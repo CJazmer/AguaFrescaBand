@@ -1,0 +1,9 @@
+*{
+    font-family: Gill Sans, sans-serif; 
+}
+body{
+    background-image: radial-gradient(blue, black);
+    min-height: 50em;
+    width: 100%;
+    overflow-x: hidden;
+}

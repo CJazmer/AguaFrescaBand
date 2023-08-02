@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="/layoutcss.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/aguafrescalogo1.png"/>
+    <title>Home</title>
+    <style>
+      .socialholder{
+        width: 100%;
+        padding: 1em;
+        margin: 0em;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: aquamarine;
+        border: .2em solid rgb(0, 0, 157);
+      }
+      .social{
+        padding: 1em;
+        border-radius: 10%;
+        border: .2em solid black;
+        text-align: center;
+        transition: .3s;
+      }
+      .social:hover{
+        transform: scale(1.1);
+      }
+      .heading{
+        width: 100%;
+        padding: .2em;
+        margin: 0em;
+        display: flex;
+        font-weight: bolder;
+        font-size: x-large;
+        justify-content: space-evenly;
+        background-color: aquamarine;
+        border: .2em .2em 0em .2em solid rgb(0, 0, 157);
+      }
+      #generos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .genero{
+        width:fit-content;
+        height: 2em;
+        padding: .5em;
+        border: .1em solid black;
+        border-radius: 10%;
+        background-color: aqua;
+      }
+      #hevents{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .event{
+        background-color: aquamarine;
+        padding: 1em;
+        border: .5em solid black;
+        border-radius: 10%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p class="heading">Agua Fresca Band</p>
+    <div class="socialholder">
+      <a href="https://www.facebook.com/aguafrescaband/" target="_blank"><div class="social" style="background-color: aqua; color:black;">Facebook</div></a>
+      <a href="https://www.youtube.com/@aguafrescaband6772" target="_blank"><div class="social" style="background-color: red; color:white">YouTube</div></a>
+    </div>
+    <div id="generos"></div>
+
+    <div id="hevents"></div>
+
+  </body>
+</html>
+<script src="/layout.js"></script>
+<script>
+  const hgeneros = document.getElementById("generos");
+  const generosarr = ["blues", "funk", "cumbia", "flamenco", "bossa nova", "reggae", "son cubano", "bolero"];
+  const hevents = document.getElementById("hevents");
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+  // Year/MonthNum/Day, Time
+  const Events = [
+    {name: "Badger State Brewery", date: "2023/10/1, ", location: "",
+    desc: ``},
+    {name: "Farmers Market (Main Stage)", date: "2023/7/12, 4-8pm", location: "", pay: 300,
+    desc: ``},
+    {name: "Roxy Market3", date: "2023/6/24, 11-3pm, ", location: "",
+    desc: ``},
+    {name: "Ten O One Club", date: "2023/6/3, 1-3pm", location: "",
+    desc: ``},
+    {name: "Marinette", date: "2022/12/10, ", location: "Marinet WI",
+    desc: ``},
+    {name: "GreenBay Ballroom", date: "2022/11/25, ", location: "Marinet WI",
+    desc: ``},
+    {name: "Lil Jamaica", date: "2022/9/24, 4-5:30pm", location: "Open for JeffMillerBand 45min", pay: 50, //50 each?
+    desc: ``},
+    {name: "Near Farmers Market", date: "2022/9/14, ", location: "Lot by BestBudz", pay: 100,
+    desc: `Opened for JeffMillerBand 45min, outside with beautiful weather`},
+    {name: "Craft Show", date: "2022/9/22, ", location: "", pay: 0,
+    desc: ``},
+    {name: "Roxy Market2", date: "2022/9/10, ", location: "", pay: 400,
+    desc: ``},
+    {name: "Lil Jamaica", date: "2022/6/5, ", location: "",
+    desc: `Jeff Miller Birthday, rainy`},
+    {name: "Roxy Market1", date: "2022/6/4, ", location: "", pay: 300,
+    desc: ``},
+    {name: "The Depot", date: "2022/4/2", location: "",
+    desc: ``},
+    {name: "Tundra New Years", date: "2021/12/31, ", location: "Tundra Lodge", pay: 0,
+    desc: ``},
+    {name: "Appleton", date: "2021/11/15, 11-2pm", location: "", pay: 100,
+    desc: ``},
+    {name: "BestBudz", date: "2021/9/25, ", location: "", pay: 100,
+    desc: ``},
+    {name: "Art Street", date: "2021/8/28, ", location: "ArtStreet", pay: 0,
+    desc: `Warm day, downpoured`},
+    {name: "Art Market", date: "2021/5/15, ", location: "Tundra Lodge", pay: 0,
+    desc: `Rainy`},
+    {name: "Ivorys", date: "2021/3/25, ", location: "Tundra Lodge", pay: 200, //?
+    desc: `4hrs, Agua Fresca Created 2021 Mar9th, first gig after`},
+  ];
+  let now = new Date();
+  console.log(now.getFullYear())
+
+  generosarr.forEach(f => {hgeneros.innerHTML += `<div class="genero">${f}</div>`;})
+
+
+
+
+  for(i=0; i<Events.length; i++){
+    let eFullDate = Events[i].date.split("/")
+    let eYear = parseInt(eFullDate[0]);
+    let eMonth = parseInt(eFullDate[1]);
+    let eDay = parseInt(eFullDate[2].substring(0, 2).replace(",", ""));
+    // 2023/5/31, 4-8pm
+
+    if( // already happened
+      now.getFullYear() > eYear ||
+      now.getMonth() > eMonth
+      ){
+      console.log(Events[i].date + "happened")
+    }
+    else{
+      console.log(Events[i].date + " Will happen")
+    }
+
+let FixDate = `${eYear}, ${months[eMonth-1]}${eDay}, ${Events[i].date.replace(`${eYear}/${eMonth}/${eDay},`, "")}`;
+
+    hevents.innerHTML += `<div class="event">${Events[i].name}<br>${FixDate}</div>`;
+  }
+
+  let totalpay = 0;
+  Events.forEach(e => {totalpay += e.pay||0})
+  console.log(`Gigs: ${Events.length}, ${totalpay}$ made`);
+
+
+</script>
+<script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0&appId=EAALKF0iExZBoBAMvvykyXn8Lh2g671bvJEx8MX4pOXO1NM2gVdVa6DuYZCkLpvwSUkclAnaRfBnpDlj1BsIlYmslUC2guJAgZALArVWl7OMzDUpnkXireHuG2AV1ToyNZB6nXlLzEIZAzsvlkalrPqnFACYrRYWORteRd5N2rZAYZAd2jAx6gP8QsZBOZAMI1nk6MEY1fdRj7IiByqtRMzcyx&autoLogAppEvents=1" crossorigin="anonymous" defer></script>
+<script>
+  FB.api(
+  '/me',
+  'GET',
+  {"fields":"id,name"},
+  function(response) {
+      // Insert your code here
+  }
+);
+  
+  
+  fetch('https://graph.facebook.com/{aguafrescaband}/events?access_token={EAALKF0iExZBoBAMvvykyXn8Lh2g671bvJEx8MX4pOXO1NM2gVdVa6DuYZCkLpvwSUkclAnaRfBnpDlj1BsIlYmslUC2guJAgZALArVWl7OMzDUpnkXireHuG2AV1ToyNZB6nXlLzEIZAzsvlkalrPqnFACYrRYWORteRd5N2rZAYZAd2jAx6gP8QsZBOZAMI1nk6MEY1fdRj7IiByqtRMzcyx}')
+  .then(response => response.json())
+  .then(data => {
+    // Process the events data
+    console.log(data);
+  })
+  .catch(error => {
+    // Handle any errors
+    console.error('Error:', error);
+  });
+</script>

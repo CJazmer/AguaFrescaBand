@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="/layoutcss.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/aguafrescalogo1.png"/>
+    <title>Home</title>
+    <style>
+      table{
+        background-color: tan;
+        margin: .5em;
+        border-collapse: collapse;
+      }
+      table th{
+        width: fit-content;
+      }
+      table td{
+        width: fit-content;
+        padding: 0em .5em 0em .5em;
+      }
+      tr{
+        border: .01em solid black;
+      }
+      tr:hover{
+        cursor: pointer;
+        border: .1em solid black;
+
+      }
+      .sentence{
+        width: fit-content;
+        height: 2em;
+        background-color: aqua;
+        padding: 2em .5em 0em 1em;
+      }
+      #hhere{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: aquamarine;
+        position: relative;
+      }
+      .chord{
+        transform: translateY(-1.6em);
+        background-color: greenyellow;
+        height: fit-content;
+        width: fit-content;
+        position: absolute;
+        padding: .2em;
+        border-radius: 10%;
+      }
+      select{
+        width: 100%;
+      }
+      .test{
+        background-color: rgb(255, 196, 165);
+        background-color: rgb(150, 255, 255);
+      }
+      canvas{
+        max-width: 50em;
+        width: 100%;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="heading">Agua Fresca Band</p>
+    <input type="text" oninput="Typed()" id="hsearch">
+    <select id="hsortby">
+      <option value="AFBdefault">Songs Agua Fresca</option>
+      <option value="AFBsetlist">SetList Agua Fresca</option>
+      <option value="genre">Genre</option>
+      <option value="name">Name</option>
+      <option value="key">Key</option>
+      <option value="JMBdefault">Songs Jeff Miller Band</option>
+      <option value="JMBsetlist">Setlist Jeff Miller Band</option>
+      <option value="songsbesaw">Songs Besaw</option>
+    </select>
+    <table id="hlist">
+    </table>
+
+    <div id="hhere"></div>
+
+    <table id="hinfotable">
+
+    </table>
+    <canvas id="hcanvasgenres"></canvas>
+
+  </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script><script src="/layout.js"></script>
+<script>
+let hlist = document.getElementById("hlist");
+let hhere = document.getElementById("hhere");
+let hsortby = document.getElementById("hsortby");
+let hsearch = document.getElementById("hsearch");
+let hinfotable = document.getElementById("hinfotable");
+let hcanvasgenres = document.getElementById("hcanvasgenres");
+let ctx = hcanvasgenres.getContext("2d");
+
+let currentsong = "Primavera";
+hsortby.addEventListener("change", function(){
+  SortArrayBy(hsortby.value); MakeTable();
+});
+
+const AFBSongsOG = [
+  {name: "Aguas", genre: "🎸flamenco",  key: "Em", chords: "Dm-F-Gm-A",
+  lyrics: ``},
+  {name: "Como Quieres Que Te Quiera", genre: "🎸flamenco",  key: "Am", chords: "Am-Dm-G-C-E7",
+  lyrics: ``},
+  {name: "La Ultima Noche", genre: "🎸flamenco",  key: "G#m", chords: "G#m-F#-E-D#",
+  lyrics: `
+    (G#m)Quiero terminar con toda la (F#)esperanza que quedó|
+    (E)Hoy voy a arrancar lo que ha quedado en (D#)este corazón|
+    (G#m)Siento que olvidar la última (F#)mirada que me dio|
+    (E)puede ahogar por fin el ultimo (D#)recuerdo de su voz|
+
+    (E)Porque he llorado tanto, tanto, tanto que no (F#)siento|
+    Mis lágrimas (E)quemándome, ay quemándome en el (D#)cuerpo|
+
+    (G#m)Ay de mí, que esta maldita (F#)luna|
+    (E)borre de mi pecho este (D#)dolor|
+    (G#m)Ay de mí, es la última (F#)noche|
+    (E)que voy a sufrir por este (D#)amor|
+  `},
+  {name: "Color Esperanza", genre: "🎸regaton", key: "A#", chords: "A#-Gm-D#-F",
+  lyrics: `
+    
+  `},
+  {name: "Hasta el Amanecer", genre: "🎸regaton", key: "F#m", chords: "F#m-Bm-D-E",
+  lyrics: `
+    
+  `},
+  {name: "Bailando", genre: "🎸regaton", key: "Em", chords: "Em-C-G-D",
+  lyrics: `
+    
+  `},
+  {name: "Chan Chan", genre: "🎸son (3/2)", key: "Dm", chords: "Dm-F-Gm-A",
+  lyrics: `
+    De (Dm)Alto Cedro (F)voy para Marcané | 
+    (Gm)Llego a Cueto (A)voy para Mayarí | 
+    (Dm)El cariño (F)que te tengo (Gm)No te lo (A)puedo negar| 
+    (Dm)Se me sale (F)la babita (Gm)Yo no lo (A)puedo evitar
+  `},
+  {name: "Moliéndo Café", genre: "🎸son (3/2)", key: "Am", chords: "Am-Dm-Am-F-E  |  (Dm-Am)2 F-E ",
+  lyrics: `
+    
+  `},
+  {name: "Caballo Viejo", genre: "🎸son (2/3)", key: "Dm", chords: "Dm, A7, Gm",
+  lyrics: `
+    
+  `},
+  {name: "Guantanamera", genre: "🎸guajira (2/3)",  key: "G", chords: "G-C-D7 | C-D7-G-E",
+  lyrics: `
+    
+  `},
+  {name: "Guajira", genre: "🎸guajira", key: "Am", chords: "Am-Dm-E",
+  lyrics: `
+    
+  `},
+  {name: "Bohio", genre: "🎸guajira", key: "Gm", chords: "Gm-Cm-Dm-Cm",
+  lyrics: `
+    
+  `},
+  {name: "Perfume de Gardenias", genre: "🎸bolero", key: "Dm", chords: "F-Em-A7-Dm | Dm-A-Dm-Gm-F-A-Dm",
+  lyrics: `
+    
+  `},
+  {name: "Quien Será", genre: "🎸bolero", key: "Em", chords: "Am-Em-B7 | Am-G-B7",
+  lyrics: `
+    
+  `},
+  {name: "Quizas Perhaps", genre: "🎸bolero", key: "Bm", chords: "capo 2) Am-Dm (F-E) | E7-A",
+  lyrics: `
+    
+  `},
+  {name: "Sabor a mi", genre: "🎸bolero", key: "F#m", chords: "1) F#m-B7-E--F#m-B7-E (C#7) |  (Bm-E)2  Amaj7-- (C#m-#Fm)2 B7",
+  lyrics: `
+    
+  `},
+  {name: "Te regalo una rosa", genre: "🎸bolero", key: "G", chords: "G-D-Em-Bm-C-G-A-D (C-G)",
+  lyrics: `
+    
+  `},
+  {name: "Besame Mucho", genre: "🎸bolero", key: "Bm", chords: "2) Am-Dm-E-Am-A7-Dm-Am-F-E | Dm-C-E-Dm-C-E-E7",
+  lyrics: `
+    
+  `},
+  {name: "Bachata en Fukuoka", genre: "🎸bachata", key: "A#", chords: "A#-Fm-G# (F#-G#)  |  (F#-G#-A#) F",
+  lyrics: `
+    
+  `},
+  {name: "Darte un Beso", genre: "🎸bachata", key: "F#m", chords: "2) C-G-Am | G-Am x2 | F-G-Am",
+  lyrics: `
+    
+  `},
+  {name: "Bugalu Agua Fresca", genre: "🎹salsa", key: "Cm", chords: "Cm-Fm-G",
+  lyrics: `
+    
+  `},
+  {name: "El Dia De Mi Suerte", genre: "🎹salsa", key: "Cm", chords: "Cm-G (Fm)",
+  lyrics: `
+    
+  `},
+  {name: "Tu Recuerdo", genre: "🎸latin other", key: "Bm", chords: "Capo2) Am-G-C-Dm-E7 | Am-G-F—E",
+  lyrics: `
+    
+  `},
+  {name: "La Bamba", genre: "🎸latin other", key: "C", chords: "C-F-G",
+  lyrics: `
+    
+  `},
+  {name: "Low Rider", genre: "🎸latin other", key: "G", chords: "G (walk up)",
+  lyrics: `
+    
+  `},
+  {name: "Suavecito", genre: "🎸latin other", key: "A", chords: "Amaj7-Bm7 *Slow",
+  lyrics: `
+    
+  `},
+  {name: "El Grand Señor", genre: "🎹cumbia", key: "F#m", chords: "Bm-F#m-C# | bridge: F#m-C#",
+  lyrics: `
+    
+  `},
+  {name: "Cariñito", genre: "🎹cumbia", key: "Am", chords: "Am-C-E7-Am | F-C-F-C-E7-Am-C-E-Am",
+  lyrics: `
+    
+  `},
+  {name: "Cumbia Cabeza", genre: "🎹cumbia", key: "Dm", chords: "Dm-C",
+  lyrics: `
+    
+  `},
+
+  {name: "Jamiroquai", genre: "🎸reggae", key: "F#m", chords: "F#-G#m-C#m-G#m",
+  lyrics: `
+    
+  `},
+  {name: "World on Fire", genre: "🎸reggae", key: "Dm", chords: "Dm---Am",
+  lyrics: `
+    
+  `},
+  {name: "Jammin", genre: "🎸reggae", key: "Bm", chords: "Bm-Em-G-F#m",
+  lyrics: `
+    
+  `},
+  {name: "Life is Life", genre: "🎸reggae", key: "Am", chords: "Am-Dm-G | Am-F-Dm-G",
+  lyrics: `
+    
+  `},
+  {name: "Mas que Nada", genre: "🎸samba", key: "Fm", chords: "Fm-A#m7-Cm7",
+  lyrics: `
+    
+  `},
+  {name: "Quando Quando", genre: "🎸bossa nova", key: "A", chords: "Amaj7-Bm7-E",
+  lyrics: `
+    
+  `},
+  {name: "Girl From Ipanema", genre: "🎸bossa nova", key: "A", chords: "F-G7-Gm-C7 | F#-B7-F#m-D-Gm-D#9-Am-Abm-Gm-C7",
+  lyrics: `
+    
+  `},
+  {name: "Tres Agujas", genre: "🎸bossa nova", key: "Bm", chords: "Bm-A | Gmaj7 (bass walk) C#dim-F#7",
+  lyrics: `
+    
+  `},
+  {name: "Corcovado", genre: "🎸bossa nova", key: "Am", chords: "Am7-E7-Gm-Csus4-Fmaj7  Fm-Am7-Gm-Csus4-Fmaj7",
+  lyrics: `
+    
+  `},
+  {name: "Água de beber", genre: "🎸bossa nova", key: "Am", chords: "Am7-D (B7) | Am7-D-Am7-Dm7-G-Cmaj7-B7-D-Am7",
+  lyrics: `
+    
+  `},
+  {name: "Black Submarines", genre: "🎸blues fast", key: "Am", chords: "A-Am-G-D",
+  lyrics: `
+    
+  `},
+  {name: "Call me the Breeze", genre: "🎸blues fast", key: "F#", chords: "F#-B-C#",
+  lyrics: `
+    
+  `},
+  {name: "Aint no Sunshine", genre: "🎸blues", key: "Am", chords: "Am-Em-G | Em7-Dm7",
+  lyrics: `
+    
+  `},
+  {name: "'Thrill is Gone'", genre: "🎸blues", key: "Am", chords: "Am-Dm-Am-Em",
+  lyrics: `
+    
+  `},
+  {name: "Wiked Game", genre: "🎸blues slow", key: "Bm", chords: "Bm-A-E",
+  lyrics: `
+    
+  `},
+  {name: "Mans World", genre: "🎸blues slow", key: "Dm", chords: "Dm-Am-Dm-Gm-A",
+  lyrics: `
+    
+  `},
+  {name: "Just the way you are", genre: "🎸jazz smooth", key: "D", chords: "D-Bm7-Gmaj7-Bm7-(D7)-Gmaj7-Gm7-D-(Am7-E7)                     Gmaj7-Gm7-D-Bm7-E7-A-D (2times)                                       I need… Gmaj7-A7-F#m7-B7-Em7-G-D---A#-C-Am7-D7-Gm7-A--",
+  lyrics: `
+    
+  `},
+  {name: "Just the two of us", genre: "🎸jazz smooth", key: "C", chords: "C-B7-Em-Dm-G",
+  lyrics: `
+    
+  `},
+  {name: "Aint no Love", genre: "🎸jazz smooth", key: "Am", chords: "Am-Dm-Am—F-G-Am | Am—C-F—G-Am (C)",
+  lyrics: `
+    
+  `},
+  {name: "Feels Like Rain", genre: "🎸soul", key: "Em", chords: "C-G | B7--Em-G7-C",
+  lyrics: `
+    
+  `},
+  {name: "Oye Cómo Va", genre: "🎸rock", key: "Am", chords: "Am-D7",
+  lyrics: `
+    
+  `},
+  {name: "Aint got Nobody", genre: "🎸rock", key: "Gm", chords: "Gm-C",
+  lyrics: `
+    
+  `},
+  {name: "Black Magic Woman", genre: "🎸rock", key: "Dm", chords: "Dm-A7-Dm-Gm",
+  lyrics: `
+    
+  `},
+  {name: "Primavera", genre: "🎸rock", key: "Gm", chords: "Gm-Cm7-Gm-D7",
+  lyrics: `
+    (Gm)Como la (Cm)semilla
+    (Gm)Lleva nueva (D7)vida
+    Hay en (Gm)esta (Cm)primavera
+    (Gm)Una nueva (D7)era|
+
+    (Gm)Lluvia de (Cm)sol|
+    (Gm)Como Una (Cm)Bendicion|
+    (Gm)La vida renace (Cm)con su luz|
+    (Gm)La primavera (Cm)ya llego|
+    (Gm)Todo es (Cm)asi|
+    (Gm)Regreso a (Cm)la raiz|
+    (Gm)Tiempo de (Cm)inquieta juventud|
+    (Gm)En (Cm)primavera ya|
+    (Gm)La tierra (Cm)negra se vuelve verde|
+    (Gm)Y las montanas y el desierto|
+    (Gm)Un bello (D7)jardin
+  `},
+  {name: "Lambada", genre: "🎸funk", key: "Am", chords: "x2 Am-F-G-C x2 Dm-Dm-G-Am",
+  lyrics: `
+
+  `},
+  {name: "Lo Que Me Gusta Me", genre: "🎸funk", key: "E", chords: "E-B-A | G#m-Gm-F#m-A-E",
+  lyrics: `
+
+  `},
+  {name: "Adoma Agua Fresca", genre: "🎸funk", key: "Cm", chords: "Gm-Cm7",
+  lyrics: `
+
+  `},
+  {name: "I belong to you", genre: "🎸funk", key: "Bm", chords: "Bm-F#m",
+  lyrics: `
+
+  `},
+  {name: "Get Lucky", genre: "🎸funk", key: "Bm", chords: "Bm-D-F#m-E",
+  lyrics: `
+
+  `},
+  {name: "Give me one Reason", genre: "🎸funk", key: "F#", chords: "F#-B#-C# ",
+  lyrics: `
+
+  `},
+  {name: "Feliz Navidad", genre: "🎸season", key: "G", chords: "G-A-D  |  G-A-D-Bm",
+  lyrics: `
+
+  `},
+];
+
+
+// JEFF MILLER BAND ---------------------
+
+const JMBSongsOG = [
+{name: "All Down the Road", genre: "blues fast", key: "E", chords: "E-A (B)", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Maggies Farm / I Aint", genre: "blues fast", key: "E", chords: "E (A-B)", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Mojo Jones", genre: "blues shuffle", key: "A", chords: "A---", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Just a Thought", genre: "rock", key: "Am", chords: "Am-D", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "I Look to be / I Am", genre: "Am", key: "Am-Em | I Look... F-G-Am-F-G", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Mama Told me not to Come", genre: "E", key: "E", chords: "E-A | G walkup | D-A-E", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Song from the Heart", genre: "rock", key: "Bm", chords: "Bm-A-E if you got no", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Ready for the Country", genre: "rock", key: "D", chords: "D | D-G-D-A *fade out", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Dead Flowers", genre: "rock", key: "D", chords: "D-A-G | A-D-", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Silvia", genre: "funk slow", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Isnt that so", genre: "rock", key: "", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "The Pusher", genre: "...", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Yer Blues", genre: "rock", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Little Quennie", genre: "rock", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Reeling and Rocking", genre: "rock", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Life in Green Bay", genre: "chill", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Quick Kisser", genre: "chill", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+];
+let JMBsetlist = ["mojo jones","kisser", "heart", "thought", "green bay", "country", "mama told me", "silvia", "look to be", "down the road"];
+console.log("SD")
+
+
+const BesawSongsOG = [
+  {name: "Beer Run", genre: "folk", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Sesaw", genre: "folk", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Old Timer", genre: "folk", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Its all right", genre: "folk", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Please dont bury me", genre: "folk", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "In my Living Room", genre: "...", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Thrill Seeking son of a gun", genre: "folk", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Standing on a Rock", genre: "folk", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Sunday Morning Sidewalk", genre: "folk", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "What in the world", genre: "folk", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "A Pirate Looks at Fourty", genre: "folk", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "I love my Girl", genre: "blues slow", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "What its Worth, stop children", genre: "...", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "...", genre: "...", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "...", genre: "...", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+]
+
+
+let Genres = [
+  {name: "flamenco", color: "rgb(255, 170, 145)"},
+  {name: "regaton", color: "rgb(255, 185, 150)"},
+  {name: "son", color: "rgb(255, 200, 150)"},
+  {name: "latin", color: "rgb(255, 200, 150)"},
+  {name: "guajira", color: "rgb(255, 200, 140)"},
+  {name: "bolero", color: "rgb(255, 210, 160)"},
+  {name: "bachata", color: "rgb(255, 200, 160)"},
+  {name: "salsa", color: "rgb(255, 200, 180)"},
+  {name: "funk", color: "rgb(255, 190, 240)"},
+  {name: "rock", color: "rgb(220, 200, 255)"},
+  {name: "soul", color: "rgb(202, 165, 255)"},
+  {name: "jazz", color: "rgb(202, 165, 255)"},
+  {name: "blues", color: "rgb(150, 225, 255)"},
+  {name: "bossanova", color: "rgb(120, 255, 123)"},
+  {name: "samba", color: "rgb(180, 255, 123)"},
+  {name: "cumbia", color: "rgb(255, 230, 133)"},
+  {name: "reggae", color: "rgb(255, 250, 133)"},
+  {name: "folk", color: "rgb(255, 200, 150)"},
+];
+
+let setlist1 = [
+"aguas", "chanchan", "quando", "primavera", "ultima noche", "two of us", "guantanamera", "the breeze"]
+
+let SongsOG = [].concat(AFBSongsOG);
+let Songs = [].concat(AFBSongsOG);
+
+
+
+  // Chart.js ========================================
+  let numofsongsgenre = [];
+Genres.forEach(g => {
+  let num = 0;
+  num = Songs.filter(s => s.genre.includes(g.name)).length;
+
+  numofsongsgenre.push(num);
+})
+
+// CHARTJS - Pie Chart Genres
+let mychart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: Genres.map(o => o.name),
+      datasets: [{
+        label: 'Number of',
+        data: numofsongsgenre,
+        backgroundColor: Genres.map(g => g.color),
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      },
+      display: true
+    }
+});
+
+
+/*
+setlist1 = [];
+let tempsongs = [].concat(SongsOG);
+let arrindexs = [];
+while(tempsongs.length-1 > 0){
+let r = (Math.random()*tempsongs.length-1).toFixed(0);
+
+    setlist1.push(SongsOG[r].name);
+    tempsongs.splice(r,1);
+}
+*/
+
+
+
+function MakeTable(){
+  let thehtml = "<tr><th>Genre</th><th>Song</th><th>Key</th><th>Chords</th></tr>";
+  Songs.forEach(s => {
+    let clr = "white";
+    Genres.forEach(g => {
+      if(s.genre.toLowerCase().replaceAll(" ", "").includes(g.name.toLowerCase().replaceAll(" ", ""))){clr=g.color}
+    })
+    thehtml += `<tr style='background-color="orange"' onclick="RowClicked('${s.name}')">
+      <td style="background-color: ${clr}; width: 6.8em">${s.genre}</td>
+      <td style="background-color: ${clr}; font-weight: 549">${s.name}</td>
+      <td style="background-color: ${clr}; text-align: center; margin:auto; font-weight: 600">${s.key}</td>
+      <td style="background-color: ${clr};">${s.chords}</td></tr>`;
+  })
+  hlist.innerHTML = thehtml;
+
+  let eeeee ="";
+  // Count Each Genre
+  let thehtml3 = "";
+  let genrepercents = [];
+  GetGenres("names").forEach(g => {
+    let crr = 
+    genrepercents.push((Songs.filter(s => s.genre.includes(g)).length)/Songs.length);
+  })
+
+  hinfotable.innerHTML = "";
+  hinfotable.innerHTML += `<tr><th>${GetGenres("names").length} Genres</th><td>Biggest Makeup ${Math.round(Math.max.apply(null, genrepercents)*100)}%</td></tr>`;
+  hinfotable.innerHTML += `<tr><th>${Songs.length} Songs</th><td>${Songs.length*3}mins (${((Songs.length*3)/60).toFixed(1)}hrs) worth of songs</td></tr>`;
+  let clrs = []
+  GetGenres("names").forEach(g => {
+    Genres.forEach(gobj => {
+      if(g == gobj.name){clrs.push(gobj.color)}
+    })
+  })
+
+
+
+  mychart.data.datasets[0].data = GetGenres("values"); // Amount, genre songs amount
+  mychart.data.labels = GetGenres("names"); // Top Labes, genres
+  mychart.data.datasets[0].label = "Songs: ";
+  mychart.data.datasets[0].backgroundColor = clrs;
+  mychart.update();
+}
+MakeTable();
+
+function SortArrayBy(field){
+  if(field == "AFBdefault"){
+    SongsOG = [].concat(AFBSongsOG);
+    Songs = [].concat(AFBSongsOG);
+  }
+  else if(field == "JMBdefault"){
+    SongsOG = [].concat(JMBSongsOG);
+    Songs = [].concat(JMBSongsOG);
+  }
+  else if(field == "songsbesaw"){
+    SongsOG = [].concat(BesawSongsOG);
+    Songs = [].concat(BesawSongsOG);
+  }
+  else if(field == "default"){
+    Songs = [].concat(SongsOG);
+  }
+  else{
+    Songs.sort((a,b)=>a[field].localeCompare(b[field]));
+  }
+  MakeTable();
+}
+
+function RowClicked(sname){
+
+  Songs.forEach(s => {
+    let filter = `<div class="sentence">${s.lyrics}`;
+
+    if(s.name == sname){
+    filter = filter.replaceAll("|","<br>");
+    filter = filter.replaceAll("(", `</div><div class='sentence'><div class="chord">`);
+    filter = filter.replaceAll(")", `</div>`);
+
+    hhere.innerHTML = filter;
+    }
+  })
+}
+
+function GetGenres(inp){
+  let r = [];
+  let currentgenres = [];
+    Songs.forEach(s => {
+      Genres.forEach(g => {
+        if(s.genre.toLowerCase().replaceAll(" ", "").includes(g.name.toLowerCase().replaceAll(" ", "")) && !currentgenres.includes(g.name)){
+          currentgenres.push(g.name);
+        }
+      })
+    })
+
+  
+    currentgenres.forEach(g => {
+      let numb = 0;
+      Songs.forEach(s => {
+        if(s.genre.toLowerCase().replaceAll(" ", "").includes(g.toLowerCase().replaceAll(" ", ""))){
+          numb++;
+        }
+      })
+      r.push(numb);
+    })
+
+
+  if(inp=="names"){r=currentgenres}
+  return r;
+}
+
+
+function Typed(){
+  let temp = [];
+  SongsOG.forEach(s => {
+    if(s.name.toLowerCase().includes(hsearch.value.toLowerCase())){
+      temp.push(s);
+    }
+  })
+  Songs = [].concat(temp);
+  MakeTable();
+}
+
+
+</script>
