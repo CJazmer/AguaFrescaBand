@@ -64,14 +64,14 @@
     <p class="heading">Agua Fresca Band</p>
     <input type="text" oninput="Typed()" id="hsearch">
     <select id="hsortby">
-      <option value="AFBdefault">Songs Agua Fresca</option>
-      <option value="AFBsetlist">SetList Agua Fresca</option>
+      <option value="defaultJMB">Songs Jeff Miller Band</option>
+      <option value="setlistJMB">Setlist Jeff Miller Band</option>
+      <option value="defaultbesaw">Songs Besaw</option>
+      <option value="defaultAFB">Songs Agua Fresca</option>
+      <option value="setlistAFB">SetList Agua Fresca</option>
       <option value="genre">Genre</option>
       <option value="name">Name</option>
       <option value="key">Key</option>
-      <option value="JMBdefault">Songs Jeff Miller Band</option>
-      <option value="JMBsetlist">Setlist Jeff Miller Band</option>
-      <option value="songsbesaw">Songs Besaw</option>
     </select>
     <table id="hlist">
     </table>
@@ -443,8 +443,6 @@ const JMBSongsOG = [
   `},
 ];
 let JMBsetlist = ["mojo jones","kisser", "heart", "thought", "green bay", "country", "mama told me", "silvia", "look to be", "down the road"];
-console.log("SD")
-
 
 const BesawSongsOG = [
   {name: "Beer Run", genre: "folk", key: "...", chords: "...", tags: "",
@@ -532,10 +530,11 @@ let Genres = [
 ];
 
 let setlist1 = [
-"aguas", "chanchan", "quando", "primavera", "ultima noche", "two of us", "guantanamera", "the breeze"]
+"aguas", "chanchan", "quando", "primavera", "ultimanoche", "two of us", "guantanamera", "the breeze", "black sub", "wikedgame", "nobody", "jammin", "worldonfire", "cabeza", "que nada", "belong to you", "moliendocafe", "lucky", "oye", "bohio", "amanecer", "besamemucho", "feels like", "adouma", "guajira", "tres"
+];
 
-let SongsOG = [].concat(AFBSongsOG);
-let Songs = [].concat(AFBSongsOG);
+let SongsOG = [].concat(JMBSongsOG);
+let Songs = [].concat(JMBSongsOG);
 
 
 
@@ -569,20 +568,6 @@ let mychart = new Chart(ctx, {
       display: true
     }
 });
-
-
-/*
-setlist1 = [];
-let tempsongs = [].concat(SongsOG);
-let arrindexs = [];
-while(tempsongs.length-1 > 0){
-let r = (Math.random()*tempsongs.length-1).toFixed(0);
-
-    setlist1.push(SongsOG[r].name);
-    tempsongs.splice(r,1);
-}
-*/
-
 
 
 function MakeTable(){
@@ -630,15 +615,27 @@ function MakeTable(){
 MakeTable();
 
 function SortArrayBy(field){
-  if(field == "AFBdefault"){
+  if(field == "defaultAFB"){
     SongsOG = [].concat(AFBSongsOG);
     Songs = [].concat(AFBSongsOG);
   }
-  else if(field == "JMBdefault"){
+  else if(field == "setlistAFB"){
+    SongsOG = [].concat(AFBSongsOG);
+    Songs = [].concat(AFBSongsOG);
+
+    SortBySetlist(setlist1);
+  }
+  else if(field == "defaultJMB"){
     SongsOG = [].concat(JMBSongsOG);
     Songs = [].concat(JMBSongsOG);
   }
-  else if(field == "songsbesaw"){
+  else if(field == "setlistJMB"){
+    SongsOG = [].concat(JMBSongsOG);
+    Songs = [].concat(JMBSongsOG);
+
+    SortBySetlist(JMBsetlist);
+  }
+  else if(field == "defaultbesaw"){
     SongsOG = [].concat(BesawSongsOG);
     Songs = [].concat(BesawSongsOG);
   }
@@ -649,6 +646,16 @@ function SortArrayBy(field){
     Songs.sort((a,b)=>a[field].localeCompare(b[field]));
   }
   MakeTable();
+}
+
+function SortBySetlist(listarr){
+  let r = [];
+  listarr.forEach(l => {
+    Songs.forEach(s => {
+      if(s.name.toLowerCase().replaceAll(" ", "").includes(l.toLowerCase().replaceAll(" ", ""))){r.push(s)}
+    });
+  });
+  Songs = r;
 }
 
 function RowClicked(sname){
@@ -669,6 +676,7 @@ function RowClicked(sname){
 function GetGenres(inp){
   let r = [];
   let currentgenres = [];
+
     Songs.forEach(s => {
       Genres.forEach(g => {
         if(s.genre.toLowerCase().replaceAll(" ", "").includes(g.name.toLowerCase().replaceAll(" ", "")) && !currentgenres.includes(g.name)){
