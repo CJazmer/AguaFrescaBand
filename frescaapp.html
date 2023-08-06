@@ -14,10 +14,10 @@
       }
       table td{
         width: fit-content;
-        padding: 0em .5em 0em .5em;
+        padding: 0em 0em 0em .5em;
       }
       tr{
-        border: .01em solid black;
+        border: .04em solid black;
       }
       tr:hover{
         cursor: pointer;
@@ -38,7 +38,7 @@
       }
       .chord{
         transform: translateY(-1.6em);
-        background-color: yellowgreen;
+        background-color: lightskyblue;
         height: fit-content;
         width: fit-content;
         position: absolute;
@@ -60,9 +60,21 @@
         background-color: rgb(150, 255, 255);
       }
       canvas{
-        max-width: 50em;
+        max-width: 30em;
         width: 100%;
         margin: auto;
+      }
+      select{
+        text-align: center;
+        font-weight: bolder;
+        background-color: rgb(224, 224, 224);
+        min-width: 2.6em;
+        min-height: 110%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+        overflow:hidden;
       }
     </style>
         <link href="./layoutcss.css" rel="stylesheet">
@@ -71,10 +83,10 @@
     <p class="heading">Agua Fresca Band</p>
     <input type="text" oninput="Typed()" id="hsearch">
     <select id="hsortby">
-      <option value="defaultJMB">Songs Jeff Miller Band</option>
+      <option value="defaultJMB">Jeff Miller Band</option>
+      <option value="defaultAFB">Agua Fresca Band</option>
+      <option value="defaultbesaw">Besaw</option>
       <option value="setlistJMB">Setlist Jeff Miller Band</option>
-      <option value="defaultbesaw">Songs Besaw</option>
-      <option value="defaultAFB">Songs Agua Fresca</option>
       <option value="setlistAFB">SetList Agua Fresca</option>
       <option value="genre">Genre</option>
       <option value="name">Name</option>
@@ -144,14 +156,15 @@ const AFBSongsOG = [
   `},
   {name: "Hasta el Amanecer", genre: "🎸regaton", key: "F#m", chords: "F#m-Bm-D-E",
   lyrics: `
+  [Coro]
     Cómo tú te (F#m)llamas Yo no (Bm)sé
     De dónde (D)llegaste Ni (E)pregunté
     Lo único que (F#m)sé es que quiero con (Bm)usted
     Quedarme (D)contigo hasta el (E)amanecer
-
+  [Rap Part]
     Óyeme, (F#m)mamacita, tu cuerpo y carita
     Piel (Bm)morena, lo que uno necesita
-    Mirando una chica tan bonita y pregunto por qué anda tan sólita
+    Mirando una (D)chica tan bonita y (E)pregunto por qué anda tan sólita
     Ven, dale ahí, ahí, moviendo to eso pa mí
     No importa idioma ni el país
     Ya vámono de aquí, que tengo algo bueno para ti
@@ -162,20 +175,21 @@ const AFBSongsOG = [
   `},
   {name: "Bailando", genre: "🎸regaton", key: "Em", chords: "Em-C-G-D",
   lyrics: `
+  [Verse1]
     (Em)Yo te miro y se me corta la (C)respiración
     (G)Cuando tú me miras se me sube el (D)corazón
     (Em)Y en un silencio tu mirada dice mil (C)palabras
     (G)La noche en la que te suplico que no salga el (D)sol
-    (Am)Bailando (C)Bailando Tú cuerpo y el (G)mío Llenando el vacío Subiendo y (D)bajando
+    (Am)Bailando (C)Bailando yú cuerpo y el (G)mío llenando el vacío subiendo y (D)bajando
     (Am)Bailando (C)Bailando ese fuego por (G)dentro me va enloqueciendo me va (D)saturando
-
+  [Verse2]
     Con tu física y tu (Em)química También tu anatomía La cerveza y el 
     (C)tequila y tu boca con la mía, Ya no puedo 
     (G)más Ya no puedo (D)más  Con esta 
     (Em)melodía tu color tu fantasía con tu 
     (C)filosofía mi cabeza está vacía y ya no puedo 
     (G)más ya no puedo (D)más
-
+  [Verse3]
     Yo quiero estar (Em)contigo
     Vivir contigo, (C)bailar contigo
     Tener contigo una noche 
@@ -186,43 +200,49 @@ const AFBSongsOG = [
   `},
   {name: "Chan Chan", genre: "🎸son (3/2)", key: "Dm", chords: "Dm-F-Gm-A",
   lyrics: `
-    De (Dm)Alto Cedro (F)voy para Marcané | 
-    (Gm)Llego a Cueto (A)voy para Mayarí | 
+  [Coro x2]
+    De (Dm)Alto Cedro (F)voy para Marcané 
+    (Gm)Llego a Cueto (A)voy para Mayarí 
+  [Verse1]
     (Dm)El cariño (F)que te tengo (Gm)No te lo (A)puedo negar| 
     (Dm)Se me sale (F)la babita (Gm)Yo no lo (A)puedo evitar|
-
+  [Verse2]
     (Dm)Cuando Juanica (F)y Chan Chan
     (Gm)En el mar (A)cernían arena
     (Dm)Como sacudía (F)el jibe
     (Gm)A Chan Chan le (A)daba pena
-
+  [Verse3]
     (Dm)Limpia el (F)camino de paja
     (Gm)Que yo me (A)quiero sentar
     (Dm)En aquél (F)tronco que veo
-    (Gm)Y así no (A)puedo llegar
+    (Gm)y así no (A)puedo llegar
   `},
   {name: "Moliéndo Café", genre: "🎸son (3/2)", key: "Am", chords: "Am-Dm-Am-F-E  |  (Dm-Am)2 F-E ",
   lyrics: `
-    Cuando la (Am)tarde languidece Renacen las sombras
-    Y en su (A)quietud los cafetales
-    Vuelven a (Dm)sentir
-    Esa triste canción de amor
-    De la vieja (Am)molienda
-    Que en el (F)letargo de la (E)noche
-    Parece (Am)gemir
-
+  [Verse1]
+    Cuando la (Am)tarde languidece renacen las sombras
+    y en su (A)quietud los cafetales
+    vuelven a (Dm)sentir
+    esa triste canción de amor
+    de la vieja (Am)molienda
+    eue en el (F)letargo de la (E)noche
+    parece (Am)gemir
+  [Verse2]
     (Dm)Una pena de amor, una (Am)tristeza
-    (Dm)Lleva el sambo Manuel en su (Am)amargura
-    (F)Pasa incansable la noche
-    Moliendo (E)café
-    
+    (Dm)lleva el sambo Manuel en su (Am)amargura
+    (F)pasa incansable la noche
+    moliendo (E)café
+  [END x1]
+    Que en el (F)letargo de la (E)noche
+    parece (Am)gemir o--o--o-o
   `},
   {name: "Caballo Viejo", genre: "🎸son (2/3)", key: "Dm", chords: "Dm, A7, Gm",
   lyrics: `
+  [Verse1]
     Cuando el (Dm)amor llega (A)así, de esta (Dm)manera, 
     uno no se da ni (A)cuenta, el cauca reverdece 
     y el (Gm)guamanchito (A)florece y la soga se (Dm)revienta 
-
+  [Verse2]
     (Gm)Caballo le dan sabana porque está viejo y (Dm)cansao, 
     pero no se dan de cuenta que un corazón (A)amarrao 
     cuando le sueltan la rienda es caballo (Dm)desbocao 
@@ -230,25 +250,22 @@ const AFBSongsOG = [
   `},
   {name: "Guantanamera", genre: "🎸guajira (2/3)",  key: "G", chords: "G-C-D7 | C-D7-G-E",
   lyrics: `
+  [Coro x2]
     (G-C-D)Guantanamera
     Guajira (G-C-D)Guantanamera
     (G-C-D)Guantanamera
     Guajira (G-C-D)guantanamera
-
+  [Verse1]
     (G)Yo soy un (C)hombre (D)sincero
     (G)De donde (C)crece la (D)palma
     (G)Yo soy un (C)hombre (D)sincero
     (G)De donde (C)crece la (D)palma
     (G)Y antes de (C)morirme (D)quiero
     (G)Echar mis (C)versos del (D)alma, hey hey 
-
-    (C-D)Guantanamera
-    Guajira (G-E)Guantanamera
-    (G-C-D)Guantanamera
-    Guajira (G-C-D)Guantanamera
   `},
   {name: "Guajira", genre: "🎸guajira", key: "Am", chords: "Am-Dm-E",
   lyrics: `
+  [Coro]
     (Am-Dm)vamanos (E)guajira (Am)vamos (G)a (F-E)bailar
     (Am-Dm)vamanos (E)guajira (Am)vamos (G)a (F-E)bailar
   `},
@@ -272,46 +289,40 @@ const AFBSongsOG = [
     (Gm)Trabajo (Cm)para el (Dm)Ingés. (Gm)Qué (Cm)destino (Dm)traicionero.
     (Gm)Trabajo (Cm)para el (Dm)Ingés. (Gm)Qué (Cm)destino (Dm)traicionero.
     (Gm)Sudando (Cm)por un (Dm)dinero (Gm)que en mis (Cm)manos no (Dm)tendré jamás.
-
   `},
   {name: "Perfume de Gardenias", genre: "🎸bolero", key: "Dm", chords: "F-Em-A7-Dm | Dm-A-Dm-Gm-F-A-Dm",
   lyrics: `
+  [Verse1]
     Perfume de (Dm-A)gardenias 
     Tiene tu (G)boca
-    Bellìsimos (Dm)destellos de (Em)luz en (Am)tu (Dm)mirar
-
-    Tu risa es una rima 
-    De alegres notas 
-    Se mueven tus cabellos 
-    Cual ondas en la mar
-    
-    Tu cuerpo es una copia de venus
-    De Cibeles que envidian las mujeres 
-    Cuando te ven pasar
-
-    Y llevas en tu alma 
-    La virginal pureza 
-    Por eso es tu belleza de místico candor
-
+    Bellìsimos (Dm)destellos de (Em)luz en (Am)tu (Dm)mirar...
+    tu risa es una (Dm-A)rima 
+    De alegres (G)notas 
+    Se mueven tus (Dm)cabellos Cual (Em)ondas (Am)en la (Dm)mar
+  [Verse2]
+    Tu cuerpo es una (Dm)copia de (A)venus
+    De (Dm)Cibeles que (Gm)envidian las (F)mujeres 
+    (A7)Cuando te ven (Dm)pasar
+    Y (A)llevas en tu (Dm)alma 
+    La (A)virginal (Dm)pureza 
+    Por (Gm)eso es tu (F)belleza de (A)místico (Dm)candor
   `},
   {name: "Veinte Años", genre: "🎸bolero", key: "Dm", chords: "F-Em-A7-Dm | Dm-A-Dm-Gm-F-A-Dm",
   lyrics: `
-    
+  [Verse1]
     qué te importa que te (Em)ame
     Si tú no me quieres (B7)ya
     El amor que ya ha pasado
     No se debe (Em)recordar
-
     Fui la ilusión de tu (E)vida
     Un día lejano (Am)ya
     Hoy represento el (Em)pasado
     No me (C)puedo (B7)conformar...
-
+  [Verse2]
     Si las (D)cosas que uno quiere
     Se (D7)pudieran (G)alcanzar
     Tú me (B7)quisieras lo mismo
     Que veinte años (Em)atrás
-
     Con qué (E)tristeza miramos
     Un amor que se nos (Am)va
     Es un pedazo del (Em)alma
@@ -327,12 +338,21 @@ const AFBSongsOG = [
   `},
   {name: "Sabor a mi", genre: "🎸bolero", key: "F#m", chords: "1) F#m-B7-E--F#m-B7-E (C#7) |  (Bm-E)2  Amaj7-- (C#m-#Fm)2 B7",
   lyrics: `
-    Tanto tiempo disfrutamos de este amor
+  [Verse1]
+    Tanto ()tiempo (...)disfrutamos de este amor
     Nuestras almas se acercaron tanto así
     Que yo guardo tu sabor
     Pero tú llevas también sabor a mí
-
-
+  [Verse2]
+    No pretendo ser tu dueño
+    No soy nada, yo no tengo vanidad
+    De mi vida doy lo bueno
+    Soy tan pobre, ¿qué otra cosa puedo dar?
+  [Verse3]
+    Si negaras mi presencia en tu vivir
+    Bastaría con abrazarte y conversar
+    Tanta vida yo te di
+    Que por fuerza tienes ya sabor a mí
   `},
   {name: "Te regalo una rosa", genre: "🎸bolero", key: "G", chords: "G-D-Em-Bm-C-G-A-D (C-G)",
   lyrics: `
@@ -344,11 +364,51 @@ const AFBSongsOG = [
   `},
   {name: "Bachata en Fukuoka", genre: "🎸bachata", key: "A#", chords: "A#-Fm-G# (F#-G#)  |  (F#-G#-A#) F",
   lyrics: `
-    
+  [Verse1]
+    Dile a la mañana que se acerca mi sueño
+    Que lo que se espera con paciencia se logra
+    Nueve horas a París viajé sin saberlo
+    Y crucé por Rusia con escala en tu boca
+    Yo canté tu bachata aquí en Fukuoka
+    Tu bachata en Fukuoka
+    Y un atardecer pintó de canvas el cielo
+    Caminé la playa de Momochi, mi anhelo
+    Y se me escapó una sonrisa del alma
+    Aquí me enseñó arigato gozaimas'
+    Yo canté tu bachata aquí en Fukuoka
+  [Coro]
+    pa bailar contigo 'pa bailar'
+    se me alegra la nota
+    quiero cantar contigo, quiero
+    una bachata en Fukuoka
+    una bachata en Fukuoka,
+    pa soñar contigo
+    en el mar las gaviotas
+    con tu piel de abrigo, quiero
+    vivir bachata en Fukuoka
   `},
   {name: "Darte un Beso", genre: "🎸bachata", key: "F#m", chords: "2) C-G-Am | G-Am x2 | F-G-Am",
   lyrics: `
-    
+  [Verse1]
+    Amarte como te amo es complicado
+    Pensar como te pienso es un pecado
+    Mirar como te miro está prohibido
+    Tocarte como quiero es un delito (Uh)
+  [Buildup]
+    Ya no sé qué hacer
+    Para que estés bien
+    Si apagar el sol para encender tu amanecer
+    Falar en portugués, aprender a hablar francés
+    O bajar la luna hasta tus pies
+  [Coro]
+    Yo solo quiero darte un beso
+    Y regalarte mis mañanas
+    Cantar para calmar tus miedos
+    Quiero que no te falte nada
+    Yo solo quiero darte un beso
+    Llenarte con mi amor el alma
+    Llevarte a conocer el cielo
+    Quiero que no te falte nada
   `},
   {name: "Bugalu Agua Fresca", genre: "🎹salsa", key: "Cm", chords: "Cm-Fm-G",
   lyrics: `
@@ -372,15 +432,40 @@ const AFBSongsOG = [
     Y la gente (G)decían al verme llorar
     No llores nene que tu suerte cambiará
     Y ¿cuándo será?
-    
   `},
   {name: "Tu Recuerdo", genre: "🎸latin other", key: "Bm", chords: "Capo2) Am-G-C-Dm-E7 | Am-G-F—E",
   lyrics: `
-    
+  [Verse1]
+    tu recuerdo sigue aqui, como un aguacero
+    rompe fuerte sobre mi, pero a fuego lento
+    quema y moja por igual, y ya no se lo que pensar
+    si tu recuerdo me hace bien o me hace mal
+  [Verse2]
+    un beso gris, un beso blanco
+    todo depende del lugar
+    que yo me fui, eso esta claro
+    pero tu recuerdo no se va
+    siento tus labios en las noches de verano
+    ahi estan, cuidandome en mi soledad
+    pero a veces me quieren matar
   `},
   {name: "La Bamba", genre: "🎸latin other", key: "C", chords: "C-F-G",
   lyrics: `
-    
+  [Coro]
+    Para bailar La ()Bamba
+    Para bailar La Bamba
+    Se necesito una poca de ()gracia
+    Una poca de gracia
+    Pa' mi, pa' ti, arriba, y arriba
+    Y arriba, y arriba
+    Por ti seré, por ti seré, por ti seré
+  [Verse]
+    Yo no soy marinero
+    Yo no soy marinero, soy capitán
+    Soy capitán, soy capitán
+    Bamba, bamba
+    Bamba, bamba
+    Bamba, bamba, bamba
   `},
   {name: "Low Rider", genre: "🎸latin other", key: "G", chords: "G (walk up)",
   lyrics: `
@@ -392,12 +477,13 @@ const AFBSongsOG = [
   `},
   {name: "El Grand Señor", genre: "🎹cumbia", key: "F#m", chords: "Bm-F#m-C# | bridge: F#m-C#",
   lyrics: `
+  [Coro]
     desde que no tengo que cuidar tu carino
     o tus caprichos ya no sufro tanto
   `},
   {name: "Cariñito", genre: "🎹cumbia", key: "Am", chords: "Am-C-E7-Am | F-C-F-C-E7-Am-C-E-Am",
   lyrics: `
-  [song]
+  [Cariñito]
     (Am)Lloro por (C)quererte por (E7)amarte por (Am)desearte
     Lloro por (C)quererte, por (E7)amarte, por (Am)desearte
     (F)Ay (C)cariño (F)ay mi (C)vida
@@ -429,8 +515,7 @@ const AFBSongsOG = [
     (Am)Why must we lose (Dm)control
     Blaze up a fire storm the people getting higher from
     the (Am)smoke of another mans (Dm)gold
-
-    [Coro]
+  [Coro x2]
     Who set the world on fire?
     (Dm)Who set the world on (Am)fire?
     Who set the world on fire?
@@ -438,6 +523,19 @@ const AFBSongsOG = [
   `},
   {name: "Jammin", genre: "🎸reggae", key: "Bm", chords: "Bm-Em-G-F#m",
   lyrics: `
+  [Coro]
+    were (Bm-Em-G)jamming I want to jam it with (F#m)you...
+    were (Bm-Em-G)jamming I hope you like jamming (F#m)too
+  [Verse1]
+    there is no (Bm)rules, there is no vows we could (Em)do it anyhow
+    (G)and I will see you (F#m)through
+    Because every(Bm)day we pay the price, with a (Em)living sacrifice
+    (G)Jamming until the jam is (F#m)through
+  [Verse2]
+    No (Bm)bullet could stop us now, we wont (Em)beg nor we wont bow
+    (G)neither can't be bought nor (F#m)sold
+    we (Bm)all defend the right, Jah, Jah (Em)children must unite
+    whose (G)life is worth more than (F#m)gold
     
   `},
   {name: "Life is Life", genre: "🎸reggae", key: "Am", chords: "Am-Dm-G | Am-F-Dm-G",
@@ -451,7 +549,6 @@ const AFBSongsOG = [
     You (Dm)all get the (G)best
     When (Am)everyone gives (F)everything
     And (Dm)every soooong (G)everybody singssss HEY!
-
   [Coro x4]
     (Am)Life, naaa (Dm)naaa na na (G)na Life is
   `},
@@ -465,12 +562,10 @@ const AFBSongsOG = [
     (Cm)Eu quero (Fm)passar
     Pois o samba está animado
     O que eu quero é sambar
-    
     Este (A#m)samba
     que é (Cm)misto de (Fm)maracatuuu
     e samba de preto (Cm)velho,
-    (A#m)Samba de (Fm)preto tu.
-    
+    (A#m)Samba de (Fm)preto tuuuu. 
     Mas que nada,
     Um (Cm)samba como (Fm)esse tão (Fm)legal
     Você não vai querer
@@ -478,21 +573,21 @@ const AFBSongsOG = [
   `},
   {name: "Quando Quando", genre: "🎸bossa nova", key: "A", chords: "Amaj7-Bm7-E",
   lyrics: `
+  [Verse1]
   (Amaj7)Tell me when will you be (Bm7-E)mine...
     Tell me quando, quando, (Amaj7)quando
     We can share a love (Bm7-E)divine 
     Please don't make me wait (Amaj7)again
-
+  [Verse2]
     When will you say yes to (Bm7-E)me
     Tell me quando, quando, (Amaj7)quando
     You mean happiness to (Bm7-E)me
     Oh my darnling tell me (Amaj7)when
-
+  [Verse3]
     Every moment's a (Bm7-E)day
     Every day seems a (Amaj7)lifetime
     Let me show you the (Bm7-E)way
     To a joy beyond (Amaj7)compare
-
     I can't wait a moment (Bm7-E)more
     Tell me quando, quando, (Amaj7)quando
     Say it's me that you (Bm7-E)adore
@@ -516,7 +611,19 @@ const AFBSongsOG = [
   `},
   {name: "Black Submarines", genre: "🎸blues fast", key: "Am", chords: "A-Am-G-D",
   lyrics: `
-    
+  [Verse1]
+    Little black submarines
+    Operator, please put me back on the line
+    Told my girl I'd be back
+    Operator, please
+    This is wreckin' my mind
+  [Coro]
+    Oh, can it be?
+    The voices calling me
+    They get lost and out of time
+    I should've seen it glow
+    But everybody knows that a broken heart is blind
+    That a broken heart is blind
   `},
   {name: "Call me the Breeze", genre: "🎸blues fast", key: "F#", chords: "F#-B-C#",
   lyrics: `
@@ -551,10 +658,13 @@ const AFBSongsOG = [
   `},
   {name: "Aint no Sunshine", genre: "🎸blues", key: "Am", chords: "Am-Em-G | Em7-Dm7",
   lyrics: `
+  [Verse1]
     aint no sunshine when shes (Am-E-G-Am)gone..........
     its not warm when shes (Am-E-G-Am)away..........
     aint no sunshine when shes (Em)gone
-    and this house just aint no (Dm)home anytime she goes (Am-E-G-Am)away..........    
+    and this house just aint no (Dm)home anytime she goes (Am-E-G-Am)away 
+  [I Know]
+    I know...
   `},
   {name: "'Thrill is Gone'", genre: "🎸blues", key: "Am", chords: "Am-Dm-Am-Em",
   lyrics: `
@@ -596,6 +706,26 @@ const AFBSongsOG = [
   `},
   {name: "Just the way you are", genre: "🎸jazz smooth", key: "D", chords: "D-Bm7-Gmaj7-Bm7-(D7)-Gmaj7-Gm7-D-(Am7-E7)                     Gmaj7-Gm7-D-Bm7-E7-A-D (2times)                                       I need… Gmaj7-A7-F#m7-B7-Em7-G-D---A#-C-Am7-D7-Gm7-A--",
   lyrics: `
+  [Verse1]
+    Don't go changing to try and please me
+    You never let me down before, mm
+    And don't imagine you're too familiar
+    And I don't see you anymore
+  [Verse2]
+    I would not leave you in times of trouble
+    We never could have come this far, mm
+    I took the good times, I'll take the bad times
+    I take you just the way you are
+  [Verse3]
+    Don't go trying some new fashion
+    Don't change the color of your hair, mm
+    You always have my unspoken passion
+    Although I might not seem to care
+  [Bridge Change]
+    Need to know that you will always be
+    The same old someone that I knew
+    Oh, what will it take till you believe in me
+    The way that I believe in you?
   `},
   {name: "Just the two of us", genre: "🎸jazz smooth", key: "C", chords: "C-B7-Em-Dm-G",
   lyrics: `
@@ -701,19 +831,49 @@ const AFBSongsOG = [
   `},
   {name: "Adoma Agua Fresca", genre: "🎸funk", key: "Cm", chords: "Gm-Cm7",
   lyrics: `
-
+  [Verse1 x2]
+    adouma (Gm)duma duma duma duma (Cm7)eh
+  [Coro x2]
+    Agua (Gm)Frescaaaaaa aaa (Cm7)aaaa
   `},
   {name: "I belong to you", genre: "🎸funk", key: "Bm", chords: "Bm-F#m",
   lyrics: `
-
+  [Coro]
+    (Bm)I belong to you and you you
+    (F#m)you belong to me too
+    you (Bm)make my life complete
+    you make me feel so (F#m)sweet
   `},
   {name: "Get Lucky", genre: "🎸funk", key: "Bm", chords: "Bm-D-F#m-E",
   lyrics: `
-
+  [Build Up]
+    we've come too far to give up who we are
+    so let's raise the bar and our cups to the stars
+  [Coro]
+    We're up all night 'til the sun
+    We're up all night to get some
+    We're up all night for good fun
+    We're up all night to get lucky
+    We're up all night to get lucky
+    We're up all night to get lucky
+    We're up all night to get lucky
+    We're up all night to get lucky
   `},
   {name: "Give me one Reason", genre: "🎸funk", key: "F#", chords: "F#-B#-C# ",
   lyrics: `
-
+  [Coro]
+    (F#m)Give me one reason to stay here (B#).....
+    And I'll (C#)turn right (B#)back (F#)around...
+    (F#m)Give me one reason to stay here (B#).....
+    And I'll (C#)turn right (B#)back (F#)around...
+    Said I don't (C#)wanna leave you lonely (B#).....
+    You gotta make me change my (F#m)mind
+  [Verse1]
+    (F#m)baby, I got your number (B#).....
+    Oh, and I know that you got (F#m)mine
+    you (F#m)know that I called you (B#)..... I called too many (F#m)times
+    You can (C#)call me baby, (B#)..... you can call me anytime
+    But you got to (F#m)call me
   `},
   {name: "Feliz Navidad", genre: "🎸season", key: "G", chords: "G-A-D  |  G-A-D-Bm",
   lyrics: `
@@ -722,7 +882,6 @@ const AFBSongsOG = [
     Feliz (D)navidad
     Feliz (G)navidad
     Prospero (A)año y (G)felicidad *STOP*
-
   [Part2 x2]
     I wanna wish you a (G)merry Christmas (A).....
     I wanna wish you a (D)merry Christmas (Bm).....
@@ -811,6 +970,30 @@ const BesawSongsOG = [
   lyrics: `
     
   `},
+  {name: "Dear Abby", genre: "blues slow", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Mr Bojangle", genre: "blues slow", key: "C", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Its Hard to be Humble", genre: "blues slow", key: "D", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Somebodys coming, FBI CIA", genre: "folk fast", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Please Dont Burry Me", genre: "folk fast", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Enjoy Yourself", genre: "folk", key: "Am", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
   {name: "Beer Run", genre: "folk fast", key: "A", chords: "A-E-A-D | A-E-F#-D", tags: "",
   lyrics: `
     
@@ -847,6 +1030,10 @@ const BesawSongsOG = [
   lyrics: `
     
   `},
+  {name: "Big Old Goofy World", genre: "folk slow", key: "G", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
   {name: "A Pirate Looks at Fourty", genre: "folk slow", key: "G", chords: "G---C---Bm-Am-G-Am-Bm-Am-G", tags: "",
   lyrics: `
     
@@ -860,6 +1047,14 @@ const BesawSongsOG = [
     
   `},
   {name: "Sesaw", genre: "folk", key: "C", chords: "C-G", tags: "original",
+  lyrics: `
+    
+  `},
+  {name: "Statisticians Blues", genre: "folk", key: "A", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Daddy Never was the Cadillac Kind", genre: "folk", key: "...", chords: "...", tags: "",
   lyrics: `
     
   `},
@@ -886,6 +1081,9 @@ let Genres = [
   {name: "cumbia", color: "rgb(255, 230, 133)"},
   {name: "reggae", color: "rgb(255, 250, 133)"},
   {name: "folk", color: "rgb(255, 200, 150)"},
+  {name: "middleast", color: "rgb(255, 150, 150)"},
+  {name: "asian", color: "rgb(255, 150, 255)"},
+  {name: "celtic", color: "rgb(150, 255, 150)"},
 ];
 
 let setlist1 = [
@@ -894,6 +1092,7 @@ let setlist1 = [
 
 let SongsOG = [].concat(JMBSongsOG);
 let Songs = [].concat(JMBSongsOG);
+let Notes = ["A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "G", "G#"];
 
 
 
@@ -928,18 +1127,37 @@ let mychart = new Chart(ctx, {
     }
 });
 
-
+// CREATE SONGS LIST TABLE ==========================================
+// ==================================================================
 function MakeTable(){
   let thehtml = "<tr><th>Genre</th><th>Song</th><th>Key</th><th>Chords</th></tr>";
   Songs.forEach(s => {
-    let clr = "white";
+    let clr = "white"; // Row color for genre
     Genres.forEach(g => {
       if(s.genre.toLowerCase().replaceAll(" ", "").includes(g.name.toLowerCase().replaceAll(" ", ""))){clr=g.color}
     })
+
+    // DropDown Key Thing ---
+    let drpdwn = `<select class="KeyDropdown" onchange="KeyChanged(this)">`;
+      Notes.forEach(n => { 
+        let hasM = ""; // "" no m, "m" has m | minor
+        if(s.key.includes("m")){hasM = "m"}
+
+        if(n == s.key.replace("m", "")){
+          drpdwn += `<option value="${s.key},${n}${hasM},${s.name}" selected="true">${n}${hasM}</option>`;
+        }
+        else{
+          drpdwn += `<option value="${s.key},${n}${hasM},${s.name}">${n}${hasM}</option>`;
+        }
+      })
+      drpdwn += `</select>`;
+
+
+      // Full Table ---
     thehtml += `<tr style='background-color="orange"' onclick="RowClicked('${s.name}')">
       <td style="background-color: ${clr}; width: 6.8em">${s.genre}</td>
       <td style="background-color: ${clr}; font-weight: 549">${s.name}</td>
-      <td style="background-color: ${clr}; text-align: center; margin:auto; font-weight: 600">${s.key}</td>
+      <td style="background-color: ${clr}; text-align: center; margin:auto; font-weight: 600">${drpdwn}</td>
       <td style="background-color: ${clr};">${s.chords}</td></tr>`;
   })
   hlist.innerHTML = thehtml;
@@ -1077,5 +1295,57 @@ function Typed(){
   MakeTable();
 }
 
+// When user changes a key dropdown
+function KeyChanged(drp){
 
+  // drp.value = "oldkey,newkey,song"
+  let oldkey = "A"
+  let newkey = drp.value.split(",")[1];
+  let songname = drp.value.split(",")[2];
+
+  Songs.forEach(s => {
+      // Find song they key will change, call "s"
+    if(s.name == songname){
+      oldkey = s.key;
+
+
+      // cntup: How many half steps to new key
+    let cntup = 0;
+      for(i=0; i<Notes.length-1; i++){
+        if(KeyToIndex(oldkey)+cntup == KeyToIndex(newkey)){
+          break;
+        }
+        else{cntup++}
+      }
+      console.log(`${oldkey} to ${newkey} is ${cntup} halfsteps`);
+      console.log(`${s.name}: changed ${s.key} to ${newkey}`);
+
+      // Replace old chords with new chords
+      for(j=0; j<Notes.length-1; j++){
+        s.chords = s.chords.replaceAll(`${Notes[j]}`,`${MoveKeyUp(Notes[j], cntup)}`);
+        s.lyrics = s.lyrics.replaceAll(`(${Notes[j]})`,`(${MoveKeyUp(Notes[j], cntup)})`);
+      }
+      s.key = newkey;
+
+      MakeTable()
+    }
+  })
+}
+function KeyToIndex(k){
+  let r = Notes.indexOf(k.replaceAll("m",""));
+  return r;
+}
+// thechord, numm "how many half steps move chord up"
+function MoveKeyUp(thechord,numm){
+  let r = "...";
+  let hasm = "";//????? astrics messing it up too
+  if(thechord.includes("m")){hasm = "m"}
+  let cnt = KeyToIndex(thechord);
+  for(ii=0; ii<numm; ii++){
+    cnt++;
+    if(cnt > Notes.length){cnt = 0;}
+  }
+  r = Notes[cnt];
+  return r;
+}
 </script>
