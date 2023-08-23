@@ -22,7 +22,6 @@
       tr:hover{
         cursor: pointer;
         border: .1em solid black;
-
       }
       .sentence{
         width: fit-content;
@@ -84,11 +83,11 @@
     <input type="text" oninput="Typed()" id="hsearch">
     <select id="hsortby">
       <option value="defaultAFB">Agua Fresca Band</option>
+      <option value="extra">Extra</option>
+      <option value="setlistAFB">SetList Agua Fresca</option>
       <option value="defaultJMB">Jeff Miller Band</option>
       <option value="defaultbesaw">Besaw</option>
-      <option value="extra">Extra</option>
       <option value="setlistJMB">Setlist Jeff Miller Band</option>
-      <option value="setlistAFB">SetList Agua Fresca</option>
       <option value="genre">Genre</option>
       <option value="name">Name</option>
       <option value="key">Key</option>
@@ -845,6 +844,78 @@ const AFBSongsOG = [
   [Coro]
     I aint (Gm)got nobody (C)..... nobody to (Gm)depend on,  
     no tengo a (C)nadie
+  `},
+  {name: "La Flaca", genre: "🎸rock", key: "Am", chords: "Am-E-Dm", tags: "",
+  lyrics: `
+  [Verse1]
+    (Am)en la vida (E7)conocí
+    mujer igual a la (D7)flaca
+    coral negro de la (C)Habana
+    (B7)tremendísima (Am)mulata, 
+    cien libras de piel y (E7)hueso
+    cuarenta kilos de (D7)salsa
+    y en la cara dos (C)soles
+    que (B7)sin palabras (F-F#-G)hablan *Stop* 
+    que sin palabras (Am)hablan (E7).....
+
+    (Am)la flaca duerme de (E7)día
+    dice que así el hambre (D7)engaña
+    cuando cae la (C)noche
+    baja a (B7)bailar a la (Am)Tasca
+    y bailar y (E7)bailar
+    y tomar y (D7)tomar, 
+    una cerveza tras (C)otra
+    pero (E7)ella nunca (F-F#-G)engorda
+    pero ella nunca (Am)engorda (E7)..... *Back to Coro*
+  [Coro x2]
+    (F)por un beso de la (G)flaca
+    daría lo que (Am)fuera
+    por un beso (D)de ella aunque sólo uno (F)fuera..... 
+    por un beso de la (G)flaca
+    daría lo que (Am)fuera
+    por un beso (D)de ella aunque sólo uno (F-F#-G)fuera... *Stop*
+    aunque sólo uno (Am)fuera (E7).....
+  [Verse2]
+    (Am)mojé mis sábanas (E7)blancas
+    como dice la (D7)canción
+    recordando las (C)caricias
+    que me (B7)brindó el primer (Am)día, 
+    enloquezco de (E7)ganas de
+    dormir a su (D7)ladito
+    porque Dios que esta (C)flaca a
+    mí me (B7)tiene (F-F#-G)loquito
+    a mí me tiene (Am)loquito (E7).....
+  [End x4]
+    (F)...... (G)Aunque solo uno (Am)fuera (D) Aunque solo uno (F)fuera
+  `},
+  {name: "Lamento Boliviano", genre: "🎸rock Incan", key: "Em", chords: "Em-Bm-Am-Em-B7", tags: "",
+  lyrics: `
+  [Verse1]
+    (Em)me quieren agitar,
+    me incitan a gritar 
+    (Bm)soy como una roca
+    palabras no me tocan
+    (Am)adentro hay un volcán
+    que pronto va a estallar
+    (Em)yo quiero estar (B7)tranquilo
+    (Em)es mi situación
+    una desolación
+    (Bm)soy como un lamento
+    lamento boliviano
+    (Am)que un día empezó
+    y no va a terminar
+    (Em)y a nadie hace (B7)daño
+  [Coro]
+    (Em)oooo, io (Bm)ioooo, (Am)eeee (Em-B7)eeee
+  [Coro2]
+    y yo estoy (Em)aquí
+    borracho y (Bm)loco... 
+    y mi (Am)corazón idiota... 
+    siempre (Em-B7)brillaráaaa
+    y yo te (Em)amaré... 
+    te amaré por (Bm)siempre... 
+    bena, no te (Am)peines en la cama... 
+    que los viajantes (Em)se van a (B7)atrasar    
   `},
   {name: "Black Magic Woman", genre: "🎸rock", key: "Dm", chords: "Dm-A7-Dm-Gm",
   lyrics: `
@@ -2387,77 +2458,35 @@ const Extra = [
     lets (Gm)straighten it out
     lets (Dm)straighten it out
   `},
-  {name: "La Flaca", genre: "rock", key: "Am", chords: "Am-E-Dm", tags: "",
+  {name: "Maldito Duende", genre: "Rock", key: "Em", chords: "Em-C-D-B7", tags: "",
   lyrics: `
   [Verse1]
-    (Am)en la vida (E7)conocí
-    mujer igual a la (D7)flaca
-    coral negro de la (C)Habana
-    (B7)tremendísima (Am)mulata, 
-    cien libras de piel y (E7)hueso
-    cuarenta kilos de (D7)salsa
-    y en la cara dos (C)soles
-    que (B7)sin palabras (F-F#-G)hablan *Stop* 
-    que sin palabras (Am)hablan (E7).....
-
-    (Am)la flaca duerme de (E7)día
-    dice que así el hambre (D7)engaña
-    cuando cae la (C)noche
-    baja a (B7)bailar a la (Am)Tasca
-    y bailar y (E7)bailar
-    y tomar y (D7)tomar, 
-    una cerveza tras (C)otra
-    pero (E7)ella nunca (F-F#-G)engorda
-    pero ella nunca (Am)engorda (E7)..... *Back to Coro*
-  [Coro x2]
-    (F)por un beso de la (G)flaca
-    daría lo que (Am)fuera
-    por un beso (D)de ella aunque sólo uno (F)fuera..... 
-    por un beso de la (G)flaca
-    daría lo que (Am)fuera
-    por un beso (D)de ella aunque sólo uno (F-F#-G)fuera... *Stop*
-    aunque sólo uno (Am)fuera (E7).....
-  [Verse2]
-    (Am)mojé mis sábanas (E7)blancas
-    como dice la (D7)canción
-    recordando las (C)caricias
-    que me (B7)brindó el primer (Am)día, 
-    enloquezco de (E7)ganas de
-    dormir a su (D7)ladito
-    porque Dios que esta (C)flaca a
-    mí me (B7)tiene (F-F#-G)loquito
-    a mí me tiene (Am)loquito (E7).....
-  [End x4]
-    (F)...... (G)Aunque solo uno (Am)fuera (D) Aunque solo uno (F)fuera
-  `},
-  {name: "Lamento Boliviano", genre: "rock Incan", key: "Em", chords: "Em-Bm-Am-Em-B7", tags: "",
-  lyrics: `
-  [Verse1]
-    (Em)me quieren agitar,
-    me incitan a gritar 
-    (Bm)soy como una roca
-    palabras no me tocan
-    (Am)adentro hay un volcán
-    que pronto va a estallar
-    (Em)yo quiero estar (B7)tranquilo
-    (Em)es mi situación
-    una desolación
-    (Bm)soy como un lamento
-    lamento boliviano
-    (Am)que un día empezó
-    y no va a terminar
-    (Em)y a nadie hace (B7)daño
+    he (Em)oído que la noche
+    (C)es toda magia
+    (D)y que un duende te invita a (B7)soooñar... 
+    y sé que (Em)últimamente
+    (C)apenas he parado
+    (D)tengo la impresión de (B7)divagar
+  [Pre Coro]
+    (Em)Amanece tan pronto
+    (C)yo estoy tan solo
+    (D)no me arrepiento de lo de (B7)ayer... 
+    las (Em)estrellas te iluminan... 
+    y te (C)sirven de guía
+    te (D)sientes tan fuerte que piensas (B7)..... 
+    que nadie te puede (Em)tocar... 
   [Coro]
-    (Em)oooo, io (Bm)ioooo, (Am)eeee (Em-B7)eeee
-  [Coro2]
-    y yo estoy (Em)aquí
-    borracho y (Bm)loco... 
-    y mi (Am)corazón idiota... 
-    siempre (Em-B7)brillaráaaa
-    y yo te (Em)amaré... 
-    te amaré por (Bm)siempre... 
-    bena, no te (Am)peines en la cama... 
-    que los viajantes (Em)se van a (B7)atrasar    
+    uoooooo oooooo (Em)ooooo... 
+    uoooooo oooooo (C)ooooo... 
+    uoooooo oooooo (D)ooooo... 
+    uoooooo oooooo (B7)ooooo
+  [Verse2]
+    las (Em)distancias se hacen cortas... 
+    pasan (C)rápidas las horas
+    (D)este cuarto no para de (B7)menguar... 
+    y tantas (Em)cosas por decir
+    tanta (C)charla por aquí... 
+    si (D)fuera posible escapar de este (B7)lugar *to PreCoro*
   `},
 ];
 
@@ -2733,7 +2762,7 @@ function MakeTable(){
       // Full Table ---
     thehtml += `<tr style='background-color="orange"' onclick="RowClicked('${s.name}')">
       <td style="background-color: ${clr}; width: 6.8em">${s.genre}</td>
-      <td style="background-color: ${clr}; font-weight: 549">${s.name}</td>
+      <td style="background-color: ${clr}; font-weight: bolder">${s.name}</td>
       <td style="background-color: ${clr}; text-align: center; margin:auto; font-weight: 600">${drpdwn}</td>
       <td style="background-color: ${clr};">${s.chords}</td></tr>`;
   })
