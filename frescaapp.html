@@ -87,6 +87,7 @@
       <option value="setlistAFB">SetList Agua Fresca</option>
       <option value="defaultJMB">Jeff Miller Band</option>
       <option value="defaultbesaw">Besaw</option>
+      <option value="bodangos">Bodangos</option>
       <option value="setlistJMB">Setlist Jeff Miller Band</option>
       <option value="genre">Genre</option>
       <option value="name">Name</option>
@@ -386,15 +387,20 @@ const AFBSongsOG = [
     (G#)aquí me enseñó (A#)arigato gozaimas'
     (F#)yo canté tu (G#)bachata aquí en (A#)Fukuoka
   [Coro]
-    pa (Fm)bailar contigo 'pa (G#)bailar'
-    se me alegra la nota
-    quiero cantar contigo, quiero
-    una bachata en Fukuoka
-    una bachata en Fukuoka,
-    pa soñar contigo
-    en el mar las gaviotas
-    con tu piel de abrigo, quiero
-    vivir bachata en Fukuoka
+    pa (Fm)bailar contigo pa (G#)bailar, 
+    se me (A#)alegra la nota... 
+    quiero (Fm)cantar contigo, ()quiero, 
+    una (A#)bachata en Fukuoka... 
+    una bachata en Fukuoka... 
+    pa soñ-(Fm)ar contigo (G#).....
+    en el (A#)mar las gaviotas... 
+    con tu (Fm)piel de abrigo (G#)quiero, 
+    vivir (A#)bachata en Fukuoka
+  [Change]
+    (F#)y llegó la hora de par-(G#)tir y decir sayo-(A#)nara... 
+    (F#)y una palomita se po-(G#)só en mi ven-(F7)tana, 
+    konnichi wa, ohayoo gozaimasu
+  *go to Coro
   `},
   {name: "Darte un Beso", genre: "🎸bachata", key: "F#m", chords: "2) C-G-Am | G-Am x2 | F-G-Am",
   lyrics: `
@@ -1667,13 +1673,27 @@ const Extra = [
   [Intro]
     (Dm-C-A#-A)Guitar riff
   [Verse1]
-    Yo (Dm)creí en tus palabras en tus (A)besos
-    Para (Gm)mí no había (A)nada más que (Dm)tú
-    Pero (C)veo que tú jugabas con mi (F)vida
-    Y por (A)mi pecado a Dios perdón (Dm)pedí
-    Ante (C)él estaba ya (F)comprometida
-    Con el (A#)hombre que ha elegido para (A)ti
+    yo (Dm)creí en tus palabras en tus (A)besos... 
+    para (Gm)mí no había (A)nada más que (Dm)tú... 
+    pero (C)veo que tú jugabas con mi (F)vida... 
+    y por (A)mi pecado a Dios perdón (Dm)pedí... 
+    ante (C)él estaba ya (F)comprometida... 
+    con el (A#)hombre que ha elegido para (A)ti
   [Verse2]
+    sé que (Dm)tú fuiste la sombra que me (A)ayudaba... 
+    a (Gm)romper con mi (A)silencio y mi sole-(Dm)dad... 
+    (C)aprendí a quererte, no puedo (F)negarlo... 
+    sin (A)saber que esto me hacía tanto (Dm)mal... 
+    y por (C)eso hoy decidí todo (F)romperlo... 
+    (A#)sufriré, pero será un mejor (A)final
+  [Verse3]
+    (Dm)vete, de veras, yo no voy a dete-(C)nerte
+    yo ya nací así con mi mala (A#)suerte
+    Conmigo no serás nunca (A)feliz... 
+    (Dm)vete, yo no sé convivir con la men-(C)tira
+    No quiero una ilusión que sea prohi-(A#)bida
+    Prefiero ser el tonto que antes (A)fui
+    vete, aléjate de (Dm)mí
 
   `},
   {name: "Me Enrede", genre: "bachata", key: "G", chords: "G-A-D-Bm", tags: "",
@@ -1713,6 +1733,30 @@ const Extra = [
     ella no (Bm)tiene corazón, ni (A)compasión
     selfish (G)lady, she cares (D)for no one
     shell make you (Bm)fall for her, and later break your (A)heart
+  `},
+  {name: "Tu Eres Ajena", genre: "bachata", key: "", chords: "", tags: "",
+  lyrics: `
+  [Part2]
+    al (Cm)conocernos me prome- (A#)tiste... 
+    darme tu (Cm)amor para toda la (A#)vida... 
+    pero muy (G#)tarde me he dado (Fm)cuenta
+    que me enga- (G#)ñabas, que me hablabas men- (G)tiras
+  [Part2]
+    de-(Fm)jaste que de ti me enamo-(A#)rara
+    que me acostum-(D#)brara solamente a tu (Cm)cariño
+    y (Fm)ahora estoy pagando mi con-(A#)dena
+    tú no (G#)debiste estar conmigo siendo (G)ajena
+    no (Fm)ves cuánto me hiere tu trai-(A#)ción?
+    yo que so-(D#)ñaba con hacerte solo (Cm)mía
+    con tu (Fm)error me lastimaste el coraz-(A#)ón
+    si lo enga-(G#)ñaste a él, 
+    a mí lo mismo me ha- (G)ríaaaa...
+    qué (Cm)lástima me da, 
+    aún corre por mis venas, 
+    la (Fm)llama de pasión que me (G)dejaste... 
+    pero tú eres (Cm)ajena
+  [Solo]
+    (Cm-G)back n forth
   `},
   {name: "Dos Gardenias", genre: "bolero", key: "Em", chords: "Em-", tags: "",
   lyrics: `
@@ -2530,11 +2574,11 @@ const JMBSongsOG = [
   lyrics: `
     
   `},
-  {name: "Isnt that so", genre: "rock", key: "A", chords: "A------D-A | D-Am-E--D-A", tags: "",
+  {name: "Yer Blues", genre: "rock", key: "Gm", chords: "Gm-Cm-Gm-Dm", tags: "",
   lyrics: `
     
   `},
-  {name: "Yer Blues", genre: "rock", key: "Gm", chords: "Gm-Cm-Gm-Dm", tags: "",
+  {name: "Isnt that so", genre: "rocknroll", key: "A", chords: "A------D-A | D-Am-E--D-A", tags: "",
   lyrics: `
     
   `},
@@ -2664,6 +2708,77 @@ const BesawSongsOG = [
   `},
 ]
 
+const BodangosOG = [
+  {name: "My Babe", genre: "blues fast", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Thrill is Gone", genre: "blues", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `}, 
+  {name: "Still Called the Blues", genre: "blues", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `}, 
+  {name: "Poor Johnny", genre: "blues", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Cold Shot", genre: "blues shuffle", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Ill play the blues", genre: "blues cool", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Footsteps in the dark", genre: "R&B", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Right Next Store", genre: "R&B cool", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Dock of the Bay", genre: "R&B soul", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Since I lost my Babe", genre: "R&B", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Last 2 Dollars", genre: "R&B bass", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "How long has this been going on", genre: "funk", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Whats going on", genre: "funk", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Wonderful World", genre: "funk", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Helpless", genre: "funk", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Stand by Me", genre: "R&B", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Aint that Lonley yet", genre: "country", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `},
+]
+
 
 let Genres = [
   {name: "flamenco", color: "rgb(255, 170, 145)"},
@@ -2686,6 +2801,7 @@ let Genres = [
   {name: "cumbia", color: "rgb(255, 230, 133)"},
   {name: "reggae", color: "rgb(255, 250, 133)"},
   {name: "folk", color: "rgb(255, 200, 150)"},
+  {name: "country", color: "rgb(255, 200, 150)"},
   {name: "middleeast", color: "rgb(255, 150, 150)"},
   {name: "sahara", color: "rgb(255, 150, 150)"},
   {name: "asian", color: "rgb(255, 150, 255)"},
@@ -2828,6 +2944,10 @@ function SortArrayBy(field){
   else if(field == "extra"){
     SongsOG = [].concat(Extra);
     Songs = [].concat(Extra);
+  }
+  else if(field == "bodangos"){
+    SongsOG = [].concat(BodangosOG);
+    Songs = [].concat(BodangosOG);
   }
   else{
     Songs.sort((a,b)=>a[field].localeCompare(b[field]));
