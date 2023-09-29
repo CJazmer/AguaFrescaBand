@@ -60,6 +60,7 @@
       }
       canvas{
         max-width: 30em;
+        padding: 0em;
         width: 100%;
         margin: auto;
       }
@@ -74,6 +75,16 @@
         text-indent: 1px;
         text-overflow: '';
         overflow:hidden;
+      }
+      #hinfo{
+        min-width: 100%;
+        min-height: 1em;
+        height: fit-content;
+        background-color: rgb(0, 193, 193);
+        color: black;
+        border: .2em solid black;
+        padding: .2em;
+        margin: 0em 0em 0em -.2em;
       }
     </style>
         <link href="./layoutcss.css" rel="stylesheet">
@@ -96,11 +107,13 @@
     <table id="hlist">
     </table>
 
+    <p id="hinfo"></p>
     <div id="hhere"></div>
 
     <table id="hinfotable">
 
     </table>
+
     <canvas id="hcanvasgenres"></canvas>
 
   </body>
@@ -112,6 +125,7 @@ let hhere = document.getElementById("hhere");
 let hsortby = document.getElementById("hsortby");
 let hsearch = document.getElementById("hsearch");
 let hinfotable = document.getElementById("hinfotable");
+let hinfo = document.getElementById("hinfo");
 let hcanvasgenres = document.getElementById("hcanvasgenres");
 let ctx = hcanvasgenres.getContext("2d");
 
@@ -121,68 +135,98 @@ hsortby.addEventListener("change", function(){
 });
 
 const AFBSongsOG = [
-  {name: "Aguas", genre: "🎸flamenco",  key: "Em", chords: "Am7-Bm7 | Em-D-C-B7",
+  {name: "Aguas", genre: "🎸flamenco",  key: "Em", chords: "Am7-Bm7 | Em-D-C-B7", info: "Conner: rhythm guitar <br> Diego: bass <br> Eric: hand percussion",
   lyrics: ``},
-  {name: "Como Quieres Que Te Quiera", genre: "🎸flamenco",  key: "Am", chords: "Am-Dm-G-C-E7",
+  {name: "Como Quieres Que Te Quiera", genre: "🎸flamenco",  key: "Am", chords: "Am-Dm-G-C-E7", info: `Conner: rhythm guitar <br> Eric: hand percussion`,
   lyrics: `
   [Verse1]
-    (Am)Cómo quieres que te quiera (Dm)Si no te tengo aquí|
-    (G)Cómo quieres que te quiera (C)Tan lejos ya (E7)de mí|
-    (Am)Cómo quieres que te quiera (Dm)Si sé que te perdí|
-    (G)Cómo quieres que te quiera (C)Tan lejos ya (E7)de mí|
+    (Am)cómo quieres que te quiera (Dm)si no te tengo aquí 
+    (G)cómo quieres que te quiera (C)tan lejos ya (E7)de mí 
+    (Am)cómo quieres que te quiera (Dm)si sé que te perdí 
+    (G)cómo quieres que te quiera (C)tan lejos ya (E7)de mí 
   [Verse2]
-    (Am)Yooo (Dm)soñaré (G)cantando a las estrellas, por el (C)día que (E7)......
-    (Am)Yooo (Dm)soñaré que (G)la vida me entrega, lo que (C)tuve ayer (E7)......
+    (Am)yooo (Dm)soñaré (G)cantando a las estrellas, por el (C)día que (E7)......
+    (Am)yooo (Dm)soñaré que (G)la vida me entrega, lo que (C)tuve ayer (E7)......
   `},
-  {name: "La Ultima Noche", genre: "🎸flamenco",  key: "G#m", chords: "G#m-F#-E-D#",
+  {name: "La Ultima Noche", genre: "🎸flamenco",  key: "G#m", chords: "G#m-F#-E-D#", info: `Conner: rhythm guitar <br> Eric: Bass`,
   lyrics: `
-    (G#m)Quiero terminar con toda la (F#)esperanza que quedó|
-    (E)Hoy voy a arrancar lo que ha quedado en (D#)este corazón|
-    (G#m)Siento que olvidar la última (F#)mirada que me dio|
-    (E)puede ahogar por fin el ultimo (D#)recuerdo de su voz|
-
-    (E)Porque he llorado tanto, tanto, tanto que no (F#)siento|
-    Mis lágrimas (E)quemándome, ay quemándome en el (D#)cuerpo|
-
-    (G#m)Ay de mí, que esta maldita (F#)luna|
-    (E)borre de mi pecho este (D#)dolor|
-    (G#m)Ay de mí, es la última (F#)noche|
-    (E)que voy a sufrir por este (D#)amor|
+  [Verse1]
+    (G#m)Quiero terminar con toda la (F#)esperanza que quedó
+    (E)Hoy voy a arrancar lo que ha quedado en (D#)este corazón
+    (G#m)Siento que olvidar la última mi-(F#)rada que me dio
+    (E)puede ahogar por fin el ultimo re-(D#)cuerdo de su voz
+  [Pre Coro]
+    (E)Porque he llorado tanto, tanto, tanto que no (F#)siento, 
+    mis lágrimas (E)quemándome, ay quemándome en el (D#)cuerpo
+  [Coro]
+    (G#m)Ay de mí, que esta maldita (F#)luna
+    (E)borre de mi pecho este (D#)dolor
+    (G#m)Ay de mí, es la última (F#)noche
+    (E)que voy a sufrir por este (D#)amor
   `},
-  {name: "Color Esperanza", genre: "🎸regaton", key: "A#", chords: "A#-Gm-D#-F",
+  {name: "Color Esperanza", genre: "🎸regaton", key: "G", chords: "G-Bm-Em-Dm-G-C-Am-D", info: `Conner: rhythm guitar n stomp pedal <br> Eric: hand percussion`,
   lyrics: `
-    Saber que se puede querer que se pueda
-    Quitarse los miedos, sacarlos afuera
-    Pintarse la cara color esperanza
-    Tentar al futuro con el corazón
+  [Verse1]
+    (G)sé qué hay en tus (Bm)ojos con solo (Em)mirar, 
+    que estás can-(Dm)sado de (G)andar y de (C)andar, 
+    y (G)caminar, 
+    girando (Am)siempre en un (D)lugar, 
+    (G)sé que las ven-(Bm)tanas se pueden (Em)abrir, 
+    cambiar el (Dm)aire de-(G)pende de (C)ti, 
+    te ayudar-(G)á
+    vale la (Am)pena una vez (D)más
+  [Coro]
+    saber que se (G)puede *All Start*, 
+    querer que se (Em)pueda, 
+    quitarse los (C)miedos, 
+    sacarlos (D)afuera, 
+    pintarse la (G)cara
+    color espe-(Em)ranza, 
+    tentar al (C)futuro, 
+    con el coraz-(D)ón
+    *percussion*
+  [Verse2]
+    (G)es mejor per-(Bm)derse que nunca embar-(Em)car, 
+    mejor ten-(Dm)tarse a dej-(G)ar de intent-(C)ar, 
+    aunque ya (Bm)ves, 
+    que no es tan (Am)fácil empez-(D)ar, 
+    (G)sé que lo impo-(Bm)sible se puede lo-(Em)grar, 
+    que la trist-(Dm)eza algún (G)día se (C)irá, 
+    y así (Bm)será
+    la vida (Am)cambia y cambiar-(D)á, 
+    Sentir-(C)ás
+    que el alma (Bm)vuela, 
+    por (Am)cantar una vez (D)más
+    vale (C)más poder bri-(Bm)llar
+    que solo (Am)buscar ver el (D)sol
   `},
-  {name: "Hasta el Amanecer", genre: "🎸regaton", key: "F#m", chords: "F#m-Bm-D-E",
+  {name: "Hasta el Amanecer", genre: "🎸regaton", key: "F#m", chords: "F#m-Bm-D-E", info: `Conner: rhythm guitar n stomp pedal<br> Eric: hand percussion`,
   lyrics: `
   [Coro]
-    Cómo tú te (F#m)llamas Yo no (Bm)sé
-    De dónde (D)llegaste Ni (E)pregunté
-    Lo único que (F#m)sé es que quiero con (Bm)usted
-    Quedarme (D)contigo hasta el (E)amanecer
+    cómo tú te (F#m)llamas Yo no (Bm)sé, 
+    de dónde (D)llegaste Ni (E)pregunté, 
+    lo único que (F#m)sé es que quiero con (Bm)usted, 
+    quedarme (D)contigo hasta el (E)amanecer
   [Rap Part]
-    Óyeme, (F#m)mamacita, tu cuerpo y carita...
+    oyeme, (F#m)mamacita, tu cuerpo y carita...
     piel (Bm)morena, lo que uno necesita...
-    (D)mirando una chica tan bonita y (E)pregunto por qué anda tan sólita
+    (D)mirando una chica tan bonita y (E)pregunto por qué anda tan sólita 
     (F#m)ahí, ahí, moviendo to eso pa mí
     (Bm)no importa idioma ni el país... 
     ya vámono de (D)aquí, que tengo algo bueno para ti, 
     una (E)noche de aventura hay que vivir
   `},
-  {name: "Bailando", genre: "🎸regaton", key: "Em", chords: "Em-C-G-D",
+  {name: "Bailando", genre: "🎸regaton", key: "Em", chords: "Em-C-G-D", info: `Conner: rhythm guitar n stomp pedal <br> Eric: hand percussion`,
   lyrics: `
   [Verse1]
     (Em)Yo te miro y se me corta la (C)respiración
     (G)Cuando tú me miras se me sube el (D)corazón
     (Em)Y en un silencio tu mirada dice mil (C)palabras
     (G)La noche en la que te suplico que no salga el (D)sol
-    (Am)Bailando (C)Bailando yú cuerpo y el (G)mío llenando el vacío subiendo y (D)bajando
-    (Am)Bailando (C)Bailando ese fuego por (G)dentro me va enloqueciendo me va (D)saturando
+    (Am)bailando (C)bailando yú cuerpo y el (G)mío llenando el vacío subiendo y (D)bajando
+    (Am)bailando (C)bailando ese fuego por (G)dentro me va enloqueciendo me va (D)saturando
   [Verse2]
-    Con tu física y tu (Em)química También tu anatomía La cerveza y el 
+    con tu física y tu (Em)química también tu anatomía La cerveza y el 
     (C)tequila y tu boca con la mía, Ya no puedo 
     (G)más Ya no puedo (D)más  Con esta 
     (Em)melodía tu color tu fantasía con tu 
@@ -197,26 +241,26 @@ const AFBSongsOG = [
     bailar (C)contigo tener contigo una noche 
     (G)loca con tremenda (D)nota
   `},
-  {name: "Chan Chan", genre: "🎸son (3/2)", key: "Dm", chords: "Dm-F-Gm-A",
+  {name: "Chan Chan", genre: "🎸son (3/2)", key: "Dm", chords: "Dm-F-Gm-A", info: `Conner: rhythm guitar <br> Eric: bass`,
   lyrics: `
   [Coro x2]
     De (Dm)Alto Cedro (F)voy para Marcané 
     (Gm)Llego a Cueto (A)voy para Mayarí 
   [Verse1]
-    (Dm)El cariño (F)que te tengo (Gm)No te lo (A)puedo negar| 
-    (Dm)Se me sale (F)la babita (Gm)Yo no lo (A)puedo evitar|
+    (Dm)el cariño (F)que te tengo (Gm)No te lo (A)puedo negar 
+    (Dm)se me sale (F)la babita (Gm)Yo no lo (A)puedo evitar 
   [Verse2]
-    (Dm)Cuando Juanica (F)y Chan Chan
+    (Dm)cuando juanica (F)y chan chan
     (Gm)En el mar (A)cernían arena
-    (Dm)Como sacudía (F)el jibe
-    (Gm)A Chan Chan le (A)daba pena
+    (Dm)como sacudía (F)el jibe
+    (Gm)a chan chan le (A)daba pena
   [Verse3]
-    (Dm)Limpia el (F)camino de paja
-    (Gm)Que yo me (A)quiero sentar
-    (Dm)En aquél (F)tronco que veo
+    (Dm)limpia el (F)camino de paja
+    (Gm)que yo me (A)quiero sentar
+    (Dm)en aquél (F)tronco que veo
     (Gm)y así no (A)puedo llegar
   `},
-  {name: "Moliéndo Café", genre: "🎸son (3/2)", key: "Am", chords: "Am-Dm-Am-F-E  |  (Dm-Am)2 F-E ",
+  {name: "Moliéndo Café", genre: "🎸son (3/2)", key: "Am", chords: "Am-Dm-Am-F-E  |  (Dm-Am)2 F-E ",  info: `Eric: bass (tresillo)`,
   lyrics: `
   [Verse1]
     Cuando la (Am)tarde languidece renacen las sombras
@@ -235,7 +279,7 @@ const AFBSongsOG = [
     Que en el (F)letargo de la (E)noche
     parece (Am)gemir o--o--o-o
   `},
-  {name: "Caballo Viejo", genre: "🎸son (2/3)", key: "Dm", chords: "Dm, A7, Gm",
+  {name: "Caballo Viejo", genre: "🎸son (2/3)", key: "Dm", chords: "Dm, A7, Gm",  info: `Eric: bass`,
   lyrics: `
   [Verse1]
     Cuando el (Dm)amor llega (A)así, de esta (Dm)manera, 
@@ -247,7 +291,7 @@ const AFBSongsOG = [
     cuando le sueltan la rienda es caballo (Dm)desbocao 
     
   `},
-  {name: "Guantanamera", genre: "🎸guajira (2/3)",  key: "G", chords: "G-C-D7 | C-D7-G-E",
+  {name: "Guantanamera", genre: "🎸guajira (2/3)",  key: "G", chords: "G-C-D7 | C-D7-G-E", info: `Eric: chachacha wood guiro`,
   lyrics: `
   [Coro x2]
     (G-C-D)Guantanamera
@@ -268,28 +312,25 @@ const AFBSongsOG = [
     (Am-Dm)vamanos (E)guajira (Am)vamos (G)a (F-E)bailar
     (Am-Dm)vamanos (E)guajira (Am)vamos (G)a (F-E)bailar
   `},
-  {name: "Bohio", genre: "🎸guajira", key: "Gm", chords: "Gm-Cm-Dm-Cm",
+  {name: "Bohio", genre: "🎸guajira", key: "Gm", chords: "Gm-Cm-Dm-Cm", info: `Eric: bass`,
   lyrics: `
     [Coro x2]
-    (Gm-Cm)Cuando (Dm)llegaré?
-    (Gm-Cm)Cuando (Dm)llegaré al bohío?
-
-    [Verse1]
-    (Gm)Al vaivén (Cm)de mi (Dm)carreta (Gm)nació (Cm)esta (Dm)lamentación.
-    (Gm)Al vaivén (Cm)de mi (Dm)carreta (Gm)nació (Cm)esta (Dm)lamentación.
-    (Gm)Compadre, (Cm)oiga mi (Dm)cuarteta. (Gm)No (Cm)tenemos (Dm)protección, ¡tú ve'!
-
-    [Verse2]
-    (Gm)Vivo el (Cm)año dando (Dm)azotes a los (Cm)bueyes, y no (Dm)extraño.
-    (Gm)Vivo el (Cm)año dando (Dm)azotes a los (Cm)bueyes, y no (Dm)extraño.
-    (Gm)Que a la (Cm)conclusión del (Dm)año, (Gm)piña, (Cm)mammee (Dm)sapoteeee
-
-    [Verse3]
-    (Gm)Trabajo (Cm)para el (Dm)Ingés. (Gm)Qué (Cm)destino (Dm)traicionero.
-    (Gm)Trabajo (Cm)para el (Dm)Ingés. (Gm)Qué (Cm)destino (Dm)traicionero.
-    (Gm)Sudando (Cm)por un (Dm)dinero (Gm)que en mis (Cm)manos no (Dm)tendré jamás.
+    (Gm-Cm)cuando (Dm)llegaré?
+    (Gm-Cm)cuando (Dm)llegaré al bohío?
+  [Verse1]
+    (Gm)al vaivén (Cm)de mi (Dm)carreta (Gm)nació (Cm)esta (Dm)lamentación.
+    (Gm)al vaivén (Cm)de mi (Dm)carreta (Gm)nació (Cm)esta (Dm)lamentación.
+    (Gm)compadre, (Cm)oiga mi (Dm)cuarteta. (Gm)No (Cm)tenemos (Dm)protección, ¡tú ve!
+  [Verse2]
+    (Gm)vivo el (Cm)año dando (Dm)azotes a los (Cm)bueyes, y no (Dm)extraño.
+    (Gm)vivo el (Cm)año dando (Dm)azotes a los (Cm)bueyes, y no (Dm)extraño.
+    (Gm)que a la (Cm)conclusión del (Dm)año, (Gm)piña, (Cm)mammee (Dm)sapoteeee
+  [Verse3]
+    (Gm)trabajo (Cm)para el (Dm)inglés. (Gm)Qué (Cm)destino (Dm)traicionero.
+    (Gm)trabajo (Cm)para el (Dm)inglés. (Gm)Qué (Cm)destino (Dm)traicionero.
+    (Gm)sudando (Cm)por un (Dm)dinero (Gm)que en mis (Cm)manos no (Dm)tendré jamás.
   `},
-  {name: "Perfume de Gardenias", genre: "🎸bolero", key: "Dm", chords: "F-Em-A7-Dm | Dm-A-Dm-Gm-F-A-Dm",
+  {name: "Perfume de Gardenias", genre: "🎸bolero", key: "Dm", chords: "F-Em-A7-Dm | Dm-A-Dm-Gm-F-A-Dm", info: `Eric: tap metal guira`,
   lyrics: `
   [Verse1]
     Perfume de (F-A7)gardenias 
@@ -306,7 +347,7 @@ const AFBSongsOG = [
     la (A)virginal (Dm)pureza 
     por (Gm)eso es tu (F)belleza de (A7)místico (Dm)candor
   `},
-  {name: "Veinte Años", genre: "🎸bolero", key: "Dm", chords: "F-Em-A7-Dm | Dm-A-Dm-Gm-F-A-Dm",
+  {name: "Veinte Años", genre: "🎸bolero", key: "Dm", chords: "F-Em-A7-Dm | Dm-A-Dm-Gm-F-A-Dm", info: `Conner: guitar <br> Eric: tap metal guira`,
   lyrics: `
   [Verse1]
     qué te importa que te (Em)ame
@@ -335,7 +376,7 @@ const AFBSongsOG = [
   lyrics: `
     
   `},
-  {name: "Sabor a mi", genre: "🎸bolero", key: "Em", chords: "1) F#m-B7-E--F#m-B7-E (C#7) |  (Bm-E)2  Amaj7-- (C#m-F#m)2 B7",
+  {name: "Sabor a mi", genre: "🎸bolero", key: "Em", chords: "1) F#m-B7-E--F#m-B7-E (C#7) |  (Bm-E)2  Amaj7-- (C#m-F#m)2 B7", info: `Eric: tap metal guira`,
   lyrics: `
   [Verse1]
     Tanto ()tiempo (F#m)disfrutamos de este amor (B7).....
@@ -353,26 +394,26 @@ const AFBSongsOG = [
     tanta vida yo te di
     que por fuerza tienes ya sabor a mí
   `},
-  {name: "Te regalo una rosa", genre: "🎸bolero", key: "G", chords: "G-D-Em-Bm-C-G-A-D (C-G)",
+  {name: "Te regalo una rosa", genre: "🎸bolero", key: "G", chords: "G-D-Em-Bm-C-G-A-D (C-G)",  info: `Conner: guitar <br> Eric: tap metal guira`,
   lyrics: `
     
   `},
-  {name: "Besame Mucho", genre: "🎸bolero", key: "Bm", chords: "2) Am-Dm-E-Am-A7-Dm-Am-F-E | Dm-C-E-Dm-C-E-E7",
+  {name: "Besame Mucho", genre: "🎸bolero", key: "Bm", chords: "2) Am-Dm-E-Am-A7-Dm-Am-F-E | Dm-C-E-Dm-C-E-E7", info: `Eric: tap metal guira`,
   lyrics: `
-  [Coro]
-    (Am)bésame, bésame mucho
+  [Coro x2]
+    (Am)bésame, bésame (Dm)mucho
     como si fuera esta (E)noche la última (Am)vez... 
     (A7)bésame bésame (Dm)mucho
     (Am)que tengo miedo (F)perderte, (E)perderte otra (Am)vez
   [Change]
     (Dm)quiero tenerte muy (C)cerca, 
     mirarme en tus (E)ojos
-    verte junto a (Am)mi, 
+    verte junto a (E7)mi, 
     (Dm)Pienso que tal vez (C)mañana
     yo ya estaré (E)lejos,
     muy lejos de ti
   `},
-  {name: "Bachata en Fukuoka", genre: "🎸bachata", key: "A#", chords: "A#-Fm-G# (F#-G#)  |  (F#-G#-A#) F",
+  {name: "Bachata en Fukuoka", genre: "🎸bachata", key: "A#", chords: "A#-Fm-G# (F#-G#)  |  (F#-G#-A#) F",  info: `Conner: guitar (fingerpick) <br> Eric: tap metal guira`,
   lyrics: `
   [Verse1]
     (A#)dile a la mañana que se (Fm)acerca mi sueño
@@ -389,7 +430,7 @@ const AFBSongsOG = [
   [Coro]
     pa (Fm)bailar contigo pa (G#)bailar, 
     se me (A#)alegra la nota... 
-    quiero (Fm)cantar contigo, ()quiero, 
+    quiero (Fm)cantar contigo, (G#)quiero, 
     una (A#)bachata en Fukuoka... 
     una bachata en Fukuoka... 
     pa soñ-(Fm)ar contigo (G#).....
@@ -402,7 +443,7 @@ const AFBSongsOG = [
     konnichi wa, ohayoo gozaimasu
   *go to Coro
   `},
-  {name: "Darte un Beso", genre: "🎸bachata", key: "F#m", chords: "2) C-G-Am | G-Am x2 | F-G-Am",
+  {name: "Darte un Beso", genre: "🎸bachata", key: "F#m", chords: "2) C-G-Am | G-Am x2 | F-G-Am",  info: `Conner: guitar (fingerpick) <br> Eric: tap metal guira`,
   lyrics: `
   [Verse1]
     (C)Amarte como te (G)amo es (Am)complicado
@@ -424,30 +465,30 @@ const AFBSongsOG = [
     (F)levarte a conocer el cielo
     (G)quiero que no (Am)te falte nada
   `},
-  {name: "Bugalu Agua Fresca", genre: "🎹salsa", key: "Cm", chords: "Cm-Fm-G",
+  {name: "Bugalu Agua Fresca", genre: "🎹salsa", key: "Cm", chords: "Cm-Fm-G", info: `Conner: piano (montuno)`, 
   lyrics: `
     
   `},
-  {name: "El Dia De Mi Suerte", genre: "🎹salsa", key: "Cm", chords: "Cm-G (Fm)",
+  {name: "El Dia De Mi Suerte", genre: "🎹salsa", key: "Cm", chords: "Cm-G (Fm)", info: `Conner: piano (tresillo)`, 
   lyrics: `
   [Coro x2]
-    (C)Pronto llegará
+    (Cm)Pronto llegará
     El día de mi (G)suerte
     Sé que antes de mi muerte
-    Seguro que mi suerte (C)cambiará
+    Seguro que mi suerte (Cm)cambiará
 
   [Verse1]
-    (C)Cuando niño mi mamá se murió
-    Solito con el (G)viejo me (C)dejó
+    (Cm)Cuando niño mi mamá se murió
+    Solito con el (G)viejo me (Cm)dejó
     Me dijo solo nunca quedarás
-    Porque él no (G)esperaba una (C)enfermedad
+    Porque él no (G)esperaba una (Cm)enfermedad
     A los diez años (Fm)papá se murió
-    Se fue con mamá (C)para el más allá
+    Se fue con mamá (Cm)para el más allá
     Y la gente (G)decían al verme llorar
     No llores nene que tu suerte cambiará
     Y ¿cuándo será?
   `},
-  {name: "Tu Recuerdo", genre: "🎸latin other", key: "Bm", chords: "Capo2) Am-G-C-Dm-E7 | Am-G-F—E",
+  {name: "Tu Recuerdo", genre: "🎸latin other", key: "Bm", chords: "Capo2) Am-G-C-Dm-E7 | Am-G-F—E", info: `Conner: guitar (fingerpick) <br> Eric: shaker`,
   lyrics: `
   [Verse1]
     (Bm)tu (A-D)re-cuerdo sigue (Em)aqui, como un (F#)aguacero
@@ -463,7 +504,7 @@ const AFBSongsOG = [
     (G)ahi estan (F#)cuidandome en mi (Bm-A)soledad
     pero a (G)veces me quieren (F#)matar
   `},
-  {name: "La Bamba", genre: "🎸latin other", key: "C", chords: "C-F-G",
+  {name: "La Bamba", genre: "🎸latin other", key: "C", chords: "C-F-G", info: `Conner: guitar rhythm <br> Eric: bass`,
   lyrics: `
   [Coro]
     para bailar La (C-F-G)bamba
@@ -483,51 +524,50 @@ const AFBSongsOG = [
   lyrics: `
     
   `},
-  {name: "El Gran Señor", genre: "🎹cumbia", key: "F#m", chords: "Bm-F#m-C# | bridge: F#m-C#",
+  {name: "El Gran Señor", genre: "🎹cumbia", key: "F#m", chords: "Bm-F#m-C# | bridge: F#m-C#", info: `Conner: Piano (bass and chords) n stomp pedal <br> Eric: metal guira chachacha`,
   lyrics: `
   [Coro x2]
     desde (Bm)que no tengo que cuidar tu (F#m)cariño
     oír tus (C#)caprichos ya no sufro (F#m)tanto
   `},
-  {name: "Cariñito", genre: "🎹cumbia", key: "Am", chords: "Am-C-E7-Am | F-C-F-C-E7-Am-C-E-Am",
+  {name: "Cariñito", genre: "🎹cumbia", key: "Am", chords: "Am-C-E7-Am | F-C-F-C-E7-Am-C-E-Am", info: `Conner: piano(bass n chords) n stomp pedal <br> Eric: metal guira chachacha`,
   lyrics: `
   [Cariñito]
-    (Am)Lloro por (C)quererte por (E7)amarte por (Am)desearte... 
-    Lloro por (C)quererte, por (E7)amarte, por (Am)desearte... 
-    (F)Ay (C)cariño (F)ay mi (C)vida...
-    (E7)Nunca, pero (Am)nunca me (C)abandones (E7-Am)cariñito
-    (E7)Nunca, pero (Am)nunca me (C)abandones (E7-Am)cariñito
+    (Am)lloro por (C)quererte por (E7)amarte por (Am)desearte... 
+    lloro por (C)quererte, por (E7)amarte, por (Am)desearte... 
+    (F)ay (C)cariño (F)ay mi (C)vida...
+    (E7)nunca, pero (Am)nunca me (C)abandones (E7-Am)cariñito
+    (E7)nunca, pero (Am)nunca me (C)abandones (E7-Am)cariñito
   `},
-  {name: "Cumbia Cabeza", genre: "🎹cumbia", key: "Dm", chords: "Dm-C",
+  {name: "Cumbia Cabeza", genre: "🎹cumbia", key: "Dm", chords: "Dm-C", info: `Conner: piano(bass n chords) n stomp pedal <br> Eric: metal guira chachacha`,
   lyrics: `
   [Coro x2]
-    (Dm)Cumbia cumbia,
-    Cumbia cumbia
-    Esta es mi cumbia (C-Dm)cabeza
-    Esta la bailan los (C-Dm)negros
-    Tomando coca y (C-Dm)cerveza
+    (Dm)cumbia cumbia,
+    cumbia cumbia
+    esta es mi cumbia (C-Dm)cabeza
+    esta la bailan los (C-Dm)negros
+    tomando coca y (C-Dm)cerveza
   `},
-
   {name: "Jamiroquai", genre: "🎸reggae", key: "F#m", chords: "F#-G#m-C#m-G#m",
   lyrics: `
     
   `},
-  {name: "World on Fire", genre: "🎸reggae", key: "Dm", chords: "Dm---Am",
+  {name: "World on Fire", genre: "🎸reggae", key: "Dm", chords: "Dm---Am", 
   lyrics: `
   [Verse1]
-    If I (Dm)had all the money in the world
-    I'd (Am)probably burn it (Dm)all
-    If I had all the riches in the world
-    I'd (Am)surely burn it (Dm)all
-    One in a million, money gonna kill a man
-    (Am)Why must we lose (Dm)control
-    Blaze up a fire storm the people getting higher from
+    if I (Dm)had all the money in the world
+    id (Am)probably burn it (Dm)all
+    if I had all the riches in the world
+    id (Am)surely burn it (Dm)all
+    one in a million, money gonna kill a man
+    (Am)why must we lose (Dm)control
+    blaze up a fire storm the people getting higher from
     the (Am)smoke of another mans (Dm)gold
   [Coro x2]
-    Who set the world on fire?
-    (Dm)Who set the world on (Am)fire?
-    Who set the world on fire?
-    It was (Dm)me who set the world on (Am)fire
+    who set the world on fire?
+    (Dm)who set the world on (Am)fire?
+    who set the world on fire?
+    it was (Dm)me who set the world on (Am)fire
   `},
   {name: "Jammin", genre: "🎸reggae", key: "Bm", chords: "Bm-Em-G-F#m",
   lyrics: `
@@ -546,7 +586,7 @@ const AFBSongsOG = [
     whose (G)life is worth more than (F#m)gold
     
   `},
-  {name: "Eres Para Mi", genre: "🎸reggae", key: "Bm", chords: "Bm-D-E | Bm-A-E x2 | G-A-G-E",
+  {name: "Eres Para Mi", genre: "🎸reggae", key: "Bm", chords: "Bm-D-E | Bm-A-E x2 | G-A-G-E", info: `Conner: guitar chords <br> Eric: bass`, 
   lyrics: `
   [Coro x4]
     eres para (Bm)mí, (D)..... (E)me lo ha dicho el viento
@@ -567,62 +607,62 @@ const AFBSongsOG = [
     y (A)no es un buen momento para (G)ti...
     y para esto (E)que nos viene sucediendo
   `},
-  {name: "Life is Life", genre: "🎸reggae", key: "Am", chords: "Am-Dm-G | Am-F-Dm-G",
+  {name: "Life is Life", genre: "🎸reggae", key: "Am", chords: "Am-Dm-G | Am-F-Dm-G", info: `Conner: guitar chords <br> Eric: bass`, 
   lyrics: `
   [Buildup]
-    When we (Am)all give the (F)power
-    We (Dm)all give the (G)best
-    Every (Am)minute of an (F)hour
-    Don't (Dm)think about a (G)rest
-    Then you (Am)all get the (F)power
-    You (Dm)all get the (G)best
-    When (Am)everyone gives (F)everything
-    And (Dm)every soooong (G)everybody singssss HEY!
+    when we (Am)all give the (F)power
+    we (Dm)all give the (G)best
+    every (Am)minute of an (F)hour
+    dont (Dm)think about a (G)rest
+    then you (Am)all get the (F)power
+    you (Dm)all get the (G)best
+    when (Am)everyone gives (F)everything
+    and (Dm)every soooong (G)everybody singssss HEY!
   [Coro x4]
-    (Am)Life, naaa (Dm)naaa na na (G)na Life is
+    (Am)life, naaa (Dm)naaa na na (G)na life is
   `},
-  {name: "Mas que Nada", genre: "🎸samba", key: "Fm", chords: "Fm-A#m7-Cm7",
+  {name: "Mas que Nada", genre: "🎸samba", key: "Fm", chords: "Fm-A#m7-Cm7", info: `Conner: guitar rhythm <br> Eric: shaker`,
   lyrics: `
   [Coro 2x]
     (Fm-A#m)oooooo aarii (Cm)aaaaaaaaa  (Fm)raioooo, 
     oba oba oba
   [Verse1]
-    Mas que (Fm)nada, Sai da (A#m)minha frente
-    (Cm)Eu quero (Fm)passar
-    Pois o samba está animado
-    O que eu quero é sambar
-    Este (A#m)samba
+    mas que (Fm)nada, sai da (A#m)minha frente
+    (Cm)eu quero (Fm)passar
+    pois o samba está animado
+    o que eu quero é sambar, 
+    este (A#m)samba
     que é (Cm)misto de (Fm)maracatuuu
     e samba de preto (Cm)velho,
-    (A#m)Samba de (Fm)preto tuuuu. 
-    Mas que nada,
-    Um (Cm)samba como (Fm)esse tão (Fm)legal
-    Você não vai querer
-    Que eu chegue no (Fm-A7)finaaal    
+    (A#m)samba de (Fm)preto tuuuu. 
+    mas que nada,
+    um (Cm)samba como (Fm)esse tão (Fm)legal
+    você não vai querer
+    que eu chegue no (Fm-A7)finaaal    
   `},
-  {name: "Quando Quando", genre: "🎸bossa nova", key: "A", chords: "Amaj7-Bm7-E",
+  {name: "Quando Quando", genre: "🎸bossa nova", key: "A", chords: "Amaj7-Bm7-E", info: `Conner: guitar (fingerpick) <br> Eric: shaker`, 
   lyrics: `
   [Verse1]
-    (Amaj7)Tell me when will you be (Bm7)mine... (E).....
-    Tell me quando, quando, (Amaj7)quando
-    We can share a love (Bm7)divine (E).....
-    Please don't make me wait (Amaj7)again
+    (Amaj7)tell me when will you be (Bm7)mine... (E).....
+    tell me quando, quando, (Amaj7)quando
+    we can share a love (Bm7)divine (E).....
+    please don't make me wait (Amaj7)again
   [Verse2]
-    When will you say yes to (Bm7)me (E).....
-    Tell me quando, quando, (Amaj7)quando
-    You mean happiness to (Bm7)me (E).....
-    Oh my darnling tell me (Amaj7)when
+    when will you say yes to (Bm7)me (E).....
+    tell me quando, quando, (Amaj7)quando
+    you mean happiness to (Bm7)me (E).....
+    oh my darnling tell me (Amaj7)when
   [Verse3]
-    Every moments a (Bm7)day (E).....
-    Every day seems a (Amaj7)lifetime
-    Let me show you the (Bm7)way (E).....
-    To a joy beyond (Amaj7)compare
+    every moments a (Bm7)day (E).....
+    every day seems a (Amaj7)lifetime
+    let me show you the (Bm7)way (E).....
+    to a joy beyond (Amaj7)compare
     I cant wait a moment (Bm7)more (E).....
-    Tell me quando, quando, (Amaj7)quando
-    Say its me that you (Bm7)adore (E).....
-    And then darlin, tell me (Amaj7)when 
+    tell me quando, quando, (Amaj7)quando
+    say its me that you (Bm7)adore (E).....
+    and then darlin, tell me (Amaj7)when 
   `},
-  {name: "Girl From Ipanema", genre: "🎸bossa nova", key: "A", chords: "F-G7-Gm-C7 | F#-B7-F#m-D-Gm-D#9-Am-Abm-Gm-C7",
+  {name: "Girl From Ipanema", genre: "🎸bossa nova", key: "A", chords: "F-G7-Gm-C7 | F#-B7-F#m-D-Gm-D#9-Am-Abm-Gm-C7", info: `Conner: guitar (fingerpick) <br> Eric: shaker`,
   lyrics: `
   [Verse1]
     (Fmaj7)olha, que coisa mais linda
@@ -663,15 +703,15 @@ const AFBSongsOG = [
   lyrics: `
     
   `},
-  {name: "Corcovado", genre: "🎸bossa nova", key: "Am", chords: "Am7-E7-Gm-Csus4-Fmaj7  Fm-Am7-Gm-Csus4-Fmaj7",
+  {name: "Corcovado", genre: "🎸bossa nova", key: "Am", chords: "Am7-E7-Gm-Csus4-Fmaj7  Fm-Am7-Gm-Csus4-Fmaj7", info: `Conner: guitar rhythm <br> Eric: shaker`, 
   lyrics: `
     
   `},
-  {name: "Água de beber", genre: "🎸bossa nova", key: "Am", chords: "Am7-D (B7) | Am7-D-Am7-Dm7-G-Cmaj7-B7-D-Am7",
+  {name: "Água de beber", genre: "🎸bossa nova", key: "Am", chords: "Am7-D (B7) | Am7-D-Am7-Dm7-G-Cmaj7-B7-D-Am7", info: `Conner: guitar rhythm <br> Eric: shaker`, 
   lyrics: `
     
   `},
-  {name: "Black Submarines", genre: "🎸blues fast", key: "Am", chords: "A-Am-G-D",
+  {name: "Black Submarines", genre: "🎸blues fast", key: "Am", chords: "A-Am-G-D", info: `Conner: guitar rhythm <br> Eric: drumset (fast 1,2 beat)`,
   lyrics: `
   [Verse1]
     Little black submarines
@@ -687,38 +727,38 @@ const AFBSongsOG = [
     But everybody knows that a broken heart is blind
     That a broken heart is blind
   `},
-  {name: "Call me the Breeze", genre: "🎸blues fast", key: "F#", chords: "F#-B-C#",
+  {name: "Call me the Breeze", genre: "🎸blues fast", key: "F#", chords: "F#-B-C#", info: `Conner: guitar rhythm <br> Eric: drumset (fast 1,2 beat)`,
   lyrics: `
   [Coro]
-    (F#)Call me the breeze
-    I keep blowin' down the road
-    Well now they (B)call me the breeze
-    I keep blowin' down the road
-    (C#)I ain't got me nobody (B)..... 
-    I don't carry me no (F#)load
+    (F#)call me the breeze
+    I keep blowin down the road
+    well now they (B)call me the breeze
+    I keep blowin down the road
+    (C#)I aint got me nobody (B)..... 
+    I dont carry me no (F#)load
   [Verse1]
-    (F#)Ain't no change in the weather
-    Ain't no changes in me
-    (B)Well there ain't no change in the weather
-    Ain't no changes in me
-    (C#)And I ain't hidin' from nobody (B)..... 
-    Nobody's hidin' from (F#)me    
+    (F#)aint no change in the weather
+    aint no changes in me
+    (B)well there aint no change in the weather
+    aint no changes in me
+    (C#)and I aint hidin from nobody (B)..... 
+    nobodys hidin from (F#)me    
   [Verse2]
-    Well I (F#)got that green light baby
+    well I (F#)got that green light baby
     I got to keep movin' on
-    Well I (B)got that green light baby
+    well I (B)got that green light baby
     I got to keep movin' on
-    Well I might (C#)go out to California (B)..... 
-    Might go down to Georgia I don't (F#)know
+    well I might (C#)go out to california (B)..... 
+    might go down to georgia I dont (F#)know
   [Verse3]
-    Well I (F#)dig you Georgia peaches
-    Makes me feel right at home
-    Well now I (B)dig you Georgia peaches
-    Makes me feel right at home
-    But I don't (C#)love me no one woman (B)..... 
-    So I can't stay in Georgia (F#)long
+    well I (F#)dig you georgia peaches
+    makes me feel right at home
+    well now I (B)dig you georgia peaches
+    makes me feel right at home
+    but I dont (C#)love me no one woman (B)..... 
+    so I cant stay in georgia (F#)long
   `},
-  {name: "Aint no Sunshine", genre: "🎸blues", key: "Am", chords: "Am-Em-G | Em7-Dm7",
+  {name: "Aint no Sunshine", genre: "🎸blues", key: "Am", chords: "Am-Em-G | Em7-Dm7", info: `Conner: guitar rhythm <br> Eric: drumset (chill quiet)`,
   lyrics: `
   [Verse1]
     aint no sunshine when shes (Am-E-G-Am)gone..........
@@ -732,28 +772,28 @@ const AFBSongsOG = [
   lyrics: `
     
   `},
-  {name: "Wiked Game", genre: "🎸blues slow", key: "Bm", chords: "Bm-A-E",
+  {name: "Wiked Game", genre: "🎸blues slow", key: "Bm", chords: "Bm-A-E", info: `Conner: guitar rhythm <br> Eric: drumset(Boom ts ts Kat ts ts) *in 3s`,
   lyrics: `
   [Verse1]
-    (Bm)The world was on (A)fire, and no (E)one could save me but you
-    (Bm)It's strange what (A)desire will make (E)foolish people do
+    (Bm)the world was on (A)fire, and no (E)one could save me but you
+    (Bm)its strange what (A)desire will make (E)foolish people do
     (Bm)I never (A)dreamed that I'd meet (E)somebody like you
-    (Bm)And I never (A)dreamed that I'd lose (E)somebody like you
+    (Bm)and I never (A)dreamed that I'd lose (E)somebody like you
   [Coro]
-    no, (Bm-A)iiiiii don't wanna fall in (E)love
-    no, (Bm-A)iiiiii don't wanna fall in (E)love
+    no, (Bm-A)iiiiii dont wanna fall in (E)love
+    no, (Bm-A)iiiiii dont wanna fall in (E)love
     with (Bm-A)you, with (E)you, with (Bm-A)you, with (E)you
   [Verse2]
-    (Bm)What a wicked (A)game to play
-    To make me (E)feel this way
-    (Bm)What a wicked (A)thing to do
-    To let me (E)dream of you
+    (Bm)what a wicked (A)game to play
+    to make me (E)feel this way
+    (Bm)what a wicked (A)thing to do
+    to let me (E)dream of you
   `},
-  {name: "Mans World", genre: "🎸blues slow", key: "Dm", chords: "Dm-Am-Dm-Gm-A",
+  {name: "Mans World", genre: "🎸blues slow", key: "Dm", chords: "Dm-Am-Dm-Gm-A", info: `Conner: guitar rhythm <br> Eric: drumset(Boom ts ts Kat ts ts)`,
   lyrics: `
     [Coro]
-      This is a (Dm)man's world (Am).....
-      This is a (Dm)man's world (Am).....
+      this is a (Dm)mans world (Am).....
+      this is a (Dm)mans world (Am).....
       (Gm)but it would be (Am)nothing, nothing
       without a (A)woman or a (Dm)girl
     [Verse1]
@@ -766,10 +806,10 @@ const AFBSongsOG = [
       (Dm)..... man made the (Am)boat for the water
       (Dm)..... like Noah made the (Am)ark
   `},
-  {name: "Just the way you are", genre: "🎸jazz smooth", key: "D", chords: "D-Bm7-Gmaj7-Bm7-(D7)-Gmaj7-Gm7-D-(Am7-E7)                     Gmaj7-Gm7-D-Bm7-E7-A-D (2times)                                       I need… Gmaj7-A7-F#m7-B7-Em7-G-D---A#-C-Am7-D7-Gm7-A--",
+  {name: "Just the way you are", genre: "🎸jazz smooth", key: "D", chords: "D-Bm7-Gmaj7-Bm7-(D7)-Gmaj7-Gm7-D-(Am7-E7) Gmaj7-Gm7-D-Bm7-E7-A-D (2times) I need… Gmaj7-A7-F#m7-B7-Em7-G-D---A#-C-Am7-D7-Gm7-A--", info: `Conner: guitar rhythm <br> Eric: shaker or bass`,
   lyrics: `
   [Verse1]
-    (D)don't go (Bm7-Gmaj7)changing... to try and (Bm7-D7)please me...
+    (D)dont go (Bm7-Gmaj7)changing... to try and (Bm7-D7)please me...
     (Gmaj7)..... you never (Gm)let me down (D)before, (Am7-D7)mmmmmm
     (Gmaj7)..... and don't (Gm)imagine (D)you're too (Bm)familiar
     (E7)..... and I don't see you (Asus4-A)anymore...
@@ -789,22 +829,22 @@ const AFBSongsOG = [
     (A#)what will it (C)take till you (Am7)believe in (D7)me...
     (Gm7)the way that I believe in (Asus4-A)you?
   `},
-  {name: "Just the two of us", genre: "🎸jazz smooth", key: "C", chords: "C-B7-Em-Dm-G",
+  {name: "Just the two of us", genre: "🎸jazz smooth", key: "C", chords: "C-B7-Em-Dm-G", info: `Conner: guitar rhythm <br> Eric: drumset(funky chill)`, 
   lyrics: `
   [Verse1]
     (C)I see the (B7)crystal raindrops (Em)fall
-    And the (Dm)beauty (G)of it (C)all
-    Is when the (B7)sun comes shining (Em)through
-    (C)To make those (B7)rainbows in my (Em)mind
-    When I (Dm)think of (G)you (C)sometime
-    And I want to (B7)spend some time with (Em)you
+    and the (Dm)beauty (G)of it (C)all
+    is when the (B7)sun comes shining (Em)through
+    (C)to make those (B7)rainbows in my (Em)mind
+    when I (Dm)think of (G)you (C)sometime
+    and I want to (B7)spend some time with (Em)you
   [Coro]
-    Just the (C)two of us (B7)..... 
-    We can (Em)make it if we (Dm)try
-    (G)Just the (C)two of us (B7)..... You and (Em)I. 
-    Just the (C)two of us (B7)..... 
-    Building (Em)castles in the (Dm)sky
-    (G)Just the (C)two of us (B7)..... You and (Em)I. 
+    just the (C)two of us (B7)..... 
+    we can (Em)make it if we (Dm)try
+    (G)just the (C)two of us (B7)..... you and (Em)I. 
+    just the (C)two of us (B7)..... 
+    building (Em)castles in the (Dm)sky
+    (G)just the (C)two of us (B7)..... you and (Em)I. 
   [Verse2]
     (C)We look for (B7)love no time for (Em)tears
     Wasted (Dm)water's (G)all that (C)is
@@ -813,7 +853,7 @@ const AFBSongsOG = [
     Not for (Dm)those who (G)wait too (C)late
     We gotta (B7)go for all we (Em)know
   `},
-  {name: "Aint no Love", genre: "🎸jazz smooth", key: "Am", chords: "Am-Dm-Am—F-G-Am | Am—C-F—G-Am (C)",
+  {name: "Aint no Love", genre: "🎸jazz smooth", key: "Am", chords: "Am-Dm-Am—F-G-Am | Am—C-F—G-Am (C)", info: `Conner: guitar rhythm <br> Eric: drumset(funky chill)`, 
   lyrics: `
   [Coro]
     (Am)aint no love in the (Dm)heart of the (Am)city
@@ -830,7 +870,7 @@ const AFBSongsOG = [
     From the (G)city hall
     ro the (C)county line
   `},
-  {name: "Feels Like Rain", genre: "🎸R&B soul", key: "Em", chords: "G-C | B7--Em-G7-C",
+  {name: "Feels Like Rain", genre: "🎸R&B soul", key: "Em", chords: "G-C | B7--Em-G7-C", info: `Conner: guitar rhythm <br> Eric: 'violin elect bass w slides, light slapping'`, 
   lyrics: `
   [Feels Like Rain]
     (G)Down here the river (C)..... where it meets the (G)sea
@@ -840,18 +880,18 @@ const AFBSongsOG = [
     And it feels like (G)rain
     
   `},
-  {name: "Oye Cómo Va", genre: "🎸rock", key: "Am", chords: "Am-D7",
+  {name: "Oye Cómo Va", genre: "🎸rock", key: "Am", chords: "Am-D7", info: `Conner: guitar rhythm <br> Eric: bass`, 
   lyrics: `
   [Coro]
     (Am)oye cómo va (D)mi ritmo (Am)bueno pa gozar (D)mulata
   `},
-  {name: "Aint got Nobody", genre: "🎸rock", key: "Gm", chords: "Gm-C",
+  {name: "Aint got Nobody", genre: "🎸rock", key: "Gm", chords: "Gm-C", info: `Conner: guitar rhythm <br> Eric: bass`, 
   lyrics: `
   [Coro]
     I aint (Gm)got nobody (C)..... nobody to (Gm)depend on,  
     no tengo a (C)nadie
   `},
-  {name: "La Flaca", genre: "🎸rock", key: "Am", chords: "Am-E-Dm", tags: "",
+  {name: "La Flaca", genre: "🎸rock", key: "Am", chords: "Am-E-Dm", tags: "", info: `Conner: guitar rhythm <br> Eric: bass`, 
   lyrics: `
   [Verse1]
     (Am)en la vida (E7)conocí
@@ -894,7 +934,7 @@ const AFBSongsOG = [
   [End x4]
     (F)...... (G)Aunque solo uno (Am)fuera (D) Aunque solo uno (F)fuera
   `},
-  {name: "Lamento Boliviano", genre: "🎸rock Incan", key: "Em", chords: "Em-Bm-Am-Em-B7", tags: "",
+  {name: "Lamento Boliviano", genre: "🎸rock Incan", key: "Em", chords: "Em-Bm-Am-Em-B7", tags: "", info: `Conner: guitar rhythm <br> Eric: bass`,
   lyrics: `
   [Verse1]
     (Em)me quieren agitar,
@@ -913,7 +953,7 @@ const AFBSongsOG = [
     (Em)y a nadie hace (B7)daño
   [Coro]
     (Em)oooo, io (Bm)ioooo, (Am)eeee (Em-B7)eeee
-  [Coro2]
+  [Coro2 (Steady Thump)]
     y yo estoy (Em)aquí
     borracho y (Bm)loco... 
     y mi (Am)corazón idiota... 
@@ -923,7 +963,7 @@ const AFBSongsOG = [
     bena, no te (Am)peines en la cama... 
     que los viajantes (Em)se van a (B7)atrasar    
   `},
-  {name: "Black Magic Woman", genre: "🎸rock", key: "Dm", chords: "Dm-A7-Dm-Gm",
+  {name: "Black Magic Woman", genre: "🎸rock", key: "Dm", chords: "Dm-A7-Dm-Gm", info: `Conner: guitar rhythm <br> Eric: bass`, 
   lyrics: `
   [Verse1]
     Got a black magic (Dm)woman
@@ -947,25 +987,25 @@ const AFBSongsOG = [
     I (Dm)need you so bad (A7)magic woman
     I can't leave you (Dm)alone
   `},
-  {name: "Primavera", genre: "🎸rock", key: "Gm", chords: "Gm-Cm7-Gm-D7",
+  {name: "Primavera", genre: "🎸rock", key: "Gm", chords: "Gm-Cm7-Gm-D7", info: `Conner: guitar rhythm <br> Eric: bass`, 
   lyrics: `
   [Coro x2]
-    (Gm)Como la (Cm)semilla
-    (Gm)Lleva nueva (D7)vida
-    Hay en (Gm)esta (Cm)primavera
-    (Gm)Una nueva (D7)era
+    (Gm)como la (Cm)semilla
+    (Gm)lleva nueva (D7)vida
+    hay en (Gm)esta (Cm)primavera
+    (Gm)una nueva (D7)era
   [Verse1]
-    (Gm)Lluvia de (Cm)sol
-    (Gm)Como Una (Cm)Bendicion
-    (Gm)La vida renace (Cm)con su luz
-    (Gm)La primavera (Cm)ya llego
-    (Gm)Todo es (Cm)asi
-    (Gm)Regreso a (Cm)la raiz
-    (Gm)Tiempo de (Cm)inquieta juventud
-    (Gm)En (Cm)primavera ya
-    (Gm)La tierra (Cm)negra se vuelve verde
-    (Gm)Y las montanas y el desierto
-    (Gm)Un bello (D7)jardiiiiiiin
+    (Gm)lluvia de (Cm)sol, 
+    (Gm)como una (Cm)bendicion, 
+    (Gm)la vida renace (Cm)con su luz, 
+    (Gm)la primavera (Cm)ya llego, 
+    (Gm)todo es (Cm)asi, 
+    (Gm)regreso a (Cm)la raiz, 
+    (Gm)tiempo de (Cm)inquieta juventud, 
+    (Gm)en (Cm)primavera ya, 
+    (Gm)la tierra (Cm)negra se vuelve verde, 
+    (Gm)y las montanas y el desierto, 
+    (Gm)un bello (D7)jardiiiiiiin
   `},
   {name: "Lambada", genre: "🎸funk", key: "Am", chords: "x2 Am-F-G-C x2 Dm-Dm-G-Am",
   lyrics: `
@@ -977,33 +1017,33 @@ const AFBSongsOG = [
   {name: "Lo Que Me Gusta Mi", genre: "🎸funk", key: "E", chords: "E-B-A | G#m-Gm-F#m-A-E",
   lyrics: `
   [Verse1]
-    (E)Cuando yo estoy (B)pensando en ti
-    (A)Amor es lo que más (E)fuerte sale de mí
-    (E)Por eso yo siempre vivo (B)tan feliz
-    (A) Pues tú eres lo que yo más (E)quiero para mí
-    (E)Cuando yo me voy para (B)Medellín
-    En cada montaña yo (A)dibujo trozos de ti
-    (E)y si yo me voy para (B)Bogotá, también allá
-    (A)Esa sabana bella de (E)ti me hace recordar
+    (E)cuando yo estoy (B)pensando en ti
+    (A)amor es lo que más (E)fuerte sale de mí
+    (E)por eso yo siempre vivo (B)tan feliz
+    (A)pues tú eres lo que yo más (E)quiero para mí
+    (E)cuando yo me voy para (B)medellín
+    en cada montaña yo (A)dibujo trozos de ti
+    (E)y si yo me voy para (B)bogotá, también allá
+    (A)esa sabana bella de (E)ti me hace recordar
   [Verse2]
-    Y he (G#m)recorrido el (Gm)mundo (F#m)entero y jamás
-    Te digo que he (A)visto una cosa más (E)bella que tu mirar
-    Te digo que he (G#m)visto la (Gm)luna de (F#m)noche hablar con el mar
-    Pero jamás he (A)visto una cosa más (E)bella que tu mirar
+    y he (G#m)recorrido el (Gm)mundo (F#m)entero y jamás
+    te digo que he (A)visto una cosa más (E)bella que tu mirar
+    te digo que he (G#m)visto la (Gm)luna de (F#m)noche hablar con el mar
+    pero jamás he (A)visto una cosa más (E)bella que tu mirar
   [Verse3]
     y es que (E)son tus ojos tu sonrisa y tu (B)boca
     y tu carita de (A)coqueta a la primero lo que me (E)gusta a mí
     y (E)soy yo quien se pone siempre como un (B)loco
-    Cuando me miras (A)poco a poco de la manera que me (E)gusta a mí
+    cuando me miras (A)poco a poco de la manera que me (E)gusta a mí
   `},
-  {name: "Adoma Agua Fresca", genre: "🎸funk", key: "Cm", chords: "Gm-Cm7",
+  {name: "Adouma Agua Fresca", genre: "🎸funk", key: "Cm", chords: "Gm-Cm7", info: `Conner: guitar rhythm <br> Eric: bass`, 
   lyrics: `
   [Verse1 x2]
     adouma (Gm)duma duma duma duma (Cm7)eh
   [Coro x2]
     Agua (Gm)Frescaaaaaa aaa (Cm7)aaaa
   `},
-  {name: "I belong to you", genre: "🎸funk", key: "Bm", chords: "Bm-F#m",
+  {name: "I belong to you", genre: "🎸funk", key: "Bm", chords: "Bm-F#m", info: `Conner: guitar rhythm <br> Eric: bass`, 
   lyrics: `
   [Coro]
     (Bm)I belong to you and you you
@@ -1011,7 +1051,7 @@ const AFBSongsOG = [
     you (Bm)make my life complete
     you make me feel so (F#m)sweet
   `},
-  {name: "Get Lucky", genre: "🎸funk", key: "Bm", chords: "Bm-D-F#m-E",
+  {name: "Get Lucky", genre: "🎸funk", key: "Bm", chords: "Bm-D-F#m-E", info: `Conner: guitar rhythm <br> Eric: bass`, 
   lyrics: `
   [Build Up]
     (Bm)we've come too (D)far to give (F#m)up who we (E)are
@@ -1026,7 +1066,7 @@ const AFBSongsOG = [
     (F#m)We're up all night to get lucky
     (E)We're up all night to get lucky
   `},
-  {name: "Give me one Reason", genre: "🎸funk", key: "F#", chords: "F#-B#-C# ",
+  {name: "Give me one Reason", genre: "🎸funk", key: "F#", chords: "F#-B#-C# ", info: `Conner: guitar rhythm <br> Eric: bass`, 
   lyrics: `
   [Coro]
     (F#m)Give me one reason to stay here (B#).....
@@ -1042,18 +1082,18 @@ const AFBSongsOG = [
     You can (C#)call me baby, (B#)..... you can call me anytime
     But you got to (F#m)call me
   `},
-  {name: "Feliz Navidad", genre: "🎸season", key: "G", chords: "G-A-D  |  G-A-D-Bm",
+  {name: "Feliz Navidad", genre: "🎸season", key: "G", chords: "G-A-D  |  G-A-D-Bm", 
   lyrics: `
   [Coro x2]
-    Feliz (G-A)navidad
-    Feliz (D)navidad
-    Feliz (G)navidad
-    Prospero (A)año y (G)felicidad *STOP*
+    feliz (G-A)navidad
+    feliz (D)navidad
+    feliz (G)navidad
+    prospero (A)año y (G)felicidad *STOP*
   [Part2 x2]
-    I wanna wish you a (G)merry Christmas (A).....
-    I wanna wish you a (D)merry Christmas (Bm).....
-    I wanna wish you a (G)merry Christmas
-    From the (A)bottom of my (D7)heart
+    I wanna wish you a (G)merry christmas (A).....
+    I wanna wish you a (D)merry christmas (Bm).....
+    I wanna wish you a (G)merry christmas
+    from the (A)bottom of my (D7)heart
   `},
 ];
 
@@ -1124,7 +1164,7 @@ const Extra = [
     y van al (C)mar... 
     cuando un amor se olvida
     sabes (A7)chiquilla donde (Dm)va
-    sabes (B7)chiquilla donde (E)va
+    sabes (F)chiquilla donde (E)va
   [Verse4]
     (Am)sin mirante yo te miro
     sin (D)sentirte yo te (G)siento
@@ -1808,7 +1848,7 @@ const Extra = [
     que amores como el (A7)tuyo... 
     se encuentran en la (Dm)calle
   `},
-  {name: "Historia de un Amor", genre: "bolero", key: "Gm", chords: "Gm-A-Dm-C-C#-A", tags: "",
+  {name: "Historia de un Amor", genre: "bolero", key: "Dm", chords: "Gm-A-Dm-C-C#-A", tags: "",
   lyrics: `
   [Verse1]
     ya no estas mas a mi (Gm)lado corazón (A).....
@@ -2811,11 +2851,44 @@ const BodangosOG = [
   `},
   {name: "Footsteps in the dark", genre: "R&B", key: "", chords: "", tags: "",
   lyrics: `
-    
+  [Intro]
+  (Em-Bm)*Drum n Bass then guitar riff*
+  [Verse1]
+    (Em)are we really (Bm)sure, 
+    can a (Em)love that lasted for so long (Bm)still endure?
+    (Em)do I really (Bm)care? hey, hey
+    lets (Em)talk about the distractions goin on (Bm)elsewhere
+  [Coro x2]
+    (Cmaj7)I keep hearin (Amaj7)footsteps, baby
+    in the (F#m7)dark, oh, in the (Bm7)dark
+  [Verse2]
+    (Em)my mind drifts now and (Bm)then, 
+    lookin (Em)down dark corridors and wonders what (Bm)might have been, 
+    (Em)somethings up (Bm)ahead, should I (Em)keep this same direction or go (Bm)back instead
   `},
   {name: "Right Next Store", genre: "R&B cool", key: "", chords: "", tags: "",
   lyrics: `
-    
+    [Intro]
+      *Drum and Bass 4 times*
+    [Verse1]
+      I can (Cm)hear the couple fighting right next (D#)door, 
+      their angry (Fm)words sound clear through these thin (Cm)walls, 
+      around (Cm)midnight I heard him shout, unfaithful (D#)woman, 
+      and I (Fm)knew right there the (D#)axe was gonna (Cm)fall, 
+      its because of (A#)me, its because of (Cm)me
+    [Verse2]
+      (Cm)I heard him shout who is he, she mumbled (D#)low
+      he said (Fm)Baby dont you (D#)lie to me no (Cm)more, 
+      Im listening through these thin walls, in (D#)silence and shame
+      as she (Fm)called out my name I was right next (Cm)door
+      its because of (A#m)me, its because of (Cm)me
+      be-(A#)cause of me oh because of (Cm)me
+    [Verse3 *bass tap*]
+      she was (G#)right next door and (A#)Im such a strong (Cm)persuader, 
+      she was (G#)just another (A#)notch on my (Cm)guitar, 
+      shes (G#)gonna lose the man (A#)that really (Cm)loves her, 
+      in the silence I can hear their breaking (Cm)hearts, 
+      (D#-Cm-A#-G#-G)oooh oooh oooh *SOLO, Keep going*
   `},
   {name: "Dock of the Bay", genre: "R&B soul", key: "", chords: "", tags: "",
   lyrics: `
@@ -2885,7 +2958,33 @@ let Genres = [
 ];
 
 let setlist1 = [
-"aguas", "chanchan", "quando", "primavera", "ultimanoche", "two of us", "guantanamera", "the breeze", "black sub", "wikedgame", "nobody", "jammin", "worldonfire", "cabeza", "que nada", "belong to you", "moliendocafe", "lucky", "oye", "bohio", "amanecer", "besamemucho", "feels like", "adouma", "guajira", "tres"
+"aguas", 
+"chanchan", 
+"quando", 
+"primavera", 
+"ultimanoche", 
+"just the two of us", 
+"que nada", 
+"fukuoka", 
+"flaca", 
+"life is life", 
+"oye", 
+"belong to you", 
+"lamento", 
+"the breeze", 
+"wikedgame", 
+"black sub", 
+"cariñito", 
+"nobody", 
+"jammin", 
+"worldonfire", 
+"feels like rain", 
+"guantanamera", 
+"bohio", 
+"bailando", 
+"besamemucho", 
+"guajira", 
+"adouma", 
 ];
 
 let SongsOG = [].concat(AFBSongsOG);
@@ -3057,6 +3156,8 @@ function RowClicked(sname){
     filter = filter.replaceAll(")", `</div>`);
 
     hhere.innerHTML = filter;
+    hinfo.innerHTML = `<b>${s.name}</b><br>`;
+    hinfo.innerHTML += s.info || "";
     }
   })
 }
