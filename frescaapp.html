@@ -94,15 +94,15 @@
     <input type="text" oninput="Typed()" id="hsearch">
     <select id="hsortby">
       <option value="defaultAFB">Agua Fresca Band</option>
-      <option value="extra">Extra</option>
       <option value="setlistAFB">SetList Agua Fresca</option>
       <option value="defaultJMB">Jeff Miller Band</option>
+      <option value="setlistJMB">Setlist Jeff Miller Band</option>
+      <option value="extra">Extra</option>
       <option value="defaultbesaw">Besaw</option>
       <option value="bodangos">Bodangos</option>
-      <option value="setlistJMB">Setlist Jeff Miller Band</option>
-      <option value="genre">Genre</option>
-      <option value="name">Name</option>
-      <option value="key">Key</option>
+      <option value="genre">Sort By Genre</option>
+      <option value="name">Sort By Name</option>
+      <option value="key">Sort By Key</option>
     </select>
     <table id="hlist">
     </table>
@@ -958,12 +958,9 @@ const AFBSongsOG = [
   {name: "Lamento Boliviano", genre: "🎸rock Incan", key: "Em", chords: "Em-Bm-Am-Em-B7", tags: "", info: `Conner: guitar rhythm <br> Eric: bass`,
   lyrics: `
   [Verse1]
-    (Em)me quieren agitar,
-    me incitan a gritar 
-    (Bm)soy como una roca
-    palabras no me tocan
-    (Am)adentro hay un volcán
-    que pronto va a estallar
+    (Em)me quieren agitar, me incitan a gritar 
+    (Bm)soy como una roca palabras no me tocan
+    (Am)adentro hay un volcán, que pronto va a estallar
     (Em)yo quiero estar (B7)tranquilo
     (Em)es mi situación, una desolación
     (Bm)soy como un lamento lamento boliviano
@@ -2775,7 +2772,7 @@ const JMBSongsOG = [
     
   `},
 ];
-let JMBsetlist = ["mojo jones", "kisser", "heart", "green bay", "thought", "look to be", "down the road", "country", "flower", "farm", "mama told me", "silvia", "yer", "that so", "through the water", "little", "rocking"];
+let JMBsetlist = ["mojo jones", "heart", "kisser", "green bay", "thought", "mama", "that so", "silvia", "look to be", "down the road"];
 
 const BesawSongsOG = [
   {name: "I love my Girl", genre: "blues slow", key: "C", chords: "C-Am-Dm-G", tags: "",
@@ -3005,6 +3002,7 @@ let Genres = [
   {name: "celtic", color: "rgb(150, 255, 150)"},
 ];
 
+/*
 let setlist1 = [
 "aguas", 
 "chanchan", 
@@ -3031,6 +3029,31 @@ let setlist1 = [
 "bohio", 
 "bailando", 
 "besamemucho", 
+"guajira", 
+"adouma", 
+];
+*/
+let setlist1 = [
+"adouma", 
+"chanchan", 
+"feels like rain", 
+"la flaca", 
+"gran se",
+"ultimanoche", 
+"worldonfire", 
+"belong to you", 
+"besamemucho", 
+"the breeze",
+"lamento", 
+"life is life", 
+"que nada", 
+"bailando", 
+
+"oye", 
+"wikedgame", 
+"black sub", 
+"bohio", 
+"primavera", 
 "guajira", 
 "adouma", 
 ];
