@@ -134,9 +134,12 @@ hsortby.addEventListener("change", function(){
   SortArrayBy(hsortby.value); MakeTable();
 });
 
+
+// Only use caps for chords in "lyrics" field. lyrics and titles are lowercase because ABCDEF are reserved for chords when searching string to convert chords
+
 const AFBSongsOG = [
   {name: "Aguas", genre: "🎸flamenco",  key: "Em", chords: "Am7-Bm7 | Em-D-C-B7", info: "Conner: rhythm guitar <br> Diego: bass <br> Eric: hand percussion",
-  lyrics: `[Part1](Am7-Bm7-Am7-B7) *....................* [Part2](Em-D-C-B7)*....................*`},
+  lyrics: `[part1](Am7-Bm7-Am7-B7) *....................* [Part2](Em-D-C-B7)*....................*`},
   {name: "Como Quieres Que Te Quiera", genre: "🎸flamenco",  key: "Am", chords: "Am-Dm-G-C-E7", info: `Conner: rhythm guitar <br> Eric: hand percussion`,
   lyrics: `
   [Verse1]
@@ -150,32 +153,40 @@ const AFBSongsOG = [
   `},
   {name: "La Ultima Noche", genre: "🎸flamenco",  key: "G#m", chords: "G#m-F#-E-D#", info: `Conner: rhythm guitar <br> Eric: Bass`,
   lyrics: `
-  [Verse1]
+  [verse1]
     (G#m)quiero terminar con toda la (F#)esperanza que quedó
     (E)hoy voy a arrancar lo que ha quedado en (D#)este corazón
     (G#m)siento que olvidar la última mi-(F#)rada que me dio, 
     (E)puede ahogar por fin el ultimo re-(D#)cuerdo de su voz
-  [Pre Coro]
+  [precoro]
     (E)porque he llorado tanto, tanto, tanto que no (D#)siento, 
     mis lágrimas (E)quemándome, ay quemándome en el (D#)cuerpo
-  [Coro]
+  [coro]
     (G#m)ay de mí que esta maldita (F#)luna, 
     (E)borre de mi pecho este (D#)dolor, 
     (G#m)ay de mí es la última (F#)noche, 
     (E)que voy a sufrir por este (D#)amor
+  [coro]
+    (G#m)ay de mí que esta maldita (F#)luna, 
+    (E)borre de mi pecho este (D#)dolor, 
+    (G#m)ay de mí es la última (F#)noche, 
+    (E)que voy a sufrir por este (D#)amor
+  [fin x2]
+    para (G#m)matarla pronto, pronto... 
+    para (F#)olvidarme todo, todo... 
+    para (E)quedarme solo, solo, y (D#)vivo
   `},
   {name: "Color Esperanza", genre: "🎸regaton", key: "G", chords: "G-Bm-Em-Dm-G-C-Am-D", info: `Conner: rhythm guitar n stomp pedal <br> Eric: hand percussion`,
   lyrics: `
-  [Verse1]
-    (G)sé qué hay en tus (Bm)ojos con solo (Em)mirar, 
+  [verse1]
+    (G)sé, qué hay en tus (Bm)ojos con solo (Em)mirar, 
     que estás can-(Dm)sado de (G)andar y de (C)andar, 
     y (G)caminar, 
     girando (Am)siempre en un (D)lugar, 
-    (G)sé que las ven-(Bm)tanas se pueden (Em)abrir, 
+    (G)sé, que las ven-(Bm)tanas se pueden (Em)abrir, 
     cambiar el (Dm)aire de-(G)pende de (C)ti, 
-    te ayudar-(G)á
-    vale la (Am)pena una vez (D)más
-  [Coro x2]
+    te ayudar-(G)á, vale la (Am)pena una vez (D)más
+  [coro x2]
     saber que se (G)puede *All Start*, 
     querer que se (Em)pueda, 
     quitarse los (C)miedos, 
@@ -185,8 +196,8 @@ const AFBSongsOG = [
     tentar al (C)futuro, 
     con el coraz-(D)ón
     *percussion*
-  [Verse2]
-    (G)es mejor per-(Bm)derse que nunca embar-(Em)car, 
+  [verse2]
+    (G)es, mejor per-(Bm)derse que nunca embar-(Em)car, 
     mejor ten-(Dm)tarse a dej-(G)ar de intent-(C)ar, 
     aunque ya (Bm)ves, 
     que no es tan (Am)fácil empez-(D)ar, 
@@ -194,7 +205,7 @@ const AFBSongsOG = [
     que la trist-(Dm)eza algún (G)día se (C)irá, 
     y así (Bm)será
     la vida (Am)cambia y cambiar-(D)á, 
-    Sentir-(C)ás
+    sentir-(C)ás, 
     que el alma (Bm)vuela, 
     por (Am)cantar una vez (D)más... 
     vale (C)más poder bri-(Bm)llar
@@ -715,6 +726,26 @@ const AFBSongsOG = [
     but each (Am7)day when she walks to the (Abm7)sea... 
     she (Gm7)looks straight ahead, not at (C7)me
   `},
+  {name: "Es Por Ti", genre: "🎸bossa nova", key: "", chords: "C#m-B-A-B | A-E-F#-B", info: `Conner: guitar (fingerpick) <br> Eric: shaker`, 
+  lyrics: `
+  [verse1]
+    (C#m)cada vez que me le-(B)-vanto, 
+    y veo que a mi (A)lado estás, 
+    me siento (B)renovado, 
+    y me siento (C#m)aniquilado, 
+    aniquilado (B)si no estás, 
+    tu controlas toda (A)mi verdad, 
+    y todo lo que (B)está de más
+  [precoro]
+    tus ojos me (A)llevan lentamente al sol
+    y tu boca me habla (E)del amor y el corazón
+    tu piel tiene (F#)el color, de un rojo a-(B)-tardecer
+  [coro]
+    y es por (A)ti que late mi (E)corazón, 
+    y es por (F#)ti que brillan mis (B)ojos hoy, 
+    y es por (A)ti que he vuelto a (E)hablar de amor, 
+    y es por (F#)ti que calma (B)mi dolor
+  `},
   {name: "Tres Agujas", genre: "🎸bossa nova", key: "Bm", chords: "Bm-A | Gmaj7 (bass walk) C#dim-F#7",
   lyrics: `
     
@@ -1070,9 +1101,31 @@ const AFBSongsOG = [
   [End]
   (Bm)I belong to you *STOP*
   `},
+  {name: "Maria Maria", genre: "🎸funk", key: "Dm-Am-G-E", chords: "Am",
+  lyrics: `
+  [verse1]
+    (A7)maria, (Dm)mariaaaa, 
+    she remind me of a west side (Am)story, 
+    growin up in spanish (G)harlem... (E)..... 
+    she livin a life just like a movie (Am)star
+    (A7)maria, (Em)maria, 
+    she fell in love in east (Am)la
+    to the sounds of the (G)guitar... (E).....
+    played by carlos (Am)santana
+  [verse2]
+    stop the (Am)lootin, stop the shootin, 
+    (G)pickpockin on the corner, 
+    see as the (F)rich is getting richer, 
+    the (G)poor is getting poorer, 
+    se mira (Am)Maria on the corner, 
+    thinkin of (G)ways to make it better, 
+    in my (F)mailbox theres an eviction letter, 
+    (G)signed by the judge said, see you later, 
+    (Am)ahora vengo mama chula mama chula x4
+  `},
   {name: "Get Lucky", genre: "🎸funk", key: "Bm", chords: "Bm-D-F#m-E", info: `Conner: guitar rhythm <br> Eric: bass`, 
   lyrics: `
-  [Build Up]
+  [build up]
     (Bm)weve come too (D)far to give (F#m)up who we (E)are
     so (Bm)lets raise the (D)bar and our (F#m)cups to the (E)stars
   [Coro]
@@ -1575,12 +1628,12 @@ const Extra = [
   lyrics: `
   [Intro x2]
     (Em-D-C-B7)
-    *Guitar riff*
+    *guitar riff*
   [Coro x2]
-    (Em)Píntate los (B7)labios María, (Em)píntate (B7).....
+    (Em)píntate los (B7)labios maría, (Em)píntate (B7).....
   [Verse1]
     (Em)cuando conocí a (D)María,
-    María era muy (C)graciosita 
+    maría era muy (C)graciosita 
     y ahora que ya no se pinta
     no luce tan (B7)bonita María 
   [Verse2]
@@ -1590,7 +1643,7 @@ const Extra = [
     ya no luce tan bonita (B7)María 
   [Change x2]
     (Em--D-G-Am-Em-D-C-B7)
-    *Guitar/Horn riff
+    *guitar/horn riff
   `},
   {name: "Macusa", genre: "son 2/3", key: "Dm", chords: "Dm-A7-G-Dm-E7-A7", tags: "",
   lyrics: `
@@ -1820,7 +1873,7 @@ const Extra = [
   {name: "Dos Gardenias", genre: "bolero", key: "Em", chords: "Em-", tags: "",
   lyrics: `
   [Verse1]
-    dos Gardenias para (Em)ti, con ellas quiero decir
+    dos gardenias para (Em)ti, con ellas quiero decir
     te quiero, te adoro
     mi (C-B7)vi-da... ponles toda tu (F#7)atención
     porque son tu (B7)corazón y el (Em)mio,
@@ -1914,6 +1967,9 @@ const Extra = [
   `},
   {name: "La Travesia", genre: "merengue", key: "", chords: "", tags: "",
   lyrics: `
+  `},
+  {name: "Las Avispas", genre: "merengue", key: "", chords: "", tags: "",
+  lyrics: `
   [Verse1]
     tengo un dios admirado en los cielos
     y el amor de su espíritu santo
@@ -1931,12 +1987,7 @@ const Extra = [
     y también me dijo
     no te mortifiques
     que yo le envío
-    mis avispas pa que lo piquen
-    e verdad
-  `},
-  {name: "Las Avispas", genre: "merengue", key: "", chords: "", tags: "",
-  lyrics: `
-  [Coro]
+    mis avispas pa que lo piquen e verdad
   `},
   {name: "Idilio", genre: "salsa montuno", key: "Em", chords: "Em-Am-B7", tags: "",
   lyrics: `
@@ -1951,7 +2002,7 @@ const Extra = [
     y (C)cuando venga la aurora llena de (Am)goce, 
     se (B7)fundan en una sola tu alma y la (Em)mía
   [Coro x2]
-    Que a (E)besos yo te levante al rayar el (Am)día *a besos el día nos sorprenda corazón* 
+    que a (E)besos yo te levante al rayar el (Am)día *a besos el día nos sorprenda corazón* 
     y que el (D7)idilio perdure siempre al llegar la (G)noche *la noche sea tan solo de los dos* 
     y (C)cuando venga la aurora llena de (Am)goce *juntos solos tú y yo*
     se (B7)fundan en una sola tu alma y la (Em)mía
@@ -1961,17 +2012,46 @@ const Extra = [
   {name: "Vivir mi Vida", genre: "salsa 3/2", key: "Cm", chords: "Cm-G#-D#-A#", tags: "",
   lyrics: `
   [Coro]
-    (Cm)Voy a (G#)reír, voy a (D#)bailar, vivir mi (A#)vida la la la la
-    (Cm)Voy a (G#)reír, voy a (D#)gozar, vivir mi (A#)vida la la la la
+    (Cm)voy a (G#)reír, voy a (D#)bailar, vivir mi (A#)vida la la la la
+    (Cm)voy a (G#)reír, voy a (D#)gozar, vivir mi (A#)vida la la la la
   [Verse1]
-    (Cm)A veces llega la (G#)lluvia (D#).....
+    (Cm)a veces llega la (G#)lluvia (D#).....
     para limpiar las (A#)heridas 
-    (Cm)A veces solo una (G#)gota (D#).....
-    Puede vencer la (A#)sequía, 
+    (Cm)a veces solo una (G#)gota (D#).....
+    puede vencer la (A#)sequía, 
     y para (Cm)qué llorar, pa (G#)qué
-    si duele una (D#)pena, se (A#)olvida, 
+    si duele una (D#)penaaa, se (A#)olvidaaa, 
     y para (Cm)qué sufrir, pa (G#)qué
-    si así es la (D#)vida, hay que (D#)vivirla la la lé
+    si así es la (D#)vidaaa, hay que (D#)vivirla la la lé
+  `},
+  {name: "El Preso", genre: "salsa 3/2", key: "Cm", chords: "Cm-Fm-G", tags: "",
+  lyrics: `
+  [verse1]
+    en el mundo en (Cm)que yo vivo (Fm).....
+    siempre hay cuatro (G)esquinas, 
+    pero entre (Cm)esquina y esquina (Fm).....
+    siempre habrá lo (G)mismo, 
+    para mi no (Cm)existe el cielo (Fm).....
+    ni luna ni (G)estrellas, 
+    para mi no (Cm)alumbra el sol (Fm).....
+    pa mi todo es (G)tinieblas
+  [verse2]
+    condenado (Cm)para siempre (Fm).....
+    en esta horrible (G)celda, 
+    donde no lle-(Cm)ga el cariño (Fm).....
+    ni la voz de (G)nadie, 
+    aquí me pa-(Cm)so los días (Fm).....
+    y la noche (G)entera, 
+    sólo vivo (Cm)del recuerdo (Fm).....
+    eterno de mi (G)madre
+  [coro x2, montuno piano]
+    ay que sólo (Cm)estoy, 
+    só-(Fm)lo me espera la (G)muerte, 
+    ay que sólo (Cm)estoy, 
+    cuan-(Fm)do cambiará mi (G)suerte
+  [coro2 x2, merengue piano]
+    (Cm)sólo, (Fm)..... con mi (G)pena
+    (Cm)sólo, (Fm)..... en mi (G)condena
   `},
   {name: "lloraras", genre: "salsa", key: "Am", chords: "Am-G-C-Dm-E", tags: "",
   lyrics: `
@@ -2618,10 +2698,14 @@ const Extra = [
     loving you (A#)forever is what I (A#m9)need, 
     (Am7)let me (Gm7)be the (Fmaj7)one you come (Em)running (Dm9)to, 
     (Am)Ill (Gm7)never (Fmaj7)be (Am7-Dm9)un-untrue
-  [Coro]
+  [coro]
     (Gm9)lets, lets stay (Am7)together, 
     lovin you (Gm9)whether, whether
     times are (A#)good or (Am7)bad, (Dm7)happy or (C)sad
+  `},
+  {name: "Heard it Through the Grape Vine", genre: "R&B soul", key: "", chords: "", tags: "",
+  lyrics: `
+  [Verse1]
   `},
   {name: "Lets Straighten It Out", genre: "R&B bass", key: "Gm", chords: "Gm-Dm", tags: "",
   lyrics: `
