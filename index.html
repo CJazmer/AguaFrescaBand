@@ -11,15 +11,17 @@
         margin: 0em;
         display: flex;
         justify-content: space-evenly;
-        background-color: aquamarine;
-        border: .2em solid rgb(0, 0, 157);
       }
       .social{
-        padding: 1em;
+        width: auto;
+        height: 2em;
+        padding: .5em;
         border-radius: 10%;
         border: .2em solid black;
         text-align: center;
         transition: .3s;
+        background-color: white;
+        animation: animate 2s linear infinite;
       }
       .social:hover{
         transform: scale(1.1);
@@ -32,21 +34,26 @@
         font-weight: bolder;
         font-size: x-large;
         justify-content: space-evenly;
-        background-color: aquamarine;
+        background-color: blue;
+        color: white;
         border: .2em .2em 0em .2em solid rgb(0, 0, 157);
       }
       #generos{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        align-items: center;
       }
       .genero{
+        font-weight: bolder;
         width:fit-content;
         height: 2em;
-        padding: .5em;
+        padding: .4em;
+        margin: .4em;
         border: .1em solid black;
         border-radius: 10%;
         background-color: aqua;
+        animation: animate 2s linear infinite;
       }
       #hevents{
         display: flex;
@@ -54,29 +61,44 @@
         justify-content: space-evenly;
       }
       .event{
-        background-color: aquamarine;
+        background-color: aqua;
         padding: 1em;
-        border: .5em solid black;
-        border-radius: 10%;
+        margin-top: .5em;
+        border: .5em solid rgb(0, 37, 100);
+        border-radius: 20%;
+      }
+      h1{
+        color: white;
+      }
+      @keyframes animate {
+        0%{ background-color: rgb(0, 187, 255);}
+        50%{ background-color: aqua;}
+        100%{ background-color: rgb(0, 187, 255);;}
       }
 
     </style>
   </head>
   <body>
     <p class="heading">Agua Fresca Band</p>
-    <div class="socialholder">
-      <a href="https://www.facebook.com/aguafrescaband/" target="_blank"><div class="social" style="background-color: aqua; color:black;">Facebook</div></a>
-      <a href="https://www.youtube.com/@aguafrescaband6772" target="_blank"><div class="social" style="background-color: red; color:white">YouTube</div></a>
-    </div>
     <div id="generos"></div>
 
+    <div class="socialholder">
+      <a href="https://www.facebook.com/aguafrescaband/" target="_blank"><img src="./assets/facebook.png" class="social"/></a>
+      <a href="https://www.youtube.com/@aguafrescaband6772" target="_blank"><img src="./assets/youtube.png" class="social"/></a>
+    </div>
+
+    <p class="heading">Upcoming Events</p>
+    <div class='sk-fb-event' data-embed-id='25381567'></div><script src='https://widgets.sociablekit.com/facebook-page-events/widget.js' async defer></script>
+    
+    <p class="heading">Past Events</p>
     <div id="hevents"></div>
 
+    
   </body>
 </html>
 <script>
   const hgeneros = document.getElementById("generos");
-  const generosarr = ["blues", "funk", "cumbia", "flamenco", "bossa nova", "reggae", "son cubano", "bolero"];
+  const generosarr = ["blues", "soul", "funk", "cumbia", "flamenco", "bossa nova", "samba", "reggae", "son cubano", "guajira", "bolero", "salsa", "bachata", "merengue"];
   const hevents = document.getElementById("hevents");
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -90,7 +112,7 @@
     desc: ``},
     {name: "Ten O One Club", date: "2023/6/3, 1-3pm", location: "",
     desc: ``},
-    {name: "Marinette", date: "2022/12/10, ", location: "Marinet WI",
+    {name: "Marinette, the catus", date: "2022/12/10, ", location: "Marinet WI",
     desc: ``},
     {name: "GreenBay Ballroom", date: "2022/11/25, ", location: "Marinet WI",
     desc: ``},
@@ -124,7 +146,9 @@
   let now = new Date();
   console.log(now.getFullYear())
 
-  generosarr.forEach(f => {hgeneros.innerHTML += `<div class="genero">${f}</div>`;})
+  generosarr.forEach(g => {
+    hgeneros.innerHTML += `<div class="genero">${g}</div>`;
+  });
 
 
 
