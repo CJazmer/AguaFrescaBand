@@ -87,6 +87,10 @@
         padding: .2em;
         margin: 0em 0em 0em -.2em;
       }
+      audio{
+        height: 1.5em;
+        background-color: aqua;
+      }
     </style>
         <link href="./layoutcss.css" rel="stylesheet">
   </head>
@@ -121,6 +125,7 @@
 </html>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
+  // Audio files are same as song names but No caps or spaces
 let hlist = document.getElementById("hlist");
 let hhere = document.getElementById("hhere");
 let hsortby = document.getElementById("hsortby");
@@ -139,7 +144,7 @@ hsortby.addEventListener("change", function(){
 // Only use caps for chords in "lyrics" field. lyrics and titles are lowercase because ABCDEF are reserved for chords when searching string to convert chords
 
 const AFBSongsOG = [
-  {name: "Aguas flmco/bosa/cumbia", genre: "🎸flamenco",  key: "Em", chords: "Am7-Bm7 | Em-D-C-B7", info: "Conner: rhythm guitar <br> Diego: bass <br> Eric: hand percussion",
+  {name: "Aguas", genre: "🎸flamenco",  key: "Em", chords: "Am7-Bm7 | Em-D-C-B7 |  flmco/bosa/cumbia", info: "Conner: rhythm guitar <br> Diego: bass <br> Eric: hand percussion",
   lyrics: `[part1](Am7-Bm7-Am7-B7) *....................* [Part2](Em-D-C-B7)*....................*`},
   {name: "Como Quieres Que Te Quiera", genre: "🎸flamenco",  key: "Am", chords: "Am-Dm-G-C-E7", info: `Conner: rhythm guitar <br> Eric: hand percussion`,
   lyrics: `
@@ -195,7 +200,7 @@ const AFBSongsOG = [
     (Em)bamboleo (Am)bambolea
     porque mi (B7)vida yo la prefiero vivir (Em)así
   [Verse2]   
-    no tienes perdón de (Am)Dios
+    no tienes perdón de (Am)dios
     tú eres mi (D)vida la fortuna del (G)destino
     en el (C)destino del (Am)desamparado,
     lo mismo ya que (B7)ayer
@@ -255,7 +260,7 @@ const AFBSongsOG = [
     (F#m)ahí, ahí, moviendo to eso pa mí
     (Bm)no importa idioma ni el país... 
     ya vámono de (D)aquí, que tengo algo bueno para ti, 
-    una (E)noche de aventura hay que vivir *CORO*
+    una (E)noche de aventura hay que vivir *coro*
   `},
   {name: "Bailando", genre: "🎸regaton", key: "Em", chords: "Em-C-G-D", info: `Conner: rhythm guitar n stomp pedal <br> Eric: hand percussion`,
   lyrics: `
@@ -331,7 +336,7 @@ const AFBSongsOG = [
     (Dm)en aquél (F)tronco que veo
     (Gm)y así no (A)puedo llegar
   `},
-  {name: "Moliéndo Café", genre: "🎻son (3/2)", key: "Am", chords: "Am-Dm-Am-F-E  | Dm-Am-Dm-Am-F-E ",  info: `Eric: bass (tresillo)`,
+  {name: "Moliendo Cafe", genre: "🎻son (3/2)", key: "Am", chords: "Am-Dm-Am-F-E  | Dm-Am-Dm-Am-F-E ",  info: `Eric: bass (tresillo)`,
   lyrics: `
   [Verse1]
     cuando la (Am)tarde languidece renacen las sombras, 
@@ -369,7 +374,7 @@ const AFBSongsOG = [
   [Verse1]
     (Gm)al vaivén (Cm)de mi (Dm-Cm)carreta, (Gm)nació (Cm)esta (Dm-Cm)lamentación, 
     (Gm)al vaivén (Cm)de mi (Dm-Cm)carreta, (Gm)nació (Cm)esta (Dm-Cm)lamentación, 
-    (Gm)compadre (Cm)oiga mi (Dm-Cm)cuarteta, (Gm)no (Cm)tenemos (Dm-Cm)protección, ¡tú ve! *CORO*
+    (Gm)compadre (Cm)oiga mi (Dm-Cm)cuarteta, (Gm)no (Cm)tenemos (Dm-Cm)protección, ¡tú ve! *coro*
   [Verse2]
     (Gm)vivo el (Cm)año dando (Dm-Cm)azotes, (Gm)a los bueyes, y no (Dm-Cm)extraño, 
     (Gm)vivo el (Cm)año dando (Dm-Cm)azotes, (Gm)a los bueyes, y no (Dm-Cm)extraño, 
@@ -424,7 +429,7 @@ const AFBSongsOG = [
     ya no estas mas a mi (Gm)lado corazón (A).....
     en el alma sólo (Dm)tengo soledad, 
     y si ya no puedo (C)verte, 
-    por qué Dios me hizo (A#)quererte, 
+    por qué dios me hizo (A#)quererte, 
     para hacerme sufrir (A)mas
   [Verse1]
     siempre fuiste la (Gm)razón de mi existir (A).....
@@ -583,7 +588,7 @@ const AFBSongsOG = [
     yo (Dm)creí en tus palabras en tus (A)besos... 
     para (Gm)mí no había (A)nada más que (Dm)tú... 
     pero (C)veo que tú jugabas con mi (F)vida... 
-    y por (A)mi pecado a Dios perdón (Dm)pedí... 
+    y por (A)mi pecado a dios perdón (Dm)pedí... 
     ante (C)él estaba ya (F)comprometida... 
     con el (A#)hombre que ha elegido para (A)ti
   [Verse2]
@@ -635,7 +640,7 @@ const AFBSongsOG = [
     (Em)oye mujer... 
     lo que has provo-(Bm)-cado en mí... 
     no (C)tengo explicación... 
-    me (Bm))hundo en la emoción... 
+    me (Bm)hundo en la emoción... 
     qué (Em)sucede... 
     (Em)oye mujer... 
     tú me has conquis-(Bm)-tado y yo... 
@@ -681,6 +686,17 @@ const AFBSongsOG = [
     y te (Fm)burlabas de mi gran amor
     (D#)mentías y yo te creía,
     me (C7)destrozaste el corazón, con tus (Fm)mentiras *Repeat Verse2 When not singing*
+  `},
+  {name: "-Bailo a las olas", genre: "🎸cumbia", key: "G", chords: "Gm-F-Cm-F-Gm", tags: "",
+  lyrics: `
+  [verse 1]
+    (Gm)cumbia... bailo a las (F)olas... 
+    el mar me (Cm)llama, (F)a bailar... 
+    porque nos dis-(Gm)-fruta
+  [verse 2]
+    (Gm)cumbia... dancing to the (F)waves...  
+    the ocean (Cm)calls me, to (F)dance again... 
+    you know ill (Gm)be there
   `},
   {name: "Elsa", genre: "🎸cumbia", key: "Am", chords: "Am-G", info: ``, 
   lyrics: `
@@ -1273,7 +1289,7 @@ const AFBSongsOG = [
     que me (B7)brindó el primer (Am)día, 
     enloquezco de (E7)ganas de
     dormir a su (D7)ladito
-    porque Dios que esta (C)flaca a
+    porque dios que esta (C)flaca a
     mí me (B7)tiene (F-F#-G)loquito
     a mí me tiene (Am)loquito (E7).....
   [End x4]
@@ -1961,7 +1977,7 @@ const Extra = [
     un .38, Smith & Wesson del especial
     que carga encima pa que la libre de todo mal
   [Coro]
-    (C#m)La vida te da (A)sorpresas, (B7)sorpresas te da la (A)vida, (D-C#m)¡ay, Dios!
+    (C#m)La vida te da (A)sorpresas, (B7)sorpresas te da la (A)vida, (D-C#m)¡ay, dios!
   `},
   {name: "El Cantante", genre: "salsa montuno", key: "Gm", chords: "", tags: "",
   lyrics: `
@@ -3733,7 +3749,9 @@ function RowClicked(sname){
 
     hhere.innerHTML = filter;
     hinfo.innerHTML = `<b>${s.name}</b><br>`;
-    hinfo.innerHTML += s.info || "";
+    //hinfo.innerHTML += s.info || "";
+    hinfo.innerHTML += `<audio controls src="./audio/${s.name.toLowerCase().replaceAll(" ","")}.m4a"></audio>${s.info || ""}`
+
     }
   })
 }
