@@ -99,8 +99,8 @@
     <input type="text" oninput="Typed()" id="hsearch">
     <select id="hsortby">
       <option value="defaultAFB">Agua Fresca Band</option>
+      <option value="setlistAFB">Agua Fresca Setlist Stage</option>
       <option value="setlistCJ">Setlist Conner</option>
-      <option value="setlistAFB">SetList Agua Fresca</option>
       <option value="defaultJMB">Jeff Miller Band</option>
       <option value="setlistJMB">Setlist Jeff Miller Band</option>
       <option value="extra">Extra</option>
@@ -3574,6 +3574,18 @@ const Extra = [
   [verse1]
     
   `},
+  {name: "Miserlou", genre: "Rock surfer", key: "Em", chords: "Amaj7-Bm7 *Slow",
+  lyrics: `
+    
+  `},
+  {name: "Whipe Out", genre: "Rock surfer", key: "G", chords: "G-C-G-D7",
+  lyrics: `
+    
+  `},
+  {name: "I Get Around", genre: "Rock surfer", key: "", chords: "",
+  lyrics: `
+    
+  `},
   {name: "Low Rider", genre: "Rock latin", key: "G", chords: "G (walk up)",
   lyrics: `
   [coro]
@@ -3898,7 +3910,7 @@ let Genres = [
 ];
 
 /*
-let setlist1 = [
+let setlistAguaFrescaStage = [
 "aguas", 
 "chanchan", 
 "quando", 
@@ -3928,28 +3940,43 @@ let setlist1 = [
 "adouma", 
 ];
 */
-let setlist1 = [
+let setlistAguaFrescaStage = [
 "adouma", 
-"chanchan", 
-"feels like rain", 
-"la flaca", 
-"gran se",
-"ultimanoche", 
-"worldonfire", 
-"belong to you", 
-"besamemucho", 
-"the breeze",
-"lamento", 
-"life is life", 
-"que nada", 
-"bailando", 
+"aguas",
+"quando", 
+"perine", 
 
+"just the two", 
+"the breeze",
+"feels like rain", 
+"easy", 
+"que nada", 
+"fly me to", 
+"del cairo",
+"belong to you", 
 "como va", 
-"wikedgame", 
-"black sub", 
-"bohio", 
-"primavera", 
+ // bass n tres after high energy
+
+"bohio",
+"historia de", 
+"chanchan", 
+
+"red wine", 
+"jammin",  
+"no sunshine", 
+"life is life", 
+"maldito duende", 
 "guajira", 
+"oye mujer",
+"black sub", 
+"la flaca", 
+"ultimanoche", 
+"lamento",
+"besamemucho", 
+"got nobody", 
+"color esperanza", 
+"wikedgame", 
+"primavera", 
 "adouma", 
 ];
 let setlistCJ = [
@@ -4076,7 +4103,7 @@ function SortArrayBy(field){
     Songs = [].concat(AFBSongsOG);
   }
   else if(field == "setlistAFB"){
-    SortBySetlist(setlist1);
+    SortBySetlist(setlistAguaFrescaStage);
   }
   else if(field == "defaultJMB"){
     SongsOG = [].concat(JMBSongsOG);
