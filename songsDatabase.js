@@ -1,0 +1,4827 @@
+const AFBSongsOG = [
+  {name: "Aguas", genre: "🎸flamenco",  key: "Em", chords: "Am7-Bm7 | Em-D-C-B7 |  flmco/bosa/cumbia", info: "Conner: rhythm guitar <br> Diego: bass <br> Eric: hand percussion",
+  lyrics: `[part1](Am7-Bm7-Am7-B7) *....................* [Part2](Em-D-C-B7)*....................*`},
+  {name: "Asi es la Vida", genre: "🎸flamenco slap", key: "Gm", chords: "Gm-Cm-D7", info: ``, 
+  lyrics: `
+  [verse 1]
+    que no (Gm)quieres nada más de mí, 
+    que te fuiste con ese infeliz
+    qué (Cm)importa, qué importa, 
+    que me (D7)va a matar la depresión
+    que voy a vivir en el alcohol
+    qué (Gm)importa, qué importa, 
+    que te (Gm)fuiste sin decir adiós
+    que no dormirás en mi colchón
+    qué (Cm)importa, qué importa, 
+    que (D7)ensuciaste mi reputación
+    que te vale madres este amor
+    qué (Gm)importa, qué importa, 
+    que te (Cm)quise (F7)demasiado
+    y que (D7)nadie te ha querido como yo
+  [coro]
+    así es la (Gm)vida, de caprichosa
+    a veces (Cm)negra, a veces color rosa
+    así es la (F)vida, jacarandosa, 
+    te (D7)quita te pone te sube te baja y a veces te lo da
+    así es la (Gm)vida de caprichosa
+    a veces (Cm)negra, a veces color rosa
+    así es la (F)vida, jacarandosa, 
+    te (D7)quita te pone te sube te baja y a veces te lo da
+  `},
+  {name: "Como Quieres Que Te Quiera", genre: "🎸flamenco",  key: "Am", chords: "Am-Dm-G-C-E7", info: `Conner: rhythm guitar <br> Eric: hand percussion`,
+  lyrics: `
+  [Verse1]
+    (Am)cómo quieres que te quiera, (Dm)si no te tengo aquí 
+    (G)cómo quieres que te quiera, (C)tan lejos ya (E7)de mí 
+    (Am)cómo quieres que te quiera, (Dm)si sé que te perdí 
+    (G)cómo quieres que te quiera, (C)tan lejos ya (E7)de mí 
+  [Verse2]
+    (Am)yooo (Dm)soñaré (G)cantando a las estrellas, por el (C)día que (E7)......
+    (Am)yooo (Dm)soñaré que (G)la vida me entrega, lo que (C)tuve ayer (E7)......
+  `},
+  {name: "La Ultima Noche", genre: "🎸flamenco",  key: "G#m", chords: "G#m-F#-E-D#", info: `Conner: rhythm guitar <br> Eric: Bass`,
+  lyrics: `
+  [verse1]
+    (G#m)quiero terminar con toda la (F#)esperanza que quedó
+    (E)hoy voy a arrancar lo que ha quedado en (D#)este corazón
+    (G#m)siento que olvidar la última mi-(F#)rada que me dio, 
+    (E)puede ahogar por fin el ultimo re-(D#)cuerdo de su voz
+  [precoro]
+    (E)porque he llorado tanto, tanto, tanto que no (D#)siento, 
+    mis lágrimas (E)quemándome, ay quemándome en el (D#)cuerpo
+  [coro]
+    (G#m)ay de mí que esta maldita (F#)luna, 
+    (E)borre de mi pecho este (D#)dolor, 
+    (G#m)ay de mí es la última (F#)noche, 
+    (E)que voy a sufrir por este (D#)amor
+  [coro]
+    (G#m)ay de mí que esta maldita (F#)luna, 
+    (E)borre de mi pecho este (D#)dolor, 
+    (G#m)ay de mí es la última (F#)noche, 
+    (E)que voy a sufrir por este (D#)amor
+  [fin x2]
+    para (G#m)matarla pronto, pronto... 
+    para (F#)olvidarme todo, todo... 
+    para (E)quedarme solo, solo, y (D#)vivo
+  `},
+  {name: "Bamboleo", genre: "🎸flamenco", key: "Em", chords: "2) Em-B7-Am", tags: "",
+  lyrics: `
+  [Verse1 x2]
+    este (Em)amor llega (B7)así de esta (Em)manera
+    no tiene la (B7)culpa
+    caballo de danza vana
+    porque es muy despreciado por esooo
+    no te (Em)perdona llorar
+    ese (Em)amor llega (B7)así de esta (Em)manera
+    no tiene la (B7)culpa
+    amor de compra y venta
+    amor de en el pasado
+    bem bem bem-bem, bem bem-bem
+    bem bem bem-bem, bem bem-bem *Stop*
+  [Coro x2]
+    (Em)bamboleo (Am)bambolea
+    porque mi (B7)vida yo la prefiero vivir (Em)así
+  [Verse2]   
+    no tienes perdón de (Am)dios
+    tú eres mi (D)vida la fortuna del (G)destino
+    en el (C)destino del (Am)desamparado,
+    lo mismo ya que (B7)ayer
+    lo mismo soy (Em)yo...
+    no te encuentro el (Am)abandon
+    eres (D)imposible no te encuentro de (G)verdad
+    por eso un (C)día no encuentro si de (Am)nada
+    lo mismo ya que (B7)ayer
+    lo pienso en (Em)ti
+  `},
+  {name: "Color Esperanza", genre: "🎸regaton", key: "G", chords: "G-Bm-Em-Dm-G-C-Am-D", info: `Conner: rhythm guitar n stomp pedal <br> Eric: hand percussion`,
+  lyrics: `
+  [verse1]
+    (G)sé, qué hay en tus (Bm)ojos con solo (Em)mirar, 
+    que estás can-(Dm)sado de (G)andar y de (C)andar, 
+    y (G)caminar, 
+    girando (Am)siempre en un (D)lugar, 
+    (G)sé, que las ven-(Bm)tanas se pueden (Em)abrir, 
+    cambiar el (Dm)aire de-(G)pende de (C)ti, 
+    te ayudar-(G)á, vale la (Am)pena una vez (D)más
+  [coro x2]
+    saber que se (G)puede *All Start*, 
+    querer que se (Em)pueda, 
+    quitarse los (C)miedos, 
+    sacarlos (D)afuera, 
+    pintarse la (G)cara
+    color espe-(Em)ranza, 
+    tentar al (C)futuro, 
+    con el coraz-(D)ón
+    *percussion*
+  [verse2]
+    (G)es, mejor per-(Bm)derse que nunca embar-(Em)car, 
+    mejor ten-(Dm)tarse a dej-(G)ar de intent-(C)ar, 
+    aunque ya (Bm)ves, 
+    que no es tan (Am)fácil empez-(D)ar, 
+    (G)sé que lo impo-(Bm)sible se puede lo-(Em)grar, 
+    que la trist-(Dm)eza algún (G)día se (C)irá, 
+    y así (Bm)será
+    la vida (Am)cambia y cambiar-(D)á, 
+    sentir-(C)ás, 
+    que el alma (Bm)vuela, 
+    por (Am)cantar una vez (D)más... 
+    vale (C)más poder bri-(Bm)llar
+    que solo (Am)buscar ver el (D)sol
+  `},
+  {name: "Hasta el Amanecer", genre: "🎸regaton", key: "F#m", chords: "F#m-Bm-D-E", info: `Conner: rhythm guitar n stomp pedal<br> Eric: hand percussion`,
+  lyrics: `
+  [Coro x2]
+    cómo tú te (F#m)llamas yo no (Bm)sé, 
+    de dónde (D)llegaste ni (E)pregunté, 
+    lo único que (F#m)sé es que quiero con (Bm)usted, 
+    quedarme (D)contigo hasta el (E)amanecer
+  [Rap Part]
+    oyeme, (F#m)mamacita, tu cuerpo y carita...
+    piel (Bm)morena, lo que uno necesita...
+    (D)mirando una chica tan bonita y (E)pregunto por qué anda tan sólita,
+    (F#m)ahí, ahí, moviendo to eso pa mí
+    (Bm)no importa idioma ni el país... 
+    ya vámono de (D)aquí, que tengo algo bueno para ti, 
+    una (E)noche de aventura hay que vivir *coro*
+  `},
+  {name: "Bailando", genre: "🎸regaton", key: "Em", chords: "Em-C-G-D", info: `Conner: rhythm guitar n stomp pedal <br> Eric: hand percussion`,
+  lyrics: `
+  [Verse1, 2nd person repeat 'bailando']
+    (Em)yo te miro y se me corta la (C)respiración, 
+    (G)cuando tú me miras se me sube el (D)corazón, 
+    (Em)y en un silencio tu mirada dice mil (C)palabras, 
+    (G)la noche en la que te suplico que no salga el (D)sol, 
+    (Am)bailando (C)bailando yú cuerpo y el (G)mío llenando el vacío subiendo y (D)bajando, 
+    (Am)bailando (C)bailando ese fuego por (G)dentro me va enloqueciendo me va (D)saturando
+  [Verse2, 2nd person repeat 'ya no puedo mas']
+    con tu física y tu (Em)química también tu anatomía la cerveza y el 
+    (C)tequila y tu boca con la mía, ya no puedo 
+    (G)más, ya no puedo (D)más, con esta 
+    (Em)melodía tu color tu fantasía con tu 
+    (C)filosofía mi cabeza está vacía y ya no puedo 
+    (G)más ya no puedo (D)más
+  [Verse3]
+    yo quiero estar (Em)contigo
+    vivir contigo bailar (C)contigo
+    tener contigo una noche 
+    (G)loca, una noche (D)loca, yo quiero estar 
+    (Em)contigo vivir contigo 
+    bailar (C)contigo tener contigo una noche 
+    (G)loca, con tremenda (D)nota
+  `},
+  {name: "Ritmo Para Vacilar", genre: "🎸AfroLatin Bomba", key: "Gm", chords: "Gm-D#-D",
+  lyrics: `
+  [coro]
+    (Gm)ritmo color y (D#)sabooor, (D)ritmo para vacilar
+  `}, 
+  {name: "Baja", genre: "🎸salsa", key: "Gm", chords: "Gm-Cm-D7", tags: "",
+  lyrics: `
+    [coro]
+      baja baja (Gm)baja que esto lo baila Pique con (Cm)Shakira lo baila (D)Pitbull con Paulina, 
+      (Gm)lo goza la Chiqui el Gordo y la (Cm)Flaca toda la (D)semana
+      que esto que te (Gm)traigo con Guaco, lo menea lo (Cm)JLo con sus (D)muchachos
+      baja baja (Gm)baja y agacha y ataca que estamos hasta (Cm)abajo hasta la (D)madruga
+    [verse1]
+      (Gm)baja no te quedes con las (Cm)ganas, pon la rodilla por (D)encima de tu barriga
+      (Gm)Pa que te portes mal con tu doggy (Cm)style riega la voz a tus (D)amigas
+      (Gm)No hace falta que te pongas tan bonita, (Cm)pero si que tengas (D)muy poca ropita
+      (Gm)Siempre tan sensual, quieres bajar (Cm)mas se te nota en la (D)cara
+    [verse2]
+      (Gm)baja baja baja hasta que la musica pare, 
+      (Cm)baja baja baja (D)hasta que las luces se apaguen, 
+      (Gm)show and feel the sound always dance (Cm)around montadita (D)en la barra, 
+      (Gm)pa que vayas calentando los motores (Cm)bajate y (D)voltea pa que te enamores
+      (Gm)estas explota, mandas mas que un (Cm)pran (D)no te cambio por nada
+
+  `},
+  {name: "Amores Como el Nuestro", genre: "🎸salsa", key: "Am", chords: "Am-G | Em-F-G-C-A7-Dm-G-C-A7", tags: "",
+  lyrics: `
+  [verse1]
+    (Am)amores como el nuestro quedan ya muy (G)pocos
+    (Am)del cielo caen estrellas sin oír (G)deseos, 
+    (Am)deshojar una rosa ya es cosa de (G)tontos, 
+    (Am)a nadie le interesan ya los (G)sentimientos
+  [coro]
+    (Em)como los (F)unicornios, (G)van (C)desapareciendo
+    (A7)amar y ser (Dm)amado, (G)es darse por (C)completo, 
+    (Em)un amor como el (F)nuestro, (G)no debe morir (Am)jamás
+    (Em)como Romeo y (F)Julieta, (G)lo nuestro es algo (C)eterno, 
+    (A7)estar (Dm)enamorado, (G)es darse por (C)completo,
+    (Em)un amor como el (F)nuestro (G)no debe morir (Am)jamás
+  `},
+  {name: "Maria", genre: "🎸salsa", key: "Dm", chords: "Dm-Gm", tags: "",
+  lyrics: `
+  [parte1]
+    (D)ella es, una (Gm)mujer especial
+    como (D)caída de otro (Gm)planeta, 
+    (D)ella es, un (Gm)laberinto carnal
+    que te (D)atrapa y no te (Gm)enteras
+  [parte2]
+    así es (D)maría *mujer* tan caliente y (Gm)fría *mujer*
+    que si te la (D)bebes de seguro te va a (Gm)matar, 
+    así es (D)maría *mujer* blanca como el (Gm)día *mujer*
+    pero es (D)veneno si te quieres (Gm)enamorar
+  [parte3]
+    (D)un dos tres, (Gm)un pasito pa lante maría
+    (D)un dos tres (Gm)un pasito pa atrás
+  `},
+  {name: "Chan Chan", genre: "🎻son (3/2)", key: "Dm", chords: "Dm-F-Gm-A", info: `Conner: rhythm guitar <br> Eric: bass`,
+  lyrics: `
+  [Coro x2]
+    de (Dm)alto cedro (F)voy para Marcané 
+    (Gm)llego a cueto (A)voy para Mayarí 
+  [Verse1]
+    (Dm)el cariño (F)que te tengo (Gm)no te lo (A)puedo negar 
+    (Dm)se me sale (F)la babita (Gm)yo no lo (A)puedo evitar 
+  [Verse2]
+    (Dm)cuando juanica (F)y chan chan
+    (Gm)en el mar (A)cernían arena
+    (Dm)como sacudía (F)el jibe
+    (Gm)a chan chan le (A)daba pena
+  [Verse3]
+    (Dm)limpia el (F)camino de paja
+    (Gm)que yo me (A)quiero sentar
+    (Dm)en aquél (F)tronco que veo
+    (Gm)y así no (A)puedo llegar
+  `},
+  {name: "Moliendo Cafe", genre: "🎻son (3/2)", key: "Am", chords: "Am-Dm-Am-F-E  | Dm-Am-Dm-Am-F-E ",  info: `Eric: bass (tresillo)`,
+  lyrics: `
+  [Verse1]
+    cuando la (Am)tarde languidece renacen las sombras, 
+    y en su quietud los (A)cafetales
+    vuelven a (Dm)sentir, 
+    esa triste canción de amor
+    de la vieja (Am)molienda, 
+    eue en el (F)letargo de la (E)noche
+    parece (Am)gemir
+  [Verse2]
+    (Dm)una pena de amor, una (Am)tristeza, 
+    (Dm)lleva el sambo manuel en su (Am)amargura, 
+    (F)pasa incansable la noche
+    moliendo (E)café
+  [END x1]
+    que en el (F)letargo de la (E)noche
+    parece (Am)gemir o--o--o-o
+  `},
+  {name: "Caballo Viejo", genre: "🎻son (2/3)", key: "Dm", chords: "Dm-A7-Gm",  info: `Eric: bass`,
+  lyrics: `
+  [Verse1]
+    cuando el (Dm)amor llega (A)así, de esta (Dm)manera, 
+    uno no se da ni (A)cuenta, el cauca reverdece 
+    y el guaman-(Gm)chito (A)florece y la soga, se (Dm)revienta 
+  [Verse2 x2]
+    (Gm)caballo le dan sabana porque está viejo y (Dm)cansao, 
+    pero no se dan de cuenta que un corazón (A)amarrao, 
+    cuando le sueltan la rienda es caballo (Dm)desbocao 
+  `},
+   {name: "El Cuarto de Tula", genre: "🎻son (2/3)", key: "Am", chords: "Am-G-F-E | E-Am", tags: "",
+  lyrics: `
+  [Intro]
+  [Verse1]
+    en (Am)el barrio La (G)Cachimba se ha (F)formado la (E)corredera
+    en (Am)el barrio La (G)Cachimba se ha (F)formado la (E)corredera
+    (Am)allá fueron los (G)bomberos con sus (F)campanas, sus (E)sirenas
+    (Am)allá fueron los (G)bomberos con sus (F)campanas, sus (E)sirenas
+  [break]
+    (G)ay, (C)mamá! (G)qué (C)pasó (E)ay (Am)mamá (E)qué (Am)pasó
+  [coro x2]
+    el cuarto de (E)Tula, le cogió (Am)candela
+    se quedó (E)dormida y no apagó la (Am)vela
+  `},
+  {name: "Guantanamera", genre: "🎸guajira (2/3)",  key: "G", chords: "G-C-D7 | C-D7-G-E", info: `Eric: chachacha wood guiro`,
+  lyrics: `
+  [Coro x2]
+    (G-C-D)guantanamera, 
+    guajira (G-C-D)guantanamera, 
+    (G-C-D)guantanamera, 
+    guajira (G-C-D)guantanamera
+  [Verse1]
+    (G)yo soy un (C)hombre (D)sincero, 
+    (G)de donde (C)crece la (D)palma, 
+    (G)yo soy un (C)hombre (D)sincero, 
+    (G)de donde (C)crece la (D)palma, 
+    (G)y antes de (C)morirme (D)quiero, 
+    (G)echar mis (C)versos del (D)alma, hey hey 
+    (C-D)guantanamera, 
+    guajira (G-Em)guantanamera, 
+    (G-C-D)guantanamera, 
+    guajira (G-C-D)guantanamera
+  `},
+  {name: "Bohio", genre: "🎻guajira", key: "Gm", chords: "Gm-Cm-Dm-Cm", info: `Eric: bass`,
+  lyrics: `
+    [Coro x2]
+    (Gm-Cm)cuando (Dm-Cm)llegaré?
+    (Gm-Cm)cuando (Dm-Cm)llegaré al bohío?
+  [Verse1]
+    (Gm)al vaivén (Cm)de mi (Dm-Cm)carreta, (Gm)nació (Cm)esta (Dm-Cm)lamentación, 
+    (Gm)al vaivén (Cm)de mi (Dm-Cm)carreta, (Gm)nació (Cm)esta (Dm-Cm)lamentación, 
+    (Gm)compadre (Cm)oiga mi (Dm-Cm)cuarteta, (Gm)no (Cm)tenemos (Dm-Cm)protección, ¡tú ve! *coro*
+  [Verse2]
+    (Gm)vivo el (Cm)año dando (Dm-Cm)azotes, (Gm)a los bueyes, y no (Dm-Cm)extraño, 
+    (Gm)vivo el (Cm)año dando (Dm-Cm)azotes, (Gm)a los bueyes, y no (Dm-Cm)extraño, 
+    (Gm)que a la (Cm)conclusión del (Dm-Cm)año, (Gm)piña (Cm)mammee (Dm-Cm)sapoteeee
+  [Verse3]
+    (Gm)trabajo (Cm)para el (Dm-Cm)inglés, (Gm)qué (Cm)destino (Dm-Cm)traicionero, 
+    (Gm)trabajo (Cm)para el (Dm-Cm)inglés, (Gm)qué (Cm)destino (Dm-Cm)traicionero, 
+    (Gm)sudando (Cm)por un (Dm-Cm)dinero (Gm)que en mis (Cm)manos no (Dm-Cm)tendré jamás
+  `},
+  {name: "Guajira Jam", genre: "🎹guajira", key: "Cm", chords: "Cm-Fm-G", info: `Conner: piano (montuno)`, 
+  lyrics: `
+    
+  `},
+  {name: "Vamanos Guajira", genre: "🎸guajira", key: "Am", chords: "Am-Dm-E",
+  lyrics: `
+  [Coro]
+    (Am-Dm)vamanos (E)guajira (Am)vamos (G)a (F-E)bailar
+    (Am-Dm)vamanos (E)guajira (Am)vamos (G)a (F-E)bailar
+  `},
+  {name: "Besame Mucho", genre: "🎻bolero", key: "Bm", chords: "2) Am-Dm-E-Am-A7-Dm-Am-F-E | Dm-C-E-Dm-C-E-E7", info: `Eric: tap metal guira`,
+  lyrics: `
+  [Coro x2]
+    (Am)bésame, bésame (Dm)mucho, 
+    como si fuera esta (E)noche la última (Am)vez, 
+    (A7)bésame, bésame (Dm)mucho, 
+    (Am)que tengo miedo (F)perderte (E)perderte otra (Am)vez
+  [Change]
+    (Dm)quiero tenerte muy (C)cerca, 
+    mirarme en tus (E)ojos, 
+    verte junto a (E7)mi, 
+    (Dm)pienso que tal vez (C)mañana, 
+    yo ya estaré (E)lejos, muy lejos de ti
+  `},
+  {name: "Historia de un Amor", genre: "🎻bolero", key: "Dm", chords: "Gm-A-Dm-C-C#-A", tags: "",
+  lyrics: `
+  [Verse1]
+    ya no estas mas a mi (Gm)lado corazón (A).....
+    en el alma sólo (Dm)tengo soledad, 
+    y si ya no puedo (C)verte, 
+    por qué dios me hizo (A#)quererte, 
+    para hacerme sufrir (A)mas
+  [Verse1]
+    siempre fuiste la (Gm)razón de mi existir (A).....
+    adorarte para (Dm)mi fue religión, 
+    en tus besos yo encon-(C)traba, 
+    el calor que me (A#)brindaba, 
+    el amor y (A)la pasión
+  [Verse3]
+    es la historia de un (Gm)amor, 
+    como no hay otro (A7)igual, 
+    que me hizo (Dm)comprender, 
+    todo el bien, todo el mal, 
+    que le dio luz a mi (Gm)vida, 
+    apagándola (F-A-Dm)después, 
+    hay que vida tan (Gm)obscura, 
+    sin tu amor no (A)viviré
+  `},
+  {name: "Te regalo una rosa", genre: "🎻bolero", key: "G", chords: "G-D-Em-Bm-C-G-A-D (C-G)",  info: `Conner: guitar <br> Eric: tap metal guira`,
+  lyrics: `
+  [verse1]
+    (G)te regalo una (D)rosa (Em).....
+    la encontré en el (Bm)camino (C).....
+    no se si esta (G)desnuda, 
+    (A7)o tiene un solo (D)vestido, no lo se, 
+    (G)si la riega el (D)verano (Em).....
+    o se embriaga de (Bm)olvido (C).....
+    si alguna vez fue (G)amada, 
+    (A7)o tiene amor (D)escondido
+  [coro]
+    (C)ay, ay ay(G)ay mi amor (Em).....
+    eres la rosa que me (Bm)da calor, 
+    (C)eres el sueño de mi (G)soledad, 
+    un (A7)letargo de azul, 
+    un eclipse de (D)mar pero...
+    (C)ay, ay ay (G)ay mi amor (Em)..... 
+    yo soy satélite tu (Bm)eres mi sol, 
+    (C)un universo de agua (Bm)mineral,  
+    un (G)espacio de luz que solo (D)llenas tu, 
+  `},
+  {name: "Veinte Años", genre: "🎸bolero", key: "Em", chords: "Em-B7-Em-E-Am-Em-C-B7", info: `Conner: guitar <br> Eric: tap metal guira`,
+  lyrics: `
+  [Verse1]
+    qué te importa que te (Em)ame, 
+    si tú no me quieres (B7)ya, 
+    el amor que ya ha pasado, 
+    no se debe (Em)recordar, 
+    fui la ilusión de tu (E)vida, 
+    un día lejano (Am)ya, 
+    hoy represento el (Em)pasado, 
+    no me (C)puedo (B7)conformar
+  [Verse2]
+    si las (D)cosas, que uno quiere, 
+    se (D7)pudieran (G)alcanzar, 
+    tú me (B7)quisieras lo mismo, 
+    que veinte años (Em)atrás, 
+    con qué (E)tristeza, miramos, 
+    un amor que se nos (Am)va, 
+    es un pedazo del (Em)alma, 
+    que se (C)arranca (B7)sin (Em)piedad
+  `},
+  {name: "Perfume de Gardenias", genre: "🎻bolero", key: "Dm", chords: "F-Em-A7-Dm | Dm-A-Dm-Gm-F-A-Dm", info: `Eric: tap metal guira`,
+  lyrics: `
+  [Verse1]
+    perfume de (F-A7)gardenias, 
+    tiene tu (Dm)boca, 
+    bellìsimos (F)destellos de (Em)luz en (A7)tu (Dm)mirar, 
+    tu (C)risa es una (F-A7)rima,  
+    de alegres (Dm)notas, 
+    se mueven tus (F)cabellos, cual (Em)ondas (A7)en la (Dm)mar
+  [Verse2]
+    tu cuerpo es una (Dm)copia de (A)venus
+    de (Dm)cibeles que (Gm)envidian las (F)mujeres 
+    (A7)cuando te ven (Dm)pasar, 
+    y (A)llevas en tu (Dm)alma 
+    la (A)virginal (Dm)pureza 
+    por (Gm)eso es tu (F)belleza de (A7)místico (Dm)candor
+  `},
+  {name: "Tengo Que Hacer", genre: "🎸merengue", key: "A#m", chords: "F-G-Am", info: ``, 
+  lyrics: `
+  [coro x2]
+    (Am)que tengo que (F)hacer pa que (G)vuelvas (Am)conmigo... 
+    vamos a (F)dejar el (G)pasado (Am)atras... 
+    para mi la (F)vida no (G)tiene (Am)sentido... 
+    si te (F-G-Am)vaaaas
+  `},
+  {name: "Vida Es Un Carnaval", genre: "🎸merengue", key: "Cm", chords: "Cm-G#-G", tags: "",
+  lyrics: `
+  [verse1]
+    (Cm)todo aquel que piense que la vida, es desigual
+    tiene que saber que (G#)no es así
+    que la vida es una (G)hermosura, hay que vivirla... 
+    (Cm)todo aquel que piense que está solo y que está mal
+    tiene que saber que (G#)no es así
+    que en la vida no hay nadie (G)solo, siempre hay alguien
+  [coro]
+    (Cm)ay, no hay que llorar, 
+    que la vida es un (G#)carnaval
+    y es más bello (G)vivir cantando
+  `},
+  {name: "Suavemente", genre: "🎸merengue", key: "Cm", chords: "Cm-G", tags: "",
+  lyrics: `
+  [coro x2]
+    (Cm)suavemente be-sa-(G)me, 
+    que quiero sentir tus labios 
+    besandome otra (Cm)vez 
+  [verse1]
+    cuando tu me (Cm)besas, me siento en el (G)aire, 
+    por eso cuando te veo, comienzo a (Cm)besarte,  
+    y si te despegas, yo me (G)despierto
+    de ese rico sueño, que me dan tus (Cm)besos
+  [verse2]
+    (Cm)besame suavecito, sin prisa why con (G)calma, 
+    dame un beso bien profundo, que me llegue al (Cm)alma, 
+    dame un beso más, que en mi boca (G)cabe, 
+    dame un beso despacito, dame un beso (Cm)suave
+  `},
+  {name: "Set Fire to the Rain", genre: "🎸bachata", key: "Dm", chords: "Dm-F-C-Gm", tags: "",
+  lyrics: `
+  [verse1]
+  I let it (Dm)fall, my (F)heart
+  and as it (C)fell, you rose to (Gm)claim it, 
+  it was (Dm)dark, and I was (F)over, 
+  until you (C)kissed my lips and you (Gm)saved me, 
+  my (Dm)hands, they were (F)strong, 
+  but my (C)knees were far too (Gm)weak, 
+  to (Dm)stand, in your (F)arms, 
+  without (C)falling to your (Gm)feet, 
+  [pre coro]
+  but theres a (Dm)side to you
+  that I (F)never knew never knew
+  all the (C)things youd say
+  they were (Gm)never true, never true
+  and the (Dm)games youd play
+  you would (F)always win, always win (C-Gm).....
+  [coro]
+  but I set (Dm)fire, to the (F)rain
+  watched it (C)pour as I touched your (Gm)face, 
+  well it (Dm)burned while I cried
+  cause I (F)heard it screaming out your (C)name, your (Gm)name
+  `},
+  {name: "Hoja en Blanco", genre: "🎸bachata", key: "Dm", chords: "Dm-C-A#-F",
+  lyrics: `
+  [verse1]
+    fue (Dm)imposible sacar tu recuerdo, de mi (C)mente, 
+    fue (A#)imposible olvidar que algún día, yo te (C)quise, 
+    tanto (Dm)tiempo pasó desde el día, que te (C)fuiste, 
+    allí (A#)supe que las despedidas, son muy (C)tristes, 
+    nunca me (Dm)imaginé que un tren se llevaría en su viaje,
+    aquellas (C)ilusiones que de niños nos juramos,
+    todos tus (A#)sentimientos los guardaste en tu equipaje,
+    quisiste (F)consolarme y me dijiste yo te amo,
+    desde entonces no (Dm)supe qué sería de tu vida,
+    desde entonces no (C)supe si algún día regresabas,
+    los amigos del (A#)pueblo preguntaron si volvías,
+    llorando di la (F)espalda, no les pude decir nada,
+  [coro x2]
+    y (Dm)vuelva vuela, por (C)otro rumbo ve y (A#)sueña sueña, que el (F)mundo es tuyo,
+    tú (Dm)ya no puedes, (C)volar conmigo aun-(A#)que mis sueños se (F)irán contigo, 
+  [verse2]
+    (Dm)ayer que regresé a mi pueblo, 
+    alguien me (C)dijo que ya te casaste, 
+    mírame y (A#)dime si ya me olvidaste, 
+    me (C)marcharé con los ojos aguados, 
+    (Dm)después le pregunté a la luna, 
+    me dio la (C)espalda e intentó ocultarse, 
+    hasta la (A#)luna sabe que me amaste, 
+    hasta la (C)luna sabe que aún me amas, 
+  `},
+  {name: "Obsesion", genre: "🎸bachata", key: "A", chords: "A-C#m", tags: "",
+  lyrics: `
+  [verse1]
+    son las (A)cinco en la mañana, y yo (C#m)no he dormido nada,
+    (A)pensando en tu belleza, en loco (C#m)voy a parar,
+    el (A)insomnio es mi castigo, tu (C#m)amor será mi alivio, 
+    y (A)hasta que no seas mía, no (C#m)viviré en paz,
+    hoy (A)conocí tu novio, (C#m)pequeño y no buen mozo,
+    y (A)sé que él no te quiere, por (C#m)su forma de hablar,
+    (A)además tú no lo amas, (C#m)porque él no da la talla,
+    no (A)sabe complacerte como (C#m)lo haría yo, 
+    (A)pero tendré paciencia, (C#m)porque él no es competencia, 
+    por (A)eso no hay motivos, (C#m)para yo respetarlo, 
+  [coro]
+    (E)no no es (B)amor, lo que tú (F#m)sientes, 
+    se llama (E)obsesión, una (C#m)ilusión, 
+    en tu (B)pensamiento,que te hace hacer (F#m)cosas
+    así funciona el (E)corazón
+  `},
+  {name: "Gone", genre: "🎸bachata", key: "Am", chords: "F-C-Em-Am | Fm-Cm", tags: "",
+  lyrics: `
+  [intro]
+    (Fmaj7)mil palabras te (Cmaj7)podría decir
+    (Em)to make you come (Am)home
+    (Fmaj7)seems so long ago you (Cmaj7)walked away
+    (Em)and left me (Am)alone
+    (Fmaj7)y yo me recuerdo what you (Cmaj7)said to me
+    (Em)you were acting so (Am)strange
+    (Fmaj7)quizás fui ciego y no (Cmaj7)quise entender
+    (Em)that you needed a (Am)change
+    [pre coro]
+      was it (Am)something I said to make you (G)turn away, 
+      to make you (C)walk out and (G)leave me (Am)cold, 
+      if I could (G#)just find a way
+      to (Cm)make it so that you were right (G)here, right now
+    [coro x2]
+      ive been (Fm)seating here, cant get you (Cm)off my mind, 
+      ive tried my (Fm)best to be a man and be (Cm)strong,
+      I drove (Fm)myself insane, wishing I could (Cm)touch your face
+      but the (G#)truth (G)remains
+    [precoro x4]
+      (Cm-Fm)*you're gone... repeat*
+  `},
+  {name: "Te Quiero Mas Igual k ayer", genre: "🎸bachata", key: "D#", chords: "D#-Gm-G#-A#", tags: "",
+  lyrics: `
+  [verse1]
+    (D#)hoy vuelvo a sentir tus ojos sobre mi pasado, 
+    y (Gm)es como una nube repentina pero eterna, 
+    (G#)eres un infierno donde corre brisa fresca, 
+    y (A#)esa tentación que dice qué aún te amo........ 
+    (D#)yo nunca he podido controlar mis sentimientos, 
+    y (Gm)hoy soy el licor que se escapó de una botella, 
+    (G#)disfrace de canto uno más de mis silencios, 
+    (A#)para decirte...
+  [verse2]
+    que se me ahoga la (D#)vida si tú, 
+    tienes otro amor y no (Gm)vas a volver, 
+    aún tengo tu nombre (G#)sembrado en mi piel
+    entonces si puedes (A#)volver junto a mí, 
+    y yo quisiera (D#)abrazarme de ti
+    y llegar al cielo con (Gm)esa pasión
+    yo pensé que habías (G#)olvidado el ayer
+    yo también pensaba (A#)pero ya me ves
+  [coro x2]
+    te quiero (Cm)igual o más que (Gm)ayer
+    yo también te (G#)quiero más que (A#)ayer
+  `},
+  {name: "Darte un Beso", genre: "🎸bachata", key: "F#m", chords: "2) C-G-Am | G-Am x2 | F-G-Am",  info: `Conner: guitar (fingerpick) <br> Eric: tap metal guira`,
+  lyrics: `
+  [Verse1]
+    (C)amarte como te (G)amo es (Am)complicado, 
+    (C)pensar como te (G)pienso es un (Am)pecado, 
+    (C)mirar como te (G)miro está (Am)prohibido, 
+    (C)tocarte como (G)quiero es un (Am)delito
+  [Buildup]
+    (G)ya no sé qué hacer, para que estés bien, 
+    (Am)si apagar el sol para encender tu amanecer, 
+    (G)falar en portugués, aprender a hablar francés, 
+    (Am)o bajar la luna hasta tus pies
+  [Coro]
+    yo solo quiero (F)darte un beso, 
+    (G)y regalarte (Am)mis mañanas, 
+    cantar (F)para calmar tus miedos, 
+    (G)quiero que no (Am)te falte nada, 
+    yo solo quiero (F)darte un beso, 
+    (G)llenarte con mi (Am)amor el alma, 
+    (F)levarte a conocer el cielo, 
+    (G)quiero que no (Am)te falte nada
+  `},
+  {name: "Bachata en Fukuoka", genre: "🎸bachata", key: "A#", chords: "A#-Fm-G# (F#-G#)  |  (F#-G#-A#) F",  info: `Conner: guitar (fingerpick) <br> Eric: tap metal guira`,
+  lyrics: `
+  [Verse1]
+    (A#)dile a la mañana que se (Fm)acerca mi sueño, 
+    (G#)que lo que se espera con (A#)paciencia se logra, 
+    nueve horas a parís (Fm)viajé sin saberlo, 
+    (G#)y crucé por rusia con (A#)escala en tu boca, 
+    (F#)yo canté tu (G#)bachata aquí en (A#-Fm)Fukuoka
+  [Verse2]
+    (A#)y un atardecer pintó de (Fm)canvas el cielo, 
+    (G#)caminé la playa de (A#)momochi mi anhelo, 
+    y se me escapó una (Fm)sonrisa del alma, 
+    (G#)aquí me enseñó, (A#)arigato gozaimas, 
+    (F#)yo canté tu (G#)bachata aquí en (A#)Fukuoka
+  [Coro]
+    pa (Fm)bailar contigo pa (G#)bailar, 
+    se me (A#)alegra la nota... 
+    quiero (Fm)cantar contigo, (G#)quiero, 
+    una (A#)bachata en Fukuoka... 
+    una bachata en Fukuoka... 
+    pa soñ-(Fm)ar contigo (G#).....
+    en el (A#)mar las gaviotas... 
+    con tu (Fm)piel de abrigo (G#)quiero, 
+    vivir (A#)bachata en Fukuoka
+  [Change]
+    (F#)y llegó la hora de par-(G#)tir y decir sayo-(A#)nara... 
+    (F#)y una palomita se po-(G#)só en mi ven-(F7)tana, 
+    konnichi wa, ohayoo gozaimasu
+  *go to Coro
+  `},
+  {name: "Cuando Calienta El Sol", genre: "🎸bachata", key: "F", chords: "F-Dm-Am-A#-C", info: ``,
+  lyrics: `
+  [intro]
+    (F)cuando calienta el (Dm)sol aquí en la (Am)playa, 
+    (A#)siento tu cuerpo (C)vibrar cerca de (F-Dm)mí
+    (A#)es tu (C)palpitar es tu (F)cara, es tu (Dm)pelo
+    son tus (Am)besos, me (A#)estremezco, oh oh (C)oh
+  `},
+  {name: "Long Train Running", genre: "🎸cumbia", key: "F#m", chords: "F#m-Bm | D-C#", info: ``,
+  lyrics: `
+  [verse1]
+    (F#m)down around the corner, half a mile from here, 
+    see them long trains runnin, and you watch em disappear, 
+    (Bm)without love, where would you be (F#m)now, without (D-C#)looove, 
+    (F#m)know I saw miss lucy, down along the tracks, 
+    she lost her home and her family, 
+    and she wont be coming back, without (Bm)love, 
+    where would you be right (F#m)now, without (D-C#)looove, 
+    well, the (F#m)illinois central, 
+    and the Southern Central freight, 
+    got to (F#m)keep on pushin mama, 
+    cause you know theyre runnin late, 
+    without (Bm)love, where would you be (F#m)now, without (D-C#)looove
+  [verse2]
+    well (F#m)pistons keep on churnin, 
+    and the wheels go round and round, 
+    and the steel rails lie cold and hard on the mountains they go down, 
+    without (Bm)love, where would you be right (F#m)now, without (D-C#)love
+  `},
+  {name: "Sweet Dreams", genre: "🎸cumbia", key: "Cm", chords: "Cm-G#-G", info: ``,
+  lyrics: `
+  [coro]
+    (Cm)sweet dreams are (G#)made of (G)these, (Cm)who am I to (G#-G)disagree?
+    I (Cm)travel the world and the (G#)seven (G)seas
+    (Cm)everybodys (G#)looking for (G)something
+  [verse1]
+    (Cm)some of them want to (G#-G)use you
+    (Cm)some of them want to get (G#-G)used by you
+    (Cm)some of them want to (G#-G)abuse you
+    (Cm)some of them want to (G#)be (G)abused
+  `},
+  {name: "Corazon", genre: "🎸cumbia", key: "G", chords: "G-C-D | G-Bm-C-D", info: ``,
+  lyrics: `
+  [intro]
+    yo no (G)se lo que me pasa cuando (C)estoy con (D)vos
+    me hipnotiza tu sonrisa me (C)desarma tu (D)mirada
+    y de (G)mi no queda nada me (C)derrito como un hielo al (G-C-D)sol
+  [verse1]
+    cuando (G)vamos a algún lado nunca (Bm)elijo yo, 
+    porque lo (C)único que quiero es ir (D)contigo, 
+    (G)vivo dando vueltas a tu (Bm)alrededor, 
+    como un (C)perro abandonado que en la (D)calle te siguió
+  [coro x2]
+    pero (G)yo no soy tu prisionero y no tengo (Bm)alma de robot, 
+    es que hay (C)algo en tu carita que me gusta, 
+    que me gusta y se llevo mi (D)corazón
+  [verse2]
+    puede (G)ser por tu carácter o mi (C-D)voluntad, 
+    me (G)hipnotiza tu sonrisa, me (C)desarma tu (D)mirada, 
+    y de (G)mi no queda nada me (C)derrito como un hielo al (G-C-D)sol
+  `},
+  {name: "Ai Se Eu Te Pego", genre: "🎸cumbia", key: "B", chords: "B-F#-G#m-E", info: ``,
+  lyrics: `
+  [coro]
+    (B)nossa (F#)nossa (G#m)assim você me (E)mata
+    (B)ai se eu te (F#)pego ai, (G#m)ai, se eu te (E)pego
+    (B)delícia (F#)delícia (G#m)assim você me (E)mata 
+    (B)ai, se eu te (F#)pego ai, (G#m)ai, se eu te (E)pego, hein! vai!
+  [verse1]
+    (B)sábado (F#)na (G#m-E)balada, (B)a galera (F#m)começou a (G#m-E)dançar
+    (B)e passou a (F#)menina mais (G#m-E)linda, (B)tomei (F#)coragem e (G#m)comecei a (E)falar
+  `},
+  {name: "Cordillera", genre: "🎸cumbia", key: "Am", chords: "Am-Em", info: ``,
+  lyrics: `
+  [lick]
+    lick(Am-G-Dm-Am-G)
+  [verse1]
+    (Am)quién te ha visto (E)quien te ve,
+    en la (Am)cordillera de los (E)Andes, 
+    (Am)nunca me (E)dejas de (Am-E)sorprender, 
+    (Am)viento blanco (E)que más da, 
+    que por (Am)mi puedas pasar las (E)horas
+    (Am)quiero estar (E)contigo un tiempo (Am-E)más
+  [precoro]
+    y (Am)así (E)podrán pasar los (Am-E)años
+    y (Am)yo (E)tomar mil (Am-E)direcciones
+    (Am)se que he (E)dejado un mundo (Am)atrás
+    siguiendo (E)siempre un (Am)ideal
+    como un (E)valiente (F)cazador
+    en (G)las estrellas
+  [coro x2]
+    se (Am)vive la (E)libertad se (Am)siente la (E)libertad
+    te (Am)envuelve la (E)magia del (Am-E)lugar
+  `},
+  {name: "Y Como Es El", genre: "🎸cumbia", key: "E", chords: "Bm-E-A", info: ``,
+  lyrics: `
+  [intro]
+    (A)mirándote a los ojos, (Bm)juraría
+    (E)..... que tienes algo nuevo que (A)contarme
+    (D)..... empieza ya mujer no tengas (A)miedo, 
+    (D).....quizá para mañana sea (A)tarde
+    (D)..... quizá para mañana sea (A)tarde
+  [coro x2]
+    y cómo es (Bm)él, (E).....
+    en qué lugar se (A)enamoró de ti, 
+    de (Bm)dónde es (E)..... a qué dedica el tiempo (A)libre, 
+    (Bm)pregúntale (E)..... por qué ha robado un trozo de mi (A)vida, 
+    es (Bm)un ladrón (E)..... que me ha robado (A)todo
+  `},
+  {name: "El Gran Señor", genre: "🎸cumbia", key: "F#m", chords: "Bm-F#m-C# | F#m-C#", info: `Conner: Piano (bass and chords) n stomp pedal <br> Eric: metal guira chachacha`,
+  lyrics: `
+  [intro]
+    *Sing Coro but ring out cords.
+  [coro x2]
+    desde (Bm)que no tengo que cuidar tu (F#m)cariño, 
+    oír tus (C#)caprichos, ya no sufro (F#m-F#7)tanto o-o-o--
+  [verse1]
+    ahí (F#m)va, él es el (C#)gran señor, 
+    ahí va, es aquel que que está en (F#m)aquel RollsRoyce, 
+    ahí va, mírenlo, que aire (C#)sobrador, 
+    mira para acá solo porque está (F#m-F#7)abrazado a vos
+  `},
+  {name: "Rafaga de Amor", genre: "🎸cumbia", key: "Am", chords: "Am-A-Dm-G-C-F-Dm-E7", tags: "",
+  lyrics: `
+  [verse1]
+    (Am)chiquilina, yo te quería
+    (A7)chiquilina, me dejaste (Dm)así, 
+    aquella (G)noche yo te amé, 
+    y te (C)entregué mi corazón, 
+    aquella (F)noche nos amamos tú y (E7)yo
+    (Am)chiquilina, yo te quería, 
+    (A7)chiquilina, me dejaste (Dm)así, 
+    al pasar el (G)tiempo te olvidaste, 
+    y te (C)fuiste de mi lado, 
+    pero (F)igual yo te sigo (E7)amando, 
+  [coro]
+    (Am)fue como una ráfaga tu (Dm-E)amor, me (Am)enamoró,
+    después solito me (Dm-E)dejó, y se (Am)marchó
+  `},
+  {name: "Oye Mujer", genre: "🎸cumbia", key: "Em", chords: "Em-Bm-Am-D-Em", info: ``, 
+  lyrics: `
+  [verse1]
+    (Em)oye mujer... 
+    lo que has provo-(Bm)-cado en mí... 
+    no (C)tengo explicación... 
+    me (Bm)hundo en la emoción... 
+    qué (Em)sucede... 
+    (Em)oye mujer... 
+    tú me has conquis-(Bm)-tado y yo... 
+    (C)ni cómo decir... 
+    lo (Bm)que lloré por ti... 
+    yo te (Em)amo
+  [coro x2]
+    (Em)oye mujer... 
+    yo solo quiero darte un (Bm)beso, y no más... 
+    (Em)decirte lo que siento... 
+    cobijarte entre mis (Bm)brazos y ya... 
+  [verse2]
+    (Em)oye mujer
+    yo me he (Bm)enamorado de ti... 
+    y (C)puedo ver la miel... 
+    y un (Bm)pétalo en tu piel... 
+    y soy (Em)nada
+  `},
+     {name: "Tu Carcel", genre: "🎸cumbia", key: "C-G-Am-F-G", chords: "", tags: "",
+  lyrics: `
+    []
+    (C)te vas amor, sí así lo quieres, qué (G)puedo yo hacer, 
+    tu vanidad no te (Am)deja entender (F).....
+    que en la pobreza se (G)sabe querer, 
+    (C)quiero llorar, y me destroza que (G)pienses así, 
+    y más que ahora me (Am)quede sin ti, (F) me duele lo que tú (G)vas a sufrir
+  [coro]
+    (C)pero recuerda, nadie es perfecto, y (G)tú lo verás, 
+    más de mil cosas (Am)mejores tendrás, (F)pero cariño (G)sincero jamás, 
+    (C)vete olvidando, de esto que hoy dejas y (G)que cambiarás, 
+    por la aventura que (Am)tú ya verás (F)..... 
+    será tu cárcel y (G)nunca saldrás
+  `},
+  {name: "Si Una Vez", genre: "🎸cumbia", key: "", chords: "Dm-Gm-C7-F-A#", tags: "",
+  lyrics: `
+  [verse1]
+    (Dm)yo te di todo mi amor y (Gm)más, 
+    y (C7)tú, no reconoces ni lo que es (F)amar (A#-A).....
+    (Dm)yo me puse dispuesta a tus (Gm)pies, 
+    y tan (A#)solo con desprecio me has pagado pero ahora (A)ve
+  [coro]
+    si una (Dm)vez dije que te amaba, hoy me (Gm)arrepiento, 
+    si una (C7)vez dije que te amaba, no sé lo (F)que pensé estaba (A#-A)loca, 
+    si una (Dm)vez dije que te amaba, y que por (Gm)ti la vida daba si una (A#)vez dije que te amaba, no lo vuelvo a (A)hacer, 
+    ese error es cosa de (Dm)ayer
+  [verse2]
+    (Dm)yo, sé que un día tú (Gm)volverás,
+    (C7)y tú, de todo te (F)arrepentirás (A#-A).....
+    (Dm)yo, me puse dispuesta a tus (Gm)pies, 
+    y tan (A#)solo con desprecio me has pagado pero ahora (A)ve
+  `},
+  {name: "Los Caminos De La Vida", genre: "🎸cumbia", key: "Am", chords: "Am-G-F-C | C-G", tags: "",
+  lyrics: `
+  [verse1]
+    los caminos de la (Am)vida, no son como yo (G)pensaba, 
+    como los (F)imaginaba, no son como yo (C)creía, 
+    los caminos de la (Am)vida, son muy difícil de (G)andarlos, 
+    difícil de (F)caminarlos, y no encuentro la (C)salida
+  [coro]
+    (C)porque mi viejita ya está cansada, de trabajar pa mi hermano y pa (G)mí, 
+    y ahora con gusto me toca ayudarla, y por mi vieja lucharé hasta el (C)fin, 
+    por ella lucharé hasta que me muera, y por ella no me quiero (G)morir, 
+    tampoco que se me muera mi (C)vieja, pero, qué va, si el destino es (G)así
+  `},
+  {name: "Cariñito", genre: "🎸cumbia", key: "Am", chords: "Am-C-E7-Am | F-C-F-C-E7-Am-C-E-Am", info: `Conner: piano(bass n chords) n stomp pedal <br> Eric: metal guira chachacha`,
+  lyrics: `
+  [lick]
+  lick(Am-C)
+  [coro]
+    *lick* (Am)lloro, por (C)quererte, por (E7)amarte por (Am)desearte, 
+    lloro, por (C)quererte, por (E7)amarte por (Am)desearte, *4HITS* 
+    (F)ay (C)cariño, (F)ay mi (C)vida, 
+    (E7)nunca, pero (Am)nunca, me (C)abandones (E7-Am)cariñito, *4HITS* 
+    (E7)nunca, pero (Am)nunca, me (C)abandones (E7-Am)cariñito
+  `},
+  {name: "Me Gustas Tu", genre: "🎸reggae", key: "Bm", chords: "Bm-A-Em", tags: "",
+  lyrics: `
+    [verse1]
+    me (Bm)gustan los aviones, me (A)gustas tú, 
+    me (Em)gusta viajar, me gustas tú, 
+    me (Bm)gusta la mañana, me (A)gustas tú, 
+    me (Em)gusta el viento, me gustas tú, 
+    me (Bm)gusta soñar, me (A)gustas tú, 
+    me (Em)gusta la mar, me gustas tú, 
+    [coro]
+    (Bm)qué voy a (A)hacer? Je ne sais (Em)pas, 
+    qué voy a hacer? je ne sais (Bm)plus, 
+    qué voy a (A)hacer? je suis (Em)perdu, 
+    qué horas son, mi (Bm)corazón, 
+    [verse2]
+    me (Bm)gusta la moto, me (A)gustas tú, 
+    me (Em)gusta correr, me gustas tú, 
+    me (Bm)gusta la lluvia, me (A)gustas tú, 
+    me (Em)gusta volver, me gustas tú, 
+  `},
+  {name: "Salvame", genre: "🎸reggae", key: "F", chords: "F-A#m-G#m-B-C#", tags: "",
+  lyrics: `
+  [verse1]
+    (F#)todo el amor que sentí por vos, ya se ha (A#m)alejado, 
+    (G#m)como una flor él se marchitó, 
+    (B)..... y solo se ha (C#)quedado
+    (F#)eso ya pasó se han ido de aquí, momentos (A#m)doraaados, 
+    (G#m)solo me encuentro con mi soledad, 
+    (B)..... y mi corazón (C#)gritando
+  [coro]
+    (F#)saaaaaalvame, que no quiero (A#m)estar así, 
+    (G#m)..... quiero poder verte,  (B)..... y volver a ser (C#)feliz
+  [verse2]
+    (F#)todo está dicho en mi corazón, 
+    que hoy está (A#m)quebraaado,
+    (G#m)fue por el amor que se fue de aquí, (B).....
+    y solo me ha (C#)dejado
+`},
+{name: "No Convenceran", genre: "🎸reggae", key: "Fm", chords: "Fm-A#m", tags: "",
+  lyrics: `
+  [verse1]
+    si es que van (Fm)hablando pura mentira, 
+    enseñan a los niños la hipocresía, 
+    solo tienen (A#m)armas y cobardía, 
+    esa es la misión día a (Fm)día, 
+    guerras en el (A#m)este y en el oeste, 
+    quieren procesión, cueste lo que cueste, 
+    quieren el (Fm)poder, para continuar, 
+    destruyendo al mundo sin descansar
+  [coro]
+    no (Fm)convencerán, a mi corazón,
+    que tiene su fe, en la creación,
+    cómo (A#m)demostrarán, que no es el amor,
+    quien nos llevara, a la sanación?
+  [verse2 x2]
+    y es la misma (Fm)historia y nunca termina, 
+    mentiras por siempre siempre mentira, 
+    ya no creo (A#m)nada de lo que digan, 
+    solo es mi padre quien me ilumina
+`},
+  {name: "Mindblock", genre: "🎸reggae slow", key: "Dm", chords: "Dm-Am", tags: "",
+  lyrics: `
+  [coro x2]
+    open up your (Dm-Am)windows, open up your (Dm-Am)eyes, 
+    can you tell which way the (Dm-Am)wind blows?
+    read between the (Dm-Am)lines
+  [verse1]
+    I know you're not (Dm-Am)perfect and no no not am (Dm-Am)I,
+    music playing on your (Dm-Am)stereo, to ease your (Dm-Am)mind,
+    (Dm)I've been working Ive (Am)working all long,
+    (Dm)trying to find the melody Im (Am)singing in this song, 
+    (Dm)words come and then (Am)again theyre gone
+    (Dm)feels like I got a mind (Am)block
+  `},
+  {name: "Red Red Wine", genre: "🎸reggae", key: "D", chords: "D-Bm-G-A", tags: "",
+  lyrics: `
+  [Verse 1]
+    red red (D-Bm-G)wine... 
+    (A)goes to my (D-Bm-G)head... 
+    (A)makes me (D-Bm-G)forget that I... 
+    (A)still need her so... 
+    red red (D-Bm-G)wine... 
+    (A)its up to (D-Bm-G)you... 
+    (A)all I can (D-Bm-G)do Ive done... 
+    (A)memories wont go... 
+  `},
+  {name: "Jamiroquai", genre: "🎸reggae", key: "F#m", chords: "F#-G#m-C#m-G#m",
+  lyrics: `
+  [Verse1]
+    (F#)how many (G#m)times, can a (C#m)man, watch the (G#m)sunrise,
+    (F#)over again, (G#m)..... without feeling (C#-G#m)free
+  [Verse2]
+    (F#)how many (G#m)words, will (C#m)fill me, in my (G#m)neglegence, to (F#)arrest, oh yes, (G#m)..... 
+    this crazy part of (C#m-G#m)me
+    [Verse2]
+    (F#)how many (G#m)fools, will I (C#m)let unlock the (G#m)door to my heart,
+    when I (F#)know, oh yes, (G#m)..... that know that they shouldnt have had the (C#m-G#m)key
+  [Coro x2]
+    (F#)dont shoot me down, oh (G#m)no no no, Im (C#m)hot tequila brown (G#m).....
+  `},
+  {name: "World on Fire", genre: "🎸reggae", key: "Dm", chords: "Dm-Am", 
+  lyrics: `
+  [Verse1]
+    if I (Dm)had all the money in the world, 
+    id (Am)probably burn it (Dm)all, 
+    if I had all the riches in the world, 
+    id (Am)surely burn it (Dm)all, 
+    one in a million, money gonna kill a man, 
+    (Am)why must we lose (Dm)control, 
+    blaze up a fire storm, the people getting higher from, 
+    the (Am)smoke of another mans (Dm)gold
+  [Coro x2]
+    (Dm)who set the world on fire?
+    (Am)who set the world on (Dm)fire?
+    who set the world on fire?
+    it was (Am)me who set the world on (Dm)fire
+  `},
+  {name: "Jammin", genre: "🎸reggae", key: "Bm", chords: "Bm-Em-G-F#m",
+  lyrics: `
+  [Coro]
+    were (Bm-Em-G)jamming, I want to jam it with (F#m)you, 
+    were (Bm-Em-G)jamming, I hope you like jamming (F#m)too
+  [Verse1]
+    there is no (Bm)rules there is no vows we could (Em)do it anyhow, 
+    (G)and I will see you (F#m)through, 
+    because every(Bm)day we pay the price with a (Em)living sacrifice, 
+    (G)jamming until the jam is (F#m)through
+  [Verse2]
+    no (Bm)bullet could stop us now, we wont (Em)beg nor we wont bow, 
+    (G)neither cant be bought nor (F#m)sold, 
+    we (Bm)all defend the right Jah Jah (Em)children must unite, 
+    whose (G)life is worth more than (F#m)gold
+  `},
+  {name: "Life is Life", genre: "🎸reggae fast", key: "Am", chords: "Am-Dm-G | Am-F-Dm-G", info: `Conner: guitar chords <br> Eric: bass`, 
+  lyrics: `
+  [intro]
+    *4HITS then start coro*
+  [buildup]
+    when we (Am)all give the (F)power
+    we (Dm)all give the (G)best
+    every (Am)minute of an (F)hour
+    dont (Dm)think about a (G)rest
+    then you (Am)all get the (F)power
+    you (Dm)all get the (G)best
+    when (Am)everyone gives (F)everything
+    and (Dm)every soooong (G)everybody singssss HEY!
+  [coro x4]
+    (Am)life, naaa (Dm)naaa na na (G)na life is
+  `},
+  {name: "Eres Para Mi", genre: "🎸reggae fast", key: "Bm", chords: "Bm-D-E | Bm-A-E x2 | G-A-G-E", info: `Conner: guitar chords <br> Eric: bass`, 
+  lyrics: `
+  [Coro x4]
+    eres para (Bm)mí, (D)..... (E)me lo ha dicho el viento
+  [Verse1]
+    (Bm)la sombra que pasa, la (A)luz que me abraza
+    tus (E)ojos mirándome, 
+    la (Bm)calle que canta su (A)canto de diario
+    el (E)mundo moviéndose, 
+    y yo (G)sé, que tienes miedo
+    y (A)no es un buen momento para (G)ti, 
+    y para esto (E)que nos viene sucediendo
+  [Verse2]
+    el (Bm)espejo que da su (A)reflejo en todo
+    lo (E)pinta tal como es, 
+    mi (Bm)cuerpo que no tiene (A)peso
+    si escucho tu (E)voz llamándome, 
+    y yo (G)sé, que tienes miedo
+    y (A)no es un buen momento para (G)ti, 
+    y para esto (E)que nos viene sucediendo
+  `},
+  {name: "Mas que Nada", genre: "🎸samba", key: "Fm", chords: "Fm-A#m7-Cm7", info: `Conner: guitar rhythm <br> Eric: shaker`,
+  lyrics: `
+  [Coro 2x]
+    (Fm-A#m)oooooo aarii (Cm)aaaaaaaaa  (Fm)raioooo, oba oba oba
+  [Verse1]
+    mas que (Fm)nada, sai da (A#m)minha frente
+    (Cm)eu quero (Fm)passar, 
+    pois o samba está animado o que eu quero é sambar, 
+    este (A#m)samba que é (Cm)misto de (Fm)maracatu, 
+    e samba de preto (Cm)velho,
+    (A#m)samba de (Fm)preto tu, 
+    mas que nada,
+    um (Cm)samba como (Fm)esse tão (Fm)legal, 
+    você não vai querer
+    que eu chegue no (Fm-A7)finaaal    
+  `},
+  {name: "Perine", genre: "🎸samba", key: "Em", chords: "Em-Asus2-D-Bm", info: ``, 
+  lyrics: `
+  [coro x2]
+    sentir tu (Em)amor, cada (A)mañana, y ve el (D)cielo en tu (Bm)mirada
+  `},
+  {name: "Tratar de Estar Mejor", genre: "🎸samba", key: "D", chords: "D-F#m-Bm-F#m-Bm-A-G-Cmaj7", tags: "",
+  lyrics: `
+  [verse1]
+    (D)cuenta esa vieja (F#m)historia, 
+    que a (Bm)pesar de todo algunas cosas (F#m)quedan, 
+    los (Bm)momentos vividos (A)recuerdos que van a (G)quedar
+    en (Cmaj7)lo profundo del (D)alma
+    nada puede hacerte (F#m)olvidar
+    que (Bm)anduvimos el mismo (F#m)camino
+    y las (Bm)cosas que hicimos
+    fue (A)porque quisimos (G)estar
+    de (Cmaj7)nuevo en este (D)lugar
+  [coro]
+    (G)tantas veces (F#)tuvimos que estar (Bm)separados (F#m).....
+    y (Bm)sentí que a (A)pesar de la distancia
+    (G)sentimos lo mismo en (Cmaj7)cualquier momento
+  `},
+  {name: "Eu Menti", genre: "🎸samba", key: "A", chords: "A-C#m-Bm-E", info: ``, 
+  lyrics: `
+  [coro x2]
+    aí vem o (A)desespero, machucando o (C#m)coração, 
+    eu me entrego por (Bm)inteiro, (E)implorando o seu (A)perdão
+  `},
+  {name: "Quando Quando", genre: "🎸bossa nova", key: "A", chords: "Amaj7-Bm7-E", info: `Conner: guitar (fingerpick) <br> Eric: shaker`, 
+  lyrics: `
+  [Verse1, fingerpick]
+    (Amaj7)tell me when will you be (Bm7)mine, (E).....
+    tell me quando, quando, (Amaj7)quando, 
+    we can share a love (Bm7)divine (E).....
+    please don't make me wait (Amaj7)again
+  [Verse2, fingerpick]
+    when will you say yes to (Bm7)me (E).....
+    tell me quando, quando, (Amaj7)quando, 
+    you mean happiness to (Bm7)me (E).....
+    oh my darnling tell me (Amaj7)when
+  [Verse3, 1,2 struming]
+    every moments a (Bm7)day (E).....
+    every day seems a (Amaj7)lifetime, 
+    let me show you the (Bm7)way (E).....
+    to a joy beyond (Amaj7)compare, 
+    I cant wait a moment (Bm7)more (E).....
+    tell me quando, quando, (Amaj7)quando, 
+    say its me that you (Bm7)adore (E).....
+    and then darlin, tell me (Amaj7)when 
+  `},
+  {name: "Sabor a mi", genre: "🎸bossa nova", key: "Em", chords: "1) F#m-B7-E--F#m-B7-E (C#7) |  (Bm-E)2  Amaj7-- (C#m-F#m)2 B7", info: `Eric: tap metal guira`,
+  lyrics: `
+  [Verse1]
+    tanto (C#7)tiempo (F#m)disfrutamos de este amor (B7).....
+    nuestras almas se (E)acercaron tanto así, 
+    que yo guardo tu (F#m)sabor,
+    pero tú llevas (B7)también, sabor a (E)mí,
+    si (C#7)negaras mi (F#m)presencia en tu vivir (B7).....
+    bastaría con abra-(E)zarte y conversar, 
+    tanta vida yo te (F#m)di, 
+    que por fuerza tienes (B7)ya, sabor a (E-E7)mí
+  [Verse2]
+    no (Bm-E)pretendo, ser tu (Bm)dueño, 
+    no soy (Amaj7)nada, yo no tengo vanidad, 
+    de mi (C#m-F#m)vida, doy lo (C#m-F#m)bueno, 
+    soy tan (B7)pobre qué otra cosa puedo dar
+  `},
+  {name: "Every Breath You Take", genre: "🎸bossa nova", key: "G", chords: "G-Em-C-D | C-G-A-D", info: ``,
+  lyrics: `
+  [verse1]
+    every breath you (G)take, and every move you (Em)make, 
+    every bond you (C)break every step you (D)take
+    Ill be watching (G)you, 
+    every single (G)day, and every word you (Em)say, 
+    every game you (C)play every night you (D)stay
+    ill be watching (G)you 
+  [coro]
+    oh, cant you (C)see, you belong to (G)me, 
+    how my poor heart (A)aches, with every step you (D)take
+  [verse2]
+    every move you (G)make, and every vow you (Em)break
+    every smile you (C)fake, every claim you (D)stake
+    ill be watching (G)you
+    `},
+  {name: "Algo Mas", genre: "🎸bossa nova", key: "Em", chords: "F-Dm-G-A#-C", info: ``,
+  lyrics: `
+  [verse1]
+    a veces (F)pienso que te miento
+    cuando te (Dm)digo que te quiero
+    porque (G)esto ya no es (A#-C)querer, 
+    a veces (F)creo que he muerto
+    cuando no (Dm)estás y yo despierto
+    porque (G)sé que esto ya no es (A#-C)querer
+    es algo (A#)más algo que me llena
+    algo que no (C)mata ni envenena
+    es algo (A#)más algo más que (C)amar
+  [coro]
+    es algo (F)más que la distancia, 
+    que el (Dm)dolor y la nostalgia, 
+    sabemos (G)que eso no nos va a (A#-C)separar
+    es darte un (F)beso cada noche
+    que tus (Dm)manos me enamoren
+    y que lo (G)nuestro crezca cada día (A#)más
+    porque (C)somos algo (F)más
+  `},
+  {name: "Corcovado", genre: "🎸bossa nova", key: "Am", chords: "Am7-E7-Gm-Csus4-Fmaj7  Fm-Am7-Gm-Csus4-Fmaj7", info: `Conner: guitar rhythm <br> Eric: shaker`, 
+  lyrics: `
+    
+  `},
+  {name: "Agua de Beber", genre: "🎸bossa nova", key: "Am", chords: "Am7-D (B7) | Am7-D-Am7-Dm7-G-Cmaj7-B7-D-Am7", info: `Conner: guitar rhythm <br> Eric: shaker`, 
+  lyrics: `
+    
+  `},
+  
+  {name: "Fly me to the Moon", genre: "🎸bossa nova", key: "Am", chords: "Am-Dm-G-Cmaj7-F-A#maj7-E-Am", info: `Conner: guitar (fingerpick) Genre Changing?`, 
+  lyrics: `
+  [verse1]
+    (Am)fly me to the (Dm7)moon, let me (G7)play among the (Cmaj7)stars... 
+    (F)let me see what (A#maj7)spring is like on (E7)jupiter and (Am-A7)mars... 
+    in (Dm7)other words (G7)..... hold my (Cmaj7)hand... 
+    in (Dm7)other words (G7)..... I love (Cmaj7)you... 
+  [verse2]
+    (Am)fill my heart with (Dm7)song, and let me (G7)sing forever (Cmaj7)more... 
+    (F)you are all I (A#maj7)long for all I (E7)worship and (Am-A7)adore... 
+    in (Dm7)other words (G7)..... please be (Cmaj7)true... 
+    in (Dm7)other words (G7)..... I love (Cmaj7)you... 
+  `},
+  {name: "Black Submarines", genre: "🎸blues fast", key: "Am", chords: "A-Am-G-D", info: `Conner: guitar rhythm <br> Eric: drumset (fast 1,2 beat)`,
+  lyrics: `
+  [Verse1]
+    (Am)little black (G)submarines
+    (D-A)operator, please (Am)put me (G)back on the (D-A)line, 
+    (Am)told my (G)girl Id be (D)back
+    (D-A)operator, please (Am)this is (G)wreckin my (D-A)mind
+  [Coro]
+    (Am)oh can it (G)be, 
+    the (D)voices calling (Am)me, 
+    they get (C)lost and (D)out of (A)time, 
+    I (Am)shouldve seen it (G)glow
+    but (D)everybody (Am)knows that a (C)broken (D)heart is (Am)blind, 
+    that a (C)broken (D)heart is (Am)blind *FUNK TIME*
+  `},
+  {name: "Call me the Breeze", genre: "🎸blues fast", key: "F#", chords: "F#-B-C#", info: `Conner: guitar rhythm <br> Eric: drumset (fast 1,2 beat)`,
+  lyrics: `
+  [Coro]
+    (F#)call me the breeze
+    I keep blowin down the road
+    well now they (B)call me the breeze
+    I keep blowin down the road
+    (C#)I aint got me nobody (B)..... 
+    I dont carry me no (F#)load
+  [Verse1]
+    (F#)aint no change in the weather
+    aint no changes in me
+    (B)well there aint no change in the weather
+    aint no changes in me
+    (C#)and I aint hidin from nobody (B)..... 
+    nobodys hidin from (F#)me    
+  [Verse2]
+    well I (F#)got that green light baby
+    I got to keep movin' on
+    well I (B)got that green light baby
+    I got to keep movin' on
+    well I might (C#)go out to california (B)..... 
+    might go down to georgia I dont (F#)know
+  [Verse3]
+    well I (F#)dig you georgia peaches
+    makes me feel right at home
+    well now I (B)dig you georgia peaches
+    makes me feel right at home
+    but I dont (C#)love me no one woman (B)..... 
+    so I cant stay in georgia (F#)long
+  `},
+  {name: "Aint no Sunshine", genre: "🎸blues", key: "Am", chords: "Am-Em-G | Em7-Dm7", info: `Conner: guitar rhythm <br> Eric: drumset (chill quiet)`,
+  lyrics: `
+  [Verse1]
+    aint no sunshine when shes (Am-E-G-Am)gone..........
+    its not warm when shes (Am-E-G-Am)away..........
+    aint no sunshine when shes (Em)gone
+    and this house just aint no (Dm)home anytime she goes (Am-E-G-Am)away 
+  [I Know]
+    I know...
+  `},
+  {name: "Wiked Game", genre: "🎸blues slow", key: "Bm", chords: "Bm-A-E", info: `Conner: guitar rhythm <br> Eric: drumset(Boom ts ts Kat ts ts) *in 3s`,
+  lyrics: `
+  [Verse1]
+    (Bm)the world was on (A)fire, and no (E)one could save me but you
+    (Bm)its strange what (A)desire will make (E)foolish people do
+    (Bm)I never (A)dreamed that I'd meet (E)somebody like you
+    (Bm)and I never (A)dreamed that I'd lose (E)somebody like you
+  [Coro]
+    no, (Bm-A)iiiiii dont wanna fall in (E)love
+    no, (Bm-A)iiiiii dont wanna fall in (E)love
+    with (Bm-A)you, with (E)you, with (Bm-A)you, with (E)you
+  [Verse2]
+    (Bm)what a wicked (A)game to play
+    to make me (E)feel this way
+    (Bm)what a wicked (A)thing to do
+    to let me (E)dream of you
+  `},
+   {name: "Horse with no name", genre: "🎸pop", key: "Em", chords: "Em-F#m", tags: "",
+  lyrics: `
+  [verse1]
+    on the (Em)first part of the (F#m)journey, 
+    I was (Em)looking at all the (F#m)life, 
+    there were (Em)plants and birds and (F#m)rocks and things
+    there was (Em)sand and hills and (F#m)rings, 
+    the (Em)first thing I met was a (F#m)fly with a buzz
+    and the (Em)sky with no (F#m)clouds, 
+    the (Em)heat was hot and the (F#m)ground was dry
+    but the (Em)air was full of (F#m)sound
+  [verse2]
+    after (Em)two days in the (F#m)desert sun
+    my (Em)skin began to turn (F#m)red, 
+    after (Em)three days in the (F#m)desert fun
+    I was (Em)looking at a river (F#m)bed, 
+    and the (Em)story it told of a (F#m)river that flowed
+    made me (Em)sad to think it was (F#m)dead
+  [coro]
+    Ive (Em)been through the desert
+    on a (F#m)horse with no name
+    it felt (Em)good to be out of the (F#m)rain, 
+    in the (Em)desert, you can (F#m)remember your name
+    cause there (Em)aint no one for to (F#m)give you no pain
+    la, la, lalalalala, lala, la, lalala...
+  [verse3]
+    after nine (Em)days I let the (F#m)horse run free
+    cause the (Em)desert had turned to (F#m)sea, 
+    there were (Em)plants and birds and (F#m)rocks and things
+    there was (Em)sand and hills and (F#m)rings, 
+    the (Em)ocean is a desert with its (F#m)life underground
+    and a (Em)perfect disguise (F#m)above, 
+    under the (Em)cities lies a (F#m)heart made of ground
+    but the (Em)humans will give no (F#m)love
+  `},
+  {name: "Rather Be", genre: "🎸pop", key: "G#m", chords: "G#m-F#-E", tags: "",
+  lyrics: `
+  [verse1]
+    were a (G#m)thousand (F#)miles from (E)comfort, we have (G#m)traveled (F#)land and (E)sea, 
+    but as (G#m)long as (F#)you are (E)with me, theres (G#m)no place id (F#)rather (E)be, 
+    (G#m)I would (F#)wait (E)forever, (G#m)exalted (F#)in the (E)scene, 
+    as (G#m)long as (F#)I am (E)with you, (G#m)my heart (F#)continues to (E)beat
+  [precoro]
+    (G#m)with every step we take, (F#)kyoto to the bay (E)strolling so casually, 
+    (G#m)were different and the same, (F#)get you another name (E)switch up the batteries
+  [coro]
+    (G#m)if you (F#)gave me a (E)chance I would take it
+    (G#m)its a (F#)shot in the (E)dark but ill make it
+    (G#m)know with (F#)all of your (E)heart you cant shake me
+    (G#m)when I am with you, theres no place id (F#)rather (E)be
+  [verse2]
+    we (G#m)set out (F#)on a (E)mission, to (G#m)find our (F#)inner (E)peace, 
+    (G#m)make it (F#)everlasting, so (G#m)nothings (F#-E)incomplete, 
+    its (G#m)easy (F#)being (E)with you, (G#m)sacred (F#-E)simplicity, 
+    as (G#m)long as (F#)were (E)together, theres (G#m)no place id (F#)rather (E)be
+  `},
+  {name: "I Got a Feeling", genre: "🎸pop", key: "G", chords: "G-C-Em", tags: "",
+  lyrics: `
+  [coro]
+    I got a (G)feeling
+    that (C)tonights gonna be a good night
+    that (Em)tonights gonna be a good night
+    that (C)tonights gonna be a good good night
+  [verse1]
+    (G)I know that well have a ball
+    if we (C)get down and go out and just lose it all
+    I (Em)feel stressed out I wanna let it go
+    lets go (C)way out spaced out and losin all control *lets do it part
+  `},
+  {name: "Just the way you are", genre: "🎸jazz smooth", key: "D", chords: "D-Bm7-Gmaj7-Bm7-(D7)-Gmaj7-Gm7-D-(Am7-E7) Gmaj7-Gm7-D-Bm7-E7-A-D (2times) I need… Gmaj7-A7-F#m7-B7-Em7-G-D---A#-C-Am7-D7-Gm7-A--", info: `Conner: guitar rhythm <br> Eric: shaker or bass`,
+  lyrics: `
+  [Verse1]
+    (D)dont go (Bm7-Gmaj7)changing... to try and (Bm7-D7)please me...
+    (Gmaj7)..... you never (Gm)let me down (D)before, (Am7-D7)mmmmmm
+    (Gmaj7)..... and don't (Gm)imagine (D)you're too (Bm)familiar
+    (E7)..... and I don't see you (Asus4-A)anymore...
+  [Verse2]
+    (D)I would not (Bm-Gmaj7)leave you in times of (Bm7-D7)trouble... 
+    (Gmaj7)..... we (Gm)never could have come this (D)far, (Am7-D7)mmmmmm 
+    (Gmaj7)..... I took the (Gm)good times, (D)I'll take the (Bm)bad times... 
+    I take you (A)just the way you (D)are
+  [Verse3]
+    (D)dont go (Bm7-Gmaj7)trying some new (Bm7-D7)fashion... 
+    (Gmaj7)..... don't change the (Gm)color of your (D)hair, (Am7-D7)mmmmmm 
+    (Gmaj7)..... you always (Gm)have my (D)unspoken (Bm)passion...
+    although I (E7)might not seem to (Asus4-A)care
+  [Verse4]
+    (D)I dont want (Bm-Gmaj7)clever (Bm7-D7)conversation, 
+    (Gmaj7)..... I never want to (Gm)work that (D)hard, (Am7-D7)mmm
+    (Gmaj7)..... I just want (Gm)someone, (D)that I can (Bm)talk to,
+    (E)I want you (A)just the way you (D)are
+  [Bridge Change]
+    (Gmaj7)I need to (A7)know that you will (F#m7)always (B7)be...
+    (Em7)the same old (G)someone that I (D)knew... 
+    (A#)what will it (C)take till you (Am7)believe in (D7)me...
+    (Gm7)the way that I believe in (Asus4-A)you?
+  `},
+  {name: "Just the two of us", genre: "🎸smooth jazz", key: "C", chords: "C-B7-Em-Dm-G", info: `Conner: guitar rhythm <br> Eric: drumset(funky chill)`, 
+  lyrics: `
+  [Verse1]
+    (C)I see the (B7)crystal raindrops (Em)fall
+    and the (Dm)beauty (G)of it (C)all
+    is when the (B7)sun comes shining (Em)through, 
+    (C)to make those (B7)rainbows in my (Em)mind
+    when I (Dm)think of (G)you (C)sometime
+    and I want to (B7)spend some time with (Em)you
+  [Coro]
+    just the (C)two of us (B7)..... 
+    we can (Em)make it if we (Dm)try
+    (G)just the (C)two of us (B7)..... you and (Em)I,  
+    just the (C)two of us (B7)..... 
+    building (Em)castles in the (Dm)sky
+    (G)just the (C)two of us (B7)..... you and (Em)I
+  [Verse2]
+    (C)we look for (B7)love no time for (Em)tears
+    wasted (Dm)waters (G)all that (C)is
+    And it dont (B7)make no flowers (Em)grow, 
+    (C)Good things might (B7)come to those who (Em)wait
+    not for (Dm)those who (G)wait too (C)late
+    we gotta (B7)go for all we (Em)know
+  `},
+  {name: "Aint no Love", genre: "🎸smooth jazz", key: "Am", chords: "Am-Dm-Am—F-G-Am | Am—C-F—G-Am (C)", info: `Conner: guitar rhythm <br> Eric: drumset(funky chill)`, 
+  lyrics: `
+  [Coro]
+    (Am)aint no love in the (Dm)heart of the (Am)city, 
+    (F)aint no love (G)..... in the heart of (Am)town, 
+    (Am)aint no love and it's (Dm)sure nuff a (Am)pity, 
+    (F)aint no love (G)..... cause you ain't (Am)around
+  [Verse1]
+    (Am)when you were (C)mine
+    oh, I was (F)feeling so good, 
+    cause your (G)love lit up, 
+    this whole (Am)neighborhood, 
+    now that youre (C)gone, 
+    you know the (F)sun dont shine,  
+    from the (G)city hall, 
+    to the (C)county line
+  `},
+  {name: "Easy", genre: "🎸soul", key: "G#", chords: "G#-Cm-A#m", tags: "",
+  lyrics: `
+  [Verse1]
+    (G#)..... I know it sounds (Cm)funny, but I just cant (A#m)stand the pain, 
+    (G#)..... girl, Im (Cm)leaving you (A#m)tomorrow, 
+    (G#)..... seems to (Cm)me girl, you know Ive done (A#m)all I can, 
+    (G#).....  you see, I (Cm)begged, stole and I (A#m)borrowed, (A#m)yeah oh
+  [Coro]
+    thats why Im (G#)easy (Cm-A#m)..... 
+    Im easy like sunday (G#)morning (Cm-A#m)..... 
+    thats why Im (G#)easy (Cm-A#m)..... 
+    Im easy like sunday (F#-G#)morning
+  [Verse2]
+    (G#)..... why in the (Cm)world would anybody put (A#m)chains on me, 
+    (G#)..... Ive (Cm)paid my dues to make (A#m)it, 
+    (G#)..... everybody (Cm)wants me to be what they (A#m)want me to be, 
+    (G#)..... Im not (Cm)happy when I try to (A#m)fake it, (A#m)no *Go To Coro*
+  `},
+  {name: "Feels Like Rain", genre: "🎸soul", key: "Em", chords: "G-C | B7--Em-G7-C", info: `Conner: guitar rhythm <br> Eric: 'violin elect bass w slides, light slapping'`, 
+  lyrics: `
+  [Part1]
+    (G)down here the river (C)..... where it meets the (G)sea, 
+    and in the sticky heat I feel ya (C)..... open up to (G)me, 
+    (B7)love, comes out of nowhere baby (Em)..... just (G7)like a (C)hurricane, 
+    and it feels like (G)rain (C).....
+    and it feels like (G)rain
+  `},
+  {name: "Bring it Home to Me", genre: "🎸soul 3", key: "C", chords: "C-G-F", tags: "",
+  lyrics: `
+  [Verse1]
+    if you (C)ever, change your (G)mind,
+    about (C)leaving, leaving me (F)behind
+    baby, (C)bring it to me, 
+    bring your sweet (G)loving, 
+    bring it on home to (C-F-C-G)me
+  [Verse2]
+    I know I (C)laughed, when you (G)left,
+    but now I (C)know I only hurt (F)myself
+    baby, (C)bring it to me
+    bring your sweet (G)loving
+    bring it on home to (C-F-C-G)me
+  [Verse3]
+    Ill give you (C)jewellery, and money (G)too, 
+    that aint (C)all, that aint all Ill do for (F)you
+    if you (C)bring it to me
+    bring your sweet (G)loving
+    bring it on home to (C-F-C-G)me
+  [Verse4]
+    you know Ill (C)always be your (G)slave
+    til Im (C)buried, buried in my (F)grave
+    oh honey, (C)bring it to me
+    bring your sweet (G)loving
+    bring it on home to (C-F-C-G)me
+  [Verse5]
+    one more thing, 
+    I (C)tried to treat you (G)right
+    but you (C)stayed out, stayed out at (F)night
+    but I forgive you, (C)bring it to me
+    bring your sweet (G)loving
+    bring it on home to (C-F-C-G)me
+  `},
+  {name: "Dock of the Bay", genre: "🎸soul", key: "G", chords: "G-B7-C-Am", tags: "",
+  lyrics: `
+  [Verse1]
+    (G)sittin in the mornin (B7)sun
+    Ill be (C)sittin when the evenin (A)come
+    (G)watching the ships roll (B7)in
+    Then I'll (C)watch em roll away (A)again
+  [Coro]
+    Im (G)sittin on the dock of the (E)bay
+    watching the (G)tide roll (E)away
+    ooo, Im just (G)sittin on the dock of the (A)bay
+    wastin (G-E)time
+  [Verse2]
+    I (G)left my home in (B7)Georgia
+    (C)headed for the Frisco (A)Bay
+    (G)I have nothing to (B7)live for
+    look like (C)nothin gonna come my (A)way
+  [Bridge]
+    (G)look (D)like, (C)nothings gonna (G)change
+    (G-D)Everything still (C)remains the (G)same
+    (G)I cant (D)do what (C)ten people (G)tell me to do... 
+    (F)So I guess Ill (D)remain the same, yes
+  `},
+  {name: "I Wouldnt Treat A Dog", genre: "🎸soul", key: "Gm", chords: "Gm-Dm-Cm", tags: "",
+  lyrics: `
+  [Verse1]
+    when I was (Gm)up (Dm7).....
+    youd always come (Cm7)around... 
+    when I (Gm)need a friend (Dm7).....
+    you could never be (Cm7)found... 
+    I got a (Gm)hole
+    where my (Dm7)heart used to (Cm7)be... 
+    I wouldnt (D7)treat a dog, (Cm7)no
+    the way you treated (Em)me
+  [Verse2]
+    when time was (Gm)good (Dm7).....
+    all of your lovin was the (Cm7)same...
+    when the (Gm)goin got rough (Dm7).....
+    you hardly knew my (Cm7)name... 
+    you locked me (Gm)out
+    and you (Dm7)threw away the (Cm7)key... 
+    I wouldnt (D7)treat a dog, no no (Cm7)nooo
+    the way you treated (Gm)me
+  [Bridge]
+    (D#)got me cryin for the love
+    that Im needin
+    (Gm)beggin like a dog for a bone
+    (D#)Although I spent all of my time pleading
+    you (D)turn you back
+    and you leave me alone
+  `},
+  {name: "Stand by Me", genre: "🎸soul", key: "A", chords: "A-F#m-D-E", tags: "",
+  lyrics: `
+  [Verse1]
+    when the (A)night has come, (F#m)..... 
+    and the land is dark, 
+    and the (D)moon is the (E)only light we'll (A)see... 
+    no I (A)wont be afraid oh, I (F#m)wont be afraid
+    just as (D)long as you (E)stand, stand by me
+  [Coro]
+    so darling, darling
+    (A)stand by me, oh (F#m)stand by me
+    oh (D)stand, (E)..... stand by me
+    stand by me
+  [Verse2]
+    if the (A)sky that we look upon, (F#m)..... 
+    should tumble and fall, 
+    or the (D)mountain should (E)crumble to the (A)sea... 
+    I wont cry, I wont cry
+    no, I (F#m)wont shed a tear
+    just as (D)long as you (E)stand, stand by me
+  `},
+    {name: "It aint over til its over", genre: "🎸soul", key: "C#", chords: "C#-C#maj7-C#7-F#-F#m", tags: "",
+  lyrics: `
+  [verse1]
+    (C#)..... here we (C#maj7)are, still (C#7)together,
+    we (F#-F#m)are,
+    (C#)..... so much (C#maj7)time, wasted (C#7)..... 
+    playing games with (F#-F#m)love
+  [coro]
+    (C#)..... so many tears Ive cried, 
+    (C#maj7)so much pain inside, 
+    (C#7)but baby, it aint over til its (F#-F#m)over
+    (C#)..... so many years weve tried
+    (C#maj7)to keep our love alive
+    (C#7)but baby, it aint over til its (F#-F#m)over
+  [verse2]
+    (C#)..... how many (C#maj7)times did we give (C#7)up
+    but we always worked things (F#-F#m)out
+    (C#)..... and all my doubts and fear kept me (C#maj7)wondering, yeah
+    if I'd (C#7)always, always be in (F#-F#m)love
+  `},
+  {name: "Dixieland Delight", genre: "🎸country 1,2swing", key: "G", chords: "G-D-Em-C", tags: "",
+  lyrics: `
+  [verse1]
+    rollin down a (G)backwoods, tennessee (D)byway, 
+    (Em)one arm on the (C)wheel, 
+    holdin my (G)lover, with the (D)other, 
+    a (Em)sweet soft southern (C)thrill, 
+    worked hard (G)all week, got a little (D)jingle, 
+    on a (Em)tennessee saturday (C)night, 
+    couldnt feel (G)better, Im (D)together, 
+    with my (Cm)dixieland (G)delight
+  [coro]
+    spend my (D)dollar, parked in a (Em)holler neath the mountain (C)moonlight, 
+    hold her (G)uptight, make a little (D)lovin, 
+    a little turtle (Em)dovin on a mason dixon (C)night, 
+    fits my (Em)life, oh so (D)right, my (Cm)dixieland delight
+  [verse2]
+    whitetail (G)buck deer, munchin on (D)clover, 
+    red-tail (Em)hawk sittin on a (C)limb, 
+    chubby old (G)groundhog, croakin (D)bullfrog, 
+    (Em)free as the feelin in the (C)wind, 
+    home grown (G)country girl, gonna give (D)me a whirl, 
+    on a (Em)tennessee saturday (C)night, 
+    lucky as a (G)seven, livin in (D)heaven, 
+    with my (Cm)dixieland (G)delight
+  `},
+  {name: "Whipe Out", genre: "🎸rock surfer", key: "G", chords: "G-C-G-D7",
+  lyrics: `
+    
+  `},
+  {name: "No Voy En Tren", genre: "🎸rock", key: "Am", chords: "Am-D | F-G-Am-D",
+  lyrics: `
+  [coro x2]
+    no voy en (Am)tren, voy en (D)avión
+    no (Am)necesito a nadie, (D)nadie alrededor
+  [verse1]
+    porque no hay (Am)nadie que mi piel (D)resista, 
+    porque no hay (Am)nadie que yo quiera (D)ver, 
+    no veo (Am)televisión ni las (D)revistas, 
+    no veo ya (Am)nada que no pueda (D)ser
+  [precoro]
+    yo soy de la (F)cruz (G)del (Am)sur, 
+    (D)soy el que cierra y el que (Am)apaga la luz, 
+    yo soy de la (F)cruz (G)del (Am)sur, 
+    aquí y en (E7)everywhere *CORO*
+  [verse2]
+    cuando era niño nunca fui muy (D)listo, 
+    tocaba el (Am)piano como un (D)animal, 
+    yo sé que (Am)algunos piensan que soy (D)mixto, 
+    pero yo (Am)tengo (D)personalidad
+  `},
+  {name: "Lamento Boliviano", genre: "🎸rock", key: "Em", chords: "Em-Bm-Am-Em-B7", tags: "", info: `Conner: guitar rhythm <br> Eric: bass`,
+  lyrics: `
+  [Verse1]
+    (Em)me quieren agitar, me incitan a gritar 
+    (Bm)soy como una roca palabras no me tocan
+    (Am)adentro hay un volcán, que pronto va a estallar
+    (Em)yo quiero estar (B7)tranquilo
+    (Em)es mi situación, una desolación
+    (Bm)soy como un lamento lamento boliviano
+    (Am)que un día empezó, y no va a terminar
+    (Em)y a nadie hace (B7)daño
+  [Coro]
+    (Em)oooo, io (Bm)ioooo, (Am)eeee (Em-B7)eeee
+  [Coro2, Steady Thump]
+    y yo estoy (Em)aquí, 
+    borracho y (Bm)loco,  
+    y mi (Am)corazón idiota,  
+    siempre (Em-B7)brillaráaaa, 
+    y yo te (Em)amaré,  
+    te amaré por (Bm)siempre,  
+    bena, no te (Am)peines en la cama,  
+    que los viajantes (Em)se van a (B7)atrasar    
+  `},
+  {name: "Maldito Duende", genre: "🎸rock", key: "Em", chords: "Em-C-D-B7", tags: "",
+  lyrics: `
+  [Verse1]
+    he (Em)oído que la noche, 
+    (C)es toda magia, 
+    (D)y que un duende te invita a (B7)soooñar... 
+    y sé que (Em)últimamente, 
+    (C)apenas he parado, 
+    (D)tengo la impresión de (B7)divagar 
+  [Pre Coro]
+    (Em)amanece tan pronto, 
+    (C)yo estoy tan solo, 
+    (D)no me arrepiento de lo de (B7)ayer... 
+    las (Em)estrellas te iluminan... 
+    y te (C)sirven de guía, 
+    te (D)sientes tan fuerte que piensas (B7)..... 
+    que nadie te puede (Em)tocar... 
+  [Coro]
+    uoooooo oooooo (Em)ooooo... 
+    uoooooo oooooo (C)ooooo... 
+    uoooooo oooooo (D)ooooo... 
+    uoooooo oooooo (B7)ooooo
+  [Verse2]
+    las (Em)distancias se hacen cortas... 
+    pasan (C)rápidas las horas
+    (D)este cuarto no para de (B7)menguar... 
+    y tantas (Em)cosas por decir
+    tanta (C)charla por aquí... 
+    si (D)fuera posible escapar de este (B7)lugar *to PreCoro*
+  `},
+  {name: "La Flaca", genre: "🎸rock", key: "Am", chords: "Am-E-Dm", tags: "", info: `Conner: guitar rhythm <br> Eric: bass`, 
+  lyrics: `
+  [Verse1, FingerPick]
+    (Am)en la vida (E7)conocí
+    mujer igual a la (D7)flaca
+    coral negro de la (C)Habana
+    (B7)tremendísima (Am)mulata, 
+    cien libras de piel y (E7)hueso
+    cuarenta kilos de (D7)salsa
+    y en la cara dos (C)soles
+    que (B7)sin palabras (F-F#-G)hablan *STOP* 
+    que sin palabras (Am)hablan (E7).....
+
+    (Am)la flaca duerme de (E7)día
+    dice que así el hambre (D7)engaña
+    cuando cae la (C)noche
+    baja a (B7)bailar a la (Am)tasca
+    y bailar y (E7)bailar
+    y tomar y (D7)tomar, 
+    una cerveza tras (C)otra
+    pero (E7)ella nunca (F-F#-G)engorda *STOP* 
+    pero ella nunca (Am)engorda (E7)..... *Back to Coro*
+  [Coro x2]
+    (F)por un beso de la (G)flaca
+    daría lo que (Am)fuera
+    por un beso (D)de ella aunque sólo uno (F)fuera..... 
+    por un beso de la (G)flaca, 
+    daría lo que (Am)fuera, 
+    por un beso (D)de ella aunque sólo uno (F-F#-G)fuera... *Stop*
+    aunque sólo uno (Am)fuera (E7).....
+  [Verse2]
+    (Am)mojé mis sábanas (E7)blancas
+    como dice la (D7)canción
+    recordando las (C)caricias
+    que me (B7)brindó el primer (Am)día, 
+    enloquezco de (E7)ganas de
+    dormir a su (D7)ladito
+    porque dios que esta (C)flaca a
+    mí me (B7)tiene (F-F#-G)loquito
+    a mí me tiene (Am)loquito (E7).....
+  [End x4]
+    (F)...... (G)Aunque solo uno (Am)fuera (D) Aunque solo uno (F)fuera
+  `},
+  {name: "Del Cairo a Paris", genre: "🎸rock slow", key: "Dm", chords: "Dm-C-A#-C | C-Dm-A#-C", info: `Conner: piano(bass n chords) n stomp pedal <br> Eric: metal guira chachacha`,
+  lyrics: `
+  [part 1]
+    del cairo a (Dm)paris, cruce por el (C)mar,
+    mientras que la (A#)luna se (C)asomaba (Dm)fugaz...
+    un siglo (Dm)paso, testigo (C)fue el sol,
+    amor a la (A#)egipcia, (C)sacrifica el (Dm)corazon...
+  [part 2]
+    busco (C)mas, un inst-(Dm)-ante mas,
+    como un (A#)rey, (C)..... (Dm)insaciable, 
+    frente al (C)dios que (Dm)vigila el viento, 
+    nos (C)juramos, (C)..... eterno (Dm)amor.
+  [part 3]
+    del cairo a (Dm)paris, cruce sin (C)pensar, 
+    que amor a la (A#)egipcia, es (C)dificil de (Dm)olvidar... 
+    un siglo (Dm)paso, testigo (C)fue el sol.
+    amor a la (A#)egipcia, (C)sacrifica el (Dm)corazon.
+  `},
+  {name: "Oye Como Va", genre: "🎸rock", key: "Am", chords: "Am-D7", info: `Conner: guitar rhythm <br> Eric: bass`, 
+  lyrics: `
+  [coro x2]
+    (Am)oye cómo va (D)mi ritmo (Am)bueno pa gozar (D)mulata
+  [transition or end x2]
+  (Am)o-oo-o-o-o-(D)o-o-
+  `},
+  {name: "Aint got Nobody", genre: "🎸rock", key: "Gm", chords: "Gm-C", info: `Conner: guitar rhythm <br> Eric: bass`, 
+  lyrics: `
+  [Coro]
+    I aint (Gm)got nobody (C)..... nobody to (Gm)depend on,  
+    no tengo a (C)nadie
+  `},
+  {name: "Amores Lejanos", genre: "🎸rock", key: "Am", chords: "Dm-A(A7)-Gm | G-Dm-G-A#-A", tags: "",
+  lyrics: `
+  [verse1]
+    esta (Dm)tarde no pasa nada, 
+    las (Am)calles parecen desiertas, 
+    (Dm)carmencita se fue de viaje, 
+    y (Am)quizás nunca más la (E)vea, 
+    yo (Dm)mirando por la ventana
+    el (Am)asfalto brillando perlas
+    los (Dm)lugares que frecuentaba
+    no me (Am)atraen ni me (E)interesan
+  [coro]
+    y aunque hoy no (F-G)estás, voy planific-(Am)-ando, 
+    una y otra (F-G)vez amores (Am)lejanos, 
+    y aunque hoy no (F-G)estás, te abro mis (Am)brazos, 
+    y yo me (F-G)quedaré aquí (Am)esperando
+  `},
+  {name: "Primavera", genre: "🎸rock", key: "Gm", chords: "Gm-Cm7-Gm-D7", info: `Conner: guitar rhythm <br> Eric: bass`, 
+  lyrics: `
+  [intro]
+  *Fingerpick and Guitar Lead, 2 times then all start*
+  [coro x2]
+    (Gm)como la (Cm)semilla, 
+    (Gm)lleva nueva (D7)vida
+    hay en (Gm)esta (Cm)primavera, 
+    (Gm)una nueva (D7)era
+  [verse1]
+    (Gm)lluvia de (Cm)sol, 
+    (Gm)como una (Cm)bendicion, 
+    (Gm)la vida renace (Cm)con su luz, 
+    (Gm)la primavera (Cm)ya llego, 
+    (Gm)todo es (Cm)asi, 
+    (Gm)regreso a (Cm)la raiz, 
+    (Gm)tiempo de (Cm)inquieta juventud, 
+    (Gm)en (Cm)primavera ya, 
+    (Gm)la tierra (Cm)negra se vuelve verde, 
+    (Gm)y las montanas y el desierto, 
+    (Gm)un bello (D7)jardiiiiiiin
+  `},
+  {name: "Black Magic Woman", genre: "🎸rock", key: "Dm", chords: "Dm-A7-Dm-Gm", info: `Conner: guitar rhythm <br> Eric: bass`, 
+  lyrics: `
+  [Verse1]
+    got a black magic (Dm)woman, 
+    got a black magic (A7)woman, 
+    Ive got a (Dm)black magic woman
+    got me so blind I cant (Gm)see, 
+    that shes a black magic (Dm)woman
+    and shes (A7)tryin to make a devil out of (Dm)me
+  [Verse2]
+    dont turn your back on me (Dm)baby, 
+    dont turn your back on me (A7)baby, 
+    yes, dont turn your (Dm)back on me baby
+    stop messin around with your (Gm)tricks, 
+    dont turn your (Dm)back on me baby
+    you (A7)just might pick up my magic (Dm)sticks
+  [Verse3]
+    got your spell on me (Dm)baby, 
+    got your spell on me (A7)baby, 
+    yes you got your (Dm)spell on me baby
+    turning my heart into (Gm)stone, 
+    I (Dm)need you so bad (A7)magic woman
+    I can't leave you (Dm)alone
+  `},
+  {name: "I Belong to You", genre: "🎸funk", key: "Bm", chords: "Bm-F#m", info: `Conner: guitar rhythm <br> Eric: bass`, 
+  lyrics: `
+  [Coro]
+    (Bm)I belong to you, and you you
+    (F#m)you belong to me too, 
+    you (Bm)make my life complete, 
+    you make me feel sooo (F#m)sweet
+  [End]
+  (Bm)I belong to you *STOP*
+  `},
+  {name: "Lucky", genre: "🎸funk", key: "Bm", chords: "Bm-D-F#m-E", info: `Conner: guitar rhythm <br> Eric: bass`, 
+  lyrics: `
+  [build up]
+    (Bm)weve come too (D)far to give (F#m)up who we (E)are
+    so (Bm)lets raise the (D)bar and our (F#m)cups to the (E)stars
+  [Coro]
+    (Bm)were up all night til the sun
+    (D)were up all night to get some
+    (F#m)were up all night for good fun
+    (E)were up all night to get lucky
+    (Bm)were up all night to get lucky
+    (D)were up all night to get lucky
+    (F#m)were up all night to get lucky
+    (E)were up all night to get lucky
+  `},
+    {name: "Give me one Reason", genre: "🎸funk", key: "F#", chords: "F#-B#-C#", info: `Conner: guitar rhythm <br> Eric: bass`, 
+  lyrics: `
+  [coro]
+    (F#)give me one reason to stay here (B#).....
+    and Ill (C#)turn right (B#)back (F#)around, 
+    (F#)give me one reason to stay here (B#).....
+    and Ill (C#)turn right (B#)back (F#)around, 
+    said I dont (C#)wanna leave you lonely (B#).....
+    you gotta make me change my (F#m)mind
+  [verse1]
+    (F#)baby, I got your number (B#).....
+    oh, and I know that you got (F#)mine, 
+    you (F#)know that I called you (B#)..... I called too many (F#m)times
+    You can (C#)call me baby, (B#)..... you can call me anytime
+    but you got to (F#)call me
+  `},
+  {name: "Lo Que Me Gusta Mi", genre: "🎸funk", key: "E", chords: "E-B-A | G#m-Gm-F#m-A-E",
+  lyrics: `
+  [Verse1]
+    (E)cuando yo estoy (B)pensando en ti
+    (A)amor es lo que más (E)fuerte sale de mí
+    (E)por eso yo siempre vivo (B)tan feliz
+    (A)pues tú eres lo que yo más (E)quiero para mí
+    (E)cuando yo me voy para (B)medellín
+    en cada montaña yo (A)dibujo trozos de ti
+    (E)y si yo me voy para (B)bogotá, también allá
+    (A)esa sabana bella de (E)ti me hace recordar
+  [Verse2]
+    y he (G#m)recorrido el (Gm)mundo (F#m)entero y jamás
+    te digo que he (A)visto una cosa más (E)bella que tu mirar
+    te digo que he (G#m)visto la (Gm)luna de (F#m)noche hablar con el mar
+    pero jamás he (A)visto una cosa más (E)bella que tu mirar
+  [Verse3]
+    y es que (E)son tus ojos tu sonrisa y tu (B)boca
+    y tu carita de (A)coqueta a la primero lo que me (E)gusta a mí
+    y (E)soy yo quien se pone siempre como un (B)loco
+    cuando me miras (A)poco a poco de la manera que me (E)gusta a mí
+  `},
+  {name: "Adouma Agua Fresca", genre: "🎸funk", key: "Gm", chords: "Gm-Cm7", info: `Conner: guitar rhythm <br> Eric: bass`, 
+  lyrics: `
+  [Verse1 x2]
+    adouma (Gm)duma duma duma duma (Cm7)eh
+  [Coro x2]
+    Agua (Gm)Frescaaaaaa aaa (Cm7)aaaa
+  `},
+  {name: "Maria Maria", genre: "🎸funk", key: "Am", chords: "Dm-Am-G-E",
+  lyrics: `
+  [verse1]
+    (A7)maria, (Dm)mariaaaa, 
+    she remind me of a west side (Am)story, 
+    growin up in spanish (G)harlem... (E)..... 
+    she livin a life just like a movie (Am)star
+    (A7)maria, (Em)maria, 
+    she fell in love in east (Am)la
+    to the sounds of the (G)guitar... (E).....
+    played by carlos (Am)santana
+  [verse2]
+    stop the (Am)lootin, stop the shootin, 
+    (G)pickpockin on the corner, 
+    see as the (F)rich is getting richer, 
+    the (G)poor is getting poorer, 
+    se mira (Am)Maria on the corner, 
+    thinkin of (G)ways to make it better, 
+    in my (F)mailbox theres an eviction letter, 
+    (G)signed by the judge said, see you later, 
+    (Am)ahora vengo mama chula mama chula x4
+  `},
+  {name: "Lambada", genre: "🎸funk", key: "Am", chords: "x2 Am-F-G-C x2 Dm-Dm-G-Am",
+  lyrics: `
+  [Verse1 x2]
+    (Am)llorando se fue (F)y me dejo (G)solo sin su (C)amor
+  [Verse2 x2]
+    (Dm)sola estará, recordando el amor, que el (G)tiempo no pudo (Am)borrar
+  [Verse3 x2]
+    (Dm)sola estará, recordando el amor, que un (G)día no supo (Am)cuidar
+  `},
+  {name: "Feliz Navidad", genre: "🎸season", key: "G", chords: "G-A-D  |  G-A-D-Bm", 
+  lyrics: `
+  [Coro x2]
+    feliz (G-A)navidad
+    feliz (D)navidad
+    feliz (G)navidad
+    prospero (A)año y (G)felicidad *STOP*
+  [Part2 x2]
+    I wanna wish you a (G)merry christmas (A).....
+    I wanna wish you a (D)merry christmas (Bm).....
+    I wanna wish you a (G)merry christmas
+    from the (A)bottom of my (D7)heart
+  `},
+  {name: "Tu Recuerdo", genre: "🎸latin other", key: "Bm", chords: "Capo2) Am-G-C-Dm-E7 | Am-G-F—E", info: `Conner: guitar (fingerpick) <br> Eric: shaker`,
+  lyrics: `
+  [Verse1]
+    (Bm)tu (A-D)re-cuerdo sigue (Em)aqui, como un (F#)aguacero
+    (Bm-A)rom-pe (D)fuerte sobre (Em)mi, pero a (F#)fuego lento
+    (Bm-A)qu-ema y (D)moja por (Em)igual, y ya (F#)no se lo que (Bm-A-D)pensar
+    si tu (Em)recuerdo me hace (F#)bien o me hace (Bm)mal
+  [Verse2]
+    (Bm)un beso gris, (A)un beso blanco
+    (G)todo depende del (F#)lugar
+    (Bm)que yo me fui, (A)eso esta claro
+    (G)pero tú recuerdo (F#)no se va
+    (Bm)siento tus labios en las (A)noches de verano
+    (G)ahi estan (F#)cuidandome en mi (Bm-A)soledad
+    pero a (G)veces me quieren (F#)matar
+  `},
+  {name: "La Bamba", genre: "🎸latin other", key: "C", chords: "C-F-G", info: `Conner: guitar rhythm <br> Eric: bass`,
+  lyrics: `
+  [Coro]
+    para bailar la (C-F-G)bamba, 
+    para bailar la (C)bamba
+    se (F-G)necesita una (F)poca de (C-F-G)gracia, 
+    una poca de (C)gracia, 
+    pa (F)mi, pa (G)ti, (F)arriba, y (C-F-G)arriba
+  [Coro2]
+    (C-F)bamba (G-F)bamba, (C-F)bamba (G-F)bamba (G-F).....
+  `},
+];
+
+const Extra = [
+{name: "üsküdar", genre: "middleeast", key: "", chords: "", tags: "",
+  lyrics: `
+  [Verse1]
+    Üsküdara gider İken aldı da bir yağmur *x2*
+    kâtibimin setresi uzun eteği Çamur *x2*
+`},
+{name: "Nour El Ein", genre: "middleeast", key: "", chords: "", tags: "",
+  lyrics: `
+  [Verse1]
+  حبيبي يا نور العين يا ساكن خيالي
+عاشق بقالي سنين ولا غيرك في بالي
+
+`},
+  {name: "sastanàqqàm", genre: "sahara bbbk", key: "Gm", chords: "Gm", tags: "",
+  lyrics: `
+  [Verse1]
+    (Gm)ténéré sastanàqqàm
+    indek tifut nimidiwàn
+    tiled tasnit, tiled achàkwa
+    (Gm)aynayàn wàràn issindjày
+    tissanàd tabaràt
+    ssàkkoz itran dàgh ichinnawàn
+  `},
+  {name: "Imidiwan Mahitinam", genre: "sahara 3/6", key: "Gm", chords: "Gm-Cm", tags: "",
+  lyrics: `
+  [Coro]
+    (Gm)imidiwan mahitinam, imidiwan mahitinam, (Cm)tasl-bra tasl-namana makata-fafuzeein
+  `},
+  {name: "Midiwan", genre: "sahara 3/6", key: "D", chords: "D-A-Em", tags: "",
+  lyrics: `
+  [Coro]
+    (D)imidiwona, imidiwona (A)imidiwona, (Em)imidiwona (D)imidiwona
+  `},
+  {name: "Como el Auga", genre: "flamenco", key: "", chords: "", tags: "",
+  lyrics: `
+  [Verse1]
+    
+  [Coro]
+    
+  `},
+{name: "Gitana", genre: "flamenco", key: "Am", chords: "4) Am-G-F-E", tags: "",
+  lyrics: `
+  [Verse1]
+    (Am)por si algun día me (G)muero, 
+    (F)y tú lees este (E)papel
+    que (Am)sepas lo que te (G)quiero, 
+    (F)aunque no te vuelva a (E)ver
+    (Am)gitana, gitana, (Em)gitana, gitana
+    tu pelo, tu (F)pelo, tu cara, tu (E)cara... 
+    sé que nunca fuiste (F)mia
+    (D)ni lo has sito ni lo (G)eres
+    (C)pero de mio (F)corazon
+    (D)un pedacito tú (G)tienes, tú tienes, tú (F)tienes, tú (E)tienes
+  [Verse2]
+    (Am)porque sabes que te (G)quiero
+    no (F)trates tu de (E) alabarme tú,
+    (Am)pues lo mismo que te (G)quiero
+    soy (F)capaz hasta de (E)odiarte yo
+  [Change]
+    (A#)y tendo celos del viento porque acaricia tu (F)piel... 
+    de la luna a la miras
+    (A7)del sol porque (Dm)calienta
+    (D)yo tengo celos del (G)agua (F)y del peinecito que a ti te (E)piena
+  [Coro2 x2]
+    y con los (Am)celos, los (Em)celos, los celos, los celos
+    a mi el (Dm)corazon me arde, me (E)arde
+  [Verse3]
+    (Am)las palabras son de aire, 
+    y van al (Dm)aire...  
+    mis lágrimas son agua ay
+    y van al (C)mar... 
+    cuando un amor se olvida
+    sabes (A7)chiquilla donde (Dm)va
+    sabes (F)chiquilla donde (E)va
+  [Verse4]
+    (Am)sin mirante yo te miro
+    sin (D)sentirte yo te (G)siento
+    sin (C)hablarte yo te (F)hablo
+    sin (Dm)quererte yo te (E)quiero
+  `},
+  {name: "Aye Que Dolor", genre: "flamenco", key: "Dm", chords: "Dm-C-A#-A", tags: "",
+  lyrics: `
+  [verse1]
+    (A)hiciste la maleta, ay, sin decirme (A#)adiós *ay, qué dolor*
+    tu amor me abandon-(C)-ó, *ay, qué dolor*
+    y solo me (A#)dejó, ay, *qué dolor*
+  [coro x2]
+    ay qué (C)dolor, ay qué (A#)dolor, ay qué (A)dolor
+  [verse2]
+    (A)por más que me pregunto, 
+    no encuentro la (A#)razón *ay, qué dolor*
+    para dejarme (C)así *ay, qué dolor*
+    sin una explica-(A#)-ción *ay, qué dolor*
+  [verse3]
+    (Dm)contigo todo lo tenía nada me faltaba, nada me fal-(C)-taba
+    contigo todo lo tenía ya no tengo nada, ya no tengo (A#)nada
+    perdido voy por este mundo sin saber a dónde, como un vaga-(A)-bundo
+  `},
+  {name: "Volare", genre: "flamenco", key: "", chords: "", tags: "",
+  lyrics: `
+  [Verse1]
+    (E)pienso que un sueño parecido no volverá (F#m)más...
+    y me pintaba las manos y la cara de (E)azul...
+    y de improviso el (G#m)viento rápido me (F#m)llevó
+    y me hizo (C#m)volar en el cielo (B7)infinito
+  [Coro]
+    (F#m)volaré, oh, (B7)oh
+    (E)cantaré, oh, oh, oh, (C#m)oh...
+    nel (F#m)blu (B7)dipinto di (E)blu...
+    (F#m)felice di (B7)stare (E)lassu
+  [Change]
+    y (C#m)volando, volando feliz
+    yo me encuentro más (G#m)alto, más alto que el sol...
+    (G#)mientras el mundo se aleja despacio de (C#m)mí... 
+    una (Am)música dulce tocada sólo para (G-B7)mí
+  `},
+  {name: "A Mi Manera My Way", genre: "flamenco", key: "E", chords: "", tags: "",
+  lyrics: `
+    [Verse1]
+      yo (E)se que no (G#m7)vendrás
+      por eso (Bm7)ya tanto la (C#7)olvido
+      (F#m)dejar un nuevo amor
+      tanto mejor (B7)ay como el (E)mío, 
+      dejaaar y la (E7)vive
+      ay en este (A)mundo de (A7)tristeza
+      (E)dejar y la (F#m)vive
+      (B7)ay mi (A--E)maneee-ra
+    [Verse2]
+      yo quiero (E)ser hay nada (E7)más
+      (A)prefieraré y (A7)recordar,
+      un nuevo (F#m)amor tanto (B)mejor
+      quise (G#m7)olvidarte toda (C#m7)dejo, 
+      qisiera (F#m)vivir hay nada (B7)más
+      ay mi (A--E)maneee-ra *spanish guitar solo*
+  `},
+  {name: "No Volvere", genre: "flamenco", key: "Em", chords: "Em-D-C-G", tags: "",
+  lyrics: `
+  [verse1 2x]
+    amor (Em)mio, amor mio por favor
+    tu no te (D)vas, yo cuentare a las (C)horas
+    que (G)nadia hoy
+[verse2 2x]
+    (Em)vuelve, no volvere no volvere no (D)volvere, 
+    no quiere (C)recordan, no queire (G)recordan
+  `},
+  {name: "Porompomero", genre: "flamenco", key: "Am", chords: "Am-E | Am-G-F-E", tags: "",
+  lyrics: `
+  [Verse1]
+    (Am)el trigo entre todas las flores,
+    ha elegido a la (E)amapola, 
+    y yo elijo a mi Dolores
+    Dolores, Lolita, (Am)Lola
+  [Coro x2]
+    ay porompom (Am)pón, poropo, porompom (G)pero, peró, 
+    poropo porom (F)pompero, peró,
+    poropo porompom (E)pon
+  [Verse2]
+    (Am)a los chicos de mi cara...  
+    ses voy a poner un (E)candao... 
+    por no ver las cosas raras.. 
+    de ese niñato (Am)chalao...
+    por no (Am)*Hithit*, por no ver las cosas (G)raras de esé, 
+    de ese niñato (F)chalao que te, 
+    que te apunta y no (E)dispara
+  `},
+  {name: "Cumbiamba", genre: "flamenco", key: "Gm", chords: "D-Gm-F-D#-D", tags: "",
+  lyrics: `
+  [coro x2]
+    dame tu (D)cumbia, dame tu (Gm)porro, (F)dame tu (D#-D)merecumbé 
+  [verse1]
+    (D)con tus mujeres (Gm)bonitas, con tu (D)paisaje (Gm)precioso, 
+    con tu (D)aguardiente (Gm)sabroso, (F)quiero (D#)gozar en (D)colombia
+  [verse2]
+    echa un (D)pasito pa (Gm)lante, dale (D)sabor al (Gm)montuno
+    caliente (D)como (Gm)ninguno, (F)para que (D#)goce (D)bastante
+  [verse3]
+    con el (D)sabor de tus (Gm)costas, y el (D)juego de tus (Gm)mujeres
+    hay en el (D)mundo (Gm)placeres, (F)como en tu (D#)tierra (D)sabrosa
+  [verse3]
+    ya con (D)esta me (Gm)despido, colombia (D)de mis (Gm)amores, 
+    con un (D)sendero de (Gm)flores, (F)de tu (D#)tierra tan (D)divina
+  `},
+  {name: "El Muerto Vivo", genre: "flamenco slap", key: "Cm", chords: "Cm-G", tags: "",
+  lyrics: `
+  [Verse1]
+    a mi amigo blanco (Cm)herrera le pagaron su (G)salario
+    y sin pensarlo dos veces, salió para (Cm)malgastarlo,
+    una semana de juerga y perdió el (Fm)conocimiento,
+    como no volvía a su (Cm)casa (G)toooodos le daban por (Cm)muerto,
+  [Coro1 x2]
+    y no estaba (G)muerto nono y no estaba (Cm)muerto nono,
+    y no estaba (G)muerto nono, estaba tomando (Cm)cañas lelelelei
+  [Verse2]
+    pero al cabo de unos (Cm)días de haber (G)desaparecido
+    encontraron uno muerto, un muerto muy (Cm)parecido,
+    le montaron un velorio y le rezaron la (Fm)novena,
+    le perdonaron sus (Cm)deudas y lo (G)enterraron con (Cm)pena
+  [Coro2 x2]
+    y no estaba (G)muertooo estabá tomando (Cm)cañas
+  `},
+  {name: "Quiero Saber", genre: "flamenco", key: "", chords: "", tags: "",
+  lyrics: `
+  [Verse1]
+    (D#maj7)quiero saber...
+    que lo me (D7)importa de ti...
+    (DbMaj7)y conocer... 
+    a un (Cm7)nuevo amor...
+    y tu (A#m7)forma de ser...
+    no llega (G#)comprender
+    y tus (C)ojos ya llorando un día
+    para (G)mí
+  [Coro]
+    (D#maj7)Dao, (G#maj7)daidu-di didudooo, (D#maj7)daidudi-dai dudo, dadadi (G#maj7)dadudo, (Gm7)dadidudo
+  [Verse2]
+    (G#maj7)Corre cada noche voy pensando 
+    como (Gm7)pienso en ti...
+    (G#maj7)corre cada noche voy pensando 
+    como (Gm7)pienso en ti...
+    el (G#maj7)amor que sera (Gm7)recordando ayer
+  `},
+  {name: "Calaverada", genre: "flamenco slow", key: "Bm", chords: "2) Bm-Em-A7-D", tags: "",
+  lyrics: `
+  [Coro x2]
+    amor (Bm)vivir, amor llorar
+    un dia (Em)suelta de felicidad
+    si yo no (A7)te encuentro yo solo pol la (D)calle
+  [Verse1]
+    (Bm)yo quisiera hoy saber, 
+    eres (Em)todos como amigos, 
+    yo (A7)quisiera hoy saber, 
+    el (D)motivo que tu tienes
+  [Lai Lo Lai... x2]
+    (Gmaj7)Lailo Lailo Lailo Lailo Lailo Lailo Lailo Lai... 
+    (F#m)Lailo Lailo Lailo Lailo Lailo Lailo Lailo Lai... 
+    (Em)Lailo Lailo Lailo Lailo Lailo Lailo Lailo Lai...
+    Lailo (A7)Laaaailo Laaaailo (D)Laiiii
+  `},
+  {name: "Tristesa", genre: "flamenco", key: "Em", chords: "1) Em-D-C-B7", tags: "",
+  lyrics: `
+  [Intro]
+  (C-B7-C-B7)Guitar Riff
+  [Part1]
+    (Em)triste, ay ni llorando del amor que para (Am)heroe...
+    (C)triste, llamar (B7)héroe... voy a sufrido
+    voy a llorar por si te (Em)amado...
+    *SLAP* (D)yyyyy (C)yyyyyyyyy (B7)yyyyyyy..... 
+    (Em)yyyyy (D)yyyyy (C)yyyyyyyyy (B7)yyyyyyy.....
+  [Part2]
+    ya aprende la (Em)ley que hémos pasado... se (Am)elige...
+    ya aprende que el (D)amor no(C)puede se (B7)elige..... 
+    todo (Em)hay que todo hay que matar o (D)no
+    todo hay que todo hay que matar o (C)no
+    todo hay que todo hay que matar o (B7)no
+  [Part2]
+    (B7)Alliiiiiiii pasa la (Em)pena.....
+    ay no le quería a (D)Maria, usado.....
+    ay no le quería a (C)Maria, usado.....
+    ay porque te (D)aaa (C)aaa (B7)mo.....
+    (B7)Mariiiii (C)aaa, tu cara (D)boniiii (C)iiiii (B7)iiita.....
+    (B7)Mariiiii (C)aaa, tu cara (D)boniiii (C)iiiii (B7)iiita.....
+    ay tus (C)cabellos, tu cara (B7)bonita...
+    ay tus (C)cabellos, tu cara (B7)bonita...
+  [End x2]
+    *Slap* (Em)lay lolaylolaylo(D)lay, lolaylolaylo(C)lay, lolaylolaylo(B7)lay
+  `},
+  {name: "Djobi Djoba", genre: "flamenco", key: "", chords: "", tags: "",
+  lyrics: `
+  [Intro x2]
+    (F-Am-Gm-C7)Guitar Riff
+  [Verse1]
+    ay (A#maj7)niña..... 
+    yo te encuentro..... 
+    solita por la (Am)calle.....  
+    yo me siento (Gm)enamorado..... 
+    yo me (C7)siento triste (F)solo
+  [Coro x2]
+    djobi (A#maj7)djoba, cada dia yo te quiero (Am)mas 
+    djobi djobi djobi djoba, cada dia te quiero (Gm)mas 
+    djobi djobi djobi djoba,  
+    cada (C)dia yo te quiero (Fmaj7)mas 
+  [Verse2]
+    que lo me (A#maj7)importa..... 
+    que lo distancia ya (Am)nos separa..... 
+    yo me contento me (Gm)retiro..... 
+    y no me (C7)diga ay para (F)guarja ja 
+  `},
+  {name: "Un Amor", genre: "flamenco", key: "Em", chords: "2) Em-Am-D-G-C-Am-B7", tags: "",
+  lyrics: `
+  [Verse1]
+    (Em)un amor..... 
+    un amor (Am)vivi..... 
+    (D)llorando y me (G-Em)decía..... 
+    las palabras de (Em)dios
+    llorando por (Am-B7)tiiiiii..... 
+    es con (Em)amor..... 
+    Un amor..... 
+    Un amor (Am)vivi..... 
+    (D7)llorando y (G-Em)atormentado..... 
+    Las palabras de dios..... 
+    llorando por (Am-B7)tiiiiii.....
+    Es con (Em)amor *Stop*
+  [Coro]
+    ay para ya (Am)vivir
+    a junta (D7)ti
+    me (G)enamore yo de (C)ti
+    y sin tus (Am)besos yo no (B7)puedo, 
+    vivir y recor-(Em)-dar
+  `},
+  {name: "Quiero Ser Libre", genre: "flamenco", key: "Am", chords: "E-F | G-F-E", tags: "",
+  lyrics: `
+  [Verse1]
+    que bueno he sido pa (F)ti
+    y que (G)mal te (F)estás (E)portando...
+    me paso dia tras (F)día...
+    en (G)esta (F)celda (E)llorando... 
+    sin saber si tú estás (F)viva... 
+    sin (G)saber si (F)te han (E)matao... 
+    sin saber si tú estás (F)viva... 
+    sin (G)saber si (F)te han (E)matao... 
+  [Coro x2]
+    (E)libre libre quiero (F)ser... 
+    quiero (G)ser (F)quiero ser (E)libre
+  [Verse2]
+    pero yo sé que es (F)mentira... 
+    por que (G)tu la (F)estas (E)gozando... 
+    el que se pudre soy (F)yo... 
+    en pensar como paso... 
+    la (G)ira me (F)esta (E)cegando... 
+    como (F)pude matar (E)yo
+  [Verse3]
+    y no tienes el (F)valor... 
+    de venir un (E)dia a verme... 
+    porque todos mis (F)amigos... 
+    unos van y otros (G)vienen... 
+    y yo sigo aqui (Dm)metido... 
+    a dios le pido la (E)muerte... 
+  `},
+  {name: "Te voy a comprar un regalo", genre: "flamenco", key: "", chords: "", tags: "",
+  lyrics: `
+  [Coro]
+
+  `},
+  {name: "Baila Me", genre: "flamenco", key: "G", chords: "G-Am-D", tags: "",
+  lyrics: `
+  [Verse1]
+    cuando sei maria (G)dolores, 
+    cuando sei quei mal (Am)damore, 
+    cuando sei quei mal a (D)su vera, 
+    cuando sei me va al (G)dottore
+  [Coro]
+    baila, baila, baila, baila
+    baila, baila, baila (Am)me
+    este rumba a ta gitana
+    que yo siempre (G)cantaré
+    pero yo siempre cantaré
+    pero yo siempre (Am)cantaré
+    este rumba a ta (D)gitana
+    que yo siempre (G)cantaré
+  `},
+  {name: "Mi Vida", genre: "flamenco", key: "Em", chords: "4) C-B7", tags: "",
+  lyrics: `
+  [Verse1]
+    (C)que, porque ya esta (B7)amor vendra,
+    que ya ri-(C)-cordar non es possible,
+    nuestro (B7)amor que olvidar,
+    (C)sei, que de nuestra amor (B7)pensar,
+    quel (C)motivo tu tendras,
+    para (B7)corra d'olvidar,
+    oy mi (Em)nina, no lo puede (Am)ser,
+    con (D)locura, que no ya (B7)llegar comprender l'amor,
+    oy mi (Em)nina, por quel mo-(Am)-tivo sera,
+    que (D)recuerdo, que ya el (B7)motivo sin ta mas,
+  [Coro x4 palm hits]
+    (C)lloras lloras lloras,
+    (B7)lloras lloras llorando
+  `},
+  {name: "Con Tus Besos", genre: "corridos slofngr", key: "F#m", chords: "F#m-E-Bm-C#", tags: "",
+  lyrics: `    
+  [verse1]
+    (F#m)con tus besos me haces sentir (E)bien, 
+    simplemente me encanta tu forma de (Bm)ser, 
+    cuando caminas matas a cualquier (C#)hombre, 
+    y yo contigo neta sí me (F#m)enamoré, 
+    me traes bien loco todo el día pensándo-(E)-te, 
+    me atrevería a llevarte banda tal (Bm)vez, 
+    y escribirte canciones, gritar tu (C#)nombre... 
+    (F#m)se me hace que ya tengo con (E)quién, 
+    vivir la vida, recorrerla constan-(Bm)-te, 
+    conocer lugares románticos (C#)también, 
+    llevarte a luna o bajártela (F#m)dónde, 
+    tú quieras m'hija sabes por ti (E)pelearé, 
+    seré el hombre que te de lo que tú (Bm)desies, 
+    yo sé muy bien con verte que tú me (C#)quieres, **hay mas letra**
+  `},
+  {name: "La Durango", genre: "corridos slofngr", key: "A#", chords: "A#m-D#m-Fm", tags: "",
+  lyrics: `    
+  [verse1]
+    (D#m)después de (Fm)tanto (A#m)chingarle ya me superé, 
+    (D#m)..... y no me (Fm)agüito, (A#m)gracias a dios estamos bien, 
+    (D#m)..... y si pregun-(Fm)-tan cómo (A#m)es que me ha ido tan bien, 
+    (D#m)..... no se me (Fm)asusten, con (A#m)esfuerzo me lo gané
+  [verse2]
+    (D#m)morritas monta-(Fm)-das en (A#m)la durango y van bien cake, 
+    (D#m)los vidrios son (Fm)negros, no (A#m)me caen bien los metiches, 
+    (D#m)yo siempre lo he (Fm)dicho y (A#m)se los repetiré, 
+    aquí el que se (Fm)agüita pierde, así que (A#m)nunca se me agüite **hay mas letra**
+    
+  `},
+  {name: "Ella Baila Sola", genre: "corridos", key: "C#", chords: "C#-D#-Cm-Fm-D#", tags: "",
+  lyrics: `    
+  [verse1]
+    (C#)compa, qué le parece esa (D#)morra (Cm)la que anda bailando (Fm)sola me gus-(D#)ta pa mí, 
+    (C#)bella, ella sabe que está (D#)buena (Cm)que todos andan (Fm)mirándola cóm-(D#)-o baila, 
+    me (C#)acerco y le tiro todo un (D#)verbo (Cm)tomamos tragos sin (Fm)peros solo (D#)tentación
+  [verse2]
+    le (C#-D#)dijeee, voy a (Cm)conquistar tu (Fm)familia, que en unos días vas a (D#)ser mía, 
+    me (C#-D#)dijooo, que estoy muy (Cm)loco pero le (Fm)gusta, que ningún vato como yo (D#)actúa, 
+  [verse3]
+    (C#)no soy un vato que tiene (D#)varo (Cm)pero hablando del (Fm)corazón te cumpl-(D#)-o todo, 
+    me (C#)agarró pegadito de su (D#)mano (Cm)mi compa ni se la (Fm)creyó que al (D#)pasar fui yo, 
+    su (C#-D#)cuerpooo juro por (Cm)dios que era tan (Fm)perfecto su cinturita como (D#)modelo, 
+    sus (C#-D#)ojooos desde el (Cm)principio me (Fm)enamoraron a ella le gusto y a mí me (D#)gusta
+  `},
+  {name: "Aqui", genre: "regaton", key: "D", chords: "D-G", tags: "",
+  lyrics: `
+  [verse1]
+    el (D)hombre esta acercandose hacia
+    el encuentro con la (G)frontera
+    en (D)cambio una decision
+    la puerta abierta de una nueva (G)era
+  [verse2]
+    el (D)ruido ambiente y soledad
+    de la ciudad nos aislan de (G)todo, 
+    por eso (D)comenze a escarbar para
+    encontrar los mil y un (G)tesoros
+  [verse3]
+    (D)lamento en mi corazon
+    pues mi imaginacion es (G)verdadero
+    (D)mientras el tiempo anuncia que
+    por un segundo casi fui un (G)señuelo
+  [pre coro]
+    (Em)y el mundo que gira al reves, 
+    pretende que me encienda en el
+    (A)quemando mis ideas
+    (Em)cuando hasta un ciego puede ver
+    que nos callamos sin saber
+    (A)perdiendonos la vueeeeeelta
+  [coro x2]
+    (D)aqui tengo el presentimiento
+    (G)aqui nada voy a arrastrar desde (Em)aqui
+    no voy a (A)vivir
+  `},
+  {name: "Subeme La Radio", genre: "regaton", key: "Am", chords: "A-F-C-G", tags: "",
+  lyrics: `    
+  [coro x2]
+    súbeme la (Am)radio que esta es mi canción,
+    siente el (F)bajo que va subiendo,
+    tráeme el (C)alcohol que quita el dolor,
+    hoy vamos a (G)juntar la luna y el sol
+  [verse1]
+    ya no me importa (Am)nada,
+    ni el día ni la (F)hora,
+    si lo he perdido (C)todo,
+    me has dejado en las (G)sombras,
+    te juro que te (Am)pienso,
+    hago el mejor (F)intento,
+    el tiempo pasa (C)lento,
+    y yo me voy (G)muriendo,
+  [verse2]
+    si llega la (Am)noche y tú no contestas,
+    te juro me (F)quedo esperando a tu puerta,
+    vivo pas-(C)-ando las noches en vela,
+    y sigo cant-(G)-ando bajo la luna llena
+  `},
+  {name: "Para No Verte Mas", genre: "🎸salsa", key: "C", chords: "C-Em-Dm-G", tags: "",
+  lyrics: `
+  [verse1]
+    cuando no (C)tengas dónde ir, 
+    cuando te (Em)sangre la nariz, 
+    cuando te (Dm)duela la cabeza, 
+    y se (G)termine esa cerveza, 
+    cuando las (C)alas de tu avión, 
+    se (Em)derritan sin razón, 
+    y el cáncer (Dm)de la soledad, 
+    te haya (G)matado en la ciudad
+  [coro]
+    yo (C)romperé tus fotos, 
+    yo (Em)quemaré tus cartas, 
+    para no (Dm)verte más, 
+    para no (G)verte más
+  [verse2]
+    y si (C)logras sobrevivir, 
+    al (Em)refucilo de maldad, 
+    (Dm)preguntarás en dónde estás, 
+    (G)preguntarás qué te pasó, 
+    me voy a (C)poner a fumar, 
+    sin (Em)preocuparme nada más, 
+    total ya (Dm)es tarde pa volver, 
+    total ya (G)es tarde pa soñar
+  `},
+  {name: "Se me olvidó otra vez", genre: "🎸salsa", key: "A", chords: "A-E | D-A-E", info: ``, 
+  lyrics: `
+  [verse 1]
+    probablemente (A)ya, de mí te has (E)olvidado, 
+    y mientras tanto yo, te seguiré (A)esperando, 
+    no me he querido ir, para ver si algún (E)día, 
+    que tú quieras volver, me encuentres (A)todavía, 
+    por eso, aún (A)estoy, en el lugar de (E)siempre, 
+    en la misma ciudad, y con la misma (A)gente, 
+    para que tú al volver, no encuentres nada (E)extraño, 
+    y sea como ayer, y nunca más (A)dejarnos, 
+  [verse 2]
+    probablemente (D)estoy, pidiendo (A)demasiado, 
+    se me olvidaba (E)que, ya habíamos (A)terminado, 
+    que nunca (D)volverás, que nunca me (A)quisiste, 
+    se me olvidaba (E)que, que sólo yo te (A)quise
+  `},
+  {name: "El Dia De Mi Suerte", genre: "🎸salsa", key: "Cm", chords: "Cm-G (Fm)", info: `Conner: piano (tresillo)`, 
+  lyrics: `
+  [Coro x2]
+    (Cm)pronto llegará
+    el día de mi (G)suerte
+    sé que antes de mi muerte
+    seguro que mi suerte (Cm)cambiará
+  [Verse1]
+    (Cm)cuando niño mi mamá se murió, 
+    solito con el (G)viejo me (Cm)dejó, 
+    me dijo solo nunca quedarás, 
+    porque él no (G)esperaba una (Cm)enfermedad, 
+    a los diez años (Fm)papá se murió, 
+    se fue con mamá (Cm)para el más allá, 
+    y la gente (G)decían al verme llorar, 
+    no llores nene que tu suerte cambiará
+    y ¿cuándo será?
+  `},
+  {name: "El Cantatne Del Ghetto", genre: "🎸salsa", key: "", chords: "", info: ``, 
+  lyrics: `
+  [verse 1]
+
+  `},
+  {name: "Lo Mio Es Amor", genre: "🎸salsa", key: "F#m", chords: "F#m-A-D-Bm-A", info: ``, 
+  lyrics: `
+  [verse 1]
+    tú eres (F#m)más algo más mucho (A)más que una simple (D)canción de amor, 
+    que un (Bm)trozo de luna bailando desnuda en mi (A)habitación (G#-C#7).....
+    un (F#m)beso en la espalda (A)quemándome el alma y el (D)corazón, 
+    tú eres (G#)más, que esta (C#7)canción, 
+    tú me (F#m)quitas la calma con (A)esa mirada (D)llena de amor, 
+    si (Bm)no estoy contigo me siento perdido no (A)sé quién soy, (G#-C7)...
+    tú (F#m)eres mi amante mi (A)sueño constante mi (D)inspiración, 
+    tú eres (G#)más, que esta (C#7)canción
+  [coro x2]
+    (F#m)más que tu mano, (F#m)sobre mi mano, 
+    (F#m)más que la lluvia, sobre tus (F#m)labios,
+  [part] 
+    amor lo (Bm)mío es amor, 
+    (E)sereno callado discreto a la antigua (Amaj7)pero el mejor, 
+    no (Dmaj7)tengo que andar presumiéndole al mundo que (G#)tú y yo, 
+    porque entre (C#7)tú y yo, hay más que (F#m)amor, 
+    amor lo (Bm)mío es amor, 
+    sin (E)trucos ni peros lo mío es sincero (Amaj7)lo juro amor, 
+    no (Dmaj7)tengo que andar presumiéndole a todos que (G#)tú y yo, 
+    porque entre (C#7)tú y yo, hay más que (F#m)amor
+  `},
+  {name: "Idilio", genre: "🎸salsa", key: "Em", chords: "Em-Am-B7", tags: "",
+  lyrics: `
+  [Verso 1]
+    solo me (Em)alienta el deseo divino de hacerte mía
+    más me (E)destruye la incertidumbre que estoy (Am)pasando,
+    es que la (B7)nieve cruel de los años mi cuerpo (Em)enfría,
+    y se me (F#)agota ya la paciencia por ti (B7)esperando, 
+    y se me (Em)agota ya la paciencia por ti esperando, 
+    que a (E)besos yo te levante al rayar el (Am)día
+    y que el (D)idilio perdure siempre al llegar la (G)noche,
+    y (C)cuando venga la aurora llena de (Am)goce, 
+    se (B7)fundan en una sola tu alma y la (Em)mía
+  [Coro x2]
+    que a (E)besos yo te levante al rayar el (Am)día *a besos el día nos sorprenda corazón* 
+    y que el (D7)idilio perdure siempre al llegar la (G)noche *la noche sea tan solo de los dos* 
+    y (C)cuando venga la aurora llena de (Am)goce *juntos solos tú y yo*
+    se (B7)fundan en una sola tu alma y la (Em)mía
+  [Change]
+    (Em-Am)soñan-do (D7-G)conti-go (C-Am)querien-do que se cumpla (B7)nuestro idilio (Em)..... 
+  `},
+  {name: "Mi Libertad", genre: "🎸salsa", key: "G#", chords: "G#-Cm-Fm-D#", tags: "",
+  lyrics: `
+  [intro]
+    (Fm)una colilla de cigarro (C#)más (D#)..... un cenicero que va a (Fm)reventar, 
+    (Fm)la misma historia triste y sin (C#)final el mismo cuento de nunca (D#)acabar y la carcajada de otra (A#m)madrugada, (D#)wo uu oooh
+  [verse1]
+    se burlan (G#)cuatro paredes rutina (Cm)puerta cerrada, 
+    y un carna-(Fm)-val de barrotes, bailando (D#)sobre mi cama, 
+    extraño (G#)aquella cometa que yo de (Cm)niño volaba, 
+    y a mis (Fm)amigos del barrio, que mis (D#)canciones bailaban
+  [coro]
+    (G#)quiero cantar de (Cm)nuevo, camin-(Fm)-ar y a mis amigos (D#)buenos visi-(A#m)-tar pidiendo otra (D#)oportunidad, 
+    (G#)bajo el farol del (Cm)pueblo conver-(Fm)-sar y en una fiesta (D#)linda celeb-(A#m)-rar, mi (D#)libertad
+  `},
+  {name: "Hotel California", genre: "🎸salsa", key: "Bm", chords: "Bm-F#m-A-E-G-D-Em-F#", tags: "",
+  lyrics: `
+  [verse1]
+    (Bm)on a dark desert highway, (F#)cool wind in my hair, 
+    (A)warm smell of colitas, (E)rising up through the air, 
+    (G)up ahead in the distance, (D)I saw a shimmering light, 
+    (Em)my head grew heavy and my sight grew dim, (F#)I had to stop for the night, 
+    (Bm)there she stood in the doorway, (F#)I heard the mission bell, 
+    (A)and I was thinkin to myself, this could be (E)heaven or this could be hell, 
+    (G)then she lit up a candle, (D)and she showed me the way,
+    (Em)there were voices down the corridor, (F#)I thought I heard them say
+  [coro]
+    (G)welcome to the hotel (D)california, 
+    such a (F#)lovely place such a (Bm)lovely face
+    (G)plenty of room at the hotel (D)california
+    any (Em)time of year, you can (F#)find it here
+  [verse2]
+    (Bm)her mind is tiffany twisted, (F#)she got the mercedes benz, 
+    (A)she got a lot of pretty pretty boys (E)that she calls friends, 
+    (G)how they dance in the courtyard, (D)sweet summer sweat, 
+    (Em)some dance to remember, (F#)some dance to forget, 
+    (Bm)so I called up the captain, (F#)please bring me my wine
+    he said (A)we havent had that spirit here since (E)1969
+    (G)and still those voices are calling from (D)far away, 
+    (Em)wake you up in the middle of the night (F#)just to hear them say
+  `},
+  {name: "Tu Con El", genre: "salsa clasica", key: "", chords: "", tags: "",
+  lyrics: `
+  [verse1]
+    (Am)tú con él, el tiempo (D)corre, yo te espero, pero (G)tú con él, 
+    ya no (Am)recuerdas mis ()locuras, ni el amor aquel
+    estás (Bm)tranquila, lo mereces, ()siempre fuiste fiel, 
+    (Am)tú con él, no me (D)sorprende, sospechaba (G)terminar así, 
+    yo ()solamente fui la escusa para hacerle ver, 
+    que tú ()podías, si querías, ()vivir sin su amor, 
+    (Am)perdóname, no me di (D)cuenta de ese juego y me (G)enamoré, 
+    después fue tarde, no podía ya volver atrás, 
+    y te quería cada día ()más y más
+  [verse2]
+    (Am)tú con él, ya me han (D)contado que estás linda, mucho (G)más que ayer, 
+    que no me ()odias y preguntas ()siempre algo de mí, 
+    al fin y al ()cabo un poquito ()yo me hice querer, 
+    (Am)discúlpame, aquellos (D)celos tan intensos (G)que sentí por ti, 
+    estaba ()loco, casi loco por aquel amor, y al poco ()tiempo para siempre lo ()perdí
+  `},
+  {name: "Oiga Mire Vea", genre: "salsa clasica", key: "D#", chords: "D#-A#", tags: "",
+  lyrics: `
+  [verse1]
+    mi (D#)cali se está adornando para su fiesta más (A#)popular, 
+    con caña, dulce el (D#)melao hierbe en la paila hasta (A#)amanecer, 
+    habrá corrida de (D#)toros, y por la noche fiesta y (A#)rumba, 
+    en Cali (D#)mirá, se sabe (A#)gozar, pero que en cali (D#)mirá, se sabe (A#)gozar
+  `},
+  {name: "Extraño tu amor", genre: "salsa clasica", key: "Bm", chords: "Bm-Em-A-D-F#7", tags: "",
+  lyrics: `
+  [verse1]
+    (Bm)ahora que no estás conmigo es cuando me doy cuenta que te (Em)necesito, 
+    (A)ahora que no estás conmigo me siento tan (D)triste y extraño tu (F#7)amor, 
+    (Bm)quisiera estar entre tus brazos, recibiendo el fuego de tu (Em)chimenea, 
+    (A)quisiera estar al lado tuyo, darte muchos (D)besos y escuchar tu (F#7)voz
+  [coro x2]
+    no (Bm)sabes lo que estoy sintiendo, 
+    no (Em)sabes cómo te deseo, 
+    el (A)fuego dentro de mí se enciende
+    y no hay quién (D)apague este inmenso (F#7)deseo
+    (Bm)quisiera acostarme contigo, 
+    (Em)sentir cómo tu amor me quema, 
+    (A)estar junto a ti cuerpo a cuerpo
+    y sentir (D)así tu más alta (F#7)marea
+  `},
+  {name: "Conteo Regresivo", genre: "salsa clasica", key: "G", chords: "G-Bm-C-D", tags: "",
+  lyrics: `
+  [verse1]
+    (G)di-esto que te canto a todo el mundo, 
+    (Bm)no-he venido a casa en casi un mes, 
+    (C)o-chocas con la verdad o finges, 
+    si he tenido fallas, (D)tú también, 
+    (G)se-hizo tarde para ser felices, 
+    (Bm)sin comentarios, yo lo sé, 
+    (C)cuatro mil razones, hoy nos sobran, 
+    para terminar (D)con este estrés
+    (Am)dosis de (G#m)amor hacían (Gm)falta, (Am)pero (E)ninguno cedió... 
+  [coro]
+    ahora solo hay (G)números en tu (Bm)cabeza, 
+    de una (C)relación que no da para (D)más, 
+    ahora solo hay (G)símbolos de suma y (Bm)resta, 
+    sumas mis (C)errores, resto tu (D)bondad, 
+    ahora soy la (G)pieza en tu rompeca-(Bm)-bezas, 
+    que nunca hizo (F)falta, que no (E)encajará, 
+    voy a (G)enumerar todos nuestros (Bm)errores, 
+    cuando llegue a (C)cero todo (D)acabará
+  [verse2]
+    (G)diez nunca me dices que me amas, 
+    (Bm)nueve siempre cambio la verdad, 
+    (C)ocho cuando salgo de la casa, 
+    (D)siete casi siempre llego a las
+    (G)seis no me agradan tus detalles, 
+    (Bm)cinco a esta altura nos da igual, 
+    (C)cuatro se nos apagó la llama
+    tres casi voy a (D)terminar, 
+    (Am)dos si no hay (G#)amor, no hay (G)nada, (F#-Am)..... es opor-(E)-tuno el adiós...
+  `},
+  {name: "Vivir mi Vida", genre: "salsa 3/2", key: "Cm", chords: "Cm-G#-D#-A#", tags: "",
+  lyrics: `
+  [Coro]
+    (Cm)voy a (G#)reír, voy a (D#)bailar, vivir mi (A#)vida la la la la
+    (Cm)voy a (G#)reír, voy a (D#)gozar, vivir mi (A#)vida la la la la
+  [Verse1]
+    (Cm)a veces llega la (G#)lluvia (D#).....
+    para limpiar las (A#)heridas 
+    (Cm)a veces solo una (G#)gota (D#).....
+    puede vencer la (A#)sequía, 
+    y para (Cm)qué llorar, pa (G#)qué
+    si duele una (D#)penaaa, se (A#)olvidaaa, 
+    y para (Cm)qué sufrir, pa (G#)qué
+    si así es la (D#)vidaaa, hay que (D#)vivirla la la lé
+  `},
+  {name: "El Preso", genre: "🎹salsa 3/2", key: "Cm", chords: "Cm-Fm-G", tags: "",
+  lyrics: `
+  [verse1]
+    en el mundo en (Cm)que yo vivo (Fm).....
+    siempre hay cuatro (G)esquinas, 
+    pero entre (Cm)esquina y esquina (Fm).....
+    siempre habrá lo (G)mismo, 
+    para mi no (Cm)existe el cielo (Fm).....
+    ni luna ni (G)estrellas, 
+    para mi no (Cm)alumbra el sol (Fm).....
+    pa mi todo es (G)tinieblas
+  [verse2]
+    condenado (Cm)para siempre (Fm).....
+    en esta horrible (G)celda, 
+    donde no lle-(Cm)ga el cariño (Fm).....
+    ni la voz de (G)nadie, 
+    aquí me pa-(Cm)so los días (Fm).....
+    y la noche (G)entera, 
+    sólo vivo (Cm)del recuerdo (Fm).....
+    eterno de mi (G)madre
+  [coro x2, montuno piano]
+    ay que sólo (Cm)estoy, 
+    só-(Fm)lo me espera la (G)muerte, 
+    ay que sólo (Cm)estoy, 
+    cuan-(Fm)do cambiará mi (G)suerte
+  [coro2 x2, merengue piano]
+    (Cm)sólo, (Fm)..... con mi (G)pena
+    (Cm)sólo, (Fm)..... en mi (G)condena
+  `},
+  {name: "lloraras", genre: "🎹salsa", key: "Am", chords: "Am-G-C-Dm-E", tags: "",
+  lyrics: `
+  [Verse1]
+    (Am)sé que (G)tu no (C)quieres, (Dm)que yo a ti te (E)quiera
+    (Am)siempre (G)tu me (C)esquivas de (Dm)alguna (E)manera
+    (Am)si te (G)busco (C)por aqui tu me (Dm)sales por (E)allá
+    (Am)lo único (G)que yo (C)quiero es que (Dm)no me hagas (E)sufrir más
+  [Verse2]
+    (Am)por tu (G)mal (C)comportamiento, (Dm)te vas a (E)arrepentir
+    (Am)muy caro (G)tendrás que (C)pagar (Dm)todo mi (E)sufrimiemto
+    (Am-G)llorarás y (C)llorarás sin (Dm)alguien que te (E)consuele
+    (Am)y asi te (G)darás de (C)cuenta (Dm)que si te engañan (E)duele
+  [Verse3] 
+    (Am)y después (G)vendras a (C)mi, (Dm)pidiéndome (E)perdón
+    (Am)pero ya (G)mi (C)corazón, (Dm)no se acuerda más de (E)ti
+    (Am-G)llorarás y (C)llorarás sin (Dm)nadie que te (E)consuele
+    (Am)asi te (G)darás de (C)cuenta (Dm)que si te engañan (E)duele
+  `},
+  {name: "Pedro Navajas", genre: "salsa montuno", key: "C", chords: "C-A7-Dm-G7", tags: "",
+  lyrics: `
+  [Verse1]
+    por la (C)esquina del viejo (A7)barrio lo vi (Dm)pasar
+    con el tumbao que tienen los guapos al (C)caminar... 
+    las manos siempre en los (A7)bolsillos de su (Dm)gabán
+    pa que no (G7)sepan en cuál de ellas lleva el (C)puñal... 
+    usa sombrero de ala (A7)ancha de medio (Dm)lao
+    y (G7)zapatillas por si hay problemas, salir (C)volao
+    lentes oscuros pa que no (A7)sepan qué está (Dm)mirando
+    y un diente de (G7)oro que cuando ríe se ve (C)brillando
+  [Verse2]
+    como a tres (C)cuadras de aquella (A7)esquina, una (Dm-G7)mujer... 
+    va (C)recorriendo la acera entera por quinta (C)vez
+    y en un (C)zaguán entra y se da un (A7)trago para (Dm-G7)olvidar... 
+    que el día está (C)flojo y no hay clientes pa (C)trabajar
+  [Verse3]
+    un carro pasa muy despacito por la avenida
+    no tiene marcas, pero to' saben que e' policía, hmm
+    pedro Navaja, las manos siempre dentro 'el gabán
+    mira y sonríe y el diente de oro vuelve a brillar
+  [Verse4]
+    mira pa un lado, mira pal otro y no ve a nadie
+    y a la carrera, pero sin ruido, cruza la calle
+    y mientras tanto, en la otra acera va esa mujer
+    refunfuñando, pues no hizo pesos con qué comer
+    mientras camina del viejo abrigo saca un revolver, esa mujer
+    y va a guardarlo en su cartera pa que no estorbe
+    un .38, Smith & Wesson del especial
+    que carga encima pa que la libre de todo mal
+  [Coro]
+    (C#m)La vida te da (A)sorpresas, (B7)sorpresas te da la (A)vida, (D-C#m)¡ay, dios!
+  `},
+  {name: "El Cantante", genre: "salsa montuno", key: "Gm", chords: "", tags: "",
+  lyrics: `
+  [Verse1]
+    (Gm)yo soy el (A)cantante que hoy han (Cm)venido a (D)escuchar
+    lo mejor del repertorio a ustedes voy a brindar
+    y canto a la vida de risas y penas
+    de momentos malos y de cosas buenas
+    vinieron a divertirse y pagaron en la puerta
+    no hay tiempo para tristeza, vamos cantante, comienza
+  [Verse2]
+    me paran siempre en la calle mucha gente que comenta:
+    ¡Oye Hector! Tú estás hecho, siempre con hembras y en fiestas"
+    y nadie pregunta si sufro o si lloro
+    si tengo una pena que hiere muy hondo
+    yo soy el cantante porque lo mío es cantar
+    el público paga para poderme escuchar
+  [Coro]
+    hoy te dedico mis mejores pregones
+  `},
+  {name: "El Gran Varon", genre: "salsa montuno", key: "F", chords: "F-Gm", tags: "",
+  lyrics: `
+  [Coro]
+    no se (F)puede corregir a la (Gm)naturaleza, 
+    palo que (F)nace doblao, jamás su (Gm)tronco endereza
+  `},
+  {name: "ay ay ay amor", genre: "🎹salsa tresillo", key: "Cm", chords: "Cm-Fm-G", tags: "",
+  lyrics: `
+  [intro]
+  *piano lick 2 times*
+  [Verse1]
+    (Cm)tomaré tu mano dulcemente... 
+    te hablaré de amor mientras (Fm)bailamos... 
+    cosas del ayer, nos (Cm)decimos nada... 
+    porque (G#)ahora ha llegado la (G)mirada... 
+    (Cm)tómame la mano suavemente... 
+    dime que me amas mientras (Fm)bailas... 
+    besos y caricias (Cm)sólo espero... 
+    (G#)quiero sentir tu (G)respiración... 
+    (Cm)toma mi mano suave y dulcemente... 
+    hazme sentir que nuestro amor (Fm)existe... 
+    en la realidad lo (Cm)entregas todo... 
+    y que (G#)estás de mí realmente (G)enamorada
+  [Coro]
+    (Cm)ay ay ay amor
+    porque ahora las (G#)palabras no nos dicen (G)nada
+    (Cm)ay ay ay amor
+    porque ahora solo (G#)hablan las (G)miradas
+    (Cm)ay ay ay amor
+    porque ahora las (G#)palabras nos (G)reparan
+    (Cm)ay ay ay amor
+    porque ahora nos (G#)encienden las (G)miradas *piano montunto until starts over*
+  `},
+  {name: "Lagrimas Negras", genre: "son 3/2", key: "Em", chords: "Em-Am-D-G-Em-Am-D-C-B7", tags: "",
+  lyrics: `
+  [Verse1]
+    aunque (Em)tú me has echado en el (Am)abandono
+    aunque (D)ya hayas matado mis (G)ilusiones,
+    en (Em)vez, de maldecirte con justo (Am)encono, 
+    en mis sueños te (D-C)colmo, 
+    en mis sueños te (B7)colmo de (Em)bendiciones...
+    sufro la inmensa pena de tu (Am)extravío
+    (D)siento el dolor profundo de tu (G)partida
+    y (F#7)lloro sin que sepas que el llanto (B7)mío
+    tiene lágrimas (Em)negras
+    tiene lágrimas (C)negras como mi (B7-Em)vida
+  [Coro]
+    (Em)tú me quieres dejar, yo no quiero (B7)sufrir
+    (Am)contigo me voy, mi (Em)santa, aunque me (B7)cueste morir
+    
+  `},
+  {name: "El Carretero", genre: "son 2/3", key: "Am", chords: "Am-E | Dm-Am-E-Am", tags: "",
+  lyrics: `
+  [verse1 x2]
+    por el (E)camino del sitio (Am)mío, un (E)carretero alegre (Am)pasó (E-Am).....
+    en su (E)tonada que es muy (Am)guajira, y muy (E)sentida alegre (Am)cantó
+  [verse2]
+    me voy al (E)transbordador (Am)*guanba* a (....E)descargar la carreta (Am)*guanba*
+    me voy al (E)transbordador (Am)*guanba* a (....E)descargar la carreta (Am)*guanba*
+    para llegar (E)a la meta (Am)*guanba* de mi penosa (E)labooor
+  [coro x4]
+    (Am)a (...-E)caball-o vamos pal (Am)monte, (Am)a (...-E)caball-o vamos pal (Am)monte
+  [verse3]
+    yo trabajo (E)sin reposo (Am)*guanba*, para (E)poderme casar, que (Am)*guanba*
+    yo trabajo (E)sin reposo (Am)*guanba*, para (E)poderme casar, que (Am)*guanba*
+    y si lo (E)puedo lograr (Am)*guanba* seré un guajiro (E)dichoso
+  [end]
+    (Dm)chapea el monte, (Am)cultiva el llano, (E)recoge el fruto de tu sudor
+    (Dm)chapea el monte, (Am)cultiva el llano, (E)recoge el fruto de tu sudor
+  `},
+  {name: "La Negra Tomasa", genre: "son 2/3", key: "Am", chords: "Am-E", tags: "",
+  lyrics: `
+  [Verse1 x2]
+    (Am)estoy tan enamorao, de la negra (E)Tomasa
+    que cuando se va de casa...
+    que triste me (Am)pongo...
+  [Verse2]
+    (G)ay, (F)ay, (E)ay
+    esa negra (E)linda camara...
+    que me hecho (Am)bilongo...
+    esa negra (E)linda camara...
+    que me hecho (Am)bilongo...
+  [Change x2]
+    na (C)má que me gusta la comia que me (G)cocina...
+    na má que me gusta la cafe que ella me (C)cuela
+  `},
+  {name: "Son de la Loma", genre: "son 2/3", key: "A", chords: "A-D", tags: "",
+  lyrics: `
+  [Intro]
+    (A-E)Tres Riff
+  [Verse1 x2]
+    (A)mamá, yo quiero saber
+    de donde son los (E7)cantantes...
+    que los encuentro muy (Bm-F#)galantes
+    y los quiero (Bm)conocer
+    con su (D)trova (D#dim-A)fascinante
+    (F#)que me la (Bm)quiero (E7-A)aprend-er
+  [Verse2]
+    (A)¿De dónde serán? (A-G-F#)ay-ma-má.
+    ¿Serán de la (Bm)Habana?
+    (F#)¿Serán de (Bm)Santiago?    
+    (E)son de la loma y cantan en el llano,
+    ya verás... tú verás
+  `},
+  {name: "Marieta", genre: "son 2/3", key: "Am", chords: "Am-E", tags: "",
+  lyrics: `
+  [Intro]
+    (Am-E) Guitar riff
+  [Coro x4]
+    (Am)..... a mí me gusta (E)que baile (Am)Marieta
+  [Verse1 *Aye dios*]
+   (Am-E)
+    Yo tengo una mala maña
+    Que a mí misma me da pena
+    Yo tengo una mala maña
+    Que a mí misma me da pena
+    Que yo me acuesto en mi cama
+    Y amanezco en cama ajena
+  `},
+  {name: "A Buena Vista", genre: "son 2/3", key: "Am", chords: "Am-E", tags: "",
+  lyrics: `
+  [Coro x2]
+    yo (Am)quiero que me lleves a (E)Buena Vista ayyyy, (Am)a Buena Vista
+  [Verse1 x2]
+    yo (Am)quiero que tú me (E)lleves al barrio de Buena (Am)Vista
+  [Verse2 x2]
+    si tú (Am)visitas La (E)Habana, tú vendrás a Buena (Am)Vista
+  [Verse3 say 'a buena vista' after each sentence]
+    Y que me lleve mi negra, 
+    Que me lleve a bailar, 
+    Te lo digo mamita, 
+    Esqueda tropical, 
+    Vamo a gozar, 
+    Vamo a bailar, 
+    Y que lo gozen en Cuba, 
+    Y mi gente bonita 
+  `},
+  {name: "Píntate los labios María", genre: "son 2/3", key: "Em", chords: "Em-D-C-B7 | Em-B7", tags: "",
+  lyrics: `
+  [Intro x2]
+    (Em-D-C-B7)
+    *guitar riff*
+  [Coro x2]
+    (Em)píntate los (B7)labios maría, (Em)píntate (B7).....
+  [Verse1]
+    (Em)cuando conocí a (D)María,
+    maría era muy (C)graciosita 
+    y ahora que ya no se pinta
+    no luce tan (B7)bonita María 
+  [Verse2]
+    que es (Em)lo que pasa (D)María
+    ha sufrido un (C)desengaño 
+    y al transcurrir de los años 
+    ya no luce tan bonita (B7)María 
+  [Change x2]
+    (Em--D-G-Am-Em-D-C-B7)
+    *guitar/horn riff
+  `},
+  {name: "Macusa", genre: "son 2/3", key: "Dm", chords: "Dm-A7-G-Dm-E7-A7", tags: "",
+  lyrics: `
+  [Intro]
+    Tres Riff
+  [Verse1]
+    (Dm)tu me quisiste Macusa... 
+    y yo también te (A7)adoré... 
+    (Gm)con tanta ilusión te (Dm)quise... 
+    que (E)nunca de ti (A7)dudé
+  [Verse2]
+    (Dm)por un poquito de tiempo
+    que de ti me (A)separé
+    (Gm)me traicionaste (Dm)Macusa
+    que (E)triste yo me (A7)quedé... 
+    (Dm)me devolviste el retrato, 
+    que en prueba de amor de (A7)ti
+    (C)me pediste tus cartas
+    en ellas decías (A7)así
+    (Gm)te quiero mi (Dm)Puchunguito
+    tú (E)nunca me hagas (A7)sufrir
+  `},
+  {name: "El Camison de Pepa", genre: "son 3/3", key: "Em", chords: "B7-Em-D-G-C-Am-B7", tags: "",
+  lyrics: `
+  [Intro]
+    Tres Riff
+  [Verse1]
+    pepa tiene un (B7)camisón... 
+    que baila solo una (Em-D)danza... 
+    le hace chiquita la (G)panza... 
+    (C)cuando (Am)aprieta el (B7)cinturón... 
+    ya no tiene ni un (B7)botón... 
+    para apretar la (Em-D)varilla... 
+    tiene un roto en la (G)rodilla
+    (C)y en otro (Am)sitio (B7)peor
+  [Verse2] 
+    el (E)camisóoon de (B7)Pepa
+    tiene (E)historia... 
+    en La Habana ganó... 
+    el (B7)premio mayor... 
+    por su (E)singularidad... 
+    no es de (B7)tela ni es de (E)seda... 
+    ni es un (B7)vestido (E)imperial... 
+    por la (B7)calle le hace un (E)talle... 
+    que (Am)le gritan al (B7)pasar
+  `},
+  {name: "Hasta Siempre", genre: "guajira", key: "Em", chords: "Em-Am-B7 | Em-D-C-B7", tags: "",
+  lyrics: `
+  [Verse1]
+    (Em)..... (Am)aprendimos a (B7)quererte
+    (Em)..... (Am)desde la (B7)historica altura
+    (Em)donde el (Am)sol de tu (B7)bravura
+    (Em)..... le (Am)puso un (By)cerco a la muerte
+  [Coro]
+    (Em)aquí se (Am)queda la (B7)clara,
+    (Em)la (Am)entrañable (B7)transparencia
+    de (Em)tu querida (D)presencia,
+    (C)comandante Che (B7)Guevaaaara.  
+  [Verse1]
+    (Em)..... (Am)tu mano (B7)gloriosa y fuerte
+    (Em)..... (Am)sobre la (B7)historia dispara
+    (Em)..... cuando (Am)toda Santa (B7)Clara
+    (Em)..... se (Am)despierta (B7)para verte.
+  `},
+  {name: "El Raton", genre: "guajira", key: "Am", chords: "Am-C-B7-A#", tags: "",
+  lyrics: `
+  [Verse1]
+    (Am-C)..... mi gato se esta (B7-A#)quejando...
+    (Am-C)..... que no puede (B7-A#)vacilar... 
+    (Am)..... (C)si donde quiera que se (B7-A#)mete... 
+    (Am)..... su (C)gata lo va a (B7-A#)buscar... 
+    (Am)..... de (C)noche brinca la (B7-A#)verja... 
+    (Am)..... que (C)está detrás de mi (B7-A#)casa... 
+    (Am)..... a ver, (C).... si puede (B7-A#)fugarse... 
+    (Am)..... sin que (C)ella lo (B7-A#)pueda ver... 
+    y no (Am)tan pronto (C)... no tan pronto (B7)está de (A#)fiesta
+    silvestre (Am)felino...
+    (C)..... tiene que echar a (B7-A#)correr
+    (Am)..... (C)esto si es serio mi (B7-A#)amigo
+    (Am)..... oye que (C)lío, que lío se (B7-A#)va a formar
+    (Am)..... (C)cuando mi gatito (B7-A#)sepa
+    (Am)..... y es (C)... es tan simple (B7-A#)la razón... 
+    (Am)..... el que (C)a su gata le cuenta (B7)...
+    el que a (A#)su gata le (Am)cuenta
+    (C)... no es nada mas que (B7)un raton (A#)... un ratón
+  [Coro x4]
+    de cualquier malla, sale un ratón oyeee de cualquier malla 
+  [Coro2]
+    Echale semilla a la maracas pa que suenen
+    Chacucha cuchu cucha cucha
+  `},
+  {name: "Mujer Divina", genre: "guajira", key: "A#m", chords: "A#m-C-F | A#-D#-G#-C#-G-C-F", tags: "",
+  lyrics: `
+  [Verse1]
+    la primera noche (A#m)que te vi (C).....
+    yo sabia que eras (Fm)para mi (C).....
+    jamas otros besos te (A#m)preferi (C).....
+    porque siempre estas en (Fm)mi
+  [Verse2]
+    mujer (A#m)divina (D#).....
+    como (G#)fascinas (C#).....
+    y me (G)dominas (C).....
+    el corazon (F)
+  [Verse3]
+    y es por eso que yo (A#m)soy feliz... 
+    porque ahora yo te (C)tengo a ti... 
+    prieta linda tu eres (Fm)para mi
+    y yo siempre soy de ti
+  [Coro]
+    (F#m)mulata, mi (A#m)prieta, mi (C)cielo, 
+    te quiero, te adoro (F#m)divina mujer
+  `},
+  {name: "Salchicha Con Huevos", genre: "guajira", key: "Gm", chords: "Gm-D", tags: "",
+  lyrics: `
+  [Coro]
+    (Gm)salchicha con (D)huevo, me pidió al (Gm)amanecer
+  [Verse1]
+    el que se duerme
+    se lo lleva la corriente
+    eso fue lo que me quiso
+    dar entender el pollo
+  [Verse1]
+    me dejo con hambre
+    se le quemo el sartén
+    y ella me dijo papito
+    hay fuego en el 23
+
+  `},
+  {name: "Besame Mama", genre: "guajira", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "ShingALing", genre: "guajira", key: "", chords: "", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Tu Eres Ajena", genre: "🎸bachata", key: "Cm", chords: "Cm-A#", tags: "",
+  lyrics: `
+  [Part2]
+    al (Cm)conocernos me prome- (A#)tiste... 
+    darme tu (Cm)amor para toda la (A#)vida... 
+    pero muy (G#)tarde me he dado (Fm)cuenta
+    que me enga- (G#)ñabas, que me hablabas men- (G)tiras
+  [Part2]
+    de-(Fm)jaste que de ti me enamo-(A#)rara
+    que me acostum-(D#)brara solamente a tu (Cm)cariño
+    y (Fm)ahora estoy pagando mi con-(A#)dena
+    tú no (G#)debiste estar conmigo siendo (G)ajena
+    no (Fm)ves cuánto me hiere tu trai-(A#)ción?
+    yo que so-(D#)ñaba con hacerte solo (Cm)mía
+    con tu (Fm)error me lastimaste el coraz-(A#)ón
+    si lo enga-(G#)ñaste a él, 
+    a mí lo mismo me ha- (G)ríaaaa...
+    qué (Cm)lástima me da, 
+    aún corre por mis venas, 
+    la (Fm)llama de pasión que me (G)dejaste... *stop* 
+    pero tú eres (Cm)ajena
+  [Solo]
+    (Cm-G)back n forth
+  `},
+  {name: "No Tengo Suerte en el Amor", genre: "🎸bachata", key: "A#m", chords: "A#m-F7-A#m-D#m", tags: "",
+  lyrics: `
+  [verse1]
+    a través del (A#m)tiempo, he venido escuchando que hablan del (F7)amor, 
+    dicen que es la gloria que es un don divino que lo impuso (A#m)dios, 
+    y yo me (A#7)pregunto si eso es tan hermoso, por qué tengo que (D#m)sufrir, 
+    si yo te amo (A#m)tanto, dime las (F7)razones por qué no me amas a (A#m)mí
+  [coro]
+    si yo te entrego el (D#m)ama en cada beso que (G#)doy, por qué me (C-A#m)tracionan, 
+    será que la (D#m)vida no guardo para (G#)mí, un amor (C-A#m)verdadero, 
+    a veces (D#m)quisera renunciar al (G#)amor pero es que no (C-A#m)puedo, 
+    no pierdo la (D#m)esperanza de un día (F7)escuchar que yo soy tu (A#m)dueño
+    no pierdo la (D#m)esperanza de un dia (F7)escuchar y me digan te (A#m)quiero
+  `},
+  {name: "Vagabundo Boracho y Loco", genre: "🎸bachata", key: "F#m", chords: "F#m-G", tags: "",
+  lyrics: `
+  [verse1]
+    que me (F#m)llamen vagabundo (E)borracho y loco no (F#m)importa, 
+    estoy (E)bebiendo por esa mujer, que a (F#m)destrosado todo mi querer, 
+    y se a (E)burlado de mi corazón no tengo (F#m)amor
+  [coro x2]
+    ella se (E)fue me (F#m)abadonó y (E)destrozó mi (F#m)corazón
+  [verse2]
+    esta (F#m)noche quiero (E)beber hasta (F#m)morir, 
+    es que me (E)duele el corazón, por la (F#m)traición de esa mujer, 
+    por eso (E)tengo que tomar, no se que (F#m)hacer
+  [verse3]
+    venga (F#m)mozo traiga (E)licor para (F#m)olvidar, 
+    es que me (E)siento yo tan mal, y creo (F#m)que voy a morir, 
+    es que no (E)quiero yo creer, que esto me (F#m)este pasando a mí, 
+    por eso (E)tengo que tomar, para (F#m)olvidar
+  
+  `},
+  {name: "Me Voy", genre: "🎸bachata", key: "Em", chords: "Em-Am-D-B7", tags: "",
+  lyrics: `
+  [verse1]
+    ya me estoy (Em)cansando de la forma que me tratas, hoy yo me voy de (Am)aquí, 
+    maldigo el (D7)matrimonio por ti no creo en (B7)mujeres esto llego a su (Em)fin, 
+    estoy (Em)decepcionado, cupido me ha fallado,  a mi vida llegas (Am)tu, 
+    una mujer (D7)celosa bochinchera mala (B7)esposa y puedo hasta (Em)seguir
+  [coro]
+    me voy de la (Em)casa y vendo el (Am)anillo ya no te (D)soporto punto y (G)final, 
+    (B7)contigo la (Em)muerte es algo (Am)divino y se que al (D)cielo tu no (G)llegaras
+    (B7)tendré (Em)precaución libre de (Am)pecado porque en el (D)infierno te puedo (G)encontrar, 
+    (B7)eres una (Em)actriz que bien fue tu (Am)acto, ni en el primer (D)año me hiciste (G)feliz
+    (B7)que ingrata (Am)mujer... hasta luego y mala (Em)suerte te deseo lo peor *Stop*
+  [verse2 x2]
+    (Em)yo, daré (Am)consejos, no todo los (D)hombres que casen viven mi (G-B7)ejemplo
+    (Em)ella, no era (Am)así, y a través del (D)tiempo las palabras se la lleva el (G-B7)viento
+  
+  `},
+  {name: "Te Extrano", genre: "🎸bachata", key: "F#m", chords: "F#m-D-E", tags: "",
+  lyrics: `
+  [verse1]
+    el tiempo (F#m)pasa y pasa y yo sigo así, 
+    (D)queriéndote en mis brazos sin poderte tener, 
+    y (E)busco una salida para no verme así, 
+    ay qué (F#m)lejos de mi lado tu amor está de mí, 
+    yo (F#m)lloro y lloro al saber que no estás, 
+    con mis (D)labios mira mami yo te quiero besar, 
+    y (E)trato y trato por no sentirme así, 
+    pero es (F#m)malo saber que ya no me quieres a mí
+  [coro]
+    (F#m)mira cómo estoy (D)sufriendo, 
+    me quemo por (E)dentro, por sentir tu (F#m)amor, 
+    (F#m)mami no me hagas (D)eso, sabes que te (E)quiero,
+    con todo el (F#m)corazón
+  `},
+  {name: "Hoy Te Vi Pasar", genre: "🎸bachata", key: "Cm", chords: "Cm-A#", tags: "",
+  lyrics: `
+  
+  `},
+  {name: "Donde Estan Esos Amigos", genre: "🎸bachata", key: "A#m", chords: "A#m-F#-G#", tags: "",
+  lyrics: `
+    [verse 1]
+      decían mis (A#m)amigos, somos tus (F#)amigos, por toda la (G#)vida, te seremos (A#m)fiel... 
+      me sentía (A#m)halagado, y muy (F#)superado, casi mi (G#)fortuna, con ellos (A#m)gaste... 
+      surgieron (A#m)problemas, en mi (F#)economía, por un corto (G#)tiempo, (A#m)desaparecí... 
+      y aquellas (A#m)palabras, que tanto (F#)decían, ahora me doy (G#)cuenta, que no eran (A#m)así...
+    [coro]
+      (F#)dónde están esos (G#)amigos que me (A#m)decían, 
+      (F#)que en las buenas y en las (G#)malas conmigo (A#m)estarían, 
+      (F#)que cosas tiene la (G#)vida todo era (A#m)mentira, 
+      (F#)y sólo me quedo (F)uno por toda la (A#m)vida, 
+      (F#)y sólo me quedo (F)uno por toda la (A#m)vida, 
+  `},
+  {name: "Eres Mia", genre: "🎸bachata", key: "F#m", chords: "F#m-D-E-A", tags: "",
+  lyrics: `
+  [verse 1]
+    (F#m)ya me han informado que tu novio es un insípido (E)aburrido, 
+    (Bm)tú que eres (C#m)fogata y él tan (F#m)frío, 
+    (F#m)dice tu amiguita que es celoso no quiere que sea tu (E)amigo, 
+    (Bm)sospecha que soy un (C#m)pirata y robaré su (F#m)flor
+  [coro]
+    no te (F#m)asombres si una (D)noche entro a tu (E)cuarto y nuevamente te (Amaj7)hago mía, 
+    bien (F#m)conoces mis (D)errores el (E)egoísmo ha de ser dueño de tu (Amaj7)vida
+    eres (F#m)mía, eres (D)mía, no te hagas la (E)loca, eso muy bien ya lo (A)sabías
+    eres (F#m)mía, eres (D)mía, no te hagas la (E)loca, eso muy bien ya lo (A)sabías
+  [verse2]
+    (F#m)si tú te casas el (D)día de tu boda le (A)digo a tu esposo con (E)risas
+    que (F#m)solo es prestada la (D)mujer que ama (A)porque sigues siendo (E)mía
+  `},
+  {name: "Corazon Culpable", genre: "🎸bachata", key: "Em", chords: "G-Bm-Em-C-D", tags: "",
+  lyrics: `
+  [verse1]
+    (G)si fracaso mama, tu (Bm)no tienes la (Em)culpa, 
+    con (C)mi me lo (D-G)dijiste, 
+    que (G)pensaras muy bien por (Bm)que en la vida (Em)existe, 
+    (C)amores con (D)malicias
+  [coro]
+    (Em)yo no quería enamorarme no,
+    (Em)yo no sabias que iba ser así
+    (Em)creyendo en ella todo se lo di
+  [verse2]
+    ay que (G)grande en la vida
+    (Bm)estar (Em)enamorado, 
+    de un (C)amor (D-G)imposible
+    pero (G)que voy hacer, si (Bm)cada vez mas la (Em)quiero, 
+    (C)ella es mi (D)preferida
+  `},
+  {name: "Voy Palla", genre: "🎸bachata", key: "Em", chords: "Em-D-Em-B7", tags: "",
+  lyrics: `
+  [intro]
+    (Em)voy pallá, voy a buscar... 
+    la mujer que me (D)domina... 
+    la buscare, la traeré... 
+    aunque el mundo me lo (Em)impida, (B7)ahhh
+    bendita (Em)sean todas las mujeres... 
+    india, blanca y (D)morena... 
+    que con su voz y su color... 
+    hacen que yo me (Em)muera, (B7)ahh
+    voy pa (Em)llá aunque llueva... 
+    o aunque se hunda la (D)tierra... 
+    yo llegaré y la besaré... 
+    aunque pelee con (Em)cualquiera, (B7)ahhh
+  [verse2]
+    por qué te (Em)fuiste y me dejaste... 
+    si soy el macho de tu (D)vida... 
+    no soy culpable de que esa boda... 
+    la impidiera tu (Em)familia, (B7)ahhh
+    voy pallá aunque (Em)haya un candela... 
+    porque sé que tu me (D)quiere... 
+    yo soy el hombre que te enseñó a querer... 
+    y te hizo sentir (Em)mujer, (B7)ahhh
+  [coro]
+    (Em-B7).............. que voy pallá
+  `},
+  {name: "Porque Lo Hiciste", genre: "🎸bachata", key: "A", chords: "A-E-F#m-D-A-E", tags: "",
+  lyrics: `
+  [intro]
+    (A)cuando llega la (E)noooche (F#m)muchas ganas me (D)dan, de (A)llorar, y (E)gritar, 
+    (A)casi no me da (E)sueño (F#m)me desvelo al (D)pensar, si (A)vendrás, (E)llegaras, 
+  [verse]
+    (F#m)quiero saber porque lo (E)hiciste, y no (D)volviste, que (A-E)pasaraaa, 
+    (F#m)porque a mi vida tu le (E)mentiste, si yo te (D)quise, sin (A-E)falcedaaaa, 
+    (F#m)son tan largas las (E)hoooras, (A)..... y no hay fresco de (D)ti, que (A)sera (E)volveraa,
+    (A)yo me siento tan (E)sooolooo (F#m)me pregunto que (D)hacer, si (A)olvidar, o (E)esperar,
+  [precoro]
+    (F#m)quisiera hablarte saber si (E)sientees, lo quе yo (D)siento, noo juegues (A-E)maaa
+    (F#m)noo sabеs el daño que me as (E)causado, estoy (D)cansado, que voy (A-E)hacer,...
+  [coro]
+    (A)quisiera saber porque lo (F#m)hiciste, estoy (D)llorando estoy (E)solito
+    quiero (A)vivir saber si (F#m)existo quiero (D)tener (E)tranquilidad... 
+    voy a (A)luchar hasta que (F#m)pueda voy a (D)hencistir para que (E)vuelvas, 
+    o (A)tratareee de (F#m)olvidarla y ya a no (D)seee no puedo (E)máaaass...
+  `},
+  {name: "Me Enrede", genre: "🎸bachata", key: "G", chords: "G-A-D-Bm", tags: "",
+  lyrics: `
+  [Verse1]
+    me (G)pediste que te mandara mi (A)ubicación
+    y yo (D)estaba en un bar en medio del (Bm)malecón
+    y (G)ninguno de los do' andaba buscando (A)amores
+    (D)solamente vivir la vida con sus (Bm)colores
+  [Verse2]    
+    (G)hablamos, bailamos, y (A)así fue que empezamos
+    con (D)una presidente y en un (Bm)beso terminamos
+    (G)pasamos las horas, tú y (A)yo como las olas
+    nos (D)fuimos y vinimos una (Bm)vez y otra vez
+  [Coro]
+    y me (G)enredé en (A)RD
+    y ahí a tu (D)lado abrazado (Bm)desperté
+    y me (G)enredé en (A)RD
+    despues de (D)tanto trago, que paso no (Bm)sé
+    solo sé (G)que tu boca se (A)enredó en la mía
+    y me (D)olvidé que enamorarme no (Bm)quería
+    Y me (G)enredé en (A)RD
+  `},
+  {name: "Mala", genre: "🎸bachata", key: "Bm", chords: "Bm-F#m-G-D | G-D-Bm-A", tags: "",
+  lyrics: `
+  [Verse1]
+    querido (Bm)amigo, se me ha partido el (F#m)alma... 
+    por no (G)escuchar al corazón, cuando me (D)dijo que no...
+    con sus (Bm)palabras, ya se me fue la (F#m)calma... 
+    cuando me (G)dijo que ella amaba sólo a (D)uno de los dos
+    (Bm)ella (F#m)jugó con los (G)dos... 
+    fuimos dos (D)tontos víctimas de una (A)traición
+    (Bm)perdidos (F#m)en el (G)amor, 
+    eres mi (D)amigo, pero ella me (A)enamoró
+  [Coro]
+    ella es (G)mala, mala, (D)mala…
+    ella no (Bm)tiene corazón, ni (A)compasión
+    selfish (G)lady, she cares (D)for no one
+    shell make you (Bm)fall for her, and later break your (A)heart
+  `},
+  {name: "Vete y Alejate de Mi", genre: "🎸bachata", key: "Dm", chords: "Dm-C-A#-A | Dm-A-Gm", tags: "",
+  lyrics: `
+  [Intro]
+    (Dm-C-A#-A)Guitar riff
+  [Verse1]
+    yo (Dm)creí en tus palabras en tus (A)besos... 
+    para (Gm)mí no había (A)nada más que (Dm)tú... 
+    pero (C)veo que tú jugabas con mi (F)vida... 
+    y por (A)mi pecado a dios perdón (Dm)pedí... 
+    ante (C)él estaba ya (F)comprometida... 
+    con el (A#)hombre que ha elegido para (A)ti
+  [Verse2]
+    sé que (Dm)tú fuiste la sombra que me (A)ayudaba... 
+    a (Gm)romper con mi (A)silencio y mi sole-(Dm)dad... 
+    (C)aprendí a quererte, no puedo (F)negarlo... 
+    sin (A)saber que esto me hacía tanto (Dm)mal... 
+    y por (C)eso hoy decidí todo (F)romperlo... 
+    (A#)sufriré, pero será un mejor (A)final
+  [Verse3]
+    (Dm)vete, de veras, yo no voy a dete-(C)nerte
+    yo ya nací así con mi mala (A#)suerte
+    conmigo no serás nunca (A)feliz... 
+    (Dm)vete, yo no sé convivir con la men-(C)tira
+    no quiero una ilusión que sea prohi-(A#)bida
+    Prefiero ser el tonto que antes (A)fui
+    vete, aléjate de (Dm)mí
+  `},
+  {name: "Si Te Quieres Ir", genre: "🎸bachata", key: "Em", chords: "Em-B7-Am", tags: "",
+  lyrics: `
+  [verse1]
+    si te quieres ir (B7)hazlo ya, esta vez no te (Em)detendré, 
+    no queda nada por (B7)hacer, para que estemos (Em)en paz, 
+    ya no podemos ni (Am)hablar, y buscar una (Em)salida, 
+    para salvarle la (B7)vida, a un amor que lo dio (Em)todo, 
+    y que se hunde en (B7)el lodo, porque tu estas (Em)confundida
+  [coro]
+    si te quiere ir, (Am)vete que yo no te (Em)detendré, 
+    si te quieres ir, (B7)vete no me volverás a (Em)ver, 
+    si te quieres ir, (Am)vete que yo no voy a (Em)llorar, 
+    si te quieres ir, (B7)vete vete lejos, me (Em)da igual
+  [verse2]
+    eramos algo (B7)especial, respiraba de tu (Em)aliento, 
+    y yo era tu (B7)complemento, y fuimos tal (Em)para cual, 
+    era un amor tan (Am)real, amor a prueba de (Em)balas, 
+    en las buenas y en las (B7)malas, siempre juntos (Em)de la mano, 
+    de iluso terminé (B7)pecando, pensando que igual me (Em)amabas
+  `},
+  {name: "Tu Veneno", genre: "🎸bachata", key: "D#m", chords: "D#m-G#m-C#-F#-B", tags: "",
+  lyrics: `
+  [verse1]
+    (D#m)no, no se (G#m)puede ser tan bueno en esta (C#)vida, 
+    das (F#)amor y te devuelven las (B)espinas, 
+    hay (B)amores que te amargan la (G#m)existencia, 
+    y te llenan de (A#)mentiras ay...
+    (D#m)tú, me (G#m)envolviste en un mundo de (C#)fantasías, 
+    y ahora (F#)entiendo que jamás has (B)sido mía, 
+    aquí está la (G#m)puerta, te vas de mi (A#)vida, 
+  [coro]
+    voy a (D#m)romper *STOP* todas tus cartas de *GO MOJAO*(G#m)amor, 
+    para que no (C#)queden huellas de mis (F#)sentimientos, 
+    voy a (B)quemar la última foto que (D#m)quedó, 
+    y que las (G#m)cenizas, se las lleve el (A#)viento, 
+    voy a (D#m)borrarte de mi historia de (G#m)amor, 
+    tú solo me (C#)diste malos ratos y (F#)tormento, 
+    voy a (B)sacarte a fuerza de mi (D#m)corazón, 
+    hasta que en mi (G#m)sangre, no quede una gota, de tu (A#)veneno
+  `}, 
+  {name: "Doble Filo", genre: "🎸bachata", key: "Bm", chords: "Bm-D-F# | G", tags: "",
+  lyrics: `
+  [verse1]
+    yo no (Bm)soy como unos hombres por (D)ahí, 
+    (F#)corneros por amar a (Bm)ciegas, 
+    yo te di la luna si te hacia (D)feliz, 
+    sin (F#)saber que tú eras hembra (Bm)ajena
+  [coro]
+    cometí (G)errores, pero son (D)míos, 
+    compartir (F#)mujer, no es mi (Bm)estilo
+    linda pero (G)falsa, (D)aprendí, 
+    que cuando el rió (F#)es porque piedras (Bm)traerá...
+    que grande mi (G)error, que sea tu reputación
+    creí en ti caí (A)rendido, asco que me (G)das
+    no te quieras (Bm)graduar, de rastrera gran (A)señora
+  `}, 
+  {name: "Esa Mujer", genre: "🎸bachata fast", key: "Fm", chords: "Fm-C#", tags: "",
+  lyrics: `
+  [verse1] 
+    (Fm)de tanto andar, una madre de un niño, 
+    de poca edad, de baja estatura, 
+    de pelo rizado, de un cuerpo adorable yo (C7)conocí, 
+    una hermosa mujer, que me hizo sentir,
+    que aún había tiempo, que solo era el comienzo,
+    que todo lo vivido, era solo el reflejo,
+    de lo que pasaría, cuando la (Fm)conocí
+  [coro]
+    esa (A#m)mujer, de la que hoy le hablo,
+    con el pecho desecho, esa mujer,
+    mi cuarto mi carro, mi cama y mi radio,
+    lleno de recuerdos, todo ella lo (F#m)dejó, 
+    y hoy se ha marchado, dejando una duda,
+    no sé si me quiso, si me traicionó,
+    como me contó, el que presenció,
+    que otro llegó, de un pueblo lejano, buscándola a (C7)ella
+    pero así (Fm)pasó
+  [refrán x2]
+    pero a esa (C7)mujer *la borraré*
+    a esa (Fm)mujer *la borraré*
+    a esa (C7)mujer *la borraré*
+    la (Fm)borraré *la borraré*
+  `},
+  {name: "Quien Será", genre: "🎸bolero", key: "Em", chords: "Am-Em-B7 | Am-G-B7",
+  lyrics: `
+    
+  `},
+  {name: "Dos Gardenias", genre: "bolero", key: "Em", chords: "Em-", tags: "",
+  lyrics: `
+  [Verse1]
+    dos gardenias para (Em)ti, con ellas quiero decir,
+    te quiero, te adoro
+    mi (C-B7)vi-da... ponles toda tu (F#7)atención
+    porque son tu (B7)corazón y el (Em)mio,
+    dos gardenias para ti
+    que tendrán todo el (E)calor de un (Am)beso
+    de esos besos que te (Em)di
+    y que jamás (C)encontrarás en el (B7)calor de (Em)otro (Em)querer
+  [Verse2]
+    (Em)a tu lado vivirán y te hablarán
+    como cuando estás (F#7)conmigo... 
+    y hasta (B7)creerás que te dirán
+    te (Em)quiero... 
+    pero si un atardecer las gardenias de mi (E)amor
+    se (Am)mueren... es porque han (Em)adivinado que tu amor se ha (C)terminado
+    porque (B7)existe otro (Em)querer
+  `},
+  {name: "La Flor y La Hoja Seca", genre: "bolero", key: "Gm", chords: "D-Gm-Cm-F-A#-D-Gm-F-A#", tags: "",
+  lyrics: `
+  [Verse1]
+    ella era un (D)flor en una (Gm)hojá seca, 
+    una (G)hoja seca que silvó como (Cm)guitarra, 
+    (F)ella como flor se (A#)enamoró, se (D)enamoró, se (Gm)enamoró
+    y (F)hoy que pasado (A#)el tiempo la (D)flooor sigue en su herida
+    la (A)hoja ni suspira, en su (Gm)amor, su amor
+  `},
+  {name: "Amor de la Calle", genre: "bolero", key: "Em", chords: "Em-A7-Dm-D7-Gm-Em-A7-Dm-A7-Dm", tags: "",
+  lyrics: `
+  [Verse1]
+    creí que eras (Em)distinta (A7)..... 
+    creí que (Dm)eras sincera... 
+    y te entregué mi (D7)vida... 
+    sin ninguna (Gm)condición... 
+    pero todo fue un (Em-A7)sueño... 
+    de mi alma (Dm)enamorada... 
+    igual que (A7)una de tantas... 
+    jugaste con mi (Dm)amor
+  [Verse2]
+    igual que una de (G)tantas (C-G)
+    igual que (F)una cualquiera... 
+    jugaste con mi (Gm)vida... 
+    y con mi (A7)corazón... el ciel 
+    y si el (Gm)corazón llora... 
+    le pido que se (Dm)calle... 
+    que amores como el (A7)tuyo... 
+    se encuentran en la (Dm)calle
+  `},
+  {name: "a lo oscuro", genre: "merengue slo", key: "A", chords: "A-Dm", tags: "",
+  lyrics: `
+  [verse1]
+    (A)a lo oscuro, meti la mano,
+    (Dm)a lo oscuro, yo meti yo un pie
+    (A)a lo oscuro, me encontré un lió, 
+    (Dm)le pregunte, que como me llamaba,
+    (A)ella me dijo, te dijo en la cama
+  `},
+  {name: "La Travesia", genre: "merengue fast", key: "", chords: "", tags: "",
+  lyrics: `
+  `},
+  {name: "Las Avispas", genre: "merengue fast", key: "Em", chords: "Em-G-Am-B", tags: "",
+  lyrics: `
+  [verse1]
+    tengo un (Em)dios admirado en los cielos, 
+    y el (G)amor de su espíritu santo, 
+    por su (Am)gracia yo soy hombre nuevo, 
+    y de (B)gozo se llena mi canto, 
+    de su (Em)imagen soy un reflejo, 
+    que me (G)lleva por siempre en victoria, 
+    y me ha (Am)hecho cabeza y no cola, 
+    en mi (B)cristo yo todo lo puedo
+  [coro]
+    (Em)jesús me dijo, que (G)me riera, 
+    si (Am)el enemigo, me tienta en la (B)carrera, 
+    (Em)también me dijo, no te (G)mortifiques, 
+    que yo le (Am)envío
+    mis avispas pa (B)que lo piquen, e verdad
+  `},
+  {name: "Amame", genre: "🎸cumbia", key: "Dm", chords: "Dm-Gm-A#-A", tags: "",
+  lyrics: `
+  [lick]
+    lick(Dm-Am-Gm-A)
+  [coro x2]
+    (Dm)Ámame (Gm)quiéreme (A#)sin ti no puedo (A)vivir, 
+    (Dm)Ámame (Gm)quiéreme (A#)sin ti no puedo (A)vivir, 
+    (F)enamorada estoy de (Gm)ti, sin tus (A#)besos no vivo (A)yo, 
+    (F)donde quiera que vayas (Gm)tu mi (A#)corazón y mi alma (A)irán
+  [change]
+    (F)yo no se por que te (Gm)quiero
+    (A#)yo no se por que te (A)amo
+    (F)yo no se por que te (Gm)quiero
+    (A#)yo no se por que te (A)amo
+    si tu cariño no es (Dm)sincero, verdadero, (A#)traicionero, (A)mentiroso
+  [solo flute]
+    Dm-Am-Gm-A
+  `},
+   {name: "Que No Queda Huella", genre: "🎸cumbia", key: "Am", chords: "Am-E", tags: "",
+  lyrics: `
+  [intro]
+    (Am)esta canción que canto amigos, es una mas de (E)dolor
+    si es que me ven llorando amigos, discúlpenme por (Am)favor
+  [verse1]
+    (Am)traigo en el alma pena y llanto, que no puedo (E)contener, 
+    y es que la quiero tanto y tanto, pero me tocó (Am)perder
+    y (A)ahora tengo que (Dm)olvidarla también
+    y (G)arrancarla de mi (C)alma y mi ser
+    (F)y de aquel amor que (Dm)quema mi piel
+    (E)que no quede (Am)nada
+  [coro x2]
+    que no quede (Dm)huella, que no y que no, que no quede (Am)huella
+    porque estoy (Dm)seguro que tú mi amor, ya ni me (Am)recuerdas
+  [end x2]
+    que no quede (E)huella de ti
+    y de los (Am)besos que te di
+    para (E)convencerme mejor que yo
+    ya te (Am)perdí
+  `},
+  {name: "Ya No Caigo Mas", genre: "🎸cumbia", key: "Fm", chords: "Fm-C7-Fm-A#m", tags: "",
+  lyrics: `
+  [verse1]
+    (Fm)ya no caigo más, ya no me enamoro de esa traidora, que me hace (C7)llorar, 
+    ya no caigo más, yo ya no le creo que no tiene credito en el (Fm)celular,
+    ya no caigo más, cuando me asegura que el beso con otro fue (A#m)casualidad, 
+    yo ya estoy (Fm)cansado (C7)descorazonado
+    ya no caigo (Fm)más, yo ya estoy cansado, (C7)descorazonado
+    yo ya no caigo (C7)más ya no caigo (F#m)más
+  [verse2]
+    ya no caigo (A#m)mas, en sus historias, en sus desplantes, no caigo (Fm)más
+    a que me envuelva con sus mentiras, no caigo (C7)más, 
+    a ser la burla de mis amigos, no caigo (Fm)más, ya no caigo (A#m)más, 
+    en los engaños de esa tramposa, no caigo (Fm)más, 
+    a que me acuse de que la asfixio, no caigo (C7)más
+    a que se rían a mis espaldas, no caigo (Fm)más
+  `},
+  {name: "Lluminara", genre: "🎸cumbia fast", key: "Gm", chords: "Gm-F", tags: "",
+  lyrics: `
+    (Gm)salí a caminar, una noche hermosa
+    pero de repente se quedó sin (F)luz la ciudad
+    (Cm)en ese momento se iluminó todo y la gente (Gm)empezó a delirar
+    (F)enloquecerá, (Gm)enloquecerá
+    (Gm)les quiero contar, 
+    que yo estoy hablando de una nueva luna que en el cielo (F)brillando está
+    (Cm)pero si ya saben de lo que les hablo, ahora (Gm)todos van cantar, 
+    vamos a (F)cantar, todos a (Gm)cantar
+    vamos a (F)cantar
+    o-ooo-ooo
+    [coro x2]
+    (F)iluminará, (Gm)iluminará
+    (F)iluminará la nueva, (Gm)iluminará
+  `},
+  {name: "Mentirosa", genre: "🎸cumbia", key: "Fm", chords: "Fm-D#-C#-G#-C7", tags: "",
+  lyrics: `
+  [verse1]
+    (Fm)no vuelvas más, ya no te quiero ver,
+    he sufrido tanto por tu querer, menti-(D#)-rosaaa, menti-(C#)-rosaaa
+    no vuelvas (G#)más, nunca (C7)más... 
+    (Fm)hoy tiene dueña mi corazón,
+    no creo más en tu falso amor, menti-(D#)-rosaaa, menti-(C#)-rosaaa
+    no vuelvas (G#)más aquí, nunca (C7)más a mis (Fm)brazos
+  [verse2]
+    (D#)mentías cuando me decías, 
+    que yo era (Fm)sólo para ti, 
+    (D#)mentías cuando me decías, 
+    que sin mi (Fm)amor no eras feliz *4 hits* 
+    (D#)mentías y te reías,
+    y te (Fm)burlabas de mi gran amor, 
+    (D#)mentías y yo te creía,
+    me (C7)destrozaste el corazón, con tus (Fm)mentiras
+  `},
+  {name: "Elsa", genre: "🎸cumbia fast", key: "Am", chords: "Am-G", info: ``, 
+  lyrics: `
+  [verse1 x2]
+    (Am)esos tus (G)ojitos, (Am)me han (G)embelesado, 
+    (Am)tu dulce (G)mirada mama, (Am)me tiene (G)hipnotizado
+  [coro x2]
+    (Am)elsa elsa, (G)yo te juro (Am)que te quiero, 
+    (G)que sin ti yo (Am)moriría, (G)si me faltar-(Am)-a tu amor (G).....
+  `},
+  {name: "Cumbia Cabeza", genre: "🎹cumbia", key: "Dm", chords: "Dm-C", info: `Conner: piano(bass n chords) n stomp pedal <br> Eric: metal guira chachacha`,
+  lyrics: `
+  [coro x2]
+    (Dm)cumbia cumbia, cumbia cumbia, 
+    esta es mi cumbia (C-Dm)cabeza, 
+    esta la bailan (C-Dm)todos, 
+    tomando coca y (C-Dm)cerveza *o--o-o-o-*
+  [verse]
+    (C)porque paro en la esquina con mis amigos a tomar un vino, 
+    todos me empiezan a (Dm)criticar
+    (C)que yo soy un villero, que soy alegro
+    porque me gusta la (Dm)cumbia
+  `},
+  {name: "-Bailo a las olas?", genre: "🎸cumbia", key: "G", chords: "Gm-F-Cm-F-Gm", tags: "",
+  lyrics: `
+  [verse 1]
+    (Gm)cumbia... bailo a las (F)olas... 
+    el mar me (Cm)llama, (F)a bailar... 
+    porque nos dis-(Gm)-fruta
+  [verse 2]
+    (Gm)cumbia... dancing to the (F)waves...  
+    the ocean (Cm)calls me, to (F)dance again... 
+    you know ill (Gm)be there
+  `},
+  {name: "Que Nadie Sepa Mi Sufrir", genre: "cumbia", key: "Am", chords: "Am-Em-B7-E | Em-Am-D-G-B7-Em-C-B7", tags: "",
+  lyrics: `
+  [Intro]
+    (Am-Em-B7)Guitar/Horn Riff
+  [Verse1]
+    no te (Em)asombres si te digo lo que (Am)fuiste
+    un (D7)ingrato con mi pobre (G)corazón
+    por que el (B7)fuego de tus lindos ojos (Em)negros
+    (C)alumbraron el camino de otro (B7)amor, 
+    y (Em)pensar que te adoraba (Am)tiernamente
+    que a tu (D7)lado como nunca me (G)sentí
+    y por (B7)esas cosas raras de la (Em)vida
+    sin el (C)beso de tu (B7)boca yo me (Em)vi
+  [Verse2]
+    amor de mis (D)amores, amor mio que me (G)hiciste
+    que no puedo (D)conformarme sin poderte (G)contemplar
+    ya que pagaste (B7)mal a mi cariño tan ()sincero
+    lo que (D)conseguirás que no te nombre nunca ()mas
+    amor de mis (D)amores si dejaste de (G)quererme
+    no hay cuidado que la (D)gente de eso no se (G)enterara
+    que gano con (B7)decir que un hombre cambio mi (Em)suerte
+    se burlaran de (C)mi que nadie (B7)sepa mi (Em)sufrir 
+  `},
+  {name: "La Negra Tomasa", genre: "cumbia", key: "Dm", chords: "Dm-A", tags: "",
+  lyrics: `
+  [Verse1 x2]
+    (Dm)estoy tan enamorado, de la negra (A)Tomasa... 
+    que cuando se va de casa... que triste me (Dm)pongo...
+  [Verse1 x2]
+    (Dm)Estoy tan enamorado de mi negra (A)preciosa... 
+    que cuando se va de casa, triste me (Dm)pongo
+  [Verse2 x2]
+    (C)ay, (A#)ay, (A)ay.......*x1*  
+    esa negra (A)linda que me tiene (Dm)loco
+    que me (A)come poquito a (Dm)poco
+  `},
+  {name: "La Camisa Negra", genre: "cumbia", key: "F#m", chords: "", tags: "",
+  lyrics: `
+  [coro]
+   
+  `},
+  {name: "Quizas Perhaps", genre: "🎸bossa nova?", key: "Bm", chords: "capo 2) Am-Dm (F-E) | E7-A",
+  lyrics: `
+  [verse1]
+    siempre que te pregunto
+    qué, cuándo, cómo y dónde
+    tú siempre me respondes
+    quizás, quizás, quizás
+    y así pasan los días
+    y yo, desesperando
+    y tú, tú contestando
+    quizás, quizás, quizás
+  [verse2]
+    you wont admit you love me
+    and so how am I ever to know?
+    you always tell me
+    perhaps, perhaps, perhaps
+    a million times Ive asked you,
+    and then I ask you over again
+    you only answer
+    perhaps, perhaps, perhaps
+    If you cant make your mind up
+    well never get started
+    and I dont wanna wind up
+    being parted, broken-hearted
+    so if you really love me
+    say yes, but if you dont dear, confess
+    and please dont tell me
+    p-erhaps, perhaps, perhaps
+  `},
+  {name: "Tres Agujas", genre: "🎸bossa nova", key: "Bm", chords: "Bm-A | Gmaj7 (bass walk) C#dim-F#7",
+  lyrics: `
+    
+  `},
+  {name: "Girl From Ipanema", genre: "🎸bossa nova?", key: "A", chords: "F-G7-Gm-C7 | F#-B7-F#m-D-Gm-D#9-Am-Abm-Gm-C7", info: `Conner: guitar (fingerpick) <br> Eric: shaker`,
+  lyrics: `
+  [Verse1]
+    (Fmaj7)olha, que coisa mais linda
+    mais cheia de (G7)graça... 
+    É ela, menina, que vem e que (Gm7)passa...
+    num doce (C7)balanço, a caminho do (Fmaj7)mar.....
+    (Fmaj7)moça do corpo dourado
+    do sol de (G7)Ipanema...
+    o seu balançado, É mais que um (Gm7)poema... 
+    É a coisa mais (C7)linda que eu já vi (Fmaj7)passar
+  [Verse2]
+    (F#maj7)ah, por que estou tão (B9)sozinho?
+    (F#m7)ah, por que tudo é tão (D9)triste?
+    (Gm7)ah, a beleza que (D#)existe... 
+    a (Am7)beleza que não é só (Abm7)minha...
+    que (Gm7)também passa (C7)sozinha
+    (Fmaj7)ah, se ela soubesse
+    que quando ela (G7)passa, o mundo sorrindo
+    se enche de (Gm7)graça e fica mais (C7)lindo
+    por causa do (Fmaj7)amor
+  [Verse1 English]
+    (Fmaj7)tall and tan and young and lovely
+    the (G7)girl from Ipanema goes walking
+    and (Gm7)when she passes
+    each (C7)one she passes goes (Fmaj7)ah... 
+    (Fmaj7)when she walks she's like a samba that
+    (G7)swings so cool and sways so gently
+    that (Gm7)when she passes
+    each one (B7)she passes goes (Fmaj7)ah
+  [Verse2 English]
+    (F#maj7)oh, but he watches so (B9)sadly... 
+    (F#m7)how can he tell her he (D9)loves her?
+    (Gm7)yes, he would give his heart (D#)gladly... 
+    but each (Am7)day when she walks to the (Abm7)sea... 
+    she (Gm7)looks straight ahead, not at (C7)me
+  `},
+  {name: "Es Por Ti", genre: "🎸bossa nova?", key: "", chords: "C#m-B-A-B | A-E-F#-B", info: `Conner: guitar (fingerpick) <br> Eric: shaker`, 
+  lyrics: `
+  [verse1]
+    (C#m)cada vez que me le-(B)-vanto, 
+    y veo que a mi (A)lado estás, 
+    me siento (B)renovado, 
+    y me siento (C#m)aniquilado, 
+    aniquilado (B)si no estás, 
+    tu controlas toda (A)mi verdad, 
+    y todo lo que (B)está de más
+  [precoro]
+    tus ojos me (A)llevan lentamente al sol
+    y tu boca me habla (E)del amor y el corazón
+    tu piel tiene (F#)el color, de un rojo a-(B)-tardecer
+  [coro]
+    y es por (A)ti que late mi (E)corazón, 
+    y es por (F#)ti que brillan mis (B)ojos hoy, 
+    y es por (A)ti que he vuelto a (E)hablar de amor, 
+    y es por (F#)ti que calma (B)mi dolor
+  `},
+  {name: "Streets of Gold", genre: "🎸reggae dub", key: "A#m", chords: "A#m-Fm | F#-G#-A#m", tags: "",
+  lyrics: `
+  [intro]
+
+  [verse1]
+    (A#m)I had a vision last night, 
+    that I was (F#)walking on a (G#)street of pure (A#m)gold...
+    the street that I saw is where I and I should have been
+    but (F#)not until we stand (G#)up fight for our (A#m)rights
+  [coro x2]
+    (A#m)dreadlocks the (G#)time is now, 
+    (A#m)stand up fight (G#)for your rights
+    (A#m)or you aint gonna (G#)get your culture man
+    (A#m)roots natty (G#)dont give up, hold on
+  [verse2]
+    (A#m)if I am wrong, be not afraid to say so,
+    (F#)is there any (G#)difference between black and (A#m)white?
+    we are (A#m)all of one skin, same blood same soul,
+    but (F#)there are some who (G#)think, dreadlocks dont (A#m)count
+
+  `},
+  {name: "Satta Massagana", genre: "🎸reggae dub", key: "Am", chords: "Am-Dm", tags: "",
+  lyrics: `
+  [verse 1]
+    (Am)there is a land, (Dm)far far away
+    (Am)where theres no night, (Dm)theres only day
+    (Am)look into the book of life (Dm)and you will see
+    (Am)that theres a land (G)far far (Am)away
+    (Am)that theres a land (G)far far (Am)away
+  [verse 2]
+    (Dm)the king of kings and the (Am)lord of lords
+    (Dm)sit upon his throne and He (Am)rules us all
+    (Dm)look into the book of life and (Am)you will see
+    that (C-G)heeeee rules us (Am)all, that (C-G)heeeee rules us (Am)all 
+  `},
+  {name: "Swing Easy", genre: "reggae riddim", key: "Dm", chords: "Dm-Gm", tags: "",
+  lyrics: `
+   
+  `},
+  {name: "Pressure and Slide", genre: "reggae riddim", key: "C", chords: "C-D-E-D", tags: "",
+  lyrics: `
+  *2 chord hits each, bass line
+  `},
+  {name: "Get up Stand up", genre: "reggae", key: "Cm", chords: "", tags: "",
+  lyrics: `
+  [Coro x2]
+    (Cm)get up, stand up, stand up for your right, 
+    (Cm)get up, stand up, dont give up the fight 
+  [Verse1]
+    (Cm)preacher man dont tell me (Gm)heaven is under the earth
+    (Cm)I know you dont know what (Gm)life is really worth
+    (Cm)its not all that glitter is gold, 
+    (Gm)half the story has never been told
+    so (Cm)now you see the light, 
+    (Cm)stand up for your right. Come on
+  [Verse2]
+    (Cm)most people think God'll come(Gm) from the sky
+    (Cm)take away everything, and make (Gm)everyone right
+    (Cm)but if you know what life is worth
+    (Gm)you would look for yours on earth
+    (Cm)now you see the light
+    (Gm)stand up for your right, yeah
+  `},
+  {name: "Waiting in Vain", genre: "reggae swing", key: "G#m", chords: "G#maj7-C#maj7", tags: "",
+  lyrics: `
+  [Coro]
+    (G#maj7)I dont wanna wait in (C#maj7)vain for your love
+  [Verse1]
+    (G#maj7)from the very first time I (C#maj7)blessed my eyes on you, 
+    (G#maj7)..... my heart says follow (C#maj7)through
+    (G#maj7)..... but I know, now, that Im (C#maj7)way down on your line
+    (G#maj7)..... but the waitin feel is (C#maj7)fine
+    (G#maj7)..... so don't treat me like a (C#maj7)puppet on a string
+    (G#maj7)..... cause I know how to do my (C#maj7)thing
+    (G#maj7)..... don't talk to me as if you (C#maj7)think I'm dumb
+    (G#maj7)..... I wanna know when you're gonna (C#maj7)come, see
+  `},
+  {name: "One Love", genre: "reggae", key: "A", chords: "A", tags: "",
+  lyrics: `
+  [Coro x2]
+    (A)one love, (E)one heart, (D)lets get (A)together and (E)feel all (A)right
+  [Verse1]
+    (A)let them all (F#m)pass all their (D)dirty (A)remarks...
+    there is one (F#m)question Id (D)really love to (A)ask...
+    is there a (F#m)place for the (D)hopeless (A)sinner...
+    who has (F#m)hurt all (D)mankind (E)just to save his (A)own
+  [Verse2]
+    (A)lets get (F#m)together to (D)fight this Holy (A)Armageddon...
+    so when the (F#m)Man comes there will (D)be no, no (A)doom...
+    have (F#m)pity on those whose (D)chances grow (A)thinner...
+    there (F#m)aint no hiding (D)place from the (E)Father of (A)Creation
+  `},
+  {name: "Roots Rock Reggae", genre: "reggae", key: "Bm", chords: "Bm-Em-Bm-F#m", tags: "",
+  lyrics: `
+  [Coro]
+    (Bm)play I some (Em)music, (Bm)this a reggae music (F#m).....
+    (Bm)play I some (Em)music, (Bm)this a reggae music (F#m).....
+    (Bm)roots rock (Em)reggae, (Bm)this a reggae music (F#m).....
+    (Bm)roots rock (Em)reggae, (Bm)this a reggae music (F#m).....
+  [Verse1]
+    (Bm)hey mister (Em)music, you (Bm)sure sound good to (F#m)me...
+    (Bm)I cant (Em)refuse it, (Bm)what do we got to (F#m)be...
+    (Bm)feel like (Em)dancing (Bm)dance cause we are (F#m)free...
+    (Bm)feel like (Em)dancing (Bm)come dance with (F#m)me
+  [Verse2 x2]
+    (Bm)play I on the (Em)R&B, (Bm)want all my people to sing (F#m).....
+    were (Bm)bubbling on the top one (Em)hundred, (Bm)just like a mighty dread (F#m).....
+  `},
+  {name: "Forever Loving Jah", genre: "reggae", key: "F#m", chords: "F#m--Bm-C#m", tags: "",
+  lyrics: `
+  [Coro x2]
+    (F#m)we'll be forever loving (Bm-C#m)Jah
+  [Verse1]
+    some they say (F#m)see them walking (Bm)up the street (C#m).....
+    they say were (F#m)going wrong to all the (Bm)people we meet (C#m).....
+    but we wont (F#m)worry, we wont (Bm)shed no tears (C#m).....
+    we found a (F#m)way to cast (Bm)away the fears (C#m).....
+  [Verse2]
+    so old man (F#m)river, don't (Bm)cry for me (C#m).....
+    Ive got a (F#m)running stream, of love you (Bm)see...
+    so (C#m)no matter what (F#m)stages... (Bm)stages, (C#m)stages stages they (F#m)put us through, 
+    we'll never be (Bm)blue (C#m)..... 
+    no matter what (F#m)rages, oh (Bm)rages, (C#m)changes, rages they (F#m)put us through, 
+    we'll never be (Bm)blue (C#m)..... 
+  `},
+  {name: "Could You be Loved", genre: "reggae", key: "Bm", chords: "Bm-Em-", tags: "",
+  lyrics: `
+  [Coro x2]
+    (D)could you be (Bm)loved, (G)..... and be (D)love.....
+  [Verse1]
+    (Bm)dont let them fool (Em)ya 
+    (Bm)..... or even try to school ya (Em)..... 
+    (Bm)weve got a mind of our own
+    so go to (G)hell if (F#m)what youre thinking is (Em)not right... 
+    (Bm)love would never leave us alone,
+    ayin the (G)darkness there (F#m)must come out to (A)light
+  [Verse2]
+    the (Bm)road of life is rocky and you may stumble too,
+    so (Bm)while you point your fingers someone else is judging you
+    (Bm)love your brotherman
+  `},
+  {name: "Night Nurse", genre: "reggae", key: "Am", chords: "Am-G", tags: "",
+  lyrics: `
+  [Verse 1]
+    
+  `},
+  {name: "Concrete Jungle", genre: "reggae", key: "Em", chords: "", tags: "",
+  lyrics: `
+  [Verse 1]
+    (Em)..... no sun will (Am)shine in my (Em)day today *No sun will shine*
+    the high yellow (Am)moon won't come out to (D)play *won't come out to play*
+    I said (C)darkness has covered (Em)my light
+    (C)and has changed my day (Em)into night,  
+    (G)..... where is the love to be (D)found, 
+    wont someone tell me
+    cause (Em)life, sweet life
+    (Am)must be (Em)somewhere to be found , 
+    instead of concrete jungle 
+  `},
+  {name: "Soul Rebel", genre: "reggae swing", key: "Dm", chords: "Dm-C | C-Dm-F-G", tags: "",
+  lyrics: `
+  [Coro]
+    Im a (Dm)rebel... soul (C)rebel...
+    Im a (Dm)capturer... soul (C)adventurer
+  [Verse1]
+    (C)see the morning sun aaaa (Dm)aa...
+    on the hillside
+    (F)..... if not living (G)good... then (C)travel wide...
+    said Im a living man aaaa (Dm)aa...
+    Ive got work to do
+    (F)..... if youre not happy (G)children...
+    then you (C)must be blue
+  `},
+  {name: "Your House", genre: "reggae", key: "Am", chords: "Am-Dm-A-D", tags: "",
+  lyrics: `
+  [Verse1]
+    (Am)..... your (G)love is a (Dm)life for (C)I... 
+    (Am)..... realized that (G)so much... 
+    when I (Dm)first met (C)you
+    (Am)..... that was some (G)time ago (Dm).....
+    from then until (C)this... 
+    (Am)resist (G)no no no (Dm)close to you (C).....
+    (Am)..... (G)oh yes, oh yes (Dm)right from the start (C).....
+    (Am)..... (G)no no no (Dm)could never part (C)..... 
+    (Am)..... (G)oh I (Dm)hear from that thought (C).....
+  [Coro]
+    (Am)I wanna live in (G)your house
+    (Dm)I wanna live in (Am)your house... 
+    you say dry your (G)nose
+    (Dm)wipe that (Am)tear drop from your (G)eye (Dm-Am).....  
+  `},
+  {name: "Rock Fort Rock", genre: "reggae", key: "Dm", chords: "Dm-C", tags: "",
+  lyrics: `
+  [Part1]
+    (Dm-C)bass riff
+  [Part2 WalkDown]
+    (Dm-C-A#-Am-Gm-F-Em-Dm-A)walk down
+  `},
+  {name: "Mans World", genre: "🎸blues slow", key: "Dm", chords: "Dm-Am-Dm-Gm-A", info: `Conner: guitar rhythm <br> Eric: drumset(Boom ts ts Kat ts ts)`,
+  lyrics: `
+    [Coro]
+      this is a (Dm)mans world (Am).....
+      this is a (Dm)mans world (Am).....
+      (Gm)but it would be (Am)nothing, nothing
+      without a (A)woman or a (Dm)girl
+    [Verse1]
+      (Dm)..... man made the (Am)cars
+      (Dm)..... to take us over the (Am)road
+      (Dm)..... man made the (Am)train
+      (Dm)..... to carry the heavy (Am)load
+      (Dm)..... man made the (Am)electrolight
+      (Dm)..... to take us out of the (Am)dark
+      (Dm)..... man made the (Am)boat for the water
+      (Dm)..... like Noah made the (Am)ark
+  `},
+  {name: "Dust my Broom", genre: "blues shuffle", key: "", chords: "", tags: "",
+  lyrics: `
+  [Verse1]
+    (D)Im gonna get up in the mornin (G)...... I believe Ill dust my (D)broom... 
+    Im gonna get up in (G)soon the mornin I believe Ill dust my (D)broom... 
+    out with the (A)best gal im lovin (G).....
+    all my friends cant get my (D)room
+  [Verse2]
+    Im gonna (D)write a letter, (G)telephone every town I (D)know...
+    Im gonna (D)write a letter, (G)telephone every town I (D)know...
+    If I don't find (A)her in Mississippi (G)..... she be in (D)East Monroe I know
+  [Verse3]
+
+  `},
+  {name: "Hoochie Coochi Man", genre: "blues shuffle", key: "E", chords: "E-B-A", tags: "",
+  lyrics: `
+  [Verse1]
+    (E)the gypsy woman told my mother *Riff* 
+    before I was born *Riff* 
+    you got a boy childs comin *Riff* 
+    hes gonna be a son of a gun *Riff* 
+    he gonna make pretty womens *Riff* 
+    jump and shout *Riff* 
+    then the world wanna know *Riff* 
+    (A7)what this all about
+  [Coro]
+    (E)but you know Im him
+    everybody knows Im him
+    well you know Im the (B)hoochie coochie man (A)...... 
+    everybody knows Im (E)him
+  [Verse2]
+    (E)I got a black cat bone *Riff* 
+    I got a mojo too *Riff* 
+    I got the Johnny Concheroo *Riff* 
+    Im gonna mess with you *Riff* 
+    Im gonna make you girls *Riff* 
+    lead me by my hand *Riff* 
+    then the world will know *Riff* 
+    the hoochie coochie man
+  [Verse3]
+    (E)on the seventh hour *Riff* 
+    on the seventh day *Riff* 
+    on the seventh month *Riff* 
+    the seven doctors say *Riff* 
+    he was born for good luck *Riff* 
+    and that youll see *Riff* 
+    I got seven hundred dollars *Riff* 
+    dont you mess with me
+  `},
+  {name: "Got my Mojo Working", genre: "blues fast", key: "E", chords: "E-A-E-B7", tags: "",
+  lyrics: `
+  [coro]
+    got my (E)mojo working, but it just wont work on you... 
+    got my (A)mojo working, but it just wont work on (E)you... 
+    I wanna (B7)love you so bad (A)I don't know what to (E)do (B7).....
+  [verse1]
+    Im going (E)down to Louisiana to get me a mojo hand... 
+    Im going (A)down to Louisiana to get me a mojo hand... 
+    Im gonna (B7)have all you women (A)fetchin my (E)command (B7).....
+  [verse2]
+    I got a (E)gypsy woman giving me advice... 
+    I got a (A)gypsy woman giving me (E)advice... 
+    I got a (B7)whole lot tricks (A)keepin them on (E)ice (B7).....
+  `},
+  {name: "My Babe", genre: "blues fast", key: "Fm", chords: "Fm—Cm-Fm-A#m (fingr7th)", tags: "",
+  lyrics: `
+  [coro]
+    (Fm)my baby dont stand no cheatin, my babe
+    oh yeah she dont stand no cheatin, (Cm)my babe
+    (Fm)oh yeah she dont stand no cheatin... 
+    she (A#m)dont *STOP* stand none of that midnight creepin
+    (Fm)my babe, true little baby, my babe 
+  [verse2]
+    (Fm)my babe, I know she love me, my babe...
+    oh yes, I know she love me, (Cm)my babe...
+    (Fm)oh yes, I know she love me...
+    she (A#m)dont *STOP* do nothin but kiss and hug me
+    (Fm)my babe, true little baby, my babe
+  `},
+  {name: "Thrill is Gone", genre: "🎸blues", key: "Am", chords: "Am-Dm-Am-Em",
+  lyrics: `
+    
+  `},
+  {name: "Smokestack Lightning", genre: "blues fast", key: "Em", chords: "Em", tags: "",
+  lyrics: `
+  [Verse1]
+    (Em)ah-oh, smokestack lightnin'
+    shinin' just like gold
+    why don't ya hear me cryin'?
+    a-whoo-hooo, oooo whooo
+  [Verse2]
+    (Em)whoa-oh, tell me baby
+    whats the matter with you
+    why dont ya hear me cryin
+    whoo-hooo, whoo-hooo whooo
+  `},
+  {name: "To Know You is to Love You", genre: "blues", key: "Dm", chords: "Dm-A(A7)-Gm | G-Dm-G-A#-A", tags: "",
+  lyrics: `
+  [Verse1]
+    (Dm)to know you... is to (A)love you...
+    but to (Gm)know me... is not the way you (Dm)see...
+    cause you (Dm)made me... so (A)happy...
+    that my (Gm)love for you... grows (Dm)endlessly
+  [Coro]
+    when Im (G)down and feeling sad, 
+    you always (Dm)comfort me... 
+    when Im (G)down and feeling sad, 
+    you always (A#)comfort me (A).....
+  [Verse2]
+    to know (Dm)you... is to (A)love you... 
+    you (Gm)smile... when I see your (Dm)face... 
+    cause there (Dm)aint no one... on this (A)earth... 
+    could (Gm)ever, (Dm)take your place
+  `},
+  {name: "Born under a Bad Sign", genre: "blues", key: "C#m", chords: "C#m-G#m-F#", tags: "",
+  lyrics: `
+  [Coro]
+    (C#m)born under a bad sign been down since I began to crawl... 
+    (G#m)if it wasnt for bad luck
+    (F#)you know, I wouldnt have no luck at (C#m)all
+  [Verse1]
+    (C#m)hard luck and trouble been my only friend... 
+    Ive been on my own ever since I was ten
+  [Verse2]
+    (C#m)I cant read I didnt know how to write
+    my whole life has been one big fight
+  `},
+  {name: "Im Ready", genre: "blues swing", key: "D#", chords: "D#-A#7-G#7", tags: "",
+  lyrics: `
+  [Coro]
+    (D#)I am ready, as ready as anybody can be... 
+    I am ready, ready as anybody can be... 
+    I am (A#7)ready for you, I (G#7)hope you ready for me
+  [Verse1 *Stops*]
+    got a (D#)axe handled (D#)pistol on my (D#)graveyard (D#)frame...
+    that shoot (D#)tombstone (D#)bullets, wearing (D#)balls and (D#)chain...
+    Im drinking (D#-D#)T-NT, Im smoking (D#-D#)dyna-mite
+    I (D#)hope some screwball start a fight
+  [Verse2 *Stops*]
+    all you (D#)pretty little (D#)chicks with your (D#)curly (D#)hair... 
+    I (D#)know you (D#)feel like I (D#)aint (D#)nowhere... 
+    well, (D#)stop what youre (D#)doing, baby, (D#)come over (D#)here
+    Ill (D#)prove to you baby that I aint no square
+  [Verse3 *Stops*]
+    I been (D#)drinking (D#)gin like (D#)never (D#)before... 
+    I (D#)feel so (D#)good I (D#)want you to (D#)know... 
+    (D#)one more (D#)drink, I (D#)wish you (D#)would
+    I takes a (D#)whole lotta loving to make me feel good
+  `},
+  {name: "Crazy", genre: "blues slow", key: "", chords: "A-F#m-D-Dm-Bm-E-Cm-F#-D-Dm", tags: "",
+  lyrics: `
+  [coro]
+    I go (A)crazy, (F#m)crazy (D)baby, I go (Dm)crazy
+    (A)..... you turn it (F#m)on then youre (D)gone
+    yeah, you (E)drive me (A)crazy
+    (F#m)crazy, (D)crazy for you (Dm)baby
+    (F#m)what can I (E-C#m)do honey
+    I feel like the (F#)color (D-Dm)blue
+  `},
+  {name: "Tennessee Whiskey", genre: "blues slow", key: "E", chords: "E-A-E-B7", tags: "",
+  lyrics: `
+  [Verse1]
+    (A)used to spend my nights out in a (Bm)barroom... 
+    liquor was the only love Id (A)known.. 
+    but you rescued me from reachin for the (Bm)bottom... 
+    and brought me back from being too far (A)gone
+  [Coro]
+    youre as (A)smooth as Tennessee (Bm)whiskey... 
+    youre as sweet as strawberry (A)wine... 
+    youre as waaaarm as a glass of (Bm)brandy... 
+    and honey, I stay stoned on your love all the (A)time
+  [Verse2]
+    (A)ive looked for love in all the same old (Bm)places... 
+    found the bottom of a bottles always (A)dry... 
+    but when you poured out your heart, I didn't waste (Bm)it... 
+    cause theres nothing like your love to get me (A)high
+  `},
+  {name: "What a Wonderful World", genre: "soul 3", key: "", chords: "", tags: "",
+  lyrics: `
+  [Verse1]
+    I see (C)trees of (Em)green, 
+    (F)..... red roses (Em)too, 
+    (Dm)..... I see them (C)bloom, 
+    (E7)..... for me and (Am)you
+    and I (G#)think to myself (Dm7)..... 
+    what a (G)wonderful (C)world (G)..... 
+  [Verse2]
+    I see (C)skies of (Em)blue, 
+    (F)..... and clouds of (Em)white, 
+    (Dm)..... the bright blessed (C)day, 
+    (E7)..... the dark sacred (Am)night, 
+    and I (G#)think to myself (Dm7)..... 
+    what a (G)wonderful (C)world
+  [Bridge]
+    the (G)colors of the rainbow, so (C)pretty in the sky, 
+    (G)are also on the faces of (C)people going by, 
+    I see (Am)friends shaking (Em)hands saying, (Am)how do you (Em)do, 
+    (F)theyre really (Em)saying (Dm)I (C)love (G)you
+  [Verse3]
+    I hear (C)babies (Em)cry (F)..... I watch them (Em)grow, 
+    (Dm)..... theyll learn much (C)more than (E7)..... Ill ever (Am)know, 
+    and I (G#)think to myself (Dm7)..... what a (G)wonderful (C)world
+    yes, (Fmaj7)I think to myself, (Dm7)what a (G)wonderful (C)world
+  `},
+  {name: "Lets Stay Together", genre: "soul", key: "", chords: "", tags: "",
+  lyrics: `
+  [Verse1]
+    (F)I, Im Im so in (Am7)love with you, 
+    whatever you (A#)want to do, 
+    is all right with (A#m9)me, 
+    cause (Am7)you (Gm7)make me (Fmaj7)feel (Em)so brand (Dm9)new, 
+    and (Am)I (Gm)want to (Fmaj7)spend my life with (Dm9)you
+  [Verse2]
+    (F)since, since weve been (Am)together, 
+    loving you (A#)forever is what I (A#m9)need, 
+    (Am7)let me (Gm7)be the (Fmaj7)one you come (Em)running (Dm9)to, 
+    (Am)Ill (Gm7)never (Fmaj7)be (Am7-Dm9)un-untrue
+  [coro]
+    (Gm9)lets, lets stay (Am7)together, 
+    lovin you (Gm9)whether, whether
+    times are (A#)good or (Am7)bad, (Dm7)happy or (C)sad
+  `},
+  {name: "A Change is Going to Come", genre: "🎸soul 3", key: "A#", chords: "A#-Cm-Gm", tags: "",
+  lyrics: `
+  [Verse1]
+    I was (A#)born by the river
+    in a little tent
+    (Cm)oh, and just like the river, (Gm)Ive been running ever since, 
+    its been a (A#)looong, a long time (Cm7)coming, but I (D7)know
+    (Gm)a change gon come, 
+    oh (A#)yes, it will...
+
+    Its been too hard living
+    but Im afraid to die (Cm).....
+    cause I dont know whats up there (Gm).....
+    Beyond the sky... 
+    its been a (A#)looong
+    a (Cm)long time coming, but I (D7)know
+    a (Gm)change gon come,
+    oh (A#)yes, it will
+  [Verse2]
+    (Cm)..... then I go to (Gm)my brother
+    (Cm)..... and I say brother help me (Gm)please
+    (Cm)..... but he (Gm)wind up knocking me
+    (Cm).....back down on my (F)knees
+  `},
+  {name: "Heard it Through the Grape Vine", genre: "soul", key: "D#m", chords: "D#m-A#-G#", tags: "",
+  lyrics: `
+  [verse1]
+    (D#m)bet youre wonderin how I knew,
+    bout your (A#)plan to make me (G#)blue,
+    with some other (D#m)guy that you knew before,
+    between the two of us (A#)guys you know I loved you (G#)more,
+    it took me by (Cm)surprise, I must (G#)say
+    when I (D#)found out (G)yesterday
+  [coro]
+    I (D#m)heard it through the grapevine
+    not much (G#)longer would you be mine,
+    I (D#m)heard it through the grapevine
+    and Im (G#)just about to lose my mind
+    honey, honey, (D#m)yeah
+  [verse2]
+    (D#m)you know that a man aint supposed to cry,
+    but these (A#)tears I cant hold (G#)inside,
+    losin you would end my life, you see
+    cause you mean that much to me
+    you could have told me yourself
+    that you found someone else, instead
+  [verse3]
+    (D#m)people say, you hear from what you (A#)see
+    not from what you (G#m)hear,
+    I cant help but being confused
+    if its true, won't you tell me, dear
+    do you plan to let me go
+    for the other guy that you knew before
+  `},
+  {name: "Lets Straighten It Out", genre: "R&B bass", key: "Gm", chords: "Gm-Dm", tags: "",
+  lyrics: `
+  [Verse1]
+    sit yourself down, girl
+    and (Gm)talk to me, 
+    tell me whats on your (Dm)mind, 
+    dont you keep on tellin me (Gm)everythings okay, 
+    cause if it was then you wouldnt be (Dm)cryin
+  [Verse2]
+    you been tossin and turnin in yo (Gm)sleep lately,
+    sittin round poutin all day (Dm)long, 
+    now, how in the hell you expect me to (Gm)understand, 
+    when I dont even know whats (Dm)wrong
+  [Coro x2]
+    lets (Gm)straighten it out
+    lets (Dm)straighten it out
+  `},
+  {name: "Come Home for Christmas", genre: "🎸soul 3", key: "A", chords: "", tags: "",
+  lyrics: `
+  [Verse1]
+    bells will be (A-Amaj7)ringin... the sad, sad (A7)news, 
+    oh, what a (D)christmas to have the (B7)blues, 
+    my babys (A-D)gone, I have no (A-G#-Fm)friends, 
+    to wish me (B7)greetings once (E7)again 
+  [Verse2]
+    choirs will be (A-Amaj7)singin, silent (A7)night, 
+    christmas (D)carols, by (B7)candlelight, 
+    please come home for (A-D)christmas, please come home for (A-G#-Fm)christmas, 
+    if not for (B7)christmas, by new years (E7)night
+  [Bridge]
+    friends and (D)relations, send (Dm)salutations,
+    (A)sure as the stars shine above (A7)..... 
+    but this is (D)christmas, yes, christmas my (Dm)dear, 
+    some time of (B7)year to be with the one you (E7)love
+  [Verse2]
+    so wont you (A-Amaj7)tell me youll never more (A7)roam, 
+    christmas and (D)New Years will find you (B7)home,
+    therell be no more (A-D)sorrow, no grief and (A-G#-Fm)pain,
+    and Ill be (B7)happy, happy once (E7)again
+  `},
+  {name: "Footsteps in the dark", genre: "R&B", key: "", chords: "", tags: "",
+  lyrics: `
+  [Intro]
+  (Em-Bm)*Drum n Bass then guitar riff*
+  [Verse1]
+    (Em)are we really (Bm)sure, 
+    can a (Em)love that lasted for so long (Bm)still endure?
+    (Em)do I really (Bm)care? hey, hey
+    lets (Em)talk about the distractions goin on (Bm)elsewhere
+  [Coro x2]
+    (Cmaj7)I keep hearin (Amaj7)footsteps, baby
+    in the (F#m7)dark, oh, in the (Bm7)dark
+  [Verse2]
+    (Em)my mind drifts now and (Bm)then, 
+    lookin (Em)down dark corridors and wonders what (Bm)might have been, 
+    (Em)somethings up (Bm)ahead, should I (Em)keep this same direction or go (Bm)back instead
+  `},
+  {name: "Right Next Store", genre: "R&B cool", key: "", chords: "", tags: "",
+  lyrics: `
+    [Intro]
+      *Drum and Bass 4 times*
+    [Verse1]
+      I can (Cm)hear the couple fighting right next (D#)door, 
+      their angry (Fm)words sound clear through these thin (Cm)walls, 
+      around (Cm)midnight I heard him shout, unfaithful (D#)woman, 
+      and I (Fm)knew right there the (D#)axe was gonna (Cm)fall, 
+      its because of (A#)me, its because of (Cm)me
+    [Verse2]
+      (Cm)I heard him shout who is he, she mumbled (D#)low
+      he said (Fm)Baby dont you (D#)lie to me no (Cm)more, 
+      Im listening through these thin walls, in (D#)silence and shame
+      as she (Fm)called out my name I was right next (Cm)door
+      its because of (A#m)me, its because of (Cm)me
+      be-(A#)cause of me oh because of (Cm)me
+    [Verse3 *bass tap*]
+      she was (G#)right next door and (A#)Im such a strong (Cm)persuader, 
+      she was (G#)just another (A#)notch on my (Cm)guitar, 
+      shes (G#)gonna lose the man (A#)that really (Cm)loves her, 
+      in the silence I can hear their breaking (Cm)hearts, 
+      (D#-Cm-A#-G#-G)oooh oooh oooh *SOLO, Keep going*
+  `},
+  {name: "Too Close", genre: "", key: "Bm", chords: "Bm-D-Em-F#", tags: "",
+  lyrics: `
+  [verse1]
+    (Bm)you know Im not (D)one to (Em)break promises (Em-F#).....
+    (Bm)I dont want to (D)hurt you but I need to (Em)breathe (Em-F#)..... 
+    (Bm)at the end of it (D)all, youre still my (Em)best friend (Em-F#).....  
+    (Bm)but theres something (D)inside that I need to (Em)release (Em-F#).....  
+  [verse2]
+    (Bm)which way is right, (D)which way is wrong,
+    (Em)how do I say that I (F#)need to move on,
+    (Bm)you know were (D)heading separate (Em-F#)ways
+  [coro]
+    and it (Bm)feels like I am just (D)way too close to (Em)love you (Em-F#)..... 
+    (Bm)theres nothing (D)I can really (Em-F#)say, 
+    (Bm)I cant lie no more (D)I cant hide no more
+    (Em)got to be true to (E-F#)myself, 
+    and it (Bm)feels like I am just (D)way too close to (Em)love you, 
+    so Ill be on my way
+  `},
+  {name: "Paradise", genre: "", key: "Gm", chords: "Gm-F-C", tags: "",
+  lyrics: `
+  [verse1]
+    
+  `},
+  {name: "Counting Stars", genre: "", key: "C#m", chords: "C#m-E-B-A", tags: "",
+  lyrics: `
+  [coro]
+    lately ive been ive been losing sleep, 
+    dreaming about the things that we could be, 
+    but baby ive been ive been praying hard, 
+    said no more counting dollars well be counting stars, 
+    well be counting stars
+  [verse1]
+    I see this life like a swinging vine
+    swing my heart across the line
+    and in my face is flashing signs
+    seek it out and ye shall find
+  [verse2]
+    old but im not that old young but im not that bold
+    and I dont think the world is sold on just doing what were told
+  [precoro]
+    I feel something so right doing the wrong thing, 
+    and I feel something so wrong doing the right thing, 
+    I couldnt lie couldnt lie couldnt lie, 
+    everything that kills me makes me feel alive
+  `},
+  {name: "Viva La Vida", genre: "", key: "C#", chords: "C#-D#7-G#-Fm", tags: "",
+  lyrics: `
+  [verse1]
+    
+  `},
+  {name: "Am I Wrong", genre: "", key: "Cm", chords: "Cm-G#-D#-A#", tags: "",
+  lyrics: `
+  [verse1]
+    am I (Cm-G#)wrong, for (D#)thinking out (A#)the box from where (Cm-G#)I stay (D#-A#).....
+    am I (Cm-G#)wrong, for (D#)saying that (A#)Ill choose (Cm-G#)another way (D#-A#).....
+    I aint (Cm)trying to do (G#)what everybody (D#-A#)else doing, 
+    just cause (Cm-G#)everybody doing what they (D#-A#)all do, 
+    if (Cm)one thing (G#)I know, how (D#)far would (A#)I grow, 
+    im (Cm)walking down (G#)this road of mine this (D#)road that I (A#)call home
+  [coro]
+    so am I (Cm-G#)wrong, for (D#)thinking that we (A#)could be something for (Cm-G#)real (D#-A#).....
+    now am I (Cm-G#)wrong, for (D#)trying to reach (A#)the things that I cant (Cm-G#)see (D#-A#).....
+    but thats just how I (Cm-G#)feel, (D#-A#)..... thats just how I (Cm-G#)feel, (D#-A#).....
+    thats just how I (Cm-G#)feel (D#)trying to reach (A#)the things that I cant (Cm-G#)see, (D#-A#).....
+    
+  `},
+  {name: "Wake me up", genre: "", key: "Bm", chords: "Bm-G-D", tags: "",
+  lyrics: `
+  [verse1]
+    (Bm)feeling my (G)way through the (D)darkness, 
+    (Bm)guided (G)by a beating (D)heart, 
+    (Bm)I cant (G)tell where the (D)journey will end, 
+    (Bm)but I (G)know where to (D)start, 
+    (Bm)they tell me im (G)too young to (D)understand, 
+    (Bm)they say im (G)caught up in a (D)dream, 
+    (Bm)well life will (G)pass me by if I (D)dont open up my eyes
+    (Bm)well thats (G)fine by (D)me
+  [coro]
+    so wake me (Bm)up when (G)its all (D)over, 
+    when Im (Bm)wiser (G)and im (D)older, 
+    all this (Bm)time I was (G)finding (D)myself and I
+    (Bm)didnt (G)know I was (D)lost
+  [verse2]
+    (Bm)I tried (G)carrying the (D)weight of the world, 
+    (Bm)but I (G)only have two (D)hands, 
+    (Bm)hope I (G)get the chance to (D)travel the world, 
+    (Bm)but I dont (G)have any (D)plans, 
+    (Bm)wish that (G)I could stay (D)forever this young, 
+    (Bm)not (G)afraid to close my (D)eyes, 
+    (Bm)lifes a game made for everyone, 
+    (Bm)and (G)love is a (D)prize
+  `},
+  {name: "Titanium", genre: "", key: "", chords: "D#-A#-Cm | G#-A#-Gm-Cm", tags: "",
+  lyrics: `
+  [verse1]
+    
+  `},
+  {name: "Safe and Sound", genre: "", key: "F", chords: "F-C-Am-G", tags: "",
+  lyrics: `
+  [verse1]
+    (F)I could lift you (C)up, 
+    I could (Am)show you what you want to see
+    and (G)take you where you want to be, 
+    (F)you could be my (C)luck, 
+    even (Am)if the sky is falling down
+    I (G)know that well be safe and sound, 
+  [verse2]
+    (F)I could fill your (C)cup, 
+    you know my (Am)river wont evaporate
+    this (G)world we still appreciate
+    (F)you could be my (C)luck, 
+    even (Am)in a hurricane of frowns
+    I (G)know that well be safe and sound
+  `},
+  
+  {name: "Rolling in the Deep", genre: "", key: "Cm", chords: "Cm-A#-G#", tags: "",
+  lyrics: `
+  [verse1]
+    theres a (Cm)fire (A#)starting in my heart, 
+    (G#)reaching a fever pitch its bringing me out the dark, 
+    finally I can see you crystal clear
+    go ahead and sell me out and ill lay your shit bare
+    See how I leave with every piece of you
+    Don't underestimate the things that I will do
+  `},
+  {name: "Burn", genre: "", key: "A#m", chords: "A#m-F#-C#-G#", tags: "",
+  lyrics: `
+  [verse1]
+    
+  `},
+  {name: "Best day of my life", genre: "", key: "D", chords: "D-G", tags: "",
+  lyrics: `
+  [verse1]
+    
+  `},
+  {name: "Break your heart", genre: "", key: "Cm", chords: "Cm-G#-D#-A#", tags: "",
+  lyrics: `
+  [verse1]
+    
+  `},
+  {name: "Only Girl", genre: "", key: "F#m", chords: "F#m | G-Bm-G-Bm", tags: "",
+  lyrics: `
+  [verse1]
+    
+  `},
+  {name: "Wagon Wheel", genre: "country 1,2swing", key: "A", chords: "A-E-F#m-D", tags: "",
+  lyrics: `
+  [verse1]
+    (A)headin down south to the (E)land of the pines, 
+    im (F#m)thumbin my way into (D)North Caroline, 
+    (A)starin up the road and (E)pray to God I see (D)headlights, 
+    I (A)made it down the coast in (E)seventeen hours, 
+    (G#m)pickin me a bouquet of (D)dogwood flowers, 
+    and Im (A)ahopin for Raleigh, I can (E)see my baby (D)tonight
+  [coro]
+    (A)rock me mama like a (E)wagon wheel, 
+    (F#m)rock me mama any (D)way you feel, 
+    (A-E)heeey, mama (D)rock me, 
+    (A)rock me mama like the (E)wind and the rain, 
+    (F#m)rock me mama like a (D)southbound train, 
+    (A-E)heeey, mama (D)rock me, 
+  [verse2]
+    (A)runnin from the cold (E)up in New England
+    I was (F#m)born to be a fiddler in an (D)old time string band
+    my (A)baby plays a guitar, (E)I pick a banjo (D)now, 
+    (A)north country winters keep (E)agettin me down 
+    lost my (F#m)money playin poker so I (D)had to leave town, 
+    but I (A)aint turnin back to (E)livin that old life (D)no more
+  [verse3]
+    (A)walkin to the south (E)out of Roanoke, 
+    I caught a (F#m)trucker out of Philly, had a (D)nice long toke
+    but (A)hes aheadin west from the (E)cumberland Gap
+    to (D)johnson city, tennessee, 
+    and I (A)gotta get a move on (E)before the sun
+    I hear my (F#m)baby callin my name and I (D)know that shes the only one
+    and (A)if I died in raleigh at (E)least I will die (D)free
+  `},
+  {name: "You aint goin nowhere", genre: "country 1,2swing", key: "G", chords: "G-Am-C-G", tags: "",
+  lyrics: `
+  [verse1]
+    (G)clouds so swift, (Am)rain wont lift, 
+    (C)gate wont close, (G)railings froze, 
+    get your mind off (Am)wintertime, 
+    (C)you aint goin (G)nowhere
+  [coro]
+    (G)oohwee, (Am)ride me high, 
+    (C)tomorrows the day my (G)brides gonna come, 
+    oohwee, are (Am)we gonna fly, 
+    (Cm)down in the easy (G)chair
+  [verse2]
+    (G)I dont care how many (Am)letters they sent, 
+    the (C)morning came, the (Am)morning went, 
+    pack up your money, pick (Am)up your tent
+    (C)you aint goin (G)nowhere...
+    (G)buy me a flute and a (Am)gun that shoots
+    (C)tailgates and (G)substitutes, 
+    strap yourself to a (Am)tree with roots
+    (C)you aint goin (G)nowhere...
+    now (G)genghis khan, he (Am)could not keep, 
+    (C)all his kings (G)supplied with sleep
+    well climb that hill, no (Am)matter how steep
+    (C)when we get up to (G)it...
+  `},
+  {name: "Louisiana Saturday Night", genre: "country 1+2+", key: "D", chords: "D-A-G", tags: "",
+  lyrics: `
+  [coro]
+    well you (D)get down the fiddle and you (A)get down the bow, 
+    (G)kick off your shoes and you (D)throw em on the floor, 
+    dance in the kitchen til the (A)mornin light
+    (G)louisiana saturday (D)night
+  [verses]
+    (D)waiting in the front yard (A)sitting on a log
+    (G)a single-shot rifle and a (D)one-eyed dog, 
+    yonder come my kinfolk, (A)in the moonlight
+    (G)louisiana Saturday (D)night......
+    (D)my brother bill and my (A)other brother Jack
+    (G)belly full of beer and a (D)possum in a sack, 
+    15 kids in the (A)front porch light, 
+    (G)louisana saturday (D)night...... 
+    (D)when your kinfolk leave and the (A)kids get fed, 
+    (G)me and my woman gonna (D)slip off to bed, 
+    have a little fun when we (A)turn out the lights
+    (G)louisiana saturday (D)night...... 
+  `},
+  {name: "Fishin in the Dark", genre: "country 1+2+", key: "D", chords: "D-G", tags: "",
+  lyrics: `
+  [verse1]
+    (D)lazy yellow moon comin up tonight shinin through the trees
+    (G)crickets are singin and lightning bugs are floatin on the breeze, baby get (D)ready
+    (D)across the field where the creek turns back
+    by the old stump row, (G)Im gonna take you to a special place
+    that nobody knows baby get (D-A)ready
+  [coro]
+    (D)you and me go fishin in the dark
+    lyin on our backs and countin the stars
+    where the (G)cool grass grows, 
+    (D)down by the river in the full moonlight
+    well be fallin in love in the middle of the night
+    just (G)movin slow, 
+    (Em)stayin the whole night (A)through
+    (Em)it feels so good to (A)be with (D)you
+  [verse2]
+    (D)spring is almost over and the summers come, and the days are gettin long
+    (G)waited all winter for the time to be right
+    just to take you along, baby get (D)ready, 
+    and it dont matter if we sit forever and the fish dont bite, 
+    (G)jump in the river and cool ourselves from the heat of the night, baby get (D-A)ready
+  `},
+  {name: "Act Naturally", genre: "country 1,2swing", key: "G", chords: "G-C-D", tags: "",
+  lyrics: `
+  [verse1]
+    (G)theyre gonna put me in the (C)movies, 
+    (G)theyre gonna make a big star out of (D)me, 
+    well (G)make a film about a man thats sad and (C)lonely, 
+    and (D)all I gotta do is act (G)naturally, 
+  [coro]
+    well Ill (D)bet you Ima gonna be a (G)big star, 
+    might (D)win an oscar you cant (G)never tell, 
+    the (D)movies gonna make me a (G)big star, 
+    cause (A)I can play the part so (D)well
+  [verse2] 
+    well I (G)hope you come to see me in the (C)movie, 
+    (G)then I know that you will plainly (D)see, 
+    the (G)biggest fool thats ever hit the (C)big time, 
+    and (D)all I gotta do is act (G)naturally
+  `},
+  {name: "You Never Even Called Me by My Name", genre: "country 1+2+swing", key: "C", chords: "C-F", tags: "",
+  lyrics: `
+  [coro]
+    well it was (C)all, that I could (G)do, to keep from (C)crying, 
+    some-(F)-times it seemed so useless to (C)remain, 
+    but (F)you dont have to call me darlin, (C)..... darlin, 
+    you never even (G)called me by my (C-G)name, 
+    (C)you dont have (G)..... to call me waylon (C)jennings, 
+    (C)and you dont have (G)to call me charlie (C)pride, 
+    and (F)you dont have to call me (C)merle haggard, (Am)anymore, 
+    (D)even though youre on my fighting (G)side
+  [coro]
+    and Ill (F)hang around as long as you will (C)let me, 
+    and I never (G)minded standing in the (C)rain, 
+    but (F)you dont have to call me darlin, (C)..... darlin, 
+    you never even (G)called me by my (C)name
+  [verse2]
+    (C)well, Ive heard my name (G)..... 
+    a few times in your (C)phone book, 
+    and Ive seen it on (G)signs where Ive (C)played, 
+    but the (F)only time I know, Ill (C)hear david allan (Am)coe, 
+    is when (D)Jesus has his final judgment (G)day
+  `},
+  {name: "East Bound and Down", genre: "bluegrass", key: "G", chords: "G-A-C-D", tags: "",
+  lyrics: `
+  [coro]
+    (G)east bound and down, (A)loaded up and truckin,  
+    (F)we gon do what they (C)say cant be (D)done, 
+    weve got a (G)long way to go and a (A)short time to get there, 
+    im (C)east bound just (D)watch ol bandit (G)run
+  [verse1]
+    keep your (Em)foot hard on the pedal, son (C)never mind them brakes, 
+    let it (A)all hang out cause (B7)we got a run to (Em)make, 
+    the boys are thirsty in atlanta, and theres (C)beer in texarkana, 
+    and well (A)bring it back, no matter what it (B7)takes
+  `},
+  {name: "I Heard the Bluebirds Sing", genre: "bluegrass", key: "", chords: "", tags: "",
+  lyrics: `
+  [coro]
+    
+  `},
+  {name: "I Saw the Light", genre: "bluegrass", key: "", chords: "", tags: "",
+  lyrics: `
+  [coro]
+    
+  `},
+  {name: "Katiusha", genre: "slavic", key: "Am", chords: "Am-Dm-E", info: ``, 
+  lyrics: `
+  [verse1]
+    (Am)Расцветали яблони и (E)груши,
+    Поплыли туманы над (Am)рекой;
+    Выхо-(G)-дила на (F)берег Ка-(Am)-тюша, (Dm).....
+    На высо-(Am)-кий (E)берег, на кру-(Am)-той.
+    Выходила, песню заводила
+    Про степного, сизого орла,
+    Про того, которого любила,
+    Про того, чьи письма берегла.
+  `},
+  {name: "Lipka", genre: "slavic polish", key: "Am", chords: "Am-C-E", info: ``, 
+  lyrics: `
+  [verse1]
+    
+  `},
+  {name: "Murka", genre: "slavic", key: "Am", chords: "Am-E-Am-Dm", info: ``, 
+  lyrics: `
+  [verse1]
+    
+  `},
+  {name: "Kalinka", genre: "slavic", key: "Am", chords: "Am-Dm-E", info: ``, 
+  lyrics: `
+  [verse1]
+    
+  `},
+  {name: "Когда мы были на войне", genre: "slavic", key: "Am", chords: "F#m-Bm-F#m-C#", info: ``, 
+  lyrics: `
+  [verse1]
+    Когда мы были на войне,
+    Когда мы были на войне,
+    Там каждый думал о своей
+    Любимой или о жене.
+    Там каждый думал о своей
+    Любимой или о жене.
+  [verse2]
+    И я, конечно, думать мог,
+    И я, конечно, думать мог,
+    Когда на трубочку глядел,
+    На голубой ее дымок,
+    Когда на трубочку глядел,
+    На голубой ее дымок.
+  [verse3]
+    Как ты когда-то мне лгала,
+    Как ты когда-то мне лгала,
+    Что сердце девичье свое
+    Давно другому отдала.
+    Что сердце девичье свое
+    Давно другому отдала.
+  [verse4]
+    Но я не думал ни о чем,
+    Но я не думал ни о чем,
+    Я только трубочку курил
+    С турецким горьким табачком.
+    Я только трубочку курил
+    С турецким горьким табачком.
+  [verse5]
+    Я только верной пули жду,
+    Я только верной пули жду,
+    Чтоб утолить печаль свою
+    И чтоб пресечь нашу вражду.
+    Чтоб утолить печаль свою
+    И чтоб пресечь нашу вражду.
+  `},
+  {name: "Ой, то не вечер", genre: "slavic", key: "Em", chords: "Am-Dm-E", info: ``, 
+  lyrics: `
+  [verse1]
+    (Em)ой, то не вечер, то не (B7)вечер,
+    (Em)мне малым-мало (G-D)спалось,
+    (G)мне малым-мало (D-B7)спалось,
+    (Em)ох, да во сне (G-D)привиделось...
+    (G)мне во сне (D-B7)привиделось,
+  `},
+  {name: "Ойся ты, ойся", genre: "slavic", key: "Am", chords: "Am-G", info: ``, 
+  lyrics: `
+  [verse1]
+    На горе стоял казак. Он Богу молился,
+    За свободу, за народ низко поклонился.
+
+    Ойся, ты ойся, ты меня не бойся,
+    Я тебя не трону, ты не беспокойся.
+    Ойся, ты ойся, ты меня не бойся,
+    Я тебя не трону, ты не беспокойся
+    А еще просил казак, правды для народа,
+    Будет правда на земле, будет и свобода.
+    За друзей молил казак, чтоб их на чужбине
+    Стороною обошли алчность и гордыня.
+  `},
+  {name: "Farewell of Slavianka", genre: "slavic", key: "Am", chords: "Am-Dm-E", info: ``, 
+  lyrics: `
+  [verse1]
+    
+  `},
+  {name: "Miserlou", genre: "Rock surfer", key: "Em", chords: "Amaj7-Bm7 *Slow",
+  lyrics: `
+    
+  `},
+  {name: "I Get Around", genre: "Rock surfer", key: "", chords: "",
+  lyrics: `
+    
+  `},
+  {name: "Low Rider", genre: "Rock latin", key: "G", chords: "G (walk up)",
+  lyrics: `
+  [coro]
+    all my friends know the low rider
+  `},
+  {name: "Suavecito", genre: "Rock latin", key: "A", chords: "Amaj7-Bm7 *Slow",
+  lyrics: `
+    
+  `},
+  {name: "Bella Ciao", genre: "🎸italian", key: "Am", chords: "Am-Dm-E", info: `Conner: guitar picking <br> Eric: bass`, 
+  lyrics: `
+  [verse1]
+    una (Am)mattina, mi sono alzato,
+    o bella ciao bella ciao bella (A7)ciao ciao ciao
+    una (Dm)mattina, mi sono (Am)alzato,
+    e ho (E)trovato l'invas-(Am)-or,
+    o parti-(Am)-giano, portami via,
+    o bella ciao bella ciao, bella (A7)ciao ciao ciao
+    o (Dm)partigiano, portami (Am)via, 
+    che mi (E)sento di (Am)morir
+  [verse2]
+    e se io (Am)muoio da partigiano,
+    o bella ciao bella ciao bella (A7)ciao ciao ciao
+    e se io (Dm)muoio, da (Am)partigiano,
+    tu mi (E)devi (Am)seppellir, 
+    e (Am)seppellire, lassù in montagna,
+    o bella ciao bella ciao bella (A7)ciao ciao ciao
+    e seppellire (Dm)lassù, in (Am)montagna,
+    sotto (E)l'ombra di un bel (Am)fior
+  `},
+];
+
+
+
+// BESAW 
+const BesawSongsOG = [
+  {name: "I love my Girl", genre: "blues slow", key: "C", chords: "C-Am-Dm-G", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Dear Abby", genre: "blues slow", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Mr Bojangle", genre: "blues slow", key: "C", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Its Hard to be Humble", genre: "blues slow", key: "D", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Somebodys coming, FBI CIA", genre: "folk fast", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Please Dont Burry Me", genre: "folk fast", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Enjoy Yourself", genre: "folk", key: "Am", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Beer Run", genre: "folk fast", key: "A", chords: "A-E-A-D | A-E-F#-D", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Thrill Seeking son of a gun", genre: "folk fast", key: "G", chords: "G-C-G-D", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Standing on a Rock", genre: "folk fast", key: "G", chords: "G-C-G-C-D", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Old Timer", genre: "folk fast", key: "C", chords: "C-G", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Please dont bury me", genre: "folk fast", key: "D", chords: "D-A-D-G | G-D---A", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "End of Line, Its allll right", genre: "folk slow", key: "D", chords: "D--A-G | D-G", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "In my Living Room", genre: "folk slow", key: "D", chords: "D-A-G | G-D-A-D", tags: "original",
+  lyrics: `
+    
+  `},
+  {name: "Sunday Morning Sidewalk", genre: "folk slow", key: "G", chords: "G-C-G-D", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "What in the world", genre: "folk slow", key: "G", chords: "G-C-D", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Big Old Goofy World", genre: "folk slow", key: "G", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "A Pirate Looks at Fourty", genre: "folk slow", key: "G", chords: "G---C---Bm-Am-G-Am-Bm-Am-G", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "What its Worth, stop children", genre: "folk groove", key: "E", chords: "E-A", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Dock of the Bay", genre: "folk", key: "G", chords: "G-B7-C-Am(2) | G-E-G-E-G-A-G-E", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Sesaw", genre: "folk", key: "C", chords: "C-G", tags: "original",
+  lyrics: `
+    
+  `},
+  {name: "Statisticians Blues", genre: "folk", key: "A", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+  {name: "Daddy Never was the Cadillac Kind", genre: "folk", key: "...", chords: "...", tags: "",
+  lyrics: `
+    
+  `},
+];
