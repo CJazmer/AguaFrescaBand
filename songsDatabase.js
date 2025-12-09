@@ -684,6 +684,15 @@ const AFBSongsOG = [
     (Cm)some of them want to (G#-G)abuse you
     (Cm)some of them want to (G#)be (G)abused
   `},
+  {name: "Lambada", genre: "🎸cumbia", key: "Am", chords: "x2 Am-F-G-C x2 Dm-Dm-G-Am",
+  lyrics: `
+  [Verse1 x2]
+    (Am)llorando se fue (F)y me dejo (G)solo sin su (C)amor
+  [Verse2 x2]
+    (Dm)sola estará, recordando el amor, que el (G)tiempo no pudo (Am)borrar
+  [Verse3 x2]
+    (Dm)sola estará, recordando el amor, que un (G)día no supo (Am)cuidar
+  `},
   {name: "Corazon", genre: "🎸cumbia", key: "G", chords: "G-C-D | G-Bm-C-D", info: ``,
   lyrics: `
   [intro]
@@ -807,9 +816,9 @@ const AFBSongsOG = [
     y un (Bm)pétalo en tu piel... 
     y soy (Em)nada
   `},
-     {name: "Tu Carcel", genre: "🎸cumbia", key: "C-G-Am-F-G", chords: "", tags: "",
+     {name: "Tu Carcel", genre: "🎸cumbia", key: "C", chords: "C-G-Am-F-G", tags: "",
   lyrics: `
-    []
+    [verse1]
     (C)te vas amor, sí así lo quieres, qué (G)puedo yo hacer, 
     tu vanidad no te (Am)deja entender (F).....
     que en la pobreza se (G)sabe querer, 
@@ -1874,15 +1883,6 @@ const AFBSongsOG = [
     (G)signed by the judge said, see you later, 
     (Am)ahora vengo mama chula mama chula x4
   `},
-  {name: "Lambada", genre: "🎸funk", key: "Am", chords: "x2 Am-F-G-C x2 Dm-Dm-G-Am",
-  lyrics: `
-  [Verse1 x2]
-    (Am)llorando se fue (F)y me dejo (G)solo sin su (C)amor
-  [Verse2 x2]
-    (Dm)sola estará, recordando el amor, que el (G)tiempo no pudo (Am)borrar
-  [Verse3 x2]
-    (Dm)sola estará, recordando el amor, que un (G)día no supo (Am)cuidar
-  `},
   {name: "Feliz Navidad", genre: "🎸season", key: "G", chords: "G-A-D  |  G-A-D-Bm", 
   lyrics: `
   [Coro x2]
@@ -1923,6 +1923,219 @@ const AFBSongsOG = [
   [Coro2]
     (C-F)bamba (G-F)bamba, (C-F)bamba (G-F)bamba (G-F).....
   `},
+   {name: "What I Got", genre: "Pop", key: "", chords: "D-G | ", info: ``,
+  lyrics: `
+  [Verse1]
+      (D)early in the (G)morning, (D)risin to the (G)street,
+      (D)light me up that (G)cigarette, and I'll (D)strap shoes on my (G)feet
+      (D)got to find the (G)reason, (D)reason things went (G)wrong
+      (D)got to find a (G)reason why my (D)money's all (G)gone
+      (D)I got a (G)Dalmatian and (D)I can still get (G)high
+      (D)I can play the (G)guitar like a (D)motherfuckin (G)riot
+  [Verse2]
+      well life (D)is too short, so (G)love the one you got
+      cause you (D)might get run over, or you (G)might get shot
+      (D)never start no static, I just (G)get it off my chest
+      (D)never had to battle with no (G)bulletproof vest
+      (D)take a small example, take a (G)tip from me
+      (D)take all of your money, give it (G)all to charity
+      love (D)is what I got, it's (G)within my reach
+      and the (D)Sublime style's still (G)straight from Long Beach
+      it all (D)comes back to you, you're bound to (G)get what you deserve
+      (D)try and test that, you're (G)bound to get served
+      (D)loves what I got, (G)don't start a riot
+      you'll feel it when the dance gets hot
+    [coro]
+      (D-G)lovin' is what I (D-G)got, 
+      I said remember that
+  `},
+     {name: "Vacation", genre: "Reggae", key: "C#", chords: "C#-A#m-Fm", info: ``,
+      lyrics: `
+      [coro]
+        (C#)ay, ay, ayy, (A#m)I'm on vacation
+        (Fm)every single day cause I love my occupation
+        (C#)ay, ay, ayy, (A#m)I'm on vacation
+        if (Fm)you don't like your life, then you should go and change it
+        (C#)ay, ay, ayy, (A#m)I'm on vacation
+        (Fm)every single day cause I love my occupation
+        (C#)ay, ay, ayy, (A#m)I'm on vacation
+        (Fm)every single day, every, every single day
+     [verse1]
+        (C#)Everybody sour like a (A#m)lemon tree
+        (Fm)I'm just smiling down upon my enemies
+        (C#)Do this shit, I love it, on the (A#m)daily
+        You (Fm)say you hate your job but you'll never leave, never leave
+        But (C#)that ain't gonna be me, that ain't (A#m)gonna be me
+        My (Fm)brother called me up, (A#m)said he saw me on TV, 
+        I (C#)said it wasn't easy but right (A#m)now I'm living breezy
+        Built this (Fm)engine from the ground up now my hands they ain't so greasy, feel me?
+     `},
+     {name: "Dance All Night", genre: "Reggae", key: "D#m", chords: "D#m-G#-B | D#m-B-C#", info: ``,
+      lyrics: `
+      [coro x2]
+        (D#m)you better dance all night, youre gonna make it right
+        until we (G#)all fall down we all fall down cause it's (B)you that I've been missing
+      [verse1]
+        (D#m)top of the world, peak of my high Don't look now I just took flight
+        (D#m)apocalypse now, we own the night Got two choices: surf or fly
+        (G#)skate or die, sink or swim Crash or fly, look within
+        I (B)do not let this bullshit phase me I see lights and I go crazy
+        (D#m)cool is the wind, dark is the sky Blackbird sings in the dead of the night
+        (D#m)take these broken joints and get high Take your worries kiss 'em goodbye
+        (G#)tonight has been so amazing I see you and I go crazy
+        (B)you put me into this trance I hear music, let's dance
+      [Verse 2]
+        I be (D#m)bold like a leopard, fierce like a lion
+        (D#m)Like an eagle flying across the sky, and they (G#)wonder why
+        When they ponder on the (B)creation of his majesty
+        I believe in (D#m)we, I believe in you and me
+        As we (D#m)swim upon the ocean, swim on the sea
+        Won't you (G#)please come with me, running up into the hills
+        And the (B)trees we can fall down through the tumbleweeds
+      `},
+     {name: "Spread Too Thin", genre: "Reggae", key: "A", chords: "A-D-C#m-E | F#m-A", info: ``,
+      lyrics: `
+      [coro]
+        (A)I, I'm spread (D)way too thin
+        (C#m)Everybody wants to know (E)what's happenin'
+        (A)I, I'm spread (D)way too thin
+        (C#m)What's the big rush now (E)tell me why you're (A)rushin'
+        why you (A)rushin why you rushin
+      [verse1]
+        (F#m)well everybody's (A)callin', (F#m)but I just need some ()time
+        (F#m)yeah, I just need some (A)room to breathe again
+        (F#m)A way to clear my (A)mind
+        (F#m)you don't need to (A)be here
+        (F#m)all up in my (A)face
+        (F#m)we need to find the (A)right solution
+        (F#m)to put you in your (A)place
+      [precoro]
+        I said (A)hey, I (D)got a lot to say to (C#m)you
+        (E)Hear what you say it's not (A)true
+        So (D)this is what I'm gonna (C#m)do
+        Look at (E)me, I'm gonna let you know
+      [verse2]
+        (F#m)well, this has got me (A)twisted
+        (F#m)in the worst kind of (A)way
+        (F#m)you put me down when (A)I'm not around
+        (F#m)and then you, and then you smile at my (A)face
+        (F#m)you don't need a (A)home, no, (F#m)what you need is a (A)cage
+        I've (F#m)bottled up all of (A)these emotions, babe
+        a (F#m)monster 'bout to (A)rage
+      `},
+     {name: "Slow and Easy", genre: "Soul Funk", key: "A", chords: "A-B#m-D", info: ``,
+      lyrics: `
+      [verse1]
+        (A)tough times with the (B#m)soft top down
+        baby, (D)let's not make this harder
+        (A)Sit back and (B#m)let the waves crash
+        baby, (D)we can live like water
+        (A)turn off the six (B#m)o'clock news
+        (D)open the shades, enjoy the view
+        (A)don't matter what you're (B#m)going through
+        (D)whatcha say, me and you?
+      [coro]
+        just take it (A-B#m)slow and (D)easy
+        dont worry bout nothin
+        (A-B#m)no good (D)reason to be mad about somethin
+        (A)these days (B#m)are a little bit crazy
+        (D)baby, whatcha say right now we take it (A-B#m)slow and (D)easy
+        and, dont worry bout nothin
+      [verse2]
+        (A)we all need to (B#m)sit back and relax
+        (D)just let the mood meet the music in the back
+        (A)and all thesе bad (B#m)days, leave 'em in thе past
+        (D)and all these good times, we can make em last, yeah
+        (A)so chill, (B#m)man, mellow is the remedy
+        (D)we keep it cool, slow and easy, like the summer breeze
+        (A)all I need is a (B#m)cold one and roll one
+        (D)with someone I love while I hold 'em
+
+      `},
+     {name: "So Glad You Made it", genre: "Soul", key: "G#", chords: "G#maj7-C#maj7", info: ``,
+      lyrics: `
+        cooler than a (G#maj7)winter breeze warmer than the morning sun
+        im so glad you (C#maj7)made it I opened you one
+      `},
+     {name: "Old Sunrise", genre: "Reggae dub", key: "G#m", chords: "G#m-B-F#-Cm | E-G#m-B-F#", info: ``,
+      lyrics: `
+      [verse1]
+        after (G#m)all this time, I close my eyes to (B)recall
+        I was (F#)blind to find what I've been looking (Cm)for
+        like an (G#m)old sunrise under painted skies (B)above
+        I was (F#)lost inside a fire some folks call (Cm)love
+        and I (G#m)tried to explain it but I can't understand
+        it's (B)not complicated but I'm only a man in (F#)love, with (Cm)you
+        I (G#m)tried to forget it, it won't leave me alone
+        but the (B)world seems better when I'm falling in love with (F#)you, with (Cm)you
+      [coro]
+        (E)fall to your (G#m)knees
+        (B)hear those voices (F#)sing
+        and (E)all that you (G#m)see
+        that (B)old sunrise will (B)come
+      [verse2]
+        I'm (G#m)still amazed when the music plays (B)along
+        I was (F#)high when I was trying to write this (Cm)song
+        on the (G#m)perfect day, when nothing stays the (B)same
+        they say that (F#)love is strange in all except for (Cm)change
+        when the (G#m)whole world's sleeping it's a beautiful place
+        it (B)all make sense when I'm lying awake with (F#)you, with (Cm)you
+        but now the (G#m)day burns steady, just a moment in time
+        take me (B)back when your heart was never too hard to find in (F#)love, with (Cm)you
+      `},
+     {name: "Paradise", genre: "Reggae", key: "A#m", chords: "Am-F-G | C-G-Am", info: ``,
+      lyrics: `
+      [Verse 1]
+        (Am)tell me something that I don't know
+        (F)give me nothing, but love and hope
+        (G)I hope I can find my (Am)paradise...
+        and deep down under, and all I've seen
+        (F)beyond the wonders, and still I dream
+        (G)I know I can make that (Am)sacrifice...
+        and what is hopeless and what is real?
+        (F)I wish I knew how I feel
+        (G)I hope I can find that love (Am)inside...
+        give me shelter, bring me along
+        (F)theres a place where we all belong
+        (G)still I wonder, where's my (Am)paradise?
+      [coro]
+        and (C)IIII hope (G)I find my (Am)paradise...
+      [verse2]
+        (Am)out of the darkness, show me the way
+        (F)we all get lost, we've all been astray
+        (G)hold me close and tell me everything's (Am)alright...
+        the world keeps turning, the sun goes down
+        (F)a moment of silence, the greatest sound
+        (G)still I wonder, where's my (Am)paradise?
+      `},
+     {name: "Sound of the Sea", genre: "Reggae", key: "Dm", chords: "Dm-C-G", info: ``,
+      lyrics: `
+      [verse1]
+        this boat is (D#m)sinking, (B)down to the ocean (F#)floor
+        we're still (D#m)drinking, (B)drinking from the night (F#)before
+        I'm (D#m)wishing, I'm (B)wishing right now I was (F#)fishing
+        I'm (D#m)thinking, I'm (B)thinking, but my mind's not (F#)listening
+        (D#m)I never (B)felt so far (F#)away, (D#m)I never (B)lived before (F#)today
+        it's (D#m)been a while (B)since I've seen your (F#)face
+        it's (D#m)been a while, (B)time to turn the (F#)page
+      [coro]
+        (D#m)I wanna go (B)home, I wanna go (F#)home I wanna (D#m-C)feel the way I (F#)did
+        (D#m)I wanna go (B)home, I wanna go (F#)home (B)back, (D#m-C)back to the way it (F#)was
+      [verse2]
+        I got a (D#m)feeling, and this (CC)feeling won't go (F#)away
+        I'm not (D#m)leaving, I'm (B)waiting for a brighter (F#)day
+        I'm not (D#m)leaving, and (B)good things (F#)are coming my way
+        so keep (D#m)dreaming, I'm (B)feeling like I'm dreaming (F#)always
+        (D#m)It never (B)felt so strange to (F#)me
+        (D#m)And my (B)guitar is all I (F#)need
+        It's (D#m)been a while, (B)since I've been down this (F#)road
+        and it's (D#m)been a while, and (B)good things come and (F#)go
+      [change]
+        (D#m)If the (B)sun is getting (F#)closer
+        (D#m)then (B)why does it feel so (F#)cold? 
+        (D#m)and in the (B)eyes of the world, I'm (F#)older 
+        (D#m)and (B)I can't take it much (F#)longer
+      `},
 ];
 
 const Extra = [
