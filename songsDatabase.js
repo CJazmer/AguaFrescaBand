@@ -2057,31 +2057,31 @@ const AFBSongsOG = [
         cooler than a (G#maj7)winter breeze warmer than the morning sun
         im so glad you (C#maj7)made it I opened you one
       `},
-     {name: "Old Sunrise", genre: "Reggae dub", key: "G#m", chords: "G#m-B-F#-Cm | E-G#m-B-F#", info: ``,
+     {name: "Old Sunrise", genre: "Reggae dub", key: "Gm", chords: "Gm-A#-F-Cm | D#-Gm-A#-F", info: ``,
       lyrics: `
       [verse1]
-        after (G#m)all this time, I close my eyes to (B)recall
-        I was (F#)blind to find what I've been looking (Cm)for
-        like an (G#m)old sunrise under painted skies (B)above
-        I was (F#)lost inside a fire some folks call (Cm)love
-        and I (G#m)tried to explain it but I can't understand
-        it's (B)not complicated but I'm only a man in (F#)love, with (Cm)you
-        I (G#m)tried to forget it, it won't leave me alone
-        but the (B)world seems better when I'm falling in love with (F#)you, with (Cm)you
+        after (Gm)all this time, I close my eyes to (A#)recall
+        I was (F)blind to find what I've been looking (Cm)for
+        like an (Gm)old sunrise under painted skies (A#)above
+        I was (F)lost inside a fire some folks call (Cm)love
+        and I (Gm)tried to explain it but I can't understand
+        it's (A#)not complicated but I'm only a man in (F)love, with (Cm)you
+        I (Gm)tried to forget it, it won't leave me alone
+        but the (A#)world seems better when I'm falling in love with (F)you, with (Cm)you
       [coro]
-        (E)fall to your (G#m)knees
-        (B)hear those voices (F#)sing
-        and (E)all that you (G#m)see
-        that (B)old sunrise will (F#)come
+        (D#)fall to your (Gm)knees
+        (A#)hear those voices (F)sing
+        and (D#)all that you (Gm)see
+        that (A#)old sunrise will (F)come
       [verse2]
-        I'm (G#m)still amazed when the music plays (B)along
-        I was (F#)high when I was trying to write this (Cm)song
-        on the (G#m)perfect day, when nothing stays the (B)same
-        they say that (F#)love is strange in all except for (Cm)change
-        when the (G#m)whole world's sleeping it's a beautiful place
-        it (B)all make sense when I'm lying awake with (F#)you, with (Cm)you
-        but now the (G#m)day burns steady, just a moment in time
-        take me (B)back when your heart was never too hard to find in (F#)love, with (Cm)you
+        I'm (Gm)still amazed when the music plays (A#)along
+        I was (F)high when I was trying to write this (Cm)song
+        on the (Gm)perfect day, when nothing stays the (A#)same
+        they say that (F)love is strange in all except for (Cm)change
+        when the (Gm)whole world's sleeping it's a beautiful place
+        it (A#)all make sense when I'm lying awake with (F)you, with (Cm)you
+        but now the (Gm)day burns steady, just a moment in time
+        take me (A#)back when your heart was never too hard to find in (F)love, with (Cm)you
       `},
      {name: "Paradise", genre: "Reggae", key: "A#m", chords: "Am-F-G | C-G-Am", info: ``,
       lyrics: `
