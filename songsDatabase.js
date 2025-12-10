@@ -2027,9 +2027,9 @@ const AFBSongsOG = [
       lyrics: `
       [verse1]
         (A)tough times with the (B#m)soft top down
-        baby, (D)let's not make this harder
+        baby (D)lets not make this harder
         (A)Sit back and (B#m)let the waves crash
-        baby, (D)we can live like water
+        baby (D)we can live like water
         (A)turn off the six (B#m)o'clock news
         (D)open the shades, enjoy the view
         (A)don't matter what you're (B#m)going through
@@ -2072,7 +2072,7 @@ const AFBSongsOG = [
         (E)fall to your (G#m)knees
         (B)hear those voices (F#)sing
         and (E)all that you (G#m)see
-        that (B)old sunrise will (B)come
+        that (B)old sunrise will (F#)come
       [verse2]
         I'm (G#m)still amazed when the music plays (B)along
         I was (F#)high when I was trying to write this (Cm)song
@@ -2111,30 +2111,30 @@ const AFBSongsOG = [
      {name: "Sound of the Sea", genre: "Reggae", key: "Dm", chords: "Dm-C-G", info: ``,
       lyrics: `
       [verse1]
-        this boat is (D#m)sinking, (B)down to the ocean (F#)floor
-        we're still (D#m)drinking, (B)drinking from the night (F#)before
-        I'm (D#m)wishing, I'm (B)wishing right now I was (F#)fishing
-        I'm (D#m)thinking, I'm (B)thinking, but my mind's not (F#)listening
-        (D#m)I never (B)felt so far (F#)away, (D#m)I never (B)lived before (F#)today
-        it's (D#m)been a while (B)since I've seen your (F#)face
-        it's (D#m)been a while, (B)time to turn the (F#)page
+        this boat is (C#m)sinking, (B)down to the ocean (F#)floor
+        we're still (C#m)drinking, (B)drinking from the night (F#)before
+        I'm (C#m)wishing, I'm (B)wishing right now I was (F#)fishing
+        I'm (C#m)thinking, I'm (B)thinking, but my mind's not (F#)listening
+        (C#m)I never (B)felt so far (F#)away, (C#m)I never (B)lived before (F#)today
+        it's (C#m)been a while (B)since I've seen your (F#)face
+        it's (C#m)been a while, (B)time to turn the (F#)page
       [coro]
-        (D#m)I wanna go (B)home, I wanna go (F#)home I wanna (D#m-C)feel the way I (F#)did
-        (D#m)I wanna go (B)home, I wanna go (F#)home (B)back, (D#m-C)back to the way it (F#)was
+        (C#m)I wanna go (B)home, I wanna go (F#)home I wanna (D#m-C)feel the way I (F#)did
+        (C#m)I wanna go (B)home, I wanna go (F#)home (B)back, (D#m-C)back to the way it (F#)was
       [verse2]
-        I got a (D#m)feeling, and this (CC)feeling won't go (F#)away
-        I'm not (D#m)leaving, I'm (B)waiting for a brighter (F#)day
-        I'm not (D#m)leaving, and (B)good things (F#)are coming my way
-        so keep (D#m)dreaming, I'm (B)feeling like I'm dreaming (F#)always
-        (D#m)It never (B)felt so strange to (F#)me
-        (D#m)And my (B)guitar is all I (F#)need
-        It's (D#m)been a while, (B)since I've been down this (F#)road
-        and it's (D#m)been a while, and (B)good things come and (F#)go
+        I got a (C#m)feeling, and this (B)feeling won't go (F#)away
+        I'm not (C#m)leaving, I'm (B)waiting for a brighter (F#)day
+        I'm not (C#m)leaving, and (B)good things (F#)are coming my way
+        so keep (C#m)dreaming, I'm (B)feeling like I'm dreaming (F#)always
+        (C#m)It never (B)felt so strange to (F#)me
+        (C#m)And my (B)guitar is all I (F#)need
+        It's (C#m)been a while, (B)since I've been down this (F#)road
+        and it's (C#m)been a while, and (B)good things come and (F#)go
       [change]
-        (D#m)If the (B)sun is getting (F#)closer
-        (D#m)then (B)why does it feel so (F#)cold? 
-        (D#m)and in the (B)eyes of the world, I'm (F#)older 
-        (D#m)and (B)I can't take it much (F#)longer
+        (C#m)If the (B)sun is getting (F#)closer
+        (C#m)then (B)why does it feel so (F#)cold? 
+        (C#m)and in the (B)eyes of the world, I'm (F#)older 
+        (C#m)and (B)I can't take it much (F#)longer
       `},
 ];
 
