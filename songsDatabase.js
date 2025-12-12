@@ -1976,22 +1976,22 @@ const AFBSongsOG = [
         (D#m)you better dance all night, youre gonna make it right
         until we (G#)all fall down we all fall down cause it's (B)you that I've been missing
       [verse1]
-        (D#m)top of the world, peak of my high Don't look now I just took flight
+        (D#m)top of the world, peak of my high don't look now I just took flight
         (D#m)apocalypse now, we own the night Got two choices: surf or fly
-        (G#)skate or die, sink or swim Crash or fly, look within
-        I (B)do not let this bullshit phase me I see lights and I go crazy
+        (B)skate or die, sink or swim Crash or fly, look within
+        I (G#)do not let this bullshit phase me I see lights and I go crazy
         (D#m)cool is the wind, dark is the sky Blackbird sings in the dead of the night
         (D#m)take these broken joints and get high Take your worries kiss 'em goodbye
-        (G#)tonight has been so amazing I see you and I go crazy
-        (B)you put me into this trance I hear music, let's dance
+        (B)tonight has been so amazing I see you and I go crazy
+        (G#)you put me into this trance I hear music, let's dance
       [Verse 2]
         I be (D#m)bold like a leopard, fierce like a lion
-        (D#m)Like an eagle flying across the sky, and they (G#)wonder why
-        When they ponder on the (B)creation of his majesty
+        (D#m)Like an eagle flying across the sky, and they (B)wonder why
+        When they ponder on the (G#)creation of his majesty
         I believe in (D#m)we, I believe in you and me
         As we (D#m)swim upon the ocean, swim on the sea
-        Won't you (G#)please come with me, running up into the hills
-        And the (B)trees we can fall down through the tumbleweeds
+        Won't you (B)please come with me, running up into the hills
+        And the (G#)trees we can fall down through the tumbleweeds
       `},
      {name: "Spread Too Thin", genre: "Reggae", key: "A", chords: "A-D-C#m-E | F#m-A", info: ``,
       lyrics: `
@@ -2002,7 +2002,7 @@ const AFBSongsOG = [
         (C#m)What's the big rush now (E)tell me why you're (A)rushin'
         why you (A)rushin why you rushin
       [verse1]
-        (F#m)well everybody's (A)callin', (F#m)but I just need some ()time
+        (F#m)well everybody's (A)callin, (F#m)but I just need some (A)time
         (F#m)yeah, I just need some (A)room to breathe again
         (F#m)A way to clear my (A)mind
         (F#m)you don't need to (A)be here
